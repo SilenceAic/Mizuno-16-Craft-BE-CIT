@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:oxeye_daisy_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "O",
+            "P"
+		],
+		"key": {
+			"O": {
+				"item": "minecraft:oxeye_daisy"
+			},
+            "P": {
+				"item": "minecraft:flower_pot"
+			}
+		},
+		"result": {
+			"item": "cit:oxeye_daisy_0",
+            "count": 1
+		}
+	}
+}

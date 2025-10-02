@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:chest_3"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "G",
+            "C"
+		],
+		"key": {
+			"G": {
+				"item": "minecraft:gold_nugget"
+			},
+            "C": {
+				"item": "minecraft:chest"
+			}
+		},
+		"result": {
+			"item": "cit:chest_3",
+            "count": 1
+		}
+	}
+}

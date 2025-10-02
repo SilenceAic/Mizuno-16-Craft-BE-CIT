@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:birch_sapling_7"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "SBS",
+            " S "
+		],
+		"key": {
+            "S": {
+				"item": "minecraft:stone"
+			},
+			"B": {
+				"item": "minecraft:birch_sapling"
+			}
+		},
+		"result": {
+			"item": "cit:birch_sapling_7",
+            "count": 1
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+  "entity_sounds": {
+    "entities": {
+      "cit:fern_1": {
+        "events": {
+          "ambient": "",
+          "death": "dig.azalea_leaves",
+          "hurt": "dig.azalea_leaves"
+        },
+        "pitch": [0.6, 0.8],
+        "volume": 1.0
+      },
+      "cit:painting_d40": {
+        "events": {
+          "ambient": "",
+          "death": "dig.stone",
+          "hurt": "dig.stone"
+        },
+        "pitch": [0.8, 1.0],
+        "volume": 1.0
+      },
+      "cit:oak_fence_0": {
+        "events": {
+          "ambient": "",
+          "death": "dig.wood",
+          "hurt": "dig.wood"
+        },
+        "pitch": [0.8, 1.0],
+        "volume": 1.0
+      }
+    }
+  }
+}

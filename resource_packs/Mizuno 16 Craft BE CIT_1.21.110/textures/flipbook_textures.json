@@ -1,0 +1,50 @@
+[
+	{
+		"flipbook_texture": "textures/blocks/cit/glowstone_0",
+		"atlas_tile": "glowstone_0",
+		"ticks_per_frame": 25,
+		"blend_frames": true
+	},
+	{
+		"flipbook_texture": "textures/blocks/cit/torch_flame",
+		"atlas_tile": "torch_flame",
+		"ticks_per_frame": 2,
+		"blend_frames": false
+	},
+	{
+		"flipbook_texture": "textures/blocks/cit/torch_flame_e",
+		"atlas_tile": "torch_flame_e",
+		"ticks_per_frame": 2,
+		"blend_frames": false
+	},
+	{
+		"flipbook_texture": "textures/blocks/cit/torch_on",
+		"atlas_tile": "torch_on",
+		"ticks_per_frame": 20,
+		"blend_frames": true
+	},
+	{
+		"flipbook_texture": "textures/blocks/cit/torch_on_e",
+		"atlas_tile": "torch_on_e",
+		"ticks_per_frame": 20,
+		"blend_frames": true
+	},
+	{
+		"flipbook_texture": "textures/blocks/cit/butterfly_0",
+		"atlas_tile": "blue_orchid_1",
+		"ticks_per_frame": 2,
+		"blend_frames": false
+	},
+	{
+		"flipbook_texture": "textures/blocks/cit/butterfly_0",
+		"atlas_tile": "dandelion_1",
+		"ticks_per_frame": 2,
+		"blend_frames": false
+	},
+	{
+		"flipbook_texture": "textures/blocks/cit/butterfly_0",
+		"atlas_tile": "dandelion_2",
+		"ticks_per_frame": 2,
+		"blend_frames": false
+	}
+]

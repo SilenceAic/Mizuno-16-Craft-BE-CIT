@@ -1,0 +1,175 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cit:oak_sapling_3",
+      "menu_category": {
+        "category": "nature"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": ["minecraft:block_face"]
+        }
+      },
+      "states": {
+        "cit:rotation": {
+          "values": { "min": 0, "max": 15 }
+        },
+        "cit:variant": {
+          "values": { "min": 0, "max": 2 }
+        }
+      }
+    },
+    "components": {
+      "minecraft:geometry": {
+        "identifier": "geometry.cit.oak_sapling_3",
+        "bone_visibility": {
+          "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 0",
+          "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
+          "up_45": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 2",
+          "up_67_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 3",
+          "inventory": "q.block_state('minecraft:block_face') != 'up' && q.block_state('minecraft:block_face') != 'east' && q.block_state('minecraft:block_face') != 'south' && q.block_state('minecraft:block_face') != 'west' && q.block_state('minecraft:block_face') != 'north'"
+        }
+      },
+      "minecraft:collision_box": {
+        "origin": [-3, 0, -3],
+        "size": [6, 6, 6]
+      },
+      "minecraft:selection_box": {
+        "origin": [-3, 0, -3],
+        "size": [6, 6, 6]
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "oak_sapling_3",
+          "render_method": "alpha_test_single_sided",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        }
+      },
+      "tag:cit:two_height": {},
+      "cit:rotation": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'down'",
+        "components": {
+          "cit:multiblock": {}
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'east' || q.block_state('minecraft:block_face') == 'south' || q.block_state('minecraft:block_face') == 'west'  || q.block_state('minecraft:block_face') == 'north'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cit.oak_sapling_3_wall"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "oak_sapling_3",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "flower_pot": {
+              "texture": "flower_pot_l_0f",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          },
+          "minecraft:collision_box": {
+            "origin": [-4, 5, 0],
+            "size": [8, 5, 9]
+          },
+          "minecraft:selection_box": {
+            "origin": [-4, 5, 0],
+            "size": [8, 5, 9]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:variant') == 1",
+        "components": {
+          "cit:multidestory": {},
+          "minecraft:geometry": {
+            "identifier": "geometry.cit.oak_sapling_3_top_bottom",
+            "bone_visibility": {
+              "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 0",
+              "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
+              "up_45": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 2",
+              "up_67_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 3"
+            }
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "oak_sapling_3",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "flower_pot_5": {
+              "texture": "flower_pot_5",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          },
+          "minecraft:collision_box": false,
+          "minecraft:selection_box": {
+            "origin": [-4, 6, -4],
+            "size": [8, 5, 8]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:variant') == 2",
+        "components": {
+          "cit:multidestory": {},
+          "minecraft:geometry": {
+            "identifier": "geometry.cit.oak_sapling_3_top_top",
+            "bone_visibility": {
+              "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 0",
+              "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
+              "up_45": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 2",
+              "up_67_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 3"
+            }
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "oak_sapling_3",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "flower_pot_5": {
+              "texture": "flower_pot_5",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          },
+          "minecraft:collision_box": false,
+          "minecraft:selection_box": false
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, -90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
+        }
+      }
+    ]
+  }
+}

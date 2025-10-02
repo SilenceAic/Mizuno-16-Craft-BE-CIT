@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:jungle_sapling_3"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "C",
+            "B"
+		],
+		"key": {
+            "C": {
+				"item": "minecraft:sugar"
+			},
+			"B": {
+				"item": "cit:jungle_sapling_4"
+			}
+		},
+		"result": {
+			"item": "cit:jungle_sapling_3",
+            "count": 1
+		}
+	}
+}

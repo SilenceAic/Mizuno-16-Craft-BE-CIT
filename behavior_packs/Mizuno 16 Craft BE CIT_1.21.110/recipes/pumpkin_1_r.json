@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:pumpkin_1"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "PW"
+		],
+		"key": {
+			"P": {
+				"item": "minecraft:pumpkin"
+			},
+            "W": {
+				"item": "minecraft:white_dye"
+			}
+		},
+		"result": {
+			"item": "cit:pumpkin_1",
+            "count": 1
+		}
+	}
+}

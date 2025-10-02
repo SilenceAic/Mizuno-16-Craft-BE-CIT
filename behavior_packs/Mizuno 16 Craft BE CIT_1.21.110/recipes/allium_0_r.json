@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:allium_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "A",
+            "F"
+		],
+		"key": {
+            "F": {
+				"item": "minecraft:flower_pot"
+			},
+			"A": {
+				"item": "minecraft:allium"
+			}
+		},
+		"result": {
+			"item": "cit:allium_0",
+            "count": 1
+		}
+	}
+}

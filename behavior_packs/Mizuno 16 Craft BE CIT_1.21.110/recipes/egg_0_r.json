@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:egg_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            " E ",
+			"BBB"
+		],
+		"key": {
+			"E": {
+    			"item": "minecraft:egg"
+			},
+			"B": {
+				"item": "minecraft:bamboo"
+			}
+		},
+		"result": {
+			"item": "cit:egg_0",
+            "count": 1
+		}
+	}
+}

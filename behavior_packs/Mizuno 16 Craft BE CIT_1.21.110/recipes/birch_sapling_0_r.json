@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:birch_sapling_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "B",
+            "F"
+		],
+		"key": {
+            "F": {
+				"item": "minecraft:flower_pot"
+			},
+			"B": {
+				"item": "minecraft:birch_sapling"
+			}
+		},
+		"result": {
+			"item": "cit:birch_sapling_0",
+            "count": 1
+		}
+	}
+}

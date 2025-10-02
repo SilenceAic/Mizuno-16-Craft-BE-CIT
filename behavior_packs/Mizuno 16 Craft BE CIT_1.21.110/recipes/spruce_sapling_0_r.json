@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:spruce_sapling_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "S",
+            "F"
+		],
+		"key": {
+            "F": {
+				"item": "minecraft:flower_pot"
+			},
+			"S": {
+				"item": "minecraft:spruce_sapling"
+			}
+		},
+		"result": {
+			"item": "cit:spruce_sapling_0",
+            "count": 1
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:birch_sapling_6"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "OBO",
+            " O "
+		],
+		"key": {
+            "O": {
+				"item": "minecraft:oak_planks"
+			},
+			"B": {
+				"item": "minecraft:birch_sapling"
+			}
+		},
+		"result": {
+			"item": "cit:birch_sapling_6",
+            "count": 1
+		}
+	}
+}

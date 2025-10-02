@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:torch_5"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"   ",
+            "ccc",
+            " C "
+		],
+		"key": {
+			"C": {
+    			"item": "minecraft:copper_ingot"
+			},
+			"c": {
+				"item": "minecraft:candle"
+			}
+		},
+		"result": {
+			"item": "cit:torch_5",
+            "count": 1
+		}
+	}
+}

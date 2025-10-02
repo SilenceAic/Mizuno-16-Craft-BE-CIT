@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:chest_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "C"
+		],
+		"key": {
+			"C": {
+				"item": "minecraft:chest"
+			}
+		},
+		"result": {
+			"item": "cit:chest_0",
+            "count": 1
+		}
+	}
+}

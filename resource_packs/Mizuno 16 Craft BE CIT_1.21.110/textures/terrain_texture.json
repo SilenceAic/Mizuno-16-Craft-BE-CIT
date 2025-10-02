@@ -1,0 +1,867 @@
+{
+  "resource_pack_name": "Mizuno 16 Craft BE CIT_1.21.9",
+  "texture_name": "atlas.terrain",
+  "texture_data": {
+    "stone": {
+      "textures": "textures/blocks/cit/stone"
+    },
+    "oak_log_top": {
+      "textures": "textures/blocks/cit/oak_log_top"
+    },
+    "oak_log_0": {
+      "textures": "textures/blocks/cit/oak_log_0"
+    },
+    "oak_log_1": {
+      "textures": "textures/blocks/cit/oak_log_1"
+    },
+    "oak_log_1_01": {
+      "textures": "textures/blocks/cit/oak_log_1_01"
+    },
+    "sheep_0": {
+      "textures": "textures/blocks/cit/sheep_0"
+    },
+    "sheep_0a": {
+      "textures": "textures/blocks/cit/sheep_0a"
+    },
+    "white_wool": {
+      "textures": "textures/blocks/cit/white_wool"
+    },
+    "white_wool_0a": {
+      "textures": "textures/blocks/cit/white_wool_0a"
+    },
+    "light_gray_wool": {
+      "textures": "textures/blocks/cit/light_gray_wool"
+    },
+    "gray_wool": {
+      "textures": "textures/blocks/cit/gray_wool"
+    },
+    "black_wool": {
+      "textures": "textures/blocks/cit/black_wool"
+    },
+    "brown_wool": {
+      "textures": "textures/blocks/cit/brown_wool"
+    },
+    "red_wool": {
+      "textures": "textures/blocks/cit/red_wool"
+    },
+    "orange_wool": {
+      "textures": "textures/blocks/cit/orange_wool"
+    },
+    "yellow_wool": {
+      "textures": "textures/blocks/cit/yellow_wool"
+    },
+    "lime_wool": {
+      "textures": "textures/blocks/cit/lime_wool"
+    },
+    "green_wool": {
+      "textures": "textures/blocks/cit/green_wool"
+    },
+    "cyan_wool": {
+      "textures": "textures/blocks/cit/cyan_wool"
+    },
+    "light_blue_wool": {
+      "textures": "textures/blocks/cit/light_blue_wool"
+    },
+    "blue_wool": {
+      "textures": "textures/blocks/cit/blue_wool"
+    },
+    "purple_wool": {
+      "textures": "textures/blocks/cit/purple_wool"
+    },
+    "magenta_wool": {
+      "textures": "textures/blocks/cit/magenta_wool"
+    },
+    "pink_wool": {
+      "textures": "textures/blocks/cit/pink_wool"
+    },
+    "gold_block_0": {
+      "textures": "textures/blocks/cit/gold_block_0"
+    },
+    "gold_block_1": {
+      "textures": "textures/blocks/cit/gold_block_1"
+    },
+    "gold_block_1_white": {
+      "textures": "textures/blocks/cit/gold_block_1_white"
+    },
+    "pumpkin_0": {
+      "textures": "textures/blocks/cit/pumpkin_0"
+    },
+    "pumpkin_1": {
+      "textures": "textures/blocks/cit/pumpkin_1"
+    },
+    "pumpkin_0_01": {
+      "textures": "textures/blocks/cit/pumpkin_0_01"
+    },
+    "pumpkin_1_01": {
+      "textures": "textures/blocks/cit/pumpkin_1_01"
+    },
+    "snow": {
+      "textures": "textures/blocks/cit/snow"
+    },
+    "red_wool_side": {
+      "textures": "textures/blocks/cit/red_wool_side"
+    },
+    "green_wool_side": {
+      "textures": "textures/blocks/cit/green_wool_side"
+    },
+    "snow_block_0": {
+      "textures": "textures/blocks/cit/snow_block_0"
+    },
+    "snow_block_1": {
+      "textures": "textures/blocks/cit/snow_block_1"
+    },
+    "snow_block_1a": {
+      "textures": "textures/blocks/cit/snow_block_1a"
+    },
+    "glowstone_0": {
+      "textures": "textures/blocks/cit/glowstone_0"
+    },
+    "terracotta_0": {
+      "textures": "textures/blocks/cit/terracotta_0"
+    },
+    "terracotta_1": {
+      "textures": "textures/blocks/cit/terracotta_1"
+    },
+    "terracotta_1a": {
+      "textures": "textures/blocks/cit/terracotta_1a"
+    },
+    "terracotta_2": {
+      "textures": "textures/blocks/cit/terracotta_2"
+    },
+    "terracotta_2a": {
+      "textures": "textures/blocks/cit/terracotta_2a"
+    },
+    "terracotta_3": {
+      "textures": "textures/blocks/cit/terracotta_3"
+    },
+    "terracotta_3_01": {
+      "textures": "textures/blocks/cit/terracotta_3_01"
+    },
+    "terracotta_4": {
+      "textures": "textures/blocks/cit/terracotta_4"
+    },
+    "terracotta_4a": {
+      "textures": "textures/blocks/cit/terracotta_4a"
+    },
+    "terracotta_4b": {
+      "textures": "textures/blocks/cit/terracotta_4b"
+    },
+    "chest_0": {
+      "textures": "textures/blocks/cit/chest_0"
+    },
+    "chest_1": {
+      "textures": "textures/blocks/cit/chest_1"
+    },
+    "chest_2": {
+      "textures": "textures/blocks/cit/chest_2"
+    },
+    "chest_2a": {
+      "textures": "textures/blocks/cit/chest_2a"
+    },
+    "chest_3": {
+      "textures": "textures/blocks/cit/chest_3"
+    },
+    "chest_4": {
+      "textures": "textures/blocks/cit/chest_4"
+    },
+    "chest_4_01": {
+      "textures": "textures/blocks/cit/chest_4_01"
+    },
+    "crafting_table_2": {
+      "textures": "textures/blocks/cit/crafting_table_2"
+    },
+    "crafting_table_5": {
+      "textures": "textures/blocks/cit/crafting_table_5"
+    },
+    "crafting_table_5a": {
+      "textures": "textures/blocks/cit/crafting_table_5a"
+    },
+    "crafting_table_6": {
+      "textures": "textures/blocks/cit/crafting_table_6"
+    },
+    "crafting_table_6a": {
+      "textures": "textures/blocks/cit/crafting_table_6a"
+    },
+    "crafting_table_6_01": {
+      "textures": "textures/blocks/cit/crafting_table_6_01"
+    },
+    "crafting_table_6a_01": {
+      "textures": "textures/blocks/cit/crafting_table_6a_01"
+    },
+    "crafting_table_7": {
+      "textures": "textures/blocks/cit/crafting_table_7"
+    },
+    "crafting_table_7a": {
+      "textures": "textures/blocks/cit/crafting_table_7a"
+    },
+    "crafting_table_7_01": {
+      "textures": "textures/blocks/cit/crafting_table_7_01"
+    },
+    "crafting_table_7a_01": {
+      "textures": "textures/blocks/cit/crafting_table_7a_01"
+    },
+    "crafting_table_tool": {
+      "textures": "textures/blocks/cit/crafting_table_tool"
+    },
+    "crafting_table_toola": {
+      "textures": "textures/blocks/cit/crafting_table_toola"
+    },
+    "cit:oak_planks": {
+      "textures": "textures/blocks/cit/oak_planks"
+    },
+    "cit:oak_log": {
+      "textures": "textures/blocks/cit/oak_log"
+    },
+    "cit:oak_log_top": {
+      "textures": "textures/blocks/cit/oak_log_top"
+    },
+    "cit:birch_log": {
+      "textures": "textures/blocks/cit/birch_log"
+    },
+    "cit:birch_log_top": {
+      "textures": "textures/blocks/cit/birch_log_top"
+    },
+    "dark_oak_planks": {
+      "textures": "textures/blocks/cit/dark_oak_planks"
+    },
+    "bowl_glay_0": {
+      "textures": "textures/blocks/cit/bowl_glay_0"
+    },
+    "powder": {
+      "textures": "textures/blocks/cit/powder"
+    },
+    "egg_0": {
+      "textures": "textures/blocks/cit/egg_0"
+    },
+    "basket": {
+      "textures": "textures/blocks/cit/basket"
+    },
+    "sugar_1": {
+      "textures": "textures/blocks/cit/sugar_1"
+    },
+    "sugar_1a": {
+      "textures": "textures/blocks/cit/sugar_1a"
+    },
+    "sugar_1b": {
+      "textures": "textures/blocks/cit/sugar_1b"
+    },
+    "sugar_2": {
+      "textures": "textures/blocks/cit/sugar_2"
+    },
+    "sugar_4": {
+      "textures": "textures/blocks/cit/sugar_4"
+    },
+    "sugar_5": {
+      "textures": "textures/blocks/cit/sugar_5"
+    },
+    "sugar_5a": {
+      "textures": "textures/blocks/cit/sugar_5a"
+    },
+    "sugar_5_jar": {
+      "textures": "textures/blocks/cit/sugar_5_jar"
+    },
+    "sugar_5_01": {
+      "textures": "textures/blocks/cit/sugar_5_01"
+    },
+    "sugar_5a_01": {
+      "textures": "textures/blocks/cit/sugar_5a_01"
+    },
+    "sugar_6": {
+      "textures": "textures/blocks/cit/sugar_6"
+    },
+    "sugar_6_jar": {
+      "textures": "textures/blocks/cit/sugar_6_jar"
+    },
+    "sugar_7": {
+      "textures": "textures/blocks/cit/sugar_7"
+    },
+    "torch_holder": {
+      "textures": "textures/blocks/cit/torch_holder"
+    },
+    "torch_0": {
+      "textures": "textures/blocks/cit/torch_0"
+    },
+    "torch_0_e": {
+      "textures": "textures/blocks/cit/torch_0_e"
+    },
+    "torch_0a": {
+      "textures": "textures/blocks/cit/torch_0a"
+    },
+    "torch_0a_e": {
+      "textures": "textures/blocks/cit/torch_0a_e"
+    },
+    "torch_wall_0": {
+      "textures": "textures/blocks/cit/torch_wall_0"
+    },
+    "torch_wall_0_e": {
+      "textures": "textures/blocks/cit/torch_wall_0_e"
+    },
+    "torch_wall_0a": {
+      "textures": "textures/blocks/cit/torch_wall_0a"
+    },
+    "torch_wall_0a_e": {
+      "textures": "textures/blocks/cit/torch_wall_0a_e"
+    },
+    "torch_1": {
+      "textures": "textures/blocks/cit/torch_1"
+    },
+    "torch_1_e": {
+      "textures": "textures/blocks/cit/torch_1_e"
+    },
+    "torch_wall_1": {
+      "textures": "textures/blocks/cit/torch_wall_1"
+    },
+    "torch_wall_1_e": {
+      "textures": "textures/blocks/cit/torch_wall_1_e"
+    },
+    "torch_2": {
+      "textures": "textures/blocks/cit/torch_2"
+    },
+    "torch_2_e": {
+      "textures": "textures/blocks/cit/torch_2_e"
+    },
+    "torch_3": {
+      "textures": "textures/blocks/cit/torch_3"
+    },
+    "torch_3_e": {
+      "textures": "textures/blocks/cit/torch_3_e"
+    },
+    "torch_3a": {
+      "textures": "textures/blocks/cit/torch_3a"
+    },
+    "torch_3a_e": {
+      "textures": "textures/blocks/cit/torch_3a_e"
+    },
+    "torch_3b": {
+      "textures": "textures/blocks/cit/torch_3b_e"
+    },
+    "torch_3b_e": {
+      "textures": "textures/blocks/cit/torch_3b_e"
+    },
+    "torch_4": {
+      "textures": "textures/blocks/cit/torch_4"
+    },
+    "torch_4a": {
+      "textures": "textures/blocks/cit/torch_4a"
+    },
+    "torch_4b": {
+      "textures": "textures/blocks/cit/torch_4b"
+    },
+    "torch_4_e": {
+      "textures": "textures/blocks/cit/torch_4_e"
+    },
+    "torch_4a_e": {
+      "textures": "textures/blocks/cit/torch_4a_e"
+    },
+    "torch_4b_e": {
+      "textures": "textures/blocks/cit/torch_4b_e"
+    },
+    "torch_5": {
+      "textures": "textures/blocks/cit/torch_5"
+    },
+    "torch_5_01": {
+      "textures": "textures/blocks/cit/torch_5_01"
+    },
+    "torch_5a": {
+      "textures": "textures/blocks/cit/torch_5a"
+    },
+    "torch_6": {
+      "textures": "textures/blocks/cit/torch_6"
+    },
+    "torch_6_e": {
+      "textures": "textures/blocks/cit/torch_6_e"
+    },
+    "torch_7": {
+      "textures": "textures/blocks/cit/torch_7"
+    },
+    "torch_7_e": {
+      "textures": "textures/blocks/cit/torch_7_e"
+    },
+    "torch_8": {
+      "textures": "textures/blocks/cit/torch_8"
+    },
+    "torch_8_e": {
+      "textures": "textures/blocks/cit/torch_8_e"
+    },
+    "torch_wall_8": {
+      "textures": "textures/blocks/cit/torch_wall_8"
+    },
+    "torch_9": {
+      "textures": "textures/blocks/cit/torch_9"
+    },
+    "torch_wall_9": {
+      "textures": "textures/blocks/cit/torch_wall_9"
+    },
+    "torch_on": {
+      "textures": "textures/blocks/cit/torch_on"
+    },
+    "torch_on_e": {
+      "textures": "textures/blocks/cit/torch_on_e"
+    },
+    "torch_flame": {
+      "textures": "textures/blocks/cit/torch_flame"
+    },
+    "torch_flame_e": {
+      "textures": "textures/blocks/cit/torch_flame_e"
+    },
+    "hanging_basket": {
+      "textures": "textures/blocks/cit/hanging_basket"
+    },
+    "flower_pot_2c": {
+      "textures": "textures/blocks/cit/flower_pot_2c"
+    },
+    "grass_0": {
+      "textures": "textures/blocks/cit/grass_0"
+    },
+    "grass_0_01": {
+      "textures": "textures/blocks/cit/grass_0_01"
+    },
+    "grass_1": {
+      "textures": "textures/blocks/cit/grass_1"
+    },
+    "grass_1_01": {
+      "textures": "textures/blocks/cit/grass_1_01"
+    },
+    "grass_1_02": {
+      "textures": "textures/blocks/cit/grass_1_02"
+    },
+    "grass_1_03": {
+      "textures": "textures/blocks/cit/grass_1_03"
+    },
+    "grass_1_04": {
+      "textures": "textures/blocks/cit/grass_1_04"
+    },
+    "grass_2": {
+      "textures": "textures/blocks/cit/grass_2"
+    },
+    "grass_2_01": {
+      "textures": "textures/blocks/cit/grass_2_01"
+    },
+    "grass_2_02": {
+      "textures": "textures/blocks/cit/grass_2_02"
+    },
+    "grass_2_03": {
+      "textures": "textures/blocks/cit/grass_2_03"
+    },
+    "grass_5": {
+      "textures": "textures/blocks/cit/grass_5"
+    },
+    "wooden_flower_pot": {
+      "textures": "textures/blocks/cit/wooden_flower_pot"
+    },
+    "wooden_flower_pot_top": {
+      "textures": "textures/blocks/cit/wooden_flower_pot_top"
+    },
+    "cit:birch_planks": {
+      "textures": "textures/blocks/cit/birch_planks"
+    },
+    "oak_sapling_4_01": {
+      "textures": "textures/blocks/cit/oak_sapling_4_01"
+    },
+    "oak_sapling_7_01": {
+      "textures": "textures/blocks/cit/oak_sapling_7_01"
+    },
+    "fern_0": {
+      "textures": "textures/blocks/cit/fern_0"
+    },
+    "fern_0_01": {
+      "textures": "textures/blocks/cit/fern_0_01"
+    },
+    "fern_0_02": {
+      "textures": "textures/blocks/cit/fern_0_02"
+    },
+    "allium_0": {
+      "textures": "textures/blocks/cit/allium_0"
+    },
+    "flower_pot_l_1": {
+      "textures": "textures/blocks/cit/flower_pot_l_1"
+    },
+    "flower_pot_l_0c": {
+      "textures": "textures/blocks/cit/flower_pot_l_0c"
+    },
+    "flower_pot_4": {
+      "textures": "textures/blocks/cit/flower_pot_4"
+    },
+    "flower_pot_2a": {
+      "textures": "textures/blocks/cit/flower_pot_2a"
+    },
+    "azure_bluet_0": {
+      "textures": "textures/blocks/cit/azure_bluet_0"
+    },
+    "azure_bluet_0_01": {
+      "textures": "textures/blocks/cit/azure_bluet_0_01"
+    },
+    "flower_pot_2d": {
+      "textures": "textures/blocks/cit/flower_pot_2d"
+    },
+    "blue_orchid_0": {
+      "textures": "textures/blocks/cit/blue_orchid_0"
+    },
+    "blue_orchid_1": {
+      "textures": "textures/blocks/cit/butterfly_0"
+    },
+    "blue_orchid_0_01": {
+      "textures": "textures/blocks/cit/blue_orchid_0_01"
+    },
+    "cornflower_0": {
+      "textures": "textures/blocks/cit/cornflower_0"
+    },
+    "cornflower_0_01": {
+      "textures": "textures/blocks/cit/cornflower_0_01"
+    },
+    "dandelion_0": {
+      "textures": "textures/blocks/cit/dandelion_0"
+    },
+    "dandelion_0_01": {
+      "textures": "textures/blocks/cit/dandelion_0_01"
+    },
+    "dandelion_1": {
+      "textures": "textures/blocks/cit/butterfly_0"
+    },
+    "dandelion_2": {
+      "textures": "textures/blocks/cit/butterfly_0"
+    },
+    "lily_of_the_valley_0": {
+      "textures": "textures/blocks/cit/lily_of_the_valley_0"
+    },
+    "lily_of_the_valley_0_01": {
+      "textures": "textures/blocks/cit/lily_of_the_valley_0_01"
+    },
+    "oxeye_daisy_0": {
+      "textures": "textures/blocks/cit/oxeye_daisy_0"
+    },
+    "oxeye_daisy_0_01": {
+      "textures": "textures/blocks/cit/oxeye_daisy_0_01"
+    },
+    "poppy_0": {
+      "textures": "textures/blocks/cit/poppy_0"
+    },
+    "poppy_0_01": {
+      "textures": "textures/blocks/cit/poppy_0_01"
+    },
+    "tulip_planter": {
+      "textures": "textures/blocks/cit/tulip_planter"
+    },
+    "tulip_planter_01": {
+      "textures": "textures/blocks/cit/tulip_planter_01"
+    },
+    "cit:orange_tulip": {
+      "textures": "textures/blocks/cit/orange_tulip"
+    },
+    "cit:pink_tulip": {
+      "textures": "textures/blocks/cit/pink_tulip"
+    },
+    "cit:white_tulip": {
+      "textures": "textures/blocks/cit/white_tulip"
+    },
+    "cit:red_tulip": {
+      "textures": "textures/blocks/cit/red_tulip"
+    },
+    "cit:purple_tulip": {
+      "textures": "textures/blocks/cit/purple_tulip"
+    },
+    "wither_rose_0": {
+      "textures": "textures/blocks/cit/wither_rose_0"
+    },
+    "wither_rose_0_01": {
+      "textures": "textures/blocks/cit/wither_rose_0_01"
+    },
+    "wither_rose_0_02": {
+      "textures": "textures/blocks/cit/wither_rose_0_02"
+    },
+    "cit:lilac_bottom": {
+      "textures": "textures/blocks/cit/lilac_bottom"
+    },
+    "cit:lilac_top": {
+      "textures": "textures/blocks/cit/lilac_top"
+    },
+    "flower_pot_l_0a": {
+      "textures": "textures/blocks/cit/flower_pot_l_0a"
+    },
+    "cit:peony_bottom": {
+      "textures": "textures/blocks/cit/peony_bottom"
+    },
+    "cit:peony_top": {
+      "textures": "textures/blocks/cit/peony_top"
+    },
+    "flower_pot_l_0": {
+      "textures": "textures/blocks/cit/flower_pot_l_0"
+    },
+    "cit:rose_bush_bottom": {
+      "textures": "textures/blocks/cit/rose_bush_bottom"
+    },
+    "cit:rose_bush_top": {
+      "textures": "textures/blocks/cit/rose_bush_top"
+    },
+    "flower_pot_l_0b": {
+      "textures": "textures/blocks/cit/flower_pot_l_0b"
+    },
+    "cit:sunflower_0_bottom": {
+      "textures": "textures/blocks/cit/sunflower_bottom"
+    },
+    "cit:sunflower_0_top": {
+      "textures": "textures/blocks/cit/sunflower_top"
+    },
+    "cit:sunflower_0_back": {
+      "textures": "textures/blocks/cit/sunflower_back"
+    },
+    "cit:sunflower_0_front": {
+      "textures": "textures/blocks/cit/sunflower_front"
+    },
+    "cactus_0": {
+      "textures": "textures/blocks/cit/cactus_0"
+    },
+    "cactus_1": {
+      "textures": "textures/blocks/cit/cactus_1"
+    },
+    "cactus_pot_0": {
+      "textures": "textures/blocks/cit/cactus_pot_0"
+    },
+    "cactus_pot_0_01": {
+      "textures": "textures/blocks/cit/cactus_pot_0_01"
+    },
+    "oak_sapling_0": {
+      "textures": "textures/blocks/cit/oak_sapling_0"
+    },
+    "oak_sapling_0_wall": {
+      "textures": "textures/blocks/cit/oak_sapling_0_wall"
+    },
+    "flower_pot_2": {
+      "textures": "textures/blocks/cit/flower_pot_2"
+    },
+    "oak_sapling_1": {
+      "textures": "textures/blocks/cit/oak_sapling_1"
+    },
+    "oak_sapling_1_01": {
+      "textures": "textures/blocks/cit/oak_sapling_1_01"
+    },
+    "oak_sapling_1_02": {
+      "textures": "textures/blocks/cit/oak_sapling_1_02"
+    },
+    "oak_sapling_1_wall": {
+      "textures": "textures/blocks/cit/oak_sapling_1_wall"
+    },
+    "flower_pot_3": {
+      "textures": "textures/blocks/cit/flower_pot_3"
+    },
+    "oak_sapling_2": {
+      "textures": "textures/blocks/cit/oak_sapling_2"
+    },
+    "oak_sapling_2_wall": {
+      "textures": "textures/blocks/cit/oak_sapling_2_wall"
+    },
+    "oak_sapling_3": {
+      "textures": "textures/blocks/cit/oak_sapling_3"
+    },
+    "flower_pot_l_0f": {
+      "textures": "textures/blocks/cit/flower_pot_l_0f"
+    },
+    "flower_pot_5": {
+      "textures": "textures/blocks/cit/flower_pot_5"
+    },
+    "oak_sapling_4": {
+      "textures": "textures/blocks/cit/oak_sapling_4"
+    },
+    "oak_sapling_5": {
+      "textures": "textures/blocks/cit/oak_sapling_5"
+    },
+    "flower_pot_l_2": {
+      "textures": "textures/blocks/cit/flower_pot_l_2"
+    },
+    "oak_sapling_6": {
+      "textures": "textures/blocks/cit/oak_sapling_6"
+    },
+    "oak_sapling_7": {
+      "textures": "textures/blocks/cit/oak_sapling_7"
+    },
+    "oak_sapling_8": {
+      "textures": "textures/blocks/cit/oak_sapling_8"
+    },
+    "flower_pot_2b": {
+      "textures": "textures/blocks/cit/flower_pot_2b"
+    },
+    "oak_sapling_9": {
+      "textures": "textures/blocks/cit/oak_sapling_9"
+    },
+    "flower_pot_1": {
+      "textures": "textures/blocks/cit/flower_pot_1"
+    },
+    "spruce_sapling_0": {
+      "textures": "textures/blocks/cit/spruce_sapling_0"
+    },
+    "spruce_sapling_1": {
+      "textures": "textures/blocks/cit/spruce_sapling_1"
+    },
+    "cit:dirt": {
+      "textures": "textures/blocks/cit/dirt"
+    },
+    "birch_sapling_0": {
+      "textures": "textures/blocks/cit/birch_sapling_0"
+    },
+    "birch_sapling_1": {
+      "textures": "textures/blocks/cit/birch_sapling_1"
+    },
+    "birch_sapling_2": {
+      "textures": "textures/blocks/cit/birch_sapling_2"
+    },
+    "birch_sapling_3": {
+      "textures": "textures/blocks/cit/birch_sapling_3"
+    },
+    "flower_pot_l_0d": {
+      "textures": "textures/blocks/cit/flower_pot_l_0d"
+    },
+    "birch_sapling_4": {
+      "textures": "textures/blocks/cit/birch_sapling_4"
+    },
+    "birch_sapling_4_01": {
+      "textures": "textures/blocks/cit/birch_sapling_4_01"
+    },
+    "birch_sapling_5": {
+      "textures": "textures/blocks/cit/birch_sapling_5"
+    },
+    "birch_sapling_6": {
+      "textures": "textures/blocks/cit/birch_sapling_6"
+    },
+    "birch_sapling_6_01": {
+      "textures": "textures/blocks/cit/birch_sapling_6_01"
+    },
+    "flower_pot_l_0e": {
+      "textures": "textures/blocks/cit/flower_pot_l_0e"
+    },
+    "birch_sapling_7": {
+      "textures": "textures/blocks/cit/birch_sapling_7"
+    },
+    "birch_sapling_8": {
+      "textures": "textures/blocks/cit/birch_sapling_8"
+    },
+    "jungle_sapling_0": {
+      "textures": "textures/blocks/cit/jungle_sapling_0"
+    },
+    "jungle_sapling_1": {
+      "textures": "textures/blocks/cit/jungle_sapling_1"
+    },
+    "jungle_sapling_2": {
+      "textures": "textures/blocks/cit/jungle_sapling_2"
+    },
+    "jungle_sapling_2_01": {
+      "textures": "textures/blocks/cit/jungle_sapling_2_01"
+    },
+    "oak_leaves_0": {
+      "textures": "textures/blocks/cit/oak_leaves_0"
+    },
+    "oak_leaves_1": {
+      "textures": "textures/blocks/cit/oak_leaves_1"
+    },
+    "oak_leaves_2": {
+      "textures": "textures/blocks/cit/oak_leaves_2"
+    },
+    "oak_leaves_2_01": {
+      "textures": "textures/blocks/cit/oak_leaves_2_01"
+    },
+    "oak_leaves_2_02": {
+      "textures": "textures/blocks/cit/oak_leaves_2_02"
+    },
+    "oak_leaves_2a": {
+      "textures": "textures/blocks/cit/oak_leaves_2a"
+    },
+    "oak_leaves_2a_01": {
+      "textures": "textures/blocks/cit/oak_leaves_2a_01"
+    },
+    "oak_leaves_2a_02": {
+      "textures": "textures/blocks/cit/oak_leaves_2a_02"
+    },
+    "ornament_0": {
+      "textures": "textures/blocks/cit/ornament_0"
+    },
+    "spruce_leaves_2": {
+      "textures": "textures/blocks/cit/spruce_leaves_2"
+    },
+    "spruce_leaves_3": {
+      "textures": "textures/blocks/cit/spruce_leaves_3"
+    },
+    "spruce_leaves_3a": {
+      "textures": "textures/blocks/cit/spruce_leaves_3a"
+    },
+    "birch_leaves_0": {
+      "textures": "textures/blocks/cit/birch_leaves_0"
+    },
+    "birch_leaves_1": {
+      "textures": "textures/blocks/cit/birch_leaves_1"
+    },
+    "birch_leaves_2": {
+      "textures": "textures/blocks/cit/birch_leaves_2"
+    },
+    "birch_leaves_2_01": {
+      "textures": "textures/blocks/cit/birch_leaves_2_01"
+    },
+    "birch_leaves_2_02": {
+      "textures": "textures/blocks/cit/birch_leaves_2_02"
+    },
+    "birch_leaves_2a": {
+      "textures": "textures/blocks/cit/birch_leaves_2a"
+    },
+    "birch_leaves_2a_01": {
+      "textures": "textures/blocks/cit/birch_leaves_2a_01"
+    },
+    "birch_leaves_2a_02": {
+      "textures": "textures/blocks/cit/birch_leaves_2a_02"
+    },
+    "jungle_leaves_0": {
+      "textures": "textures/blocks/cit/jungle_leaves_0"
+    },
+    "jungle_leaves_1": {
+      "textures": "textures/blocks/cit/jungle_leaves_1"
+    },
+    "bamboo_0": {
+      "textures": "textures/blocks/cit/bamboo_0"
+    },
+    "bamboo_0_01": {
+      "textures": "textures/blocks/cit/bamboo_0_01"
+    },
+    "cit:hay_block_side": {
+      "textures": "textures/blocks/cit/hay_block_side"
+    },
+    "cit:hay_block_top": {
+      "textures": "textures/blocks/cit/hay_block_top"
+    },
+    "vine_0": {
+      "textures": "textures/blocks/cit/vine_0"
+    },
+    "vine_0_01": {
+      "textures": "textures/blocks/cit/vine_0_01"
+    },
+    "vine_0_02": {
+      "textures": "textures/blocks/cit/vine_0_02"
+    },
+    "vine_1": {
+      "textures": "textures/blocks/cit/vine_1"
+    },
+    "vine_1_01": {
+      "textures": "textures/blocks/cit/vine_1_01"
+    },
+    "vine_2": {
+      "textures": "textures/blocks/cit/vine_2"
+    },
+    "vine_2_01": {
+      "textures": "textures/blocks/cit/vine_2_01"
+    },
+    "vine_4": {
+      "textures": "textures/blocks/cit/vine_4"
+    },
+    "vine_4_01": {
+      "textures": "textures/blocks/cit/vine_4_01"
+    },
+    "vine_5_00_top": {
+      "textures": "textures/blocks/cit/vine_5_00_top"
+    },
+    "vine_5_01_top": {
+      "textures": "textures/blocks/cit/vine_5_01_top"
+    },
+    "vine_5_00_bottom": {
+      "textures": "textures/blocks/cit/vine_5_00_bottom"
+    },
+    "vine_5_01_bottom": {
+      "textures": "textures/blocks/cit/vine_5_01_bottom"
+    }
+  }
+}

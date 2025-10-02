@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:grass_4"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "W",
+            "GGG"
+		],
+		"key": {
+            "W": {
+				"item": "minecraft:wildflowers"
+			},
+			"G": {
+				"item": "minecraft:short_grass"
+			}
+		},
+		"result": {
+			"item": "cit:grass_4",
+            "count": 1
+		}
+	}
+}

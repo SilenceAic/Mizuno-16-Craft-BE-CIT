@@ -1,0 +1,102 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cit:spruce_leaves_3",
+      "menu_category": {
+        "category": "nature"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": ["minecraft:block_face"]
+        }
+      },
+      "states": {
+        "cit:rotation": {
+          "values": { "min": 0, "max": 15 }
+        },
+        "cit:dynamic_state": {
+          "values": { "min": 0, "max": 2 }
+        }
+      }
+    },
+    "components": {
+      "minecraft:light_emission": 6,
+      "minecraft:geometry": {
+        "identifier": "geometry.cit.spruce_leaves_3",
+        "bone_visibility": {
+          "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 0",
+          "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
+          "up_45": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 2",
+          "up_67_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 3",
+          "inventory": "q.block_state('minecraft:block_face') != 'up' && q.block_state('minecraft:block_face') != 'east' && q.block_state('minecraft:block_face') != 'south' && q.block_state('minecraft:block_face') != 'west' && q.block_state('minecraft:block_face') != 'north'"
+        }
+      },
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": {
+        "origin": [-8, 0, -6],
+        "size": [16, 8, 12]
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "spruce_leaves_3",
+          "render_method": "alpha_test_single_sided",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        }
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": ["up"]
+          }
+        ]
+      },
+      "cit:dynamic_state": {},
+      "cit:rotation": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('cit:dynamic_state') == 1",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cit.spruce_leaves_3a",
+            "bone_visibility": {
+              "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 0",
+              "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
+              "up_45": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 2",
+              "up_67_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 3",
+              "inventory": "q.block_state('minecraft:block_face') != 'up' && q.block_state('minecraft:block_face') != 'east' && q.block_state('minecraft:block_face') != 'south' && q.block_state('minecraft:block_face') != 'west' && q.block_state('minecraft:block_face') != 'north'"
+            }
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "spruce_leaves_3a",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, -90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
+        }
+      }
+    ]
+  }
+}

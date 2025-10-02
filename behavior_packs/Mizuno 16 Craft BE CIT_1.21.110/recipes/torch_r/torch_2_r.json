@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:torch_2"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"I",
+            "T",
+            "I"
+		],
+		"key": {
+			"I": {
+    			"item": "minecraft:iron_ingot"
+			},
+			"T": {
+				"item": "minecraft:torch"
+			}
+		},
+		"result": {
+			"item": "cit:torch_2",
+            "count": 1
+		}
+	}
+}

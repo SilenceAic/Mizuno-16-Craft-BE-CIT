@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:oak_leaves_2"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "WWW",
+            "WOW",
+            "WWW"
+		],
+		"key": {
+            "O": {
+				"item": "minecraft:oak_leaves"
+			},
+            "W": {
+				"item": "minecraft:wildflowers"
+			}
+		},
+		"result": {
+			"item": "cit:oak_leaves_2",
+            "count": 1
+		}
+	}
+}

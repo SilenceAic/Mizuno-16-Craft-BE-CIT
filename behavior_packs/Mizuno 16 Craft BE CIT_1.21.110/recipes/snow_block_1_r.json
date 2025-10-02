@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:snow_block_1"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            " S ",
+			"sRs",
+            " S "
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:snow"
+			},
+            "R": {
+				"item": "minecraft:red_wool"
+			},
+            "s": {
+                "item": "minecraft:stick"
+            }            
+		},
+		"result": {
+			"item": "cit:snow_block_1",
+            "count": 1
+		}
+	}
+}

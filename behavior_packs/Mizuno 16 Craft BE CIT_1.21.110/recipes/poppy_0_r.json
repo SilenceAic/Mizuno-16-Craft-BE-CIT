@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:poppy_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "p",
+            "P"
+		],
+		"key": {
+			"p": {
+				"item": "minecraft:poppy"
+			},
+            "P": {
+				"item": "minecraft:flower_pot"
+			}
+		},
+		"result": {
+			"item": "cit:poppy_0",
+            "count": 1
+		}
+	}
+}

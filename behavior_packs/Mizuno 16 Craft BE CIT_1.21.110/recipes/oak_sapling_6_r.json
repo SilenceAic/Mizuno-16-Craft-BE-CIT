@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:oak_sapling_6"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "O",
+            "A"
+		],
+		"key": {
+            "A": {
+				"item": "minecraft:polished_andesite"
+			},
+			"O": {
+				"item": "minecraft:oak_sapling"
+			}
+		},
+		"result": {
+			"item": "cit:oak_sapling_6",
+            "count": 1
+		}
+	}
+}

@@ -1,0 +1,115 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cit:painting_d40",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:health": {
+				"value": 1,
+				"max": 1
+			},
+            "minecraft:damage_sensor": {
+                "triggers": [
+					{
+						"cause": "void",
+						"deals_damage": "yes"
+					},
+					{
+						"cause": "fire_tick",
+						"deals_damage": "yes"
+					},
+					{
+						"cause": "block_explosion",
+						"deals_damage": "yes"
+					},
+					{
+						"cause": "entity_explosion",
+						"deals_damage": "yes"
+					},
+					{
+						"cause": "entity_attack",
+						"deals_damage": "yes"
+					},
+					{
+						"cause": "all",
+						"deals_damage": "no"
+					}
+				]
+            },
+			"minecraft:knockback_resistance": {
+				"value": 1.0
+			},
+			"minecraft:collision_box": {
+				"width": 0.20,
+				"height": 0.20
+			},
+			"minecraft:is_collidable": {},
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:push_through": {
+				"value": 0
+			},
+            "minecraft:loot":{
+                "table": "loot_tables/cit/entities/painting_d40.loot.json"
+            },
+			"minecraft:on_death": {
+				"event": "cit:on_death",
+				"target": "self"
+			},
+			"minecraft:vibration_damper": {
+			},
+            "minecraft:body_rotation_axis_aligned": {},
+			"minecraft:body_rotation_blocked": {},
+            "minecraft:renders_when_invisible": {}
+		},
+		"component_groups": {
+			"cit:default": {
+			},
+			"cit:instant_despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": false
+				}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"queue_command": {
+					"command": [
+						"function cit/entity/painting_d40/spawn"
+					],
+					"target": "self"
+				},
+				"add": {
+					"component_groups": [
+						"cit:default"
+					]
+				}
+			},
+			"cit:on_death": {
+				"queue_command": {
+					"command": [
+						"function cit/entity/painting_d40/death"
+					],
+					"target": "self"
+				}
+			},
+			"cit:instant_despawn": {
+				"add":{
+					"component_groups": [
+						"cit:instant_despawn"
+					]
+				}
+			}
+		}
+	}
+}

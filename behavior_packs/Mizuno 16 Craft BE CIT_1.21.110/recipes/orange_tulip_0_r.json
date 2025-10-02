@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:orange_tulip_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "OO",
+            "PP"
+		],
+		"key": {
+			"O": {
+				"item": "minecraft:orange_tulip"
+			},
+            "P": {
+				"item": "minecraft:flower_pot"
+			}
+		},
+		"result": {
+			"item": "cit:orange_tulip_0",
+            "count": 1
+		}
+	}
+}

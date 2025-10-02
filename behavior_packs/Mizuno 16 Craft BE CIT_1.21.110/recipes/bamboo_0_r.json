@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:bamboo_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+           "B",
+           "W"
+		],
+		"key": {
+            "B": {
+				"item": "minecraft:bamboo"
+			},
+            "W": {
+				"item": "minecraft:wheat"
+			}
+		},
+		"result": {
+			"item": "cit:bamboo_0",
+            "count": 1
+		}
+	}
+}

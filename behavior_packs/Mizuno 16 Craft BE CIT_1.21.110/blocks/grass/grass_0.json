@@ -1,0 +1,224 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cit:grass_0",
+      "menu_category": {
+        "category": "nature"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": ["minecraft:block_face"]
+        }
+      },
+      "states": {
+        "cit:rotation": {
+          "values": { "min": 0, "max": 15 }
+        },
+        "cit:variant": {
+          "values": { "min": 0, "max": 2 }
+        }
+      }
+    },
+    "components": {
+      "minecraft:geometry": {
+        "identifier": "geometry.cit.template_flower_0",
+        "bone_visibility": {
+          "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 0",
+          "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
+          "up_45": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 2",
+          "up_67_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 3",
+          "inventory": "q.block_state('minecraft:block_face') != 'up' && q.block_state('minecraft:block_face') != 'east' && q.block_state('minecraft:block_face') != 'south' && q.block_state('minecraft:block_face') != 'west' && q.block_state('minecraft:block_face') != 'north'"
+        }
+      },
+      "minecraft:collision_box": {
+        "origin": [-3, 0, -3],
+        "size": [6, 6, 6]
+      },
+      "minecraft:selection_box": {
+        "origin": [-3, 0, -3],
+        "size": [6, 6, 6]
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "flower_pot_2c",
+          "render_method": "alpha_test",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        },
+        "flower_pot_": {
+          "texture": "flower_pot_2c",
+          "render_method": "alpha_test",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        },
+        "plant": {
+          "texture": "grass_0",
+          "render_method": "alpha_test",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        },
+        "plant_01": {
+          "texture": "grass_0_01",
+          "render_method": "alpha_test",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        },
+        "hanging_basket": {
+          "texture": "hanging_basket",
+          "render_method": "alpha_test",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        }
+      },
+      "tag:cit:two_height": {},
+      "cit:rotation": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'east' || q.block_state('minecraft:block_face') == 'south' || q.block_state('minecraft:block_face') == 'west'  || q.block_state('minecraft:block_face') == 'north'",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cit.template_flower_0_wall"
+          },
+          "minecraft:collision_box": false,
+          "minecraft:selection_box": {
+            "origin": [-3, 3, -3],
+            "size": [6, 4, 6]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'down'",
+        "components": {
+          "cit:multiblock": {}
+        }
+      },
+      {
+        "condition": "q.block_state('cit:variant') == 1",
+        "components": {
+          "cit:multidestory": {},
+          "minecraft:geometry": {
+            "identifier": "geometry.cit.template_flower_0_top_bottom",
+            "bone_visibility": {
+              "up_0": "math.mod(q.block_state('cit:rotation'), 4) == 0",
+              "up_22_5": "math.mod(q.block_state('cit:rotation'), 4) == 1",
+              "up_45": "math.mod(q.block_state('cit:rotation'), 4) == 2",
+              "up_67_5": "math.mod(q.block_state('cit:rotation'), 4) == 3"
+            }
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "hanging_basket",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "flower_pot_": {
+              "texture": "flower_pot_2c",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "plant": {
+              "texture": "grass_0",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "plant_01": {
+              "texture": "grass_0_01",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "hanging_basket": {
+              "texture": "hanging_basket",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          },
+          "minecraft:collision_box": false,
+          "minecraft:selection_box": {
+            "origin": [-3, 4, -3],
+            "size": [6, 5, 6]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:variant') == 2",
+        "components": {
+          "cit:multidestory": {},
+          "minecraft:geometry": {
+            "identifier": "geometry.cit.template_flower_0_top_top",
+            "bone_visibility": {
+              "up_0": "math.mod(q.block_state('cit:rotation'), 4) == 0",
+              "up_22_5": "math.mod(q.block_state('cit:rotation'), 4) == 1",
+              "up_45": "math.mod(q.block_state('cit:rotation'), 4) == 2",
+              "up_67_5": "math.mod(q.block_state('cit:rotation'), 4) == 3"
+            }
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "hanging_basket",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "flower_pot_": {
+              "texture": "flower_pot_2c",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "plant": {
+              "texture": "grass_0",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "plant_01": {
+              "texture": "grass_0_01",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "hanging_basket": {
+              "texture": "hanging_basket",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          },
+          "minecraft:collision_box": {
+            "origin": [-1.5, 15, -1.5],
+            "size": [3, 1, 3]
+          },
+          "minecraft:selection_box": {
+            "origin": [-1.5, 15, -1.5],
+            "size": [3, 1, 3]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, -90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
+        }
+      }
+    ]
+  }
+}

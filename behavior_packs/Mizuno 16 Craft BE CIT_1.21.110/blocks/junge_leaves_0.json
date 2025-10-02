@@ -1,0 +1,121 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cit:jungle_leaves_0",
+      "menu_category": {
+        "category": "nature"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": ["minecraft:block_face"]
+        }
+      },
+      "states": {
+        "cit:rotation": {
+          "values": { "min": 0, "max": 15 }
+        },
+        "cit:variant": {
+          "values": { "min": 0, "max": 2 }
+        }
+      }
+    },
+    "components": {
+      "minecraft:geometry": {
+        "identifier": "geometry.cit.template_leaves_0",
+        "bone_visibility": {
+          "up_0": "q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('cit:rotation'), 4) == 0",
+          "up_22_5": "q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('cit:rotation'), 4) == 1",
+          "up_45": "q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('cit:rotation'), 4) == 2",
+          "up_67_5": "q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('cit:rotation'), 4) == 3",
+          "inventory": "q.block_state('minecraft:block_face') != 'down'"
+        }
+      },
+      "minecraft:collision_box": {
+        "origin": [-3, 0, -3],
+        "size": [6, 25.5, 6]
+      },
+      "minecraft:selection_box": {
+        "origin": [-3, 0, -3],
+        "size": [6, 25.5, 6]
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "jungle_leaves_0",
+          "render_method": "alpha_test_single_sided",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        }
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": ["down"]
+          }
+        ]
+      },
+      "tag:cit:two_height": {},
+      "cit:rotation": {},
+      "cit:multiblock": {},
+      "cit:multidestory": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('cit:variant') == 1",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cit.template_leaves_0_bottom",
+            "bone_visibility": {
+              "up_0": "math.mod(q.block_state('cit:rotation'), 4) == 0",
+              "up_22_5": "math.mod(q.block_state('cit:rotation'), 4) == 1",
+              "up_45": "math.mod(q.block_state('cit:rotation'), 4) == 2",
+              "up_67_5": "math.mod(q.block_state('cit:rotation'), 4) == 3"
+            }
+          },
+          "minecraft:collision_box": false,
+          "minecraft:selection_box": {
+            "origin": [-3, 0, -3],
+            "size": [6, 16, 6]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:variant') == 2",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cit.template_leaves_0_top",
+            "bone_visibility": {
+              "up_0": "math.mod(q.block_state('cit:rotation'), 4) == 0",
+              "up_22_5": "math.mod(q.block_state('cit:rotation'), 4) == 1",
+              "up_45": "math.mod(q.block_state('cit:rotation'), 4) == 2",
+              "up_67_5": "math.mod(q.block_state('cit:rotation'), 4) == 3"
+            }
+          },
+          "minecraft:collision_box": false,
+          "minecraft:selection_box": {
+            "origin": [-3, 0, -3],
+            "size": [6, 16, 6]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, -90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
+        }
+      }
+    ]
+  }
+}

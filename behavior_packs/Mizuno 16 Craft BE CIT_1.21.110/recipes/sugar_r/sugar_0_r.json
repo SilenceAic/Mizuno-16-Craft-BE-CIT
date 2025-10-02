@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:sugar_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "S",
+			"P"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:sugar"
+			},
+			"P": {
+				"item": "minecraft:bowl"
+			}
+		},
+		"result": {
+			"item": "cit:sugar_0",
+            "count": 1
+		}
+	}
+}

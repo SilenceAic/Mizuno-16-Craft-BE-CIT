@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:terracotta_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "BB"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:brick"
+			}
+		},
+		"result": {
+			"item": "cit:terracotta_0",
+            "count": 1
+		}
+	}
+}

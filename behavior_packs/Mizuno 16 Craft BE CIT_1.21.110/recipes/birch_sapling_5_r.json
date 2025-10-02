@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:birch_sapling_5"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "CBC",
+            " C "
+		],
+		"key": {
+            "C": {
+				"item": "minecraft:clay_ball"
+			},
+			"B": {
+				"item": "minecraft:birch_sapling"
+			}
+		},
+		"result": {
+			"item": "cit:birch_sapling_5",
+            "count": 1
+		}
+	}
+}

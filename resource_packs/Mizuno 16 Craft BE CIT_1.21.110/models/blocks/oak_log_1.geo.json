@@ -1,0 +1,119 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.oak_log_1",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "oak_log_1",
+					"pivot": [8, 0, -8]
+				},
+				{
+					"name": "up_0",
+					"parent": "oak_log_1",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-6, 0, -6],
+							"size": [12, 8, 12],
+							"uv": {
+								"north": {"uv": [2, 8], "uv_size": [12, 8]},
+								"east": {"uv": [2, 8], "uv_size": [12, 8]},
+								"south": {"uv": [2, 8], "uv_size": [12, 8]},
+								"west": {"uv": [2, 8], "uv_size": [12, 8]},
+								"up": {"uv": [14, 14], "uv_size": [-12, -12], "material_instance": "oak_log_1"},
+								"down": {"uv": [14, 14], "uv_size": [-12, -12], "material_instance": "oak_log_1"}
+							}
+						}
+					]
+				},
+				{
+					"name": "up_22_5",
+					"parent": "oak_log_1",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 22.5, 0],
+					"cubes": [
+						{
+							"origin": [-6, 0, -6],
+							"size": [12, 8, 12],
+							"uv": {
+								"north": {"uv": [2, 8], "uv_size": [12, 8]},
+								"east": {"uv": [2, 8], "uv_size": [12, 8]},
+								"south": {"uv": [2, 8], "uv_size": [12, 8]},
+								"west": {"uv": [2, 8], "uv_size": [12, 8]},
+								"up": {"uv": [14, 14], "uv_size": [-12, -12], "material_instance": "oak_log_1"},
+								"down": {"uv": [14, 14], "uv_size": [-12, -12], "material_instance": "oak_log_1"}
+							}
+						}
+					]
+				},
+				{
+					"name": "up_45",
+					"parent": "oak_log_1",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 45, 0],
+					"cubes": [
+						{
+							"origin": [-6, 0, -6],
+							"size": [12, 8, 12],
+							"uv": {
+								"north": {"uv": [2, 8], "uv_size": [12, 8]},
+								"east": {"uv": [2, 8], "uv_size": [12, 8]},
+								"south": {"uv": [2, 8], "uv_size": [12, 8]},
+								"west": {"uv": [2, 8], "uv_size": [12, 8]},
+								"up": {"uv": [14, 14], "uv_size": [-12, -12], "material_instance": "oak_log_1"},
+								"down": {"uv": [14, 14], "uv_size": [-12, -12], "material_instance": "oak_log_1"}
+							}
+						}
+					]
+				},
+				{
+					"name": "up_67_5",
+					"parent": "oak_log_1",
+					"pivot": [0, 0, 0],
+					"rotation": [0, -67.5, 0],
+					"cubes": [
+						{
+							"origin": [-6, 0, -6],
+							"size": [12, 8, 12],
+							"uv": {
+								"north": {"uv": [2, 8], "uv_size": [12, 8]},
+								"east": {"uv": [2, 8], "uv_size": [12, 8]},
+								"south": {"uv": [2, 8], "uv_size": [12, 8]},
+								"west": {"uv": [2, 8], "uv_size": [12, 8]},
+								"up": {"uv": [14, 14], "uv_size": [-12, -12], "material_instance": "oak_log_1"},
+								"down": {"uv": [14, 14], "uv_size": [-12, -12], "material_instance": "oak_log_1"}
+							}
+						}
+					]
+				},
+				{
+					"name": "inventory",
+					"parent": "oak_log_1",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-6, 0, -6],
+							"size": [12, 8, 12],
+							"uv": {
+								"north": {"uv": [2, 8], "uv_size": [12, 8]},
+								"east": {"uv": [2, 8], "uv_size": [12, 8]},
+								"south": {"uv": [2, 8], "uv_size": [12, 8]},
+								"west": {"uv": [2, 8], "uv_size": [12, 8]},
+								"up": {"uv": [14, 14], "uv_size": [-12, -12], "material_instance": "oak_log_1"},
+								"down": {"uv": [14, 14], "uv_size": [-12, -12], "material_instance": "oak_log_1"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

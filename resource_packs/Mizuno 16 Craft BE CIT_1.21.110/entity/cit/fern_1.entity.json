@@ -1,0 +1,38 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "cit:fern_1",
+            "materials": {
+                "default": "entity_alphatest_one_sided"
+            },
+            "geometry": {
+                "default": "geometry.cit.fern_1"
+            },
+            "textures": {
+                "default": "textures/cit/entity/fern_1"
+            },
+            "scripts": {
+                "initialize": [
+                    "variable.geometry_style = 0;"
+                ],
+                "pre_animation": [
+                    "variable.geometry_style = q.property('cit:fern_1_geometry_style');"
+                ],
+                "animate": [
+                    {
+                        "dead": "q.is_alive == 0"
+                    }
+                ]
+            },
+            "animations": {
+                "dead": "animation.cit.fern_1.dead"
+            },
+            "render_controllers": [
+                "controller.render.cit.fern_1"
+            ],
+            "hide_armor": true,
+            "enable_attachables": false
+        }
+    }
+}

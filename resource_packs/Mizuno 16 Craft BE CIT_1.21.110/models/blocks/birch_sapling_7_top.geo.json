@@ -1,0 +1,213 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.birch_sapling_7_top",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "birch_sapling_7_top",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "up_0",
+					"parent": "birch_sapling_7_top",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [2, 9, -7],
+							"size": [13, 0.01, 13],
+							"pivot": [0, 12, 0],
+							"rotation": [0, 0, 22.5],
+							"uv": {
+								"up": {"uv": [6.5, 0], "uv_size": [-6.5, 6.5], "uv_rotation": 90},
+								"down": {"uv": [6.5, 0], "uv_size": [-6.5, 6.5], "uv_rotation": 90}
+							}
+						},
+						{
+							"origin": [-7, 5, -15],
+							"size": [13, 0.01, 13],
+							"pivot": [0, 9, 0],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"up": {"uv": [6.5, 6.5], "uv_size": [-6.5, -6.5]},
+								"down": {"uv": [6.5, 6.5], "uv_size": [-6.5, -6.5], "uv_rotation": 180}
+							}
+						},
+						{
+							"origin": [-0.01, 0, -7.2],
+							"size": [0.01, 16, 14.4],
+							"pivot": [0, -8, 0],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"east": {"uv": [8, 2.5], "uv_size": [8, 8]},
+								"west": {"uv": [16, 2.5], "uv_size": [-8, 8]}
+							}
+						},
+						{
+							"origin": [-7.2, 0, 0],
+							"size": [14.4, 16, 0.01],
+							"pivot": [0, -8, 0],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": {"uv": [8, 2.5], "uv_size": [8, 8]},
+								"south": {"uv": [16, 2.5], "uv_size": [-8, 8]}
+							}
+						}
+					]
+				},
+				{
+					"name": "up_22_5",
+					"parent": "birch_sapling_7_top",
+					"pivot": [0, 0, 0],
+					"rotation": [0, -157.5, 0],
+					"cubes": [
+						{
+							"origin": [2, 9, -7],
+							"size": [13, 0.01, 13],
+							"pivot": [0, 12, 0],
+							"rotation": [0, 0, 22.5],
+							"uv": {
+								"up": {"uv": [6.5, 0], "uv_size": [-6.5, 6.5], "uv_rotation": 90},
+								"down": {"uv": [6.5, 0], "uv_size": [-6.5, 6.5], "uv_rotation": 90}
+							}
+						},
+						{
+							"origin": [-7, 5, -15],
+							"size": [13, 0.01, 13],
+							"pivot": [0, 9, 0],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"up": {"uv": [6.5, 6.5], "uv_size": [-6.5, -6.5]},
+								"down": {"uv": [6.5, 6.5], "uv_size": [-6.5, -6.5], "uv_rotation": 180}
+							}
+						},
+						{
+							"origin": [-0.01, 0, -7.2],
+							"size": [0.01, 16, 14.4],
+							"pivot": [0, -8, 0],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"east": {"uv": [8, 2.5], "uv_size": [8, 8]},
+								"west": {"uv": [16, 2.5], "uv_size": [-8, 8]}
+							}
+						},
+						{
+							"origin": [-7.2, 0, 0],
+							"size": [14.4, 16, 0.01],
+							"pivot": [0, -8, 0],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": {"uv": [8, 2.5], "uv_size": [8, 8]},
+								"south": {"uv": [16, 2.5], "uv_size": [-8, 8]}
+							}
+						}
+					]
+				},
+				{
+					"name": "up_45",
+					"parent": "birch_sapling_7_top",
+					"pivot": [0, 0, 0],
+					"rotation": [0, -135, 0],
+					"cubes": [
+						{
+							"origin": [2, 9, -7],
+							"size": [13, 0.01, 13],
+							"pivot": [0, 12, 0],
+							"rotation": [0, 0, 22.5],
+							"uv": {
+								"up": {"uv": [6.5, 0], "uv_size": [-6.5, 6.5], "uv_rotation": 90},
+								"down": {"uv": [6.5, 0], "uv_size": [-6.5, 6.5], "uv_rotation": 90}
+							}
+						},
+						{
+							"origin": [-7, 5, -15],
+							"size": [13, 0.01, 13],
+							"pivot": [0, 9, 0],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"up": {"uv": [6.5, 6.5], "uv_size": [-6.5, -6.5]},
+								"down": {"uv": [6.5, 6.5], "uv_size": [-6.5, -6.5], "uv_rotation": 180}
+							}
+						},
+						{
+							"origin": [-0.01, 0, -7.2],
+							"size": [0.01, 16, 14.4],
+							"pivot": [0, -8, 0],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"east": {"uv": [8, 2.5], "uv_size": [8, 8]},
+								"west": {"uv": [16, 2.5], "uv_size": [-8, 8]}
+							}
+						},
+						{
+							"origin": [-7.2, 0, 0],
+							"size": [14.4, 16, 0.01],
+							"pivot": [0, -8, 0],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": {"uv": [8, 2.5], "uv_size": [8, 8]},
+								"south": {"uv": [16, 2.5], "uv_size": [-8, 8]}
+							}
+						}
+					]
+				},
+				{
+					"name": "up_67_5",
+					"parent": "birch_sapling_7_top",
+					"pivot": [0, 0, 0],
+					"rotation": [0, -112.5, 0],
+					"cubes": [
+						{
+							"origin": [2, 9, -7],
+							"size": [13, 0.01, 13],
+							"pivot": [0, 12, 0],
+							"rotation": [0, 0, 22.5],
+							"uv": {
+								"up": {"uv": [6.5, 0], "uv_size": [-6.5, 6.5], "uv_rotation": 90},
+								"down": {"uv": [6.5, 0], "uv_size": [-6.5, 6.5], "uv_rotation": 90}
+							}
+						},
+						{
+							"origin": [-7, 5, -15],
+							"size": [13, 0.01, 13],
+							"pivot": [0, 9, 0],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"up": {"uv": [6.5, 6.5], "uv_size": [-6.5, -6.5]},
+								"down": {"uv": [6.5, 6.5], "uv_size": [-6.5, -6.5], "uv_rotation": 180}
+							}
+						},
+						{
+							"origin": [-0.01, 0, -7.2],
+							"size": [0.01, 16, 14.4],
+							"pivot": [0, -8, 0],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"east": {"uv": [8, 2.5], "uv_size": [8, 8]},
+								"west": {"uv": [16, 2.5], "uv_size": [-8, 8]}
+							}
+						},
+						{
+							"origin": [-7.2, 0, 0],
+							"size": [14.4, 16, 0.01],
+							"pivot": [0, -8, 0],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": {"uv": [8, 2.5], "uv_size": [8, 8]},
+								"south": {"uv": [16, 2.5], "uv_size": [-8, 8]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

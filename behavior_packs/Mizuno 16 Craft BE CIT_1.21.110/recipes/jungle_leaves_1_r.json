@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:jungle_leaves_1"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+           "O",
+           "O",
+           "O"
+		],
+		"key": {
+            "O": {
+				"item": "minecraft:jungle_leaves"
+			}
+		},
+		"result": {
+			"item": "cit:jungle_leaves_1",
+            "count": 1
+		}
+	}
+}

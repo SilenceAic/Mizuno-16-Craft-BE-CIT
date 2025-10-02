@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:grass_1"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            " ",
+            " ",
+            "G"
+		],
+		"key": {
+			"G": {
+				"item": "minecraft:short_grass"
+			}
+		},
+		"result": {
+			"item": "cit:grass_1",
+            "count": 1
+		}
+	}
+}

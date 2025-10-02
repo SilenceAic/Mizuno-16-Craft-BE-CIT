@@ -1,0 +1,165 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.sunflower_0_top",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "sunflower_0_top",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "up_0",
+					"parent": "sunflower_0_top",
+					"pivot": [0, -16, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-7.2402, 2, -1.6402],
+							"size": [15.275, 6, 0],
+							"pivot": [-1.6402, -2, -1.6402],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "plant_top"}
+							}
+						},
+						{
+							"origin": [-8.55196, 2, -1.52304],
+							"size": [15.275, 6, 0],
+							"pivot": [1.52304, -2, -1.52304],
+							"rotation": [0, 45, 0],
+							"uv": {
+								"north": {"uv": [16, 8], "uv_size": [-16, 8], "material_instance": "plant_top"}
+							}
+						},
+						{
+							"origin": [-6, 2, 1],
+							"size": [12, 12, 0],
+							"pivot": [0, 8, 1],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "sunflower_back"},
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "sunflower_front"}
+							}
+						}
+					]
+				},
+				{
+					"name": "up_22_5",
+					"parent": "sunflower_0_top",
+					"pivot": [0, -16, 0],
+					"rotation": [0, -157.5, 0],
+					"cubes": [
+						{
+							"origin": [-7.2402, 2, -1.6402],
+							"size": [15.275, 6, 0],
+							"pivot": [-1.6402, -2, -1.6402],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "plant_top"}
+							}
+						},
+						{
+							"origin": [-8.55196, 2, -1.52304],
+							"size": [15.275, 6, 0],
+							"pivot": [1.52304, -2, -1.52304],
+							"rotation": [0, 45, 0],
+							"uv": {
+								"north": {"uv": [16, 8], "uv_size": [-16, 8], "material_instance": "plant_top"}
+							}
+						},
+						{
+							"origin": [-6, 2, 1],
+							"size": [12, 12, 0],
+							"pivot": [0, 8, 1],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "sunflower_back"},
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "sunflower_front"}
+							}
+						}
+					]
+				},
+				{
+					"name": "up_45",
+					"parent": "sunflower_0_top",
+					"pivot": [0, -16, 0],
+					"rotation": [0, -135, 0],
+					"cubes": [
+						{
+							"origin": [-7.2402, 2, -1.6402],
+							"size": [15.275, 6, 0],
+							"pivot": [-1.6402, -2, -1.6402],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "plant_top"}
+							}
+						},
+						{
+							"origin": [-8.55196, 2, -1.52304],
+							"size": [15.275, 6, 0],
+							"pivot": [1.52304, -2, -1.52304],
+							"rotation": [0, 45, 0],
+							"uv": {
+								"north": {"uv": [16, 8], "uv_size": [-16, 8], "material_instance": "plant_top"}
+							}
+						},
+						{
+							"origin": [-6, 2, 1],
+							"size": [12, 12, 0],
+							"pivot": [0, 8, 1],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "sunflower_back"},
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "sunflower_front"}
+							}
+						}
+					]
+				},
+				{
+					"name": "up_67_5",
+					"parent": "sunflower_0_top",
+					"pivot": [0, -16, 0],
+					"rotation": [0, -112.5, 0],
+					"cubes": [
+						{
+							"origin": [-7.2402, 2, -1.6402],
+							"size": [15.275, 6, 0],
+							"pivot": [-1.6402, -2, -1.6402],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "plant_top"}
+							}
+						},
+						{
+							"origin": [-8.55196, 2, -1.52304],
+							"size": [15.275, 6, 0],
+							"pivot": [1.52304, -2, -1.52304],
+							"rotation": [0, 45, 0],
+							"uv": {
+								"north": {"uv": [16, 8], "uv_size": [-16, 8], "material_instance": "plant_top"}
+							}
+						},
+						{
+							"origin": [-6, 2, 1],
+							"size": [12, 12, 0],
+							"pivot": [0, 8, 1],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "sunflower_back"},
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "sunflower_front"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,15 @@
+{
+    "resource_pack_name": "cit's Pack",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "cit:fern_1": {
+            "textures": "textures/cit/item/fern_1"
+        },
+        "cit:painting_d40": {
+            "textures": "textures/cit/item/painting_d40"
+        },
+        "cit:oak_fence_0": {
+            "textures": "textures/cit/item/oak_fence_0"
+        }
+    }
+}

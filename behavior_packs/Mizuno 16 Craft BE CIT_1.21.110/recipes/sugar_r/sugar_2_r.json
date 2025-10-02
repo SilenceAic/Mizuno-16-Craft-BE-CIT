@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:sugar_2"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "S S",
+			"T T"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:sugar"
+			},
+			"T": {
+				"item": "minecraft:brown_terracotta"
+			}
+		},
+		"result": {
+			"item": "cit:sugar_2",
+            "count": 1
+		}
+	}
+}

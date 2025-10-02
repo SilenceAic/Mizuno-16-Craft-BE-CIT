@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "cit:oak_fence_0",
+            "materials": {
+                "default": "entity_alphatest_one_sided"
+            },
+            "geometry": {
+                "default": "geometry.cit.oak_fence_0"
+            },
+            "textures": {
+                "default": "textures/cit/entity/oak_fence_0"
+            },
+            "scripts": {
+                "animate": [
+                    {
+                        "dead": "q.is_alive == 0"
+                    }
+                ]
+            },
+            "animations": {
+                "dead": "animation.cit.oak_fence_0.dead"
+            },
+            "render_controllers": [
+                "controller.render.cit.oak_fence_0"
+            ],
+            "hide_armor": true,
+            "enable_attachables": false
+        }
+    }
+}

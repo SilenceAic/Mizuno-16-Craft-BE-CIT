@@ -1,0 +1,100 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.vine_2",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "vine_2",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-8, -10, -7],
+							"size": [16, 26, 0.01],
+							"uv": {
+								"north": {"uv": [0, 1.5], "uv_size": [8, 13], "material_instance": "plant"},
+								"south": {"uv": [8, 1.5], "uv_size": [-8, 13], "material_instance": "plant"}
+							}
+						},
+						{
+							"origin": [-8, 11, -7],
+							"size": [16, 8, 0.01],
+							"pivot": [0, 16, -7],
+							"rotation": [-22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [8, 4], "material_instance": "plant_01"},
+								"south": {"uv": [8, 0], "uv_size": [-8, 4], "material_instance": "plant_01"}
+							}
+						},
+						{
+							"origin": [-8, 11, -7],
+							"size": [16, 8, 0.01],
+							"pivot": [0, 16, -7],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [8, 4], "material_instance": "plant_01"},
+								"south": {"uv": [8, 0], "uv_size": [-8, 4], "material_instance": "plant_01"}
+							}
+						},
+						{
+							"origin": [-8, 7, -7],
+							"size": [16, 6, 0.01],
+							"pivot": [0, 10, -7],
+							"rotation": [-22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 4.5], "uv_size": [8, 3], "material_instance": "plant_01"},
+								"south": {"uv": [8, 4.5], "uv_size": [-8, 3], "material_instance": "plant_01"}
+							}
+						},
+						{
+							"origin": [-8, 7, -7],
+							"size": [16, 6, 0.01],
+							"pivot": [0, 10, -7],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 4.5], "uv_size": [8, 3], "material_instance": "plant_01"},
+								"south": {"uv": [8, 4.5], "uv_size": [-8, 3], "material_instance": "plant_01"}
+							}
+						},
+						{
+							"origin": [-8, 1, -7],
+							"size": [16, 4, 0.01],
+							"pivot": [0, 3, -7],
+							"rotation": [-22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 8], "uv_size": [8, 2], "material_instance": "plant_01"},
+								"south": {"uv": [8, 8], "uv_size": [-8, 2], "material_instance": "plant_01"}
+							}
+						},
+						{
+							"origin": [-8, 1, -7],
+							"size": [16, 4, 0.01],
+							"pivot": [0, 3, -7],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 8], "uv_size": [8, 2], "material_instance": "plant_01"},
+								"south": {"uv": [8, 8], "uv_size": [-8, 2], "material_instance": "plant_01"}
+							}
+						},
+						{
+							"origin": [-8, -10, -7.5],
+							"size": [16, 11, 1.01],
+							"uv": {
+								"north": {"uv": [0, 10.5], "uv_size": [8, 5.5], "material_instance": "plant_01"},
+								"south": {"uv": [8, 10.5], "uv_size": [-8, 5.5], "material_instance": "plant_01"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

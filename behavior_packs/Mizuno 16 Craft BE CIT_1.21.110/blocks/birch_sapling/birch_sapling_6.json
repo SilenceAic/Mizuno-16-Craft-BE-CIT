@@ -1,0 +1,185 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cit:birch_sapling_6",
+      "menu_category": {
+        "category": "nature"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": ["minecraft:block_face"]
+        }
+      },
+      "states": {
+        "cit:rotation": {
+          "values": { "min": 0, "max": 15 }
+        },
+        "cit:variant": {
+          "values": { "min": 0, "max": 2 }
+        }
+      }
+    },
+    "components": {
+      "minecraft:geometry": {
+        "identifier": "geometry.cit.birch_sapling_6",
+        "bone_visibility": {
+          "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 0",
+          "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
+          "up_45": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 2",
+          "up_67_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 3",
+          "inventory": "q.block_state('minecraft:block_face') != 'up'"
+        }
+      },
+      "minecraft:collision_box": {
+        "origin": [-3, 0, -3],
+        "size": [6, 25.5, 6]
+      },
+      "minecraft:selection_box": {
+        "origin": [-3, 0, -3],
+        "size": [6, 25.5, 6]
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "birch_sapling_6",
+          "render_method": "alpha_test_single_sided",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        },
+        "flower_pot": {
+          "texture": "flower_pot_l_0e",
+          "render_method": "alpha_test_single_sided",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        },
+        "plant": {
+          "texture": "birch_sapling_6",
+          "render_method": "alpha_test_single_sided",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        },
+        "plant_01": {
+          "texture": "birch_sapling_6_01",
+          "render_method": "alpha_test_single_sided",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        }
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": ["up"]
+          }
+        ]
+      },
+      "tag:cit:two_height": {},
+      "cit:rotation": {},
+      "cit:multiblock": {},
+      "cit:multidestory": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('cit:variant') == 1",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cit.birch_sapling_6_bottom",
+            "bone_visibility": {
+              "up_0": "math.mod(q.block_state('cit:rotation'), 4) == 0",
+              "up_22_5": "math.mod(q.block_state('cit:rotation'), 4) == 1",
+              "up_45": "math.mod(q.block_state('cit:rotation'), 4) == 2",
+              "up_67_5": "math.mod(q.block_state('cit:rotation'), 4) == 3"
+            }
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "birch_sapling_6_01",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "flower_pot": {
+              "texture": "flower_pot_l_0e",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "plant": {
+              "texture": "birch_sapling_6",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "plant_01": {
+              "texture": "birch_sapling_6_01",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          },
+          "minecraft:collision_box": {
+            "origin": [-4, 0, -4],
+            "size": [8, 7, 8]
+          },
+          "minecraft:selection_box": {
+            "origin": [-4, 0, -4],
+            "size": [8, 7, 8]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:variant') == 2",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cit.birch_sapling_6_top",
+            "bone_visibility": {
+              "up_0": "math.mod(q.block_state('cit:rotation'), 4) == 0",
+              "up_22_5": "math.mod(q.block_state('cit:rotation'), 4) == 1",
+              "up_45": "math.mod(q.block_state('cit:rotation'), 4) == 2",
+              "up_67_5": "math.mod(q.block_state('cit:rotation'), 4) == 3"
+            }
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "birch_sapling_6",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "plant": {
+              "texture": "birch_sapling_6",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "plant_01": {
+              "texture": "birch_sapling_6_01",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          },
+          "minecraft:collision_box": false,
+          "minecraft:selection_box": false
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, -90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
+        }
+      }
+    ]
+  }
+}

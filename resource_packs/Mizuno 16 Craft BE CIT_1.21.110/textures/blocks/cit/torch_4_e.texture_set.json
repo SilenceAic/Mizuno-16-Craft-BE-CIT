@@ -1,0 +1,7 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "torch_4_e",
+		"metalness_emissive_roughness": "torch_4_e_mer"
+	}
+}

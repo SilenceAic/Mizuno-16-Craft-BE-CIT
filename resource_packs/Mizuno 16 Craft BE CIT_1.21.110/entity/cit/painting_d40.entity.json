@@ -1,0 +1,35 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "cit:painting_d40",
+            "materials": {
+                "default": "entity_alphatest_one_sided"
+            },
+            "geometry": {
+                "default": "geometry.cit.painting_d40"
+            },
+            "textures": {
+                "default": "textures/cit/entity/painting_d40"
+            },
+            "scripts": {
+                "initialize": [
+                    "variable.offset_anim = 0;"
+                ],
+                "animate": [
+                    {
+                        "dead": "q.is_alive == 0"
+                    }
+                ]
+            },
+            "animations": {
+                "dead": "animation.cit.painting_d40.dead"
+            },
+            "render_controllers": [
+                "controller.render.cit.painting_d40"
+            ],
+            "hide_armor": true,
+            "enable_attachables": false
+        }
+    }
+}

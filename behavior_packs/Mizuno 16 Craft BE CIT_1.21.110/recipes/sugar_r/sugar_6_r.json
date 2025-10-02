@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:sugar_6"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "C",
+			"G"
+		],
+		"key": {
+			"C": {
+				"item": "minecraft:cocoa_beans"
+			},
+			"G": {
+				"item": "minecraft:glass_pane"
+			}
+		},
+		"result": {
+			"item": "cit:sugar_6",
+            "count": 1
+		}
+	}
+}

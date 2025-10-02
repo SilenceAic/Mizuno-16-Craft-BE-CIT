@@ -1,0 +1,290 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.sugar_6",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "sugar_6",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0]
+				},
+				{
+					"name": "up_0",
+					"parent": "sugar_6",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-3.5, 0, -3.5],
+							"size": [7, 9, 7],
+							"uv": {
+								"north": {"uv": [8, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"east": {"uv": [8, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"south": {"uv": [0, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"west": {"uv": [8, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"up": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "sugar_6"},
+								"down": {"uv": [15, 7], "uv_size": [-7, -7], "material_instance": "sugar_6"}
+							}
+						},
+						{
+							"origin": [-3.5, 9, -3.5],
+							"size": [7, 2, 7],
+							"uv": {
+								"north": {"uv": [8, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"east": {"uv": [8, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"south": {"uv": [0, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"west": {"uv": [8, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"up": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "sugar_6_jar"}
+							}
+						},
+						{
+							"origin": [-2.5, 11, -2.5],
+							"size": [5, 1, 5],
+							"uv": {
+								"north": {"uv": [5, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"east": {"uv": [5, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"south": {"uv": [0, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"west": {"uv": [5, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"up": {"uv": [5, 15], "uv_size": [-5, -5], "material_instance": "sugar_6_jar"},
+								"down": {"uv": [5, 15], "uv_size": [-5, -5], "material_instance": "sugar_6_jar"}
+							}
+						},
+						{
+							"origin": [-0.75, 11.5, -0.75],
+							"size": [1.5, 1, 1.5],
+							"uv": {
+								"north": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"east": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"south": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"west": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"up": {"uv": [6, 13], "uv_size": [-1, -1], "material_instance": "sugar_6_jar"}
+							}
+						}
+					]
+				},
+				{
+					"name": "up_22_5",
+					"parent": "sugar_6",
+					"pivot": [0, 0, 0],
+					"rotation": [0, -157.5, 0],
+					"cubes": [
+						{
+							"origin": [-3.5, 0, -3.5],
+							"size": [7, 9, 7],
+							"uv": {
+								"north": {"uv": [8, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"east": {"uv": [8, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"south": {"uv": [0, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"west": {"uv": [8, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"up": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "sugar_6"},
+								"down": {"uv": [15, 7], "uv_size": [-7, -7], "material_instance": "sugar_6"}
+							}
+						},
+						{
+							"origin": [-3.5, 9, -3.5],
+							"size": [7, 2, 7],
+							"uv": {
+								"north": {"uv": [8, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"east": {"uv": [8, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"south": {"uv": [0, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"west": {"uv": [8, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"up": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "sugar_6_jar"}
+							}
+						},
+						{
+							"origin": [-2.5, 11, -2.5],
+							"size": [5, 1, 5],
+							"uv": {
+								"north": {"uv": [5, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"east": {"uv": [5, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"south": {"uv": [0, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"west": {"uv": [5, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"up": {"uv": [5, 15], "uv_size": [-5, -5], "material_instance": "sugar_6_jar"},
+								"down": {"uv": [5, 15], "uv_size": [-5, -5], "material_instance": "sugar_6_jar"}
+							}
+						},
+						{
+							"origin": [-0.75, 11.5, -0.75],
+							"size": [1.5, 1, 1.5],
+							"uv": {
+								"north": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"east": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"south": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"west": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"up": {"uv": [6, 13], "uv_size": [-1, -1], "material_instance": "sugar_6_jar"}
+							}
+						}
+					]
+				},
+				{
+					"name": "up_45",
+					"parent": "sugar_6",
+					"pivot": [0, 0, 0],
+					"rotation": [0, -135, 0],
+					"cubes": [
+						{
+							"origin": [-3.5, 0, -3.5],
+							"size": [7, 9, 7],
+							"uv": {
+								"north": {"uv": [8, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"east": {"uv": [8, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"south": {"uv": [0, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"west": {"uv": [8, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"up": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "sugar_6"},
+								"down": {"uv": [15, 7], "uv_size": [-7, -7], "material_instance": "sugar_6"}
+							}
+						},
+						{
+							"origin": [-3.5, 9, -3.5],
+							"size": [7, 2, 7],
+							"uv": {
+								"north": {"uv": [8, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"east": {"uv": [8, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"south": {"uv": [0, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"west": {"uv": [8, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"up": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "sugar_6_jar"}
+							}
+						},
+						{
+							"origin": [-2.5, 11, -2.5],
+							"size": [5, 1, 5],
+							"uv": {
+								"north": {"uv": [5, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"east": {"uv": [5, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"south": {"uv": [0, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"west": {"uv": [5, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"up": {"uv": [5, 15], "uv_size": [-5, -5], "material_instance": "sugar_6_jar"},
+								"down": {"uv": [5, 15], "uv_size": [-5, -5], "material_instance": "sugar_6_jar"}
+							}
+						},
+						{
+							"origin": [-0.75, 11.5, -0.75],
+							"size": [1.5, 1, 1.5],
+							"uv": {
+								"north": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"east": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"south": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"west": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"up": {"uv": [6, 13], "uv_size": [-1, -1], "material_instance": "sugar_6_jar"}
+							}
+						}
+					]
+				},
+				{
+					"name": "up_67_5",
+					"parent": "sugar_6",
+					"pivot": [0, 0, 0],
+					"rotation": [0, -112.5, 0],
+					"cubes": [
+						{
+							"origin": [-3.5, 0, -3.5],
+							"size": [7, 9, 7],
+							"uv": {
+								"north": {"uv": [8, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"east": {"uv": [8, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"south": {"uv": [0, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"west": {"uv": [8, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"up": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "sugar_6"},
+								"down": {"uv": [15, 7], "uv_size": [-7, -7], "material_instance": "sugar_6"}
+							}
+						},
+						{
+							"origin": [-3.5, 9, -3.5],
+							"size": [7, 2, 7],
+							"uv": {
+								"north": {"uv": [8, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"east": {"uv": [8, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"south": {"uv": [0, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"west": {"uv": [8, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"up": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "sugar_6_jar"}
+							}
+						},
+						{
+							"origin": [-2.5, 11, -2.5],
+							"size": [5, 1, 5],
+							"uv": {
+								"north": {"uv": [5, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"east": {"uv": [5, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"south": {"uv": [0, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"west": {"uv": [5, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"up": {"uv": [5, 15], "uv_size": [-5, -5], "material_instance": "sugar_6_jar"},
+								"down": {"uv": [5, 15], "uv_size": [-5, -5], "material_instance": "sugar_6_jar"}
+							}
+						},
+						{
+							"origin": [-0.75, 11.5, -0.75],
+							"size": [1.5, 1, 1.5],
+							"uv": {
+								"north": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"east": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"south": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"west": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"up": {"uv": [6, 13], "uv_size": [-1, -1], "material_instance": "sugar_6_jar"}
+							}
+						}
+					]
+				},
+				{
+					"name": "inventory",
+					"parent": "sugar_6",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-3.5, 0, -3.5],
+							"size": [7, 9, 7],
+							"uv": {
+								"north": {"uv": [8, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"east": {"uv": [8, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"south": {"uv": [0, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"west": {"uv": [8, 7], "uv_size": [7, 9], "material_instance": "sugar_6"},
+								"up": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "sugar_6"},
+								"down": {"uv": [15, 7], "uv_size": [-7, -7], "material_instance": "sugar_6"}
+							}
+						},
+						{
+							"origin": [-3.5, 9, -3.5],
+							"size": [7, 2, 7],
+							"uv": {
+								"north": {"uv": [8, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"east": {"uv": [8, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"south": {"uv": [0, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"west": {"uv": [8, 7], "uv_size": [7, 2], "material_instance": "sugar_6_jar"},
+								"up": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "sugar_6_jar"}
+							}
+						},
+						{
+							"origin": [-2.5, 11, -2.5],
+							"size": [5, 1, 5],
+							"uv": {
+								"north": {"uv": [5, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"east": {"uv": [5, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"south": {"uv": [0, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"west": {"uv": [5, 15], "uv_size": [5, 1], "material_instance": "sugar_6_jar"},
+								"up": {"uv": [5, 15], "uv_size": [-5, -5], "material_instance": "sugar_6_jar"},
+								"down": {"uv": [5, 15], "uv_size": [-5, -5], "material_instance": "sugar_6_jar"}
+							}
+						},
+						{
+							"origin": [-0.75, 11.5, -0.75],
+							"size": [1.5, 1, 1.5],
+							"uv": {
+								"north": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"east": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"south": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"west": {"uv": [5, 12], "uv_size": [1, 1], "material_instance": "sugar_6_jar"},
+								"up": {"uv": [6, 13], "uv_size": [-1, -1], "material_instance": "sugar_6_jar"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,119 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cit:fern_1",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"properties": {
+				"cit:fern_1_geometry_style": {
+					"type": "int",
+                    "range": [0, 63],
+					"client_sync": true,
+					"default": 0
+				}
+			}
+		},
+		"components": {
+			"minecraft:health": {
+				"value": 1,
+				"max": 1
+			},
+            "minecraft:damage_sensor": {
+                "triggers": [
+					{
+						"cause": "void",
+						"deals_damage": "yes"
+					},
+					{
+						"cause": "fire_tick",
+						"deals_damage": "yes"
+					},
+					{
+						"cause": "block_explosion",
+						"deals_damage": "yes"
+					},
+					{
+						"cause": "entity_explosion",
+						"deals_damage": "yes"
+					},
+					{
+						"cause": "entity_attack",
+						"deals_damage": "yes"
+					},
+					{
+						"cause": "all",
+						"deals_damage": "no"
+					}
+				]
+            },
+			"minecraft:knockback_resistance": {
+				"value": 1.0
+			},
+			"minecraft:collision_box": {
+				"width": 0.50,
+				"height": 0.50
+			},
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": true
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:push_through": {
+				"value": 0
+			},
+            "minecraft:loot":{
+                "table": "loot_tables/cit/entities/fern_1.loot.json"
+            },
+			"minecraft:on_death": {
+				"event": "cit:on_death",
+				"target": "self"
+			},
+			"minecraft:vibration_damper": {
+			},
+			"minecraft:renders_when_invisible": {}
+		},
+		"component_groups": {
+			"cit:default": {
+			},
+			"cit:instant_despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": false
+				}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"queue_command": {
+					"command": [
+						"function cit/entity/fern_1/spawn"
+					],
+					"target": "self"
+				},
+				"add": {
+					"component_groups": [
+						"cit:default"
+					]
+				}
+			},
+			"cit:on_death": {
+				"queue_command": {
+					"command": [
+						"function cit/entity/fern_1/death"
+					],
+					"target": "self"
+				}
+			},
+			"cit:instant_despawn": {
+				"add":{
+					"component_groups": [
+						"cit:instant_despawn"
+					]
+				}
+			}
+		}
+	}
+}

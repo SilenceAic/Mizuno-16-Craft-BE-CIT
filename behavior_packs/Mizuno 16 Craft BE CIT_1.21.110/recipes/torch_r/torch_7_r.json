@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:torch_7"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" W ",
+            "WTW",
+            " W "
+		],
+		"key": {
+			"W": {
+    			"item": "minecraft:white_stained_glass_pane"
+			},
+			"T": {
+				"item": "minecraft:torch"
+			}
+		},
+		"result": {
+			"item": "cit:torch_7",
+            "count": 1
+		}
+	}
+}

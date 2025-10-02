@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:torch_6"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"W",
+            "T",
+            "I"
+		],
+		"key": {
+			"W": {
+    			"item": "minecraft:white_stained_glass_pane"
+			},
+			"T": {
+				"item": "minecraft:torch"
+			},
+            "I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": {
+			"item": "cit:torch_6",
+            "count": 1
+		}
+	}
+}

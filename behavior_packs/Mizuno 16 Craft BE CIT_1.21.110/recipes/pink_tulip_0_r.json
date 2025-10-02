@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:pink_tulip_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "pp",
+            "PP"
+		],
+		"key": {
+			"p": {
+				"item": "minecraft:pink_tulip"
+			},
+            "P": {
+				"item": "minecraft:flower_pot"
+			}
+		},
+		"result": {
+			"item": "cit:pink_tulip_0",
+            "count": 1
+		}
+	}
+}

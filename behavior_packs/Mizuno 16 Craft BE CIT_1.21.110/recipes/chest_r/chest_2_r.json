@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:chest_2"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "BBB",
+            "BCB",
+            "BBB"
+		],
+		"key": {
+			"C": {
+				"item": "minecraft:chest"
+			},
+            "B": {
+				"item": "minecraft:bamboo"
+			}
+		},
+		"result": {
+			"item": "cit:chest_2",
+            "count": 1
+		}
+	}
+}

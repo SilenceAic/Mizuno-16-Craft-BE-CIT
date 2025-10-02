@@ -1,0 +1,47 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.oak_sapling_1_wall_bottom",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "oak_sapling_1_wall_bottom",
+					"pivot": [0, 19, 2],
+					"cubes": [
+						{
+							"origin": [-3.5, -4, -1.5],
+							"size": [7, 16, 7],
+							"pivot": [0, 15, 2],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": {"uv": [0, 6.5], "uv_size": [4, 8]},
+								"east": {"uv": [8, 6.5], "uv_size": [4, 8]},
+								"south": {"uv": [0, 6.5], "uv_size": [4, 8]},
+								"west": {"uv": [8, 6.5], "uv_size": [4, 8]}
+							}
+						},
+						{
+							"origin": [-4, -4, -2],
+							"size": [8, 16, 8],
+							"pivot": [0, 15, 2],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": {"uv": [4, 6.5], "uv_size": [4, 8]},
+								"east": {"uv": [12, 6.5], "uv_size": [4, 8]},
+								"south": {"uv": [4, 6.5], "uv_size": [4, 8]},
+								"west": {"uv": [12, 6.5], "uv_size": [4, 8]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

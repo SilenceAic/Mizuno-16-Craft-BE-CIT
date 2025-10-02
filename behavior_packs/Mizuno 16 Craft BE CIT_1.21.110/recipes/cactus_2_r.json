@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:cactus_2"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "BCB",
+            " F"
+		],
+		"key": {
+            "B": {
+				"item": "minecraft:bone_meal"
+			},
+            "F": {
+				"item": "minecraft:flower_pot"
+			},
+			"C": {
+				"item": "minecraft:cactus"
+			}
+		},
+		"result": {
+			"item": "cit:cactus_2",
+            "count": 1
+		}
+	}
+}

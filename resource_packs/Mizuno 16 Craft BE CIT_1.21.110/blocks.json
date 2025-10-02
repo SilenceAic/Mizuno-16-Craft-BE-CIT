@@ -1,0 +1,474 @@
+{
+  "format_version": "1.21.40",
+  "cit:stone_0": {
+    "sound": "stone"
+  },
+  "cit:oak_log_0": {
+    "sound": "wood"
+  },
+  "cit:oak_log_1": {
+    "sound": "wood"
+  },
+  "cit:oak_log_2": {
+    "sound": "wood"
+  },
+  "cit:white_wool_0": {
+    "sound": "cloth"
+  },
+  "cit:light_gray_wool_0": {
+    "sound": "cloth"
+  },
+  "cit:gray_wool_0": {
+    "sound": "cloth"
+  },
+  "cit:black_wool_0": {
+    "sound": "cloth"
+  },
+  "cit:brown_wool_0": {
+    "sound": "cloth"
+  },
+  "cit:red_wool_0": {
+    "sound": "cloth"
+  },
+  "cit:orange_wool_0": {
+    "sound": "cloth"
+  },
+  "cit:yellow_wool_0": {
+    "sound": "cloth"
+  },
+  "cit:lime_wool_0": {
+    "sound": "cloth"
+  },
+  "cit:green_wool_0": {
+    "sound": "cloth"
+  },
+  "cit:cyan_wool_0": {
+    "sound": "cloth"
+  },
+  "cit:light_blue_wool_0": {
+    "sound": "cloth"
+  },
+  "cit:blue_wool_0": {
+    "sound": "cloth"
+  },
+  "cit:purple_wool_0": {
+    "sound": "cloth"
+  },
+  "cit:magenta_wool_0": {
+    "sound": "cloth"
+  },
+  "cit:pink_wool_0": {
+    "sound": "cloth"
+  },
+  "cit:gold_block_0": {
+    "sound": "stone"
+  },
+  "cit:gold_block_1": {
+    "sound": "stone"
+  },
+  "cit:pumpkin_0": {
+    "sound": "wood"
+  },
+  "cit:pumpkin_1": {
+    "sound": "wood"
+  },
+  "cit:snow_block_0": {
+    "sound": "snow"
+  },
+  "cit:snow_block_1": {
+    "sound": "snow"
+  },
+  "cit:glowstone_0": {
+    "sound": "glass"
+  },
+  "cit:terracotta_0": {
+    "sound": "decorated_pot"
+  },
+  "cit:terracotta_1": {
+    "sound": "decorated_pot"
+  },
+  "cit:terracotta_2": {
+    "sound": "decorated_pot"
+  },
+  "cit:terracotta_3": {
+    "sound": "decorated_pot"
+  },
+  "cit:terracotta_4": {
+    "sound": "decorated_pot"
+  },
+  "cit:chest_0": {
+    "sound": "wood"
+  },
+  "cit:chest_1": {
+    "sound": "wood"
+  },
+  "cit:chest_2": {
+    "sound": "wood"
+  },
+  "cit:chest_3": {
+    "sound": "wood"
+  },
+  "cit:chest_4": {
+    "sound": "wood"
+  },
+  "cit:crafting_table_0": {
+    "sound": "wood"
+  },
+  "cit:crafting_table_1": {
+    "sound": "wood"
+  },
+  "cit:crafting_table_2": {
+    "sound": "wood"
+  },
+  "cit:crafting_table_3": {
+    "sound": "wood"
+  },
+  "cit:crafting_table_4": {
+    "sound": "wood"
+  },
+  "cit:crafting_table_5": {
+    "sound": "wood"
+  },
+  "cit:crafting_table_6": {
+    "sound": "lantern"
+  },
+  "cit:crafting_table_7": {
+    "sound": "lantern"
+  },
+  "cit:white_carpet_0": {
+    "sound": "stone"
+  },
+  "cit:white_carpet_1": {
+    "sound": "stone"
+  },
+  "cit:white_carpet_2": {
+    "sound": "stone"
+  },
+  "cit:light_gray_carpet_0": {
+    "sound": "wool"
+  },
+  "cit:black_carpet_0": {
+    "sound": "wool"
+  },
+  "cit:gray_carpet_0": {
+    "sound": "wool"
+  },
+  "cit:brown_carpet_0": {
+    "sound": "wool"
+  },
+  "cit:red_carpet_0": {
+    "sound": "wool"
+  },
+  "cit:orange_carpet_0": {
+    "sound": "wool"
+  },
+  "cit:yellow_carpet_0": {
+    "sound": "wool"
+  },
+  "cit:lime_carpet_0": {
+    "sound": "wool"
+  },
+  "cit:green_carpet_0": {
+    "sound": "wool"
+  },
+  "cit:cyan_carpet_0": {
+    "sound": "wool"
+  },
+  "cit:light_blue_carpet_0": {
+    "sound": "wool"
+  },
+  "cit:blue_carpet_0": {
+    "sound": "wool"
+  },
+  "cit:purple_carpet_0": {
+    "sound": "wool"
+  },
+  "cit:magenta_carpet_0": {
+    "sound": "wool"
+  },
+  "cit:pink_carpet_0": {
+    "sound": "wool"
+  },
+  "cit:egg_0": {
+    "sound": "wood"
+  },
+  "cit:glowstone_dust_0": {
+    "sound": "wood"
+  },
+  "cit:sugar_0": {
+    "sound": "wood"
+  },
+  "cit:sugar_1": {
+    "sound": "glass"
+  },
+  "cit:sugar_2": {
+    "sound": "glass"
+  },
+  "cit:sugar_3": {
+    "sound": "lantern"
+  },
+  "cit:sugar_4": {
+    "sound": "lantern"
+  },
+  "cit:sugar_5": {
+    "sound": "glass"
+  },
+  "cit:sugar_6": {
+    "sound": "glass"
+  },
+  "cit:sugar_7": {
+    "sound": "glass"
+  },
+  "cit:torch_0": {
+    "sound": "wood"
+  },
+  "cit:torch_1": {
+    "sound": "wood"
+  },
+  "cit:torch_2": {
+    "sound": "lantern"
+  },
+  "cit:torch_3": {
+    "sound": "lantern"
+  },
+  "cit:torch_4": {
+    "sound": "lantern"
+  },
+  "cit:torch_5": {
+    "sound": "wood"
+  },
+  "cit:torch_6": {
+    "sound": "glass"
+  },
+  "cit:torch_7": {
+    "sound": "glass"
+  },
+  "cit:torch_8": {
+    "sound": "lantern"
+  },
+  "cit:torch_9": {
+    "sound": "lantern"
+  },
+  "cit:grass_0": {
+    "sound": "wood"
+  },
+  "cit:grass_1": {
+    "sound": "grass"
+  },
+  "cit:grass_2": {
+    "sound": "grass"
+  },
+  "cit:grass_3": {
+    "sound": "grass"
+  },
+  "cit:grass_4": {
+    "sound": "grass"
+  },
+  "cit:grass_5": {
+    "sound": "grass"
+  },
+  "cit:fern_0": {
+    "sound": "wood"
+  },
+  "cit:allium_0": {
+    "sound": "wood"
+  },
+  "cit:azure_bluet_0": {
+    "sound": "glass"
+  },
+  "cit:blue_orchid_0": {
+    "sound": "wood"
+  },
+  "cit:blue_orchid_1": {
+    "sound": ""
+  },
+  "cit:cornflower_0": {
+    "sound": "wood"
+  },
+  "cit:dandelion_0": {
+    "sound": ""
+  },
+  "cit:dandelion_1": {
+    "sound": ""
+  },
+  "cit:dandelion_2": {
+    "sound": ""
+  },
+  "cit:lily_of_the_valley_0": {
+    "sound": "grass"
+  },
+  "cit:oxeye_daisy_0": {
+    "sound": "wood"
+  },
+  "cit:poppy_0": {
+    "sound": "wood"
+  },
+  "cit:orange_tulip_0": {
+    "sound": "wood"
+  },
+  "cit:pink_tulip_0": {
+    "sound": "wood"
+  },
+  "cit:red_tulip_0": {
+    "sound": "wood"
+  },
+  "cit:white_tulip_0": {
+    "sound": "wood"
+  },
+  "cit:wither_rose_0": {
+    "sound": "wood"
+  },
+  "cit:lilac_0": {
+    "sound": "wood"
+  },
+  "cit:peony_0": {
+    "sound": "wood"
+  },
+  "cit:sunflower_0": {
+    "sound": "wood"
+  },
+  "cit:cactus_0": {
+    "sound": "wood"
+  },
+  "cit:cactus_1": {
+    "sound": "wood"
+  },
+  "cit:cactus_2": {
+    "sound": "wood"
+  },
+  "cit:oak_sapling_0": {
+    "sound": "wood"
+  },
+  "cit:oak_sapling_1": {
+    "sound": "wood"
+  },
+  "cit:oak_sapling_2": {
+    "sound": "wood"
+  },
+  "cit:oak_sapling_3": {
+    "sound": "wood"
+  },
+  "cit:oak_sapling_4": {
+    "sound": "wood"
+  },
+  "cit:oak_sapling_5": {
+    "sound": "stone"
+  },
+  "cit:oak_sapling_6": {
+    "sound": "stone"
+  },
+  "cit:oak_sapling_7": {
+    "sound": "stone"
+  },
+  "cit:oak_sapling_8": {
+    "sound": "stone"
+  },
+  "cit:oak_sapling_9": {
+    "sound": "wood"
+  },
+  "cit:spruce_sapling_0": {
+    "sound": "wood"
+  },
+  "cit:spruce_sapling_1": {
+    "sound": "wood"
+  },
+  "cit:birch_sapling_0": {
+    "sound": "wood"
+  },
+  "cit:birch_sapling_1": {
+    "sound": "wood"
+  },
+  "cit:birch_sapling_2": {
+    "sound": "stone"
+  },
+  "cit:birch_sapling_3": {
+    "sound": "wood"
+  },
+  "cit:birch_sapling_4": {
+    "sound": "wood"
+  },
+  "cit:birch_sapling_5": {
+    "sound": "decorated_pot"
+  },
+  "cit:birch_sapling_6": {
+    "sound": "wood"
+  },
+  "cit:birch_sapling_7": {
+    "sound": "stone"
+  },
+  "cit:birch_sapling_8": {
+    "sound": "wood"
+  },
+  "cit:jungle_sapling_0": {
+    "sound": "stone"
+  },
+  "cit:jungle_sapling_1": {
+    "sound": "wood"
+  },
+  "cit:jungle_sapling_2": {
+    "sound": "wood"
+  },
+  "cit:jungle_sapling_3": {
+    "sound": "grass"
+  },
+  "cit:jungle_sapling_4": {
+    "sound": "grass"
+  },
+  "cit:oak_leaves_0": {
+    "sound": "grass"
+  },
+  "cit:oak_leaves_1": {
+    "sound": "grass"
+  },
+  "cit:oak_leaves_2": {
+    "sound": "grass"
+  },
+  "cit:spruce_leaves_0": {
+    "sound": "grass"
+  },
+  "cit:spruce_leaves_1": {
+    "sound": "grass"
+  },
+  "cit:spruce_leaves_2": {
+    "sound": "grass"
+  },
+  "cit:spruce_leaves_3": {
+    "sound": "grass"
+  },
+  "cit:birch_leaves_0": {
+    "sound": "grass"
+  },
+  "cit:birch_leaves_1": {
+    "sound": "grass"
+  },
+  "cit:birch_leaves_2": {
+    "sound": "grass"
+  },
+  "cit:jungle_leaves_0": {
+    "sound": "grass"
+  },
+  "cit:jungle_leaves_1": {
+    "sound": "grass"
+  },
+  "cit:bamboo_0": {
+    "sound": "bamboo"
+  },
+  "cit:vine_0": {
+    "sound": "grass"
+  },
+  "cit:vine_1": {
+    "sound": "grass"
+  },
+  "cit:vine_2": {
+    "sound": "grass"
+  },
+  "cit:vine_3": {
+    "sound": "grass"
+  },
+  "cit:vine_4": {
+    "sound": "grass"
+  },
+  "cit:vine_5": {
+    "sound": "grass"
+  }
+}

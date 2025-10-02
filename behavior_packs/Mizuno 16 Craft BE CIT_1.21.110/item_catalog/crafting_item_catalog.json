@@ -1,0 +1,238 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:crafting_items_catalog": {
+    "categories": [
+      {
+        "category_name": "construction",
+        "groups": [
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.wool"
+            },
+            "items": [
+              "cit:white_wool_0",
+              "cit:light_gray_wool_0",
+              "cit:gray_wool_0",
+              "cit:black_wool_0",
+              "cit:brown_wool_0",
+              "cit:red_wool_0",
+              "cit:orange_wool_0",
+              "cit:yellow_wool_0",
+              "cit:lime_wool_0",
+              "cit:green_wool_0",
+              "cit:cyan_wool_0",
+              "cit:light_blue_wool_0",
+              "cit:blue_wool_0",
+              "cit:purple_wool_0",
+              "cit:magenta_wool_0",
+              "cit:pink_wool_0"
+            ]
+          },
+          {
+            "items": ["cit:gold_block_0", "cit:gold_block_1"]
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.woolCarpet"
+            },
+            "items": [
+              "cit:white_carpet_0",
+              "cit:light_gray_carpet_0",
+              "cit:gray_carpet_0",
+              "cit:black_carpet_0",
+              "cit:brown_carpet_0",
+              "cit:red_carpet_0",
+              "cit:orange_carpet_0",
+              "cit:yellow_carpet_0",
+              "cit:lime_carpet_0",
+              "cit:green_carpet_0",
+              "cit:cyan_carpet_0",
+              "cit:light_blue_carpet_0",
+              "cit:blue_carpet_0",
+              "cit:purple_carpet_0",
+              "cit:magenta_carpet_0",
+              "cit:pink_carpet_0"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "items",
+        "groups": [
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.chest"
+            },
+            "items": ["cit:chest_0", "cit:chest_1", "cit:chest_2", "cit:chest_3", "cit:chest_4"]
+          },
+          {
+            "items": [
+              "cit:crafting_table_0",
+              "cit:crafting_table_1",
+              "cit:crafting_table_2",
+              "cit:crafting_table_3",
+              "cit:crafting_table_4",
+              "cit:crafting_table_5",
+              "cit:crafting_table_6",
+              "cit:crafting_table_7",
+              "cit:glowstone_dust_0",
+              "cit:glowstone_0",
+              "cit:terracotta_0",
+              "cit:terracotta_1",
+              "cit:terracotta_2",
+              "cit:terracotta_3",
+              "cit:terracotta_4",
+              "cit:torch_0",
+              "cit:torch_1",
+              "cit:torch_2",
+              "cit:torch_3",
+              "cit:torch_4",
+              "cit:torch_5",
+              "cit:torch_6",
+              "cit:torch_7",
+              "cit:torch_8",
+              "cit:torch_9"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "nature",
+        "groups": [
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.stone"
+            },
+            "items": ["cit:stone_0"]
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.log"
+            },
+            "items": ["cit:oak_log_0", "cit:oak_log_1", "cit:oak_log_2"]
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.leaves"
+            },
+            "items": [
+              "cit:oak_leaves_0",
+              "cit:oak_leaves_1",
+              "cit:oak_leaves_2",
+              "cit:spruce_leaves_0",
+              "cit:spruce_leaves_1",
+              "cit:spruce_leaves_2",
+              "cit:spruce_leaves_3",
+              "cit:birch_leaves_0",
+              "cit:birch_leaves_1",
+              "cit:birch_leaves_2",
+              "cit:jungle_leaves_0",
+              "cit:jungle_leaves_1"
+            ]
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.sapling"
+            },
+            "items": [
+              "cit:oak_sapling_0",
+              "cit:oak_sapling_1",
+              "cit:oak_sapling_2",
+              "cit:oak_sapling_3",
+              "cit:oak_sapling_4",
+              "cit:oak_sapling_5",
+              "cit:oak_sapling_6",
+              "cit:oak_sapling_7",
+              "cit:oak_sapling_8",
+              "cit:oak_sapling_9",
+              "cit:spruce_sapling_0",
+              "cit:spruce_sapling_1",
+              "cit:birch_sapling_0",
+              "cit:birch_sapling_1",
+              "cit:birch_sapling_2",
+              "cit:birch_sapling_3",
+              "cit:birch_sapling_4",
+              "cit:birch_sapling_5",
+              "cit:birch_sapling_6",
+              "cit:birch_sapling_7",
+              "cit:birch_sapling_8",
+              "cit:jungle_sapling_0",
+              "cit:jungle_sapling_1",
+              "cit:jungle_sapling_2",
+              "cit:jungle_sapling_3",
+              "cit:jungle_sapling_4"
+            ]
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.grass"
+            },
+            "items": [
+              "cit:fern_0",
+              "cit:grass_0",
+              "cit:grass_1",
+              "cit:grass_2",
+              "cit:grass_3",
+              "cit:grass_4",
+              "cit:grass_5"
+            ]
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.flower"
+            },
+            "items": [
+              "cit:allium_0",
+              "cit:azure_bluet_0",
+              "cit:blue_orchid_0",
+              "cit:blue_orchid_1",
+              "cit:cornflower_0",
+              "cit:dandelion_0",
+              "cit:dandelion_1",
+              "cit:dandelion_2",
+              "cit:lily_of_the_valley_0",
+              "cit:oxeye_daisy_0",
+              "cit:poppy_0",
+              "cit:orange_tulip_0",
+              "cit:pink_tulip_0",
+              "cit:red_tulip_0",
+              "cit:white_tulip_0",
+              "cit:wither_rose_0",
+              "cit:lilac_0",
+              "cit:peony_0",
+              "cit:rose_bush_0",
+              "cit:sunflower_0"
+            ]
+          },
+          {
+            "items": [
+              "cit:pumpkin_0",
+              "cit:pumpkin_1",
+              "cit:snow_block_0",
+              "cit:snow_block_1",
+              "cit:egg_0",
+              "cit:sugar_0",
+              "cit:sugar_1",
+              "cit:sugar_2",
+              "cit:sugar_3",
+              "cit:sugar_4",
+              "cit:sugar_5",
+              "cit:sugar_6",
+              "cit:sugar_7",
+              "cit:cactus_0",
+              "cit:cactus_1",
+              "cit:cactus_2",
+              "cit:bamboo_0",
+              "cit:vine_0",
+              "cit:vine_1",
+              "cit:vine_2",
+              "cit:vine_3",
+              "cit:vine_4",
+              "cit:vine_5"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:azure_bluet_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "A",
+            "P"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:azure_bluet"
+			},
+            "P": {
+				"item": "minecraft:flower_pot"
+			}
+		},
+		"result": {
+			"item": "cit:azure_bluet_0",
+            "count": 1
+		}
+	}
+}

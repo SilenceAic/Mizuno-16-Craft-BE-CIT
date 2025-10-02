@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:dandelion_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "D",
+            "P"
+		],
+		"key": {
+			"D": {
+				"item": "minecraft:dandelion"
+			},
+            "P": {
+				"item": "minecraft:flower_pot"
+			}
+		},
+		"result": {
+			"item": "cit:dandelion_0",
+            "count": 1
+		}
+	}
+}

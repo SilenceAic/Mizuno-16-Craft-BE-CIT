@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:blue_orchid_1"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "S",
+            "B"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:blue_orchid"
+			},
+            "S": {
+				"item": "minecraft:sugar"
+			}
+		},
+		"result": {
+			"item": "cit:blue_orchid_1",
+            "count": 1
+		}
+	}
+}

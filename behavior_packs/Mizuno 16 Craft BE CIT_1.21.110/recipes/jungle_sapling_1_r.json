@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:jungle_sapling_1"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "J",
+            "F"
+		],
+		"key": {
+			"J": {
+				"item": "cit:jungle_sapling_0"
+			},
+            "F": {
+				"item": "minecraft:flower_pot"
+			}
+		},
+		"result": {
+			"item": "cit:jungle_sapling_1",
+            "count": 1
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:gray_carpet_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "S",
+			"L",
+			"S"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:stick"
+			},
+			"L": {
+				"item": "minecraft:gray_carpet"
+			}
+		},
+		"result": {
+			"item": "cit:gray_carpet_0",
+            "count": 1
+		}
+	}
+}

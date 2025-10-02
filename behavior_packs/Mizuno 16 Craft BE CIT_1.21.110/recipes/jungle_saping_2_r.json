@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:jungle_sapling_2"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "B",
+            "J"
+		],
+		"key": {
+            "B": {
+				"item": "minecraft:bone_meal"
+			},
+			"J": {
+				"item": "cit:jungle_sapling_1"
+			}
+		},
+		"result": {
+			"item": "cit:jungle_sapling_2",
+            "count": 1
+		}
+	}
+}

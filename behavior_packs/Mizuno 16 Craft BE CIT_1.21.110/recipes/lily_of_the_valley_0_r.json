@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:lily_of_the_valley_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "L"
+		],
+		"key": {
+            "L": {
+				"item": "minecraft:lily_of_the_valley"
+			}
+		},
+		"result": {
+			"item": "cit:lily_of_the_valley_0",
+            "count": 1
+		}
+	}
+}

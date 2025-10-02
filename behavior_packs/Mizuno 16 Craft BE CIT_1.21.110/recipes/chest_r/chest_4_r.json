@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:chest_4"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            " G",
+            "CP"
+		],
+		"key": {
+			"G": {
+				"item": "minecraft:short_grass"
+			},
+            "C": {
+				"item": "cit:chest_3"
+			},
+            "P": {
+				"item": "minecraft:flower_pot"
+			}
+		},
+		"result": {
+			"item": "cit:chest_4",
+            "count": 1
+		}
+	}
+}

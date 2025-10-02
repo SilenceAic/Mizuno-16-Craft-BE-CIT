@@ -1,0 +1,564 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.template_wool_0",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "template_wool_0",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "up_0",
+					"parent": "template_wool_0",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-3, 6, 5.25],
+							"size": [6, 6, 2],
+							"uv": {
+								"east": {"uv": [8, 2], "uv_size": [2, 6], "material_instance": "sheep"},
+								"south": {"uv": [2, 2], "uv_size": [6, 6], "material_instance": "sheep"},
+								"west": {"uv": [0, 2], "uv_size": [2, 6], "material_instance": "sheep"},
+								"up": {"uv": [8, 2], "uv_size": [-6, -2], "material_instance": "sheep"},
+								"down": {"uv": [8, 10], "uv_size": [-6, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-3.5, 5.5, -1],
+							"size": [7, 7, 7],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"east": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"south": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"west": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"up": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "wool"},
+								"down": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "wool"}
+							}
+						},
+						{
+							"origin": [-6, 10, 2.25],
+							"size": [4, 1, 2],
+							"uv": {
+								"north": {"uv": [12, 12], "uv_size": [4, 1], "material_instance": "sheep"},
+								"east": {"uv": [10, 12], "uv_size": [2, 1], "material_instance": "sheep"},
+								"south": {"uv": [6, 12], "uv_size": [4, 1], "material_instance": "sheep"},
+								"up": {"uv": [10, 12], "uv_size": [-4, -2], "material_instance": "sheep"},
+								"down": {"uv": [14, 12], "uv_size": [-4, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [2, 10, 2.25],
+							"size": [4, 1, 2],
+							"uv": {
+								"north": {"uv": [12, 15], "uv_size": [4, 1], "material_instance": "sheep"},
+								"south": {"uv": [6, 15], "uv_size": [4, 1], "material_instance": "sheep"},
+								"west": {"uv": [4, 15], "uv_size": [2, 1], "material_instance": "sheep"},
+								"up": {"uv": [10, 15], "uv_size": [-4, -2], "material_instance": "sheep"},
+								"down": {"uv": [14, 15], "uv_size": [-4, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-4.5, 2, -6],
+							"size": [9, 7, 10],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [9, 7], "material_instance": "wool"},
+								"east": {"uv": [0, 0], "uv_size": [10, 7], "material_instance": "wool"},
+								"south": {"uv": [0, 0], "uv_size": [9, 7], "material_instance": "wool"},
+								"west": {"uv": [0, 0], "uv_size": [10, 7], "material_instance": "wool"},
+								"up": {"uv": [9, 10], "uv_size": [-9, -10], "material_instance": "wool"},
+								"down": {"uv": [9, 10], "uv_size": [-9, -10], "material_instance": "wool"}
+							}
+						},
+						{
+							"origin": [1, 0, 0],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-3, 0, 0],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-3, 0, -4],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [1, 0, -4],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						}
+					]
+				},
+				{
+					"name": "up_22_5",
+					"parent": "template_wool_0",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 22.5, 0],
+					"cubes": [
+						{
+							"origin": [-3, 6, 5.25],
+							"size": [6, 6, 2],
+							"uv": {
+								"east": {"uv": [8, 2], "uv_size": [2, 6], "material_instance": "sheep"},
+								"south": {"uv": [2, 2], "uv_size": [6, 6], "material_instance": "sheep"},
+								"west": {"uv": [0, 2], "uv_size": [2, 6], "material_instance": "sheep"},
+								"up": {"uv": [8, 2], "uv_size": [-6, -2], "material_instance": "sheep"},
+								"down": {"uv": [8, 10], "uv_size": [-6, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-3.5, 5.5, -1],
+							"size": [7, 7, 7],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"east": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"south": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"west": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"up": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "wool"},
+								"down": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "wool"}
+							}
+						},
+						{
+							"origin": [-6, 10, 2.25],
+							"size": [4, 1, 2],
+							"uv": {
+								"north": {"uv": [12, 12], "uv_size": [4, 1], "material_instance": "sheep"},
+								"east": {"uv": [10, 12], "uv_size": [2, 1], "material_instance": "sheep"},
+								"south": {"uv": [6, 12], "uv_size": [4, 1], "material_instance": "sheep"},
+								"up": {"uv": [10, 12], "uv_size": [-4, -2], "material_instance": "sheep"},
+								"down": {"uv": [14, 12], "uv_size": [-4, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [2, 10, 2.25],
+							"size": [4, 1, 2],
+							"uv": {
+								"north": {"uv": [12, 15], "uv_size": [4, 1], "material_instance": "sheep"},
+								"south": {"uv": [6, 15], "uv_size": [4, 1], "material_instance": "sheep"},
+								"west": {"uv": [4, 15], "uv_size": [2, 1], "material_instance": "sheep"},
+								"up": {"uv": [10, 15], "uv_size": [-4, -2], "material_instance": "sheep"},
+								"down": {"uv": [14, 15], "uv_size": [-4, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-4.5, 2, -6],
+							"size": [9, 7, 10],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [9, 7], "material_instance": "wool"},
+								"east": {"uv": [0, 0], "uv_size": [10, 7], "material_instance": "wool"},
+								"south": {"uv": [0, 0], "uv_size": [9, 7], "material_instance": "wool"},
+								"west": {"uv": [0, 0], "uv_size": [10, 7], "material_instance": "wool"},
+								"up": {"uv": [9, 10], "uv_size": [-9, -10], "material_instance": "wool"},
+								"down": {"uv": [9, 10], "uv_size": [-9, -10], "material_instance": "wool"}
+							}
+						},
+						{
+							"origin": [1, 0, 0],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-3, 0, 0],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-3, 0, -4],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [1, 0, -4],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						}
+					]
+				},
+				{
+					"name": "up_45",
+					"parent": "template_wool_0",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 45, 0],
+					"cubes": [
+						{
+							"origin": [-3, 6, 5.25],
+							"size": [6, 6, 2],
+							"uv": {
+								"east": {"uv": [8, 2], "uv_size": [2, 6], "material_instance": "sheep"},
+								"south": {"uv": [2, 2], "uv_size": [6, 6], "material_instance": "sheep"},
+								"west": {"uv": [0, 2], "uv_size": [2, 6], "material_instance": "sheep"},
+								"up": {"uv": [8, 2], "uv_size": [-6, -2], "material_instance": "sheep"},
+								"down": {"uv": [8, 10], "uv_size": [-6, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-3.5, 5.5, -1],
+							"size": [7, 7, 7],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"east": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"south": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"west": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"up": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "wool"},
+								"down": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "wool"}
+							}
+						},
+						{
+							"origin": [-6, 10, 2.25],
+							"size": [4, 1, 2],
+							"uv": {
+								"north": {"uv": [12, 12], "uv_size": [4, 1], "material_instance": "sheep"},
+								"east": {"uv": [10, 12], "uv_size": [2, 1], "material_instance": "sheep"},
+								"south": {"uv": [6, 12], "uv_size": [4, 1], "material_instance": "sheep"},
+								"up": {"uv": [10, 12], "uv_size": [-4, -2], "material_instance": "sheep"},
+								"down": {"uv": [14, 12], "uv_size": [-4, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [2, 10, 2.25],
+							"size": [4, 1, 2],
+							"uv": {
+								"north": {"uv": [12, 15], "uv_size": [4, 1], "material_instance": "sheep"},
+								"south": {"uv": [6, 15], "uv_size": [4, 1], "material_instance": "sheep"},
+								"west": {"uv": [4, 15], "uv_size": [2, 1], "material_instance": "sheep"},
+								"up": {"uv": [10, 15], "uv_size": [-4, -2], "material_instance": "sheep"},
+								"down": {"uv": [14, 15], "uv_size": [-4, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-4.5, 2, -6],
+							"size": [9, 7, 10],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [9, 7], "material_instance": "wool"},
+								"east": {"uv": [0, 0], "uv_size": [10, 7], "material_instance": "wool"},
+								"south": {"uv": [0, 0], "uv_size": [9, 7], "material_instance": "wool"},
+								"west": {"uv": [0, 0], "uv_size": [10, 7], "material_instance": "wool"},
+								"up": {"uv": [9, 10], "uv_size": [-9, -10], "material_instance": "wool"},
+								"down": {"uv": [9, 10], "uv_size": [-9, -10], "material_instance": "wool"}
+							}
+						},
+						{
+							"origin": [1, 0, 0],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-3, 0, 0],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-3, 0, -4],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [1, 0, -4],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						}
+					]
+				},
+				{
+					"name": "up_67_5",
+					"parent": "template_wool_0",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 67.5, 0],
+					"cubes": [
+						{
+							"origin": [-3, 6, 5.25],
+							"size": [6, 6, 2],
+							"uv": {
+								"east": {"uv": [8, 2], "uv_size": [2, 6], "material_instance": "sheep"},
+								"south": {"uv": [2, 2], "uv_size": [6, 6], "material_instance": "sheep"},
+								"west": {"uv": [0, 2], "uv_size": [2, 6], "material_instance": "sheep"},
+								"up": {"uv": [8, 2], "uv_size": [-6, -2], "material_instance": "sheep"},
+								"down": {"uv": [8, 10], "uv_size": [-6, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-3.5, 5.5, -1],
+							"size": [7, 7, 7],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"east": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"south": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"west": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"up": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "wool"},
+								"down": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "wool"}
+							}
+						},
+						{
+							"origin": [-6, 10, 2.25],
+							"size": [4, 1, 2],
+							"uv": {
+								"north": {"uv": [12, 12], "uv_size": [4, 1], "material_instance": "sheep"},
+								"east": {"uv": [10, 12], "uv_size": [2, 1], "material_instance": "sheep"},
+								"south": {"uv": [6, 12], "uv_size": [4, 1], "material_instance": "sheep"},
+								"up": {"uv": [10, 12], "uv_size": [-4, -2], "material_instance": "sheep"},
+								"down": {"uv": [14, 12], "uv_size": [-4, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [2, 10, 2.25],
+							"size": [4, 1, 2],
+							"uv": {
+								"north": {"uv": [12, 15], "uv_size": [4, 1], "material_instance": "sheep"},
+								"south": {"uv": [6, 15], "uv_size": [4, 1], "material_instance": "sheep"},
+								"west": {"uv": [4, 15], "uv_size": [2, 1], "material_instance": "sheep"},
+								"up": {"uv": [10, 15], "uv_size": [-4, -2], "material_instance": "sheep"},
+								"down": {"uv": [14, 15], "uv_size": [-4, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-4.5, 2, -6],
+							"size": [9, 7, 10],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [9, 7], "material_instance": "wool"},
+								"east": {"uv": [0, 0], "uv_size": [10, 7], "material_instance": "wool"},
+								"south": {"uv": [0, 0], "uv_size": [9, 7], "material_instance": "wool"},
+								"west": {"uv": [0, 0], "uv_size": [10, 7], "material_instance": "wool"},
+								"up": {"uv": [9, 10], "uv_size": [-9, -10], "material_instance": "wool"},
+								"down": {"uv": [9, 10], "uv_size": [-9, -10], "material_instance": "wool"}
+							}
+						},
+						{
+							"origin": [1, 0, 0],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-3, 0, 0],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-3, 0, -4],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [1, 0, -4],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						}
+					]
+				},
+				{
+					"name": "inventory",
+					"parent": "template_wool_0",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-3, 6, 5.25],
+							"size": [6, 6, 2],
+							"uv": {
+								"east": {"uv": [8, 2], "uv_size": [2, 6], "material_instance": "sheep"},
+								"south": {"uv": [2, 2], "uv_size": [6, 6], "material_instance": "sheep"},
+								"west": {"uv": [0, 2], "uv_size": [2, 6], "material_instance": "sheep"},
+								"up": {"uv": [8, 2], "uv_size": [-6, -2], "material_instance": "sheep"},
+								"down": {"uv": [8, 10], "uv_size": [-6, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-3.5, 5.5, -1],
+							"size": [7, 7, 7],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"east": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"south": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"west": {"uv": [0, 0], "uv_size": [7, 7], "material_instance": "wool"},
+								"up": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "wool"},
+								"down": {"uv": [7, 7], "uv_size": [-7, -7], "material_instance": "wool"}
+							}
+						},
+						{
+							"origin": [-6, 10, 2.25],
+							"size": [4, 1, 2],
+							"uv": {
+								"north": {"uv": [12, 12], "uv_size": [4, 1], "material_instance": "sheep"},
+								"east": {"uv": [10, 12], "uv_size": [2, 1], "material_instance": "sheep"},
+								"south": {"uv": [6, 12], "uv_size": [4, 1], "material_instance": "sheep"},
+								"up": {"uv": [10, 12], "uv_size": [-4, -2], "material_instance": "sheep"},
+								"down": {"uv": [14, 12], "uv_size": [-4, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [2, 10, 2.25],
+							"size": [4, 1, 2],
+							"uv": {
+								"north": {"uv": [12, 15], "uv_size": [4, 1], "material_instance": "sheep"},
+								"south": {"uv": [6, 15], "uv_size": [4, 1], "material_instance": "sheep"},
+								"west": {"uv": [4, 15], "uv_size": [2, 1], "material_instance": "sheep"},
+								"up": {"uv": [10, 15], "uv_size": [-4, -2], "material_instance": "sheep"},
+								"down": {"uv": [14, 15], "uv_size": [-4, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-4.5, 2, -6],
+							"size": [9, 7, 10],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [9, 7], "material_instance": "wool"},
+								"east": {"uv": [0, 0], "uv_size": [10, 7], "material_instance": "wool"},
+								"south": {"uv": [0, 0], "uv_size": [9, 7], "material_instance": "wool"},
+								"west": {"uv": [0, 0], "uv_size": [10, 7], "material_instance": "wool"},
+								"up": {"uv": [9, 10], "uv_size": [-9, -10], "material_instance": "wool"},
+								"down": {"uv": [9, 10], "uv_size": [-9, -10], "material_instance": "wool"}
+							}
+						},
+						{
+							"origin": [1, 0, 0],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-3, 0, 0],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [-3, 0, -4],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						},
+						{
+							"origin": [1, 0, -4],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"east": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"south": {"uv": [2, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"west": {"uv": [0, 14], "uv_size": [2, 2], "material_instance": "sheep"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -2], "material_instance": "sheep"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

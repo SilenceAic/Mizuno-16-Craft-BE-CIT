@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:jungle_sapling_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "J",
+            "C"
+		],
+		"key": {
+            "C": {
+				"item": "minecraft:cobblestone"
+			},
+			"J": {
+				"item": "minecraft:jungle_sapling"
+			}
+		},
+		"result": {
+			"item": "cit:jungle_sapling_0",
+            "count": 1
+		}
+	}
+}

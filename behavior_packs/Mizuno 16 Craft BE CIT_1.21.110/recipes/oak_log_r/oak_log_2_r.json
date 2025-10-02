@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:oak_log_2"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "L",
+            "S"
+		],
+		"key": {
+            "L": {
+                "item": "cit:oak_log_1"
+            },
+            "S": {
+                "item": "cit:oak_log_0"
+            }
+		},
+		"result": {
+			"item": "cit:oak_log_2",
+            "count": 2
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:fern_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "F",
+            "P"
+		],
+		"key": {
+			"F": {
+				"item": "minecraft:fern"
+			},
+            "P": {
+				"item": "minecraft:flower_pot"
+			}
+		},
+		"result": {
+			"item": "cit:fern_0",
+            "count": 1
+		}
+	}
+}

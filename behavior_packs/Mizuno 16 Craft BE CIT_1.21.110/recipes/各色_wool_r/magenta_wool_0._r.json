@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:magenta_wool_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            " L",      
+			"S"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:magenta_wool"
+			},
+            "L": {
+				"item": "minecraft:black_wool"
+			}
+		},
+		"result": {
+			"item": "cit:magenta_wool_0",
+            "count": 2
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:spruce_leaves_3"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "ROG"
+		],
+		"key": {
+            "R": {
+				"item": "minecraft:redstone"
+			},
+            "O": {
+				"item": "minecraft:spruce_leaves"
+			},
+            "G": {
+				"item": "minecraft:glowstone_dust"
+			}
+		},
+		"result": {
+			"item": "cit:spruce_leaves_3",
+            "count": 1
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:sugar_7"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "P",
+			"G"
+		],
+		"key": {
+			"P": {
+				"item": "minecraft:pumpkin_seeds"
+			},
+			"G": {
+				"item": "minecraft:glass_pane"
+			}
+		},
+		"result": {
+			"item": "cit:sugar_7",
+            "count": 1
+		}
+	}
+}

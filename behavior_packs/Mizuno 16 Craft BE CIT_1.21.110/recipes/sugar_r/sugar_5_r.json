@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:sugar_5"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "P W",
+			"G G"
+		],
+		"key": {
+			"P": {
+				"item": "minecraft:pumpkin_seeds"
+			},
+			"W": {
+				"item": "minecraft:wheat_seeds"
+			},
+			"G": {
+				"item": "minecraft:glass_pane"
+			}
+		},
+		"result": {
+			"item": "cit:sugar_5",
+            "count": 1
+		}
+	}
+}

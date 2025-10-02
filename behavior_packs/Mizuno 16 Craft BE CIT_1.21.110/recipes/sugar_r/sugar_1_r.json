@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:sugar_1"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "S S",
+			"G G"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:sugar"
+			},
+			"G": {
+				"item": "minecraft:white_terracotta"
+			}
+		},
+		"result": {
+			"item": "cit:sugar_1",
+            "count": 1
+		}
+	}
+}

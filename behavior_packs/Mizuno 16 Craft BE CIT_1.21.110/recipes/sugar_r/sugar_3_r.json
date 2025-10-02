@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:sugar_3"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "SSS",
+			"III"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:sugar"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": {
+			"item": "cit:sugar_3",
+            "count": 1
+		}
+	}
+}

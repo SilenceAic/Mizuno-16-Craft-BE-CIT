@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:spruce_leaves_1"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            " I ",
+            "IOG",
+            " I "
+		],
+		"key": {
+            "O": {
+				"item": "minecraft:spruce_leaves"
+			},
+            "G": {
+				"item": "minecraft:gold_ingot"
+			},
+            "I": {
+				"item": "minecraft:iron_nugget"
+			}
+		},
+		"result": {
+			"item": "cit:spruce_leaves_1",
+            "count": 1
+		}
+	}
+}

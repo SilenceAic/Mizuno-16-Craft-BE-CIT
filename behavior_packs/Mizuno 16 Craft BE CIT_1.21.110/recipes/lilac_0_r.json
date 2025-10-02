@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:lilac_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "W",
+            "F"
+		],
+		"key": {
+            "F": {
+				"item": "minecraft:flower_pot"
+			},
+			"W": {
+				"item": "minecraft:lilac"
+			}
+		},
+		"result": {
+			"item": "cit:lilac_0",
+            "count": 1
+		}
+	}
+}

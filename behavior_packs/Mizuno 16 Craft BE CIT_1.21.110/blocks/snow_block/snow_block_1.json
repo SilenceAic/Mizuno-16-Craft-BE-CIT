@@ -1,0 +1,221 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cit:snow_block_1",
+      "menu_category": {
+        "category": "nature"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": ["minecraft:block_face"]
+        },
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"]
+        }
+      },
+      "states": {
+        "cit:rotation": {
+          "values": { "min": 0, "max": 15 }
+        },
+        "cit:dynamic_state": {
+          "values": { "min": 0, "max": 1 }
+        },
+        "cit:multiblock_index": {
+          "values": { "min": 0, "max": 1 }
+        }
+      }
+    },
+    "components": {
+      "minecraft:geometry": {
+        "identifier": "geometry.cit.snow_block_1",
+        "bone_visibility": {
+          "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 0",
+          "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
+          "up_45": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 2",
+          "up_67_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 3",
+          "inventory": "q.block_state('minecraft:block_face') != 'up'"
+        }
+      },
+      "minecraft:collision_box": {
+        "origin": [-7, 0, -7],
+        "size": [14, 14, 14]
+      },
+      "minecraft:selection_box": {
+        "origin": [-7, 0, -7],
+        "size": [14, 14, 14]
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "snow",
+          "render_method": "alpha_test",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        },
+        "_wool_side": {
+          "texture": "red_wool_side",
+          "render_method": "alpha_test",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        },
+        "black_wool": {
+          "texture": "black_wool",
+          "render_method": "alpha_test",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        },
+        "snow_block_": {
+          "texture": "snow_block_1",
+          "render_method": "alpha_test",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        },
+        "hat": {
+          "texture": "black_wool",
+          "render_method": "alpha_test",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        }
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": ["up"]
+          }
+        ]
+      },
+      "cit:rotation": {},
+      "cit:dynamic_state": {},
+      "cit:multiblock": {
+        "size": [1, 2, 1],
+        "index": "cit:multiblock_index",
+        "rotate": true
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('cit:multiblock_index') == 0 && q.block_state('cit:dynamic_state') == 0",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cit.snow_block_1_bottom",
+            "bone_visibility": {
+              "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 0",
+              "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
+              "up_45": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 2",
+              "up_67_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 3",
+              "inventory": "q.block_state('minecraft:block_face') != 'up'"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:multiblock_index') == 0 && q.block_state('cit:dynamic_state') == 1",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cit.snow_block_1_bottom",
+            "bone_visibility": {
+              "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 0",
+              "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
+              "up_45": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 2",
+              "up_67_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 3",
+              "inventory": "q.block_state('minecraft:block_face') != 'up'"
+            }
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "snow",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "_wool_side": {
+              "texture": "green_wool_side",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "snow_block_": {
+              "texture": "snow_block_1a",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:multiblock_index') == 1 && q.block_state('cit:dynamic_state') == 0",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cit.snow_block_1_top",
+            "bone_visibility": {
+              "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 0",
+              "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
+              "up_45": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 2",
+              "up_67_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 3",
+              "inventory": "q.block_state('minecraft:block_face') != 'up'"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:multiblock_index') == 1 && q.block_state('cit:dynamic_state') == 1",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cit.snow_block_1a_top",
+            "bone_visibility": {
+              "hat_1": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 0",
+              "hat_2": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
+              "hat_3": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 2",
+              "hat_4": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 3"
+            }
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "snow",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "_wool_side": {
+              "texture": "red_wool_side",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "snow_block_": {
+              "texture": "snow_block_1a",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "white_wool": {
+              "texture": "white_wool",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, -90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
+        }
+      }
+    ]
+  }
+}

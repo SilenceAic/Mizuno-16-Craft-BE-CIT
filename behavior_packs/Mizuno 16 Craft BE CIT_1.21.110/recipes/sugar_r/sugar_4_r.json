@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:sugar_4"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "S S",
+			"C C"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:sugar"
+			},
+			"C": {
+				"item": "minecraft:copper_ingot"
+			}
+		},
+		"result": {
+			"item": "cit:sugar_4",
+            "count": 1
+		}
+	}
+}

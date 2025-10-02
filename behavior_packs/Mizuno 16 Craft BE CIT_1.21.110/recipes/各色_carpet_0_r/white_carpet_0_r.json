@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:white_carpet_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "S",
+			"C",
+			"S"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:stick"
+			},
+			"C": {
+				"item": "minecraft:white_carpet"
+			}
+		},
+		"result": {
+			"item": "cit:white_carpet_0",
+            "count": 1
+		}
+	}
+}

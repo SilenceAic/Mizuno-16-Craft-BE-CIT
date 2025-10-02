@@ -1,0 +1,173 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.sunflower_0_bottom",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "sunflower_0_4bottom",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "up_0",
+					"parent": "sunflower_0_4bottom",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-7.2402, 6, -1.6402],
+							"size": [15.275, 12, 0],
+							"pivot": [-1.6402, 14, -1.6402],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "plant_bottom"}
+							}
+						},
+						{
+							"origin": [-7.2402, 6, 1.6402],
+							"size": [15.3, 12, 0],
+							"pivot": [-1.6402, 14, 1.6402],
+							"rotation": [0, 45, 0],
+							"uv": {
+								"north": {"uv": [16, 0], "uv_size": [-16, 16], "material_instance": "plant_bottom"}
+							}
+						},
+						{
+							"origin": [-4, 0, -4],
+							"size": [8, 7, 8],
+							"uv": {
+								"north": {"uv": [4, 9], "uv_size": [8, 7], "material_instance": "flower_pot"},
+								"east": {"uv": [4, 9], "uv_size": [8, 7], "material_instance": "flower_pot"},
+								"south": {"uv": [4, 9], "uv_size": [8, 7], "material_instance": "flower_pot"},
+								"west": {"uv": [4, 9], "uv_size": [8, 7], "material_instance": "flower_pot"},
+								"up": {"uv": [8, 8], "uv_size": [-8, -8], "material_instance": "flower_pot"},
+								"down": {"uv": [16, 8], "uv_size": [-8, -8], "material_instance": "flower_pot"}
+							}
+						}
+					]
+				},
+				{
+					"name": "up_22_5",
+					"parent": "sunflower_0_4bottom",
+					"pivot": [0, 0, 0],
+					"rotation": [0, -157.5, 0],
+					"cubes": [
+						{
+							"origin": [-7.2402, 6, -1.6402],
+							"size": [15.275, 12, 0],
+							"pivot": [-1.6402, 14, -1.6402],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "plant_bottom"}
+							}
+						},
+						{
+							"origin": [-7.2402, 6, 1.6402],
+							"size": [15.3, 12, 0],
+							"pivot": [-1.6402, 14, 1.6402],
+							"rotation": [0, 45, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "plant_bottom"}
+							}
+						},
+						{
+							"origin": [-4, 0, -4],
+							"size": [8, 7, 8],
+							"uv": {
+								"north": {"uv": [4, 9], "uv_size": [8, 7], "material_instance": "flower_pot"},
+								"east": {"uv": [4, 9], "uv_size": [8, 7], "material_instance": "flower_pot"},
+								"south": {"uv": [4, 9], "uv_size": [8, 7], "material_instance": "flower_pot"},
+								"west": {"uv": [4, 9], "uv_size": [8, 7], "material_instance": "flower_pot"},
+								"up": {"uv": [8, 8], "uv_size": [-8, -8], "material_instance": "flower_pot"},
+								"down": {"uv": [16, 8], "uv_size": [-8, -8], "material_instance": "flower_pot"}
+							}
+						}
+					]
+				},
+				{
+					"name": "up_45",
+					"parent": "sunflower_0_4bottom",
+					"pivot": [0, 0, 0],
+					"rotation": [0, -135, 0],
+					"cubes": [
+						{
+							"origin": [-7.2402, 6, -1.6402],
+							"size": [15.275, 12, 0],
+							"pivot": [-1.6402, 14, -1.6402],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "plant_bottom"}
+							}
+						},
+						{
+							"origin": [-7.2402, 6, 1.6402],
+							"size": [15.3, 12, 0],
+							"pivot": [-1.6402, 14, 1.6402],
+							"rotation": [0, 45, 0],
+							"uv": {
+								"north": {"uv": [16, 0], "uv_size": [-16, 16], "material_instance": "plant_bottom"}
+							}
+						},
+						{
+							"origin": [-4, 0, -4],
+							"size": [8, 7, 8],
+							"uv": {
+								"north": {"uv": [4, 9], "uv_size": [8, 7], "material_instance": "flower_pot"},
+								"east": {"uv": [4, 9], "uv_size": [8, 7], "material_instance": "flower_pot"},
+								"south": {"uv": [4, 9], "uv_size": [8, 7], "material_instance": "flower_pot"},
+								"west": {"uv": [4, 9], "uv_size": [8, 7], "material_instance": "flower_pot"},
+								"up": {"uv": [8, 8], "uv_size": [-8, -8], "material_instance": "flower_pot"},
+								"down": {"uv": [16, 8], "uv_size": [-8, -8], "material_instance": "flower_pot"}
+							}
+						}
+					]
+				},
+				{
+					"name": "up_67_5",
+					"parent": "sunflower_0_4bottom",
+					"pivot": [0, 0, 0],
+					"rotation": [0, -112.5, 0],
+					"cubes": [
+						{
+							"origin": [-7.2402, 6, -1.6402],
+							"size": [15.275, 12, 0],
+							"pivot": [-1.6402, 14, -1.6402],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "plant_bottom"}
+							}
+						},
+						{
+							"origin": [-7.2402, 6, 1.6402],
+							"size": [15.3, 12, 0],
+							"pivot": [-1.6402, 14, 1.6402],
+							"rotation": [0, 45, 0],
+							"uv": {
+								"north": {"uv": [16, 0], "uv_size": [-16, 16], "material_instance": "plant_bottom"}
+							}
+						},
+						{
+							"origin": [-4, 0, -4],
+							"size": [8, 7, 8],
+							"uv": {
+								"north": {"uv": [4, 9], "uv_size": [8, 7], "material_instance": "flower_pot"},
+								"east": {"uv": [4, 9], "uv_size": [8, 7], "material_instance": "flower_pot"},
+								"south": {"uv": [4, 9], "uv_size": [8, 7], "material_instance": "flower_pot"},
+								"west": {"uv": [4, 9], "uv_size": [8, 7], "material_instance": "flower_pot"},
+								"up": {"uv": [8, 8], "uv_size": [-8, -8], "material_instance": "flower_pot"},
+								"down": {"uv": [16, 8], "uv_size": [-8, -8], "material_instance": "flower_pot"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

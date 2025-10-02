@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:vine_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "   ",
+            " V ",
+            "   "
+		],
+		"key": {
+            "V": {
+				"item": "minecraft:vine"
+			}
+		},
+		"result": {
+			"item": "cit:vine_0",
+            "count": 1
+		}
+	}
+}

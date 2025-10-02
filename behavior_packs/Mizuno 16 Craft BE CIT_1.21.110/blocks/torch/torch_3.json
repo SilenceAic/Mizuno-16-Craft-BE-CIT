@@ -1,0 +1,223 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cit:torch_3",
+      "menu_category": {
+        "category": "items"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": ["minecraft:block_face"]
+        }
+      },
+      "states": {
+        "cit:rotation": {
+          "values": { "min": 0, "max": 15 }
+        },
+        "cit:dynamic_state": {
+          "values": { "min": 0, "max": 2 }
+        },
+        "cit:switch": {
+          "values": { "min": 0, "max": 1 }
+        }
+      }
+    },
+    "components": {
+      "minecraft:geometry": {
+        "identifier": "geometry.cit.torch_3",
+        "bone_visibility": {
+          "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 0",
+          "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
+          "up_45": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 2",
+          "up_67_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 3",
+          "wall": "q.block_state('minecraft:block_face') == 'east' || q.block_state('minecraft:block_face') == 'south' || q.block_state('minecraft:block_face') == 'west' || q.block_state('minecraft:block_face') == 'north'",
+          "inventory": "q.block_state('minecraft:block_face') != 'up' && q.block_state('minecraft:block_face') != 'east' && q.block_state('minecraft:block_face') != 'south' && q.block_state('minecraft:block_face') != 'west' && q.block_state('minecraft:block_face') != 'north'"
+        }
+      },
+      "minecraft:collision_box": {
+        "origin": [-3.5, 0, -3.5],
+        "size": [7, 12, 7]
+      },
+      "minecraft:selection_box": {
+        "origin": [-3.5, 0, -3.5],
+        "size": [7, 12, 7]
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "torch_3",
+          "render_method": "blend",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        },
+        "torch_holder": {
+          "texture": "torch_holder",
+          "render_method": "blend",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        }
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": ["up", "south", "east", "west", "north"]
+          }
+        ]
+      },
+      "cit:rotation": {},
+      "cit:dynamic_state": {},
+      "cit:switch": {},
+      "tag:cit:three_states": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('cit:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, -90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:dynamic_state') == 1 && q.block_state('cit:switch') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "torch_3a",
+              "render_method": "blend",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "torch_holder": {
+              "texture": "torch_holder",
+              "render_method": "blend",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:dynamic_state') == 2 && q.block_state('cit:switch') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "torch_3",
+              "render_method": "blend",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "torch_holder": {
+              "texture": "torch_holder",
+              "render_method": "blend",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:dynamic_state') == 0 && q.block_state('cit:switch') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "torch_3",
+              "render_method": "blend",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "torch_holder": {
+              "texture": "torch_holder",
+              "render_method": "blend",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'east' || q.block_state('minecraft:block_face') == 'south' || q.block_state('minecraft:block_face') == 'west' || q.block_state('minecraft:block_face') == 'north'",
+        "components": {
+          "minecraft:collision_box": {
+            "origin": [-3.5, 4, -1],
+            "size": [7, 11, 7]
+          },
+          "minecraft:selection_box": {
+            "origin": [-3.5, 4, -1],
+            "size": [7, 11, 7]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:dynamic_state') == 1 && q.block_state('cit:switch') == 1",
+        "components": {
+          "minecraft:light_emission": 15,
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "torch_3a_e",
+              "render_method": "blend",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "torch_holder": {
+              "texture": "torch_holder",
+              "render_method": "blend",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:dynamic_state') == 2 && q.block_state('cit:switch') == 1",
+        "components": {
+          "minecraft:light_emission": 15,
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "torch_3b_e",
+              "render_method": "blend",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "torch_holder": {
+              "texture": "torch_holder",
+              "render_method": "blend",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:dynamic_state') == 0 && q.block_state('cit:switch') == 1",
+        "components": {
+          "minecraft:light_emission": 15,
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "torch_3_e",
+              "render_method": "blend",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "torch_holder": {
+              "texture": "torch_holder",
+              "render_method": "blend",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          }
+        }
+      }
+    ]
+  }
+}

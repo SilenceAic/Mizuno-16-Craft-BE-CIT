@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:birch_sapling_4"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "DBD",
+            " D "
+		],
+		"key": {
+            "D": {
+				"item": "minecraft:bamboo"
+			},
+			"B": {
+				"item": "minecraft:birch_sapling"
+			}
+		},
+		"result": {
+			"item": "cit:birch_sapling_4",
+            "count": 1
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:birch_sapling_2"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "QBQ",
+            " Q "
+		],
+		"key": {
+            "Q": {
+				"item": "minecraft:quartz"
+			},
+			"B": {
+				"item": "minecraft:birch_sapling"
+			}
+		},
+		"result": {
+			"item": "cit:birch_sapling_2",
+            "count": 1
+		}
+	}
+}
