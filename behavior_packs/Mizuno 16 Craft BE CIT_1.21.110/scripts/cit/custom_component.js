@@ -12,7 +12,7 @@ import {
 } from "./custom_function";
 
 const components = new Map();
-
+//初始化旋转状态组件
 components.set("cit:rotation", {
   /**
    * 在玩家放置方块前触发的回调函数，用于根据玩家的旋转角度设置方块的旋转状态
