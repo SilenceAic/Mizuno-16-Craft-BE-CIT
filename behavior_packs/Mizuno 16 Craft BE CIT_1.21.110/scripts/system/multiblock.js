@@ -66,35 +66,35 @@ export class MultiblockComponent {
     const stateKeys = Object.keys(states);
     const stateCount = stateKeys.length;
 
-    // ⚡ 在同一个 tick 内同步放置所有方块（零延迟！）
-    for (let i = 0; i < totalBlocks; i++) {
-      const targetBlock = placementBlocks[i];
-      if (!targetBlock) continue;
-
-      try {
-        states[index] = i;
-        let newPermutation = permutationToPlace;
-
-        for (let j = 0; j < stateCount; j++) {
-          const key = stateKeys[j];
-          try {
-            newPermutation = newPermutation.withState(key, states[key]);
-          } catch (e) {}
-        }
-
-        if (onSetPermutation) {
-          newPermutation = onSetPermutation(newPermutation, i, event);
-        }
-
-        // 直接同步放置，无延迟！
-        targetBlock.setPermutation(newPermutation);
-      } catch (e) {
-        console.error(`Failed to set block at index ${i}:`, e);
-      }
-    }
-
-    // 播放音效（异步，不阻塞）
+    // ⚡ 延迟到下一个 tick 放置所有方块（修复权限问题）
     system.run(() => {
+      for (let i = 0; i < totalBlocks; i++) {
+        const targetBlock = placementBlocks[i];
+        if (!targetBlock) continue;
+
+        try {
+          states[index] = i;
+          let newPermutation = permutationToPlace;
+
+          for (let j = 0; j < stateCount; j++) {
+            const key = stateKeys[j];
+            try {
+              newPermutation = newPermutation.withState(key, states[key]);
+            } catch (e) {}
+          }
+
+          if (onSetPermutation) {
+            newPermutation = onSetPermutation(newPermutation, i, event);
+          }
+
+          // 在 system.run 中放置，解决权限问题
+          targetBlock.setPermutation(newPermutation);
+        } catch (e) {
+          console.error(`Failed to set block at index ${i}:`, e);
+        }
+      }
+
+      // 播放音效
       dimension.playSound(totalBlocks >= 8 ? "dig.stone" : "dig.wood", block.location);
     });
   }
