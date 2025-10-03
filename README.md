@@ -214,6 +214,7 @@ Mizuno 16 Craft BE CIT/
 
 ### 相關連結
 
+- Mizuno作品页：[https://mizunomcmemo.blogspot.com/]
 - B站主頁: [https://space.bilibili.com/487185196](https://space.bilibili.com/487185196?spm_id_from=333.337.0.0)
 
 ---
