@@ -6,7 +6,7 @@
 ![Version](https://img.shields.io/badge/版本-1.2.0-blue.svg)
 ![License](https://img.shields.io/badge/許可證-MIT-yellow.svg)
 
-一個將 Java 版 Mizuno 16 Craft CIT 移植到基岩版的資源包項目
+一個將 Java 版 Mizuno 16 Craft CIT 移植到基岩版的項目
 
 [項目簡介](#項目簡介) • [功能特性](#功能特性) • [開發指南](#開發指南) • [貢獻](#貢獻)
 
@@ -18,7 +18,7 @@
 
 ## 📖 項目簡介
 
-**Mizuno 16 Craft BE CIT** 是基於 Java 版 Mizuno 16 Craft 1.20.1 CIT 移植到 Minecraft 基岩版的資源包和行為包項目。本項目透過 TypeScript 和腳本 API 實現了自訂物品紋理（CIT）功能，讓基岩版玩家也能享受到 Java 版的精美紋理體驗。
+**Mizuno 16 Craft BE CIT** 是基於 Java 版 Mizuno 16 Craft 1.20.1 CIT 的基岩版移植項目。本項目透過 TypeScript 和腳本 API 實現了自訂物品紋理（CIT）功能，讓基岩版玩家也能享受到 Java 版的精美紋理體驗。
 
 <a id="功能特性"></a>
 
@@ -54,31 +54,6 @@
 
 - **Minecraft 基岩版**: 1.21.90 或更高版本
 - **平台支援**: Windows 10/11, Xbox, PlayStation, Android, iOS, Nintendo Switch
-
----
-
-## 📥 安装说明
-
-### 方法一：直接安装（推荐给玩家）
-
-1. 下载本项目的 Release 版本
-2. 解压后双击 `.mcaddon` 文件自动导入
-3. 在游戏中创建新世界或编辑现有世界
-4. 在**资源包**和**行为包**列表中激活
-
-### 方法二：手动安装
-
-1. 克隆或下载本仓库
-
-```bash
-git clone https://github.com/UserName/Mizuno-16-Craft-BE-CIT.git
-```
-
-2. 将文件夹复制到 Minecraft 目录：
-   - **资源包**: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_packs\`
-   - **行为包**: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\behavior_packs\`
-
-3. 在游戏中激活资源包和行为包
 
 ---
 
