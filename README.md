@@ -57,6 +57,31 @@
 
 ---
 
+## 📥 安装说明
+
+### 方法一：直接安装（推荐给玩家）
+
+1. 下载本项目的 Release 版本
+2. 解压后双击 `.mcaddon` 文件自动导入
+3. 在游戏中创建新世界或编辑现有世界
+4. 在**资源包**和**行为包**列表中激活
+
+### 方法二：手动安装
+
+1. 克隆或下载本仓库
+
+```bash
+git clone https://github.com/你的用户名/Mizuno-16-Craft-BE-CIT.git
+```
+
+2. 将文件夹复制到 Minecraft 目录：
+   - **资源包**: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_packs\`
+   - **行为包**: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\behavior_packs\`
+
+3. 在游戏中激活资源包和行为包
+
+---
+
 <a id="開發指南"></a>
 
 ## 🛠️ 開發指南
@@ -156,33 +181,6 @@ Mizuno 16 Craft BE CIT/
 2. 執行 `npm run 1` 啟動監視模式
 3. 在 Minecraft 中測試變更（使用 `/reload` 命令重新載入腳本）
 4. 準備發布時執行 `npm run 2` 生成 .mcaddon 檔案
-
----
-
-## 🎨 自訂紋理功能
-
-本項目實現了以下自訂紋理功能：
-
-### 方塊變體
-
-- **樹葉**: 橡樹、白樺、雲杉、叢林樹葉的多種變體
-- **樹苗**: 各種樹苗的生長階段紋理
-- **植物**: 多種花卉和植物的變體紋理
-- **藤蔓**: 6 種不同的藤蔓紋理
-- **草**: 7 種草的隨機紋理
-- **原木**: 橡木原木的變體
-
-### 物品紋理
-
-- **工作台**: 8 種不同的工作台紋理
-- **箱子**: 5 種箱子變體
-- **火把**: 10 種火把變體
-- **方塊**: 包括金塊、南瓜、雪塊等的多種變體
-
-### 羊毛和地毯
-
-- 16 種顏色的羊毛變體
-- 16 種顏色的地毯變體
 
 ---
 
