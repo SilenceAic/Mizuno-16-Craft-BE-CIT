@@ -74,7 +74,7 @@
 1. **克隆倉庫**
 
 ```bash
-git clone https://github.com/UserName/Mizuno-16-Craft-BE-CIT.git
+git clone https://github.com/SilenceAic/Mizuno-16-Craft-BE-CIT.git
 cd Mizuno-16-Craft-BE-CIT
 ```
 
@@ -204,7 +204,7 @@ Mizuno 16 Craft BE CIT/
 
 如果你遇到任何問題或有建議，請：
 
-1. 在 [Issues](https://github.com/你的用戶名/Mizuno-16-Craft-BE-CIT/issues) 頁面建立新問題
+1. 在 [Issues](https://github.com/SilenceAic/Mizuno-16-Craft-BE-CIT/issues) 頁面建立新問題
 2. 提供詳細的問題描述和複現步驟
 3. 附上你的 Minecraft 版本和裝置資訊
 

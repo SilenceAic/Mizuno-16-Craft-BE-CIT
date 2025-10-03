@@ -1,8 +1,8 @@
 {
-  "name": "scripting-starter",
-  "version": "0.1.0",
-  "productName": "Minecraft TypeScript Starter Project",
-  "description": "Minecraft TypeScript Starter Project",
+  "name": "mizuno-16-craft-be-cit",
+  "version": "1.2.0",
+  "productName": "Mizuno 16 Craft BE CIT",
+  "description": "Conversion of Mizuno 16 Craft JE CIT to Bedrock Edition",
   "private": true,
   "devDependencies": {
     "@minecraft/core-build-tasks": "^5.2.0",
