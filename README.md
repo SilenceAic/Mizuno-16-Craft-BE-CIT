@@ -82,15 +82,6 @@ cd Mizuno-16-Craft-BE-CIT
 npm install
 ```
 
-3. **配置環境變數**（可選）
-
-   建立 `.env` 檔案並配置：
-
-```
-PROJECT_NAME="Mizuno 16 Craft BE CIT_1.21.110"
-MINECRAFT_PRODUCT="BedrockUWP"
-```
-
 ### 可用的 NPM 命令
 
 ```bash
