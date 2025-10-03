@@ -52,7 +52,7 @@
 
 ## 🎯 適用版本
 
-- **Minecraft 基岩版**: 1.21.80 或更高版本
+- **Minecraft 基岩版**: 1.21.90 或更高版本
 - **平台支援**: Windows 10/11, Xbox, PlayStation, Android, iOS, Nintendo Switch
 
 ---
@@ -71,7 +71,7 @@
 1. 克隆或下载本仓库
 
 ```bash
-git clone https://github.com/你的用户名/Mizuno-16-Craft-BE-CIT.git
+git clone https://github.com/UserName/Mizuno-16-Craft-BE-CIT.git
 ```
 
 2. 将文件夹复制到 Minecraft 目录：
@@ -99,7 +99,7 @@ git clone https://github.com/你的用户名/Mizuno-16-Craft-BE-CIT.git
 1. **克隆倉庫**
 
 ```bash
-git clone https://github.com/你的用戶名/Mizuno-16-Craft-BE-CIT.git
+git clone https://github.com/UserName/Mizuno-16-Craft-BE-CIT.git
 cd Mizuno-16-Craft-BE-CIT
 ```
 
