@@ -48,10 +48,11 @@
           "face_dimming": true
         },
         "spruce_leaves": {
-          "texture": "spruce_leaves_carried",
+          "texture": "cit:spruce_leaves",
           "render_method": "alpha_test",
           "ambient_occlusion": true,
-          "face_dimming": true
+          "face_dimming": true,
+          "tint_method": "evergreen_foliage"
         }
       },
       "cit:rotation": {},

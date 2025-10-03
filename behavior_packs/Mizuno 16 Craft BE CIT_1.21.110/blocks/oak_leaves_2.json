@@ -41,10 +41,11 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "oak_leaves_carried",
+          "texture": "cit:oak_leaves",
           "render_method": "alpha_test",
           "ambient_occlusion": true,
-          "face_dimming": true
+          "face_dimming": true,
+          "tint_method": "default_foliage"
         },
         "plant": {
           "texture": "oak_leaves_2",
@@ -74,10 +75,11 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "leaves_carried",
+              "texture": "cit:oak_leaves",
               "render_method": "alpha_test",
               "ambient_occlusion": true,
-              "face_dimming": true
+              "face_dimming": true,
+              "tint_method": "default_foliage"
             },
             "plant": {
               "texture": "oak_leaves_2a",

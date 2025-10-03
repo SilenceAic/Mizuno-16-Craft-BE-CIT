@@ -746,6 +746,9 @@
     "jungle_sapling_2_01": {
       "textures": "textures/blocks/cit/jungle_sapling_2_01"
     },
+    "cit:oak_leaves": {
+      "textures": "textures/blocks/cit/oak_leaves"
+    },
     "oak_leaves_0": {
       "textures": "textures/blocks/cit/oak_leaves_0"
     },
@@ -772,6 +775,9 @@
     },
     "ornament_0": {
       "textures": "textures/blocks/cit/ornament_0"
+    },
+    "cit:spruce_leaves": {
+      "textures": "textures/blocks/cit/spruce_leaves"
     },
     "spruce_leaves_2": {
       "textures": "textures/blocks/cit/spruce_leaves_2"
