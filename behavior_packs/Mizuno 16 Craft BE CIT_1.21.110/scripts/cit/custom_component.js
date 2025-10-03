@@ -271,5 +271,5 @@ components.set("cit:multidestory", {
     }
   },
 });
-//你好！
+//你好！你好！
 export default components;
