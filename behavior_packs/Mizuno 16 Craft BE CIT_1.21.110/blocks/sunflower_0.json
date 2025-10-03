@@ -44,7 +44,7 @@
           "texture": "flower_pot_l_0c",
           "render_method": "alpha_test",
           "ambient_occlusion": true,
-          "face_dimming": true
+          "face_dimming": false
         },
         "flower_pot": {
           "texture": "flower_pot_l_0c",
