@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:crafting_table_5"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:air"
+			}
+		},
+		"result": {
+			"item": "cit:crafting_table_5",
+			"count": 1
+		}
+	}
+}
