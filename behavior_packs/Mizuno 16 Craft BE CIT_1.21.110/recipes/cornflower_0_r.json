@@ -2,7 +2,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "cit:crafting_table_0",
+			"identifier": "cit:cornflower_0",
 			"_comment": "⚠️ 空配方 - 需要填写实际合成材料"
 		},
 		"tags": [
@@ -17,7 +17,7 @@
 			}
 		},
 		"result": {
-			"item": "cit:crafting_table_0",
+			"item": "cit:cornflower_0",
 			"count": 1
 		}
 	}

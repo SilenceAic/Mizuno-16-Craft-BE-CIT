@@ -2,7 +2,8 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "cit:crafting_table_5"
+			"identifier": "cit:crafting_table_5",
+			"_comment": "⚠️ 空配方 - 需要填写实际合成材料"
 		},
 		"tags": [
 			"crafting_table"

@@ -1,27 +1,22 @@
 {
-	"format_version": "1.12",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "cit:wither_rose_0"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-            "W",
-            "F"
-		],
-		"key": {
-            "F": {
-				"item": "minecraft:flower_pot"
-			},
-			"W": {
-				"item": "minecraft:wither_rose"
-			}
-		},
-		"result": {
-			"item": "cit:wither_rose_0",
-            "count": 1
-		}
-	}
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cit:wither_rose_0"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["W", "F"],
+    "key": {
+      "F": {
+        "item": "minecraft:flower_pot"
+      },
+      "W": {
+        "item": "minecraft:wither_rose"
+      }
+    },
+    "result": {
+      "item": "cit:wither_rose_0",
+      "count": 1
+    }
+  }
 }
