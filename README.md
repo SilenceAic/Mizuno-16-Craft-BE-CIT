@@ -6,8 +6,6 @@
 ![Version](https://img.shields.io/badge/版本-1.2.0-blue.svg)
 ![License](https://img.shields.io/badge/許可證-MIT-yellow.svg)
 
-一個將 Java 版 Mizuno 16 Craft CIT 移植到基岩版的項目
-
 [項目簡介](#項目簡介) • [功能特性](#功能特性) • [開發指南](#開發指南) • [貢獻](#貢獻)
 
 </div>
