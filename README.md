@@ -229,8 +229,8 @@ Mizuno 16 Craft BE CIT/
 
 - **@Mizuno** - 原作者（Java 版）
 - **@LingAic** - 基岩版移植
-- **@TBQ4416** - 开发贡献
-- **@Fallen.** - 开发贡献
+- **@TBQ4416** - 前輩
+- **@Fallen.** - 資源包貢獻
 
 ### 相关链接
 
