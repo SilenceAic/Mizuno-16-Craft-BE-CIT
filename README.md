@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.80+-green.svg)
+![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.90+-green.svg)
 ![Version](https://img.shields.io/badge/版本-1.2.0-blue.svg)
 ![License](https://img.shields.io/badge/許可證-MIT-yellow.svg)
 
