@@ -1,0 +1,47 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.cit.player.sleep": {
+      "loop": true,
+      "animation_length": 5.1,
+      "override_previous_animation": true,
+      "bones": {
+        "root": {
+          "rotation": [-90, "-q.ride_body_y_rotation + (Math.round(q.ride_body_y_rotation / 90) * 90)", 0],
+          "position": [0, 9.5, -8]
+        },
+        "waist": {
+          "rotation": ["3 - 0.5 * math.sin(q.anim_time * 90)", 0, 0]
+        },
+        "head": {
+          "rotation": ["15 + 3 * math.sin(q.anim_time * 90 + math.cos(q.anim_time * 90) * 30)", 0, 0]
+        },
+        "leftArm": {
+          "rotation": ["0.5 * math.sin(q.anim_time * 90)", 5, -2.5],
+          "position": [0, -0.2, "0.1 - 0.1 * math.sin(q.anim_time * 90)"]
+        },
+        "rightArm": {
+          "rotation": ["0.5 * math.sin(q.anim_time * 90)", -5, 2.5],
+          "position": [0, -0.2, "0.1 - 0.1 * math.sin(q.anim_time * 90)"]
+        },
+        "leftLeg": {
+          "rotation": [0, 0, -2]
+        },
+        "rightLeg": {
+          "rotation": [0, 0, 2]
+        }
+      }
+    },
+    "animation.cit.player.sleep_end": {
+      "loop": false,
+      "animation_length": 0.01,
+      "override_previous_animation": true,
+      "bones": {
+        "root": {
+          "rotation": [0, 0, 0],
+          "position": [0, 0, 0]
+        }
+      }
+    }
+  }
+}

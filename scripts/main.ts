@@ -1,11 +1,10 @@
-import { world, system } from "@minecraft/server";
+import * as server from "@minecraft/server";
+import blockComponents from "./cit/custom_component";
 
-function mainTick() {
-  if (system.currentTick % 100 === 0) {
-    world.sendMessage("Hello starter! Tick: " + system.currentTick);
-  }
+server.system.beforeEvents.startup.subscribe((data) => {
+  const blockCustoms = [...blockComponents.values()];
+  const blockNames = [...blockComponents.keys()];
 
-  system.run(mainTick);
-}
-
-system.run(mainTick);
+  for (let blockIndex = 0; blockIndex < blockCustoms.length; blockIndex++)
+    data.blockComponentRegistry.registerCustomComponent(blockNames[blockIndex], blockCustoms[blockIndex]);
+});

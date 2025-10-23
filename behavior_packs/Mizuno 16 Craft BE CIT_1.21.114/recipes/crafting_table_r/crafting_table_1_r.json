@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cit:crafting_table_1"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["O", "I"],
+    "key": {
+      "O": {
+        "item": "minecraft:oak_log"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "cit:crafting_table_1",
+      "count": 1
+    }
+  }
+}

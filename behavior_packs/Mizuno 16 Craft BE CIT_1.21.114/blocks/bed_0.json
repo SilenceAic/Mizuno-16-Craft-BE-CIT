@@ -1,0 +1,135 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cit:bed_0",
+      "menu_category": {
+        "category": "construction"
+      },
+      "states": {
+        "cit:multiblock_index": [0, 1]
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"]
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 270, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:multiblock_index') != 0",
+        "components": {
+          "minecraft:loot": "loot_tables/empty.json"
+        }
+      },
+      {
+        "condition": "q.block_state('cit:multiblock_index') == 0",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bed_bottom"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:multiblock_index') == 1",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bed_front"
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:item_visual": {
+        "geometry": {
+          "identifier": "geometry.bed_item"
+        },
+        "material_instances": {
+          "*": {
+            "texture": "bed_0",
+            "render_method": "alpha_test",
+            "face_dimming": true,
+            "ambient_occlusion": true
+          },
+          "bed_0_01": {
+            "texture": "bed_white",
+            "render_method": "alpha_test",
+            "face_dimming": true,
+            "ambient_occlusion": true
+          }
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "bed_0",
+          "render_method": "alpha_test",
+          "face_dimming": true,
+          "ambient_occlusion": true
+        },
+        "bed_0_01": {
+          "texture": "bed_white",
+          "render_method": "alpha_test",
+          "face_dimming": true,
+          "ambient_occlusion": true
+        }
+      },
+      "tag:cit:bed": {},
+      "tag:cit:bed_0": {},
+      "minecraft:collision_box": {
+        "origin": [-8, 0, -8],
+        "size": [16, 9, 16]
+      },
+      "minecraft:selection_box": {
+        "origin": [-8, 0, -8],
+        "size": [16, 9, 16]
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.4
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1.0
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:map_color": "#FFFFFF",
+      "cit:multiblock": {
+        "size": [1, 1, 2],
+        "index": "cit:multiblock_index",
+        "rotate": true
+      },
+      "cit:bed_sleep": {},
+      "cit:bed_bounce": {}
+    }
+  }
+}

@@ -25,7 +25,6 @@
 - 🎨 **自訂物品紋理（CIT）**：支援基於物品屬性的動態紋理切換
 - 🌳 **豐富的方塊變體**：包含多種植物、方塊的隨機紋理變體
 - ✨ **光線追蹤支援**：兼容 RTX 光線追蹤渲染
-- 🔧 **模組化設計**：使用 TypeScript 開發，易於維護和擴展
 
 ### 📦 包含內容
 
@@ -50,7 +49,7 @@
 
 ## 🎯 適用版本
 
-- **Minecraft 基岩版**: 1.21.90 或更高版本
+- **Minecraft 基岩版**: 1.21.110 或更高版本
 - **平台支援**: Windows 10/11, Xbox, PlayStation, Android, iOS, Nintendo Switch
 
 ---
@@ -64,24 +63,9 @@
 在開始之前，請確保已安裝以下工具：
 
 - [Node.js](https://nodejs.org/) (LTS 版本)
-- [Visual Studio Code](https://code.visualstudio.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-### 開發環境設置
-
-1. **克隆倉庫**
-
-```bash
-git clone https://github.com/SilenceAic/Mizuno-16-Craft-BE-CIT.git
-cd Mizuno-16-Craft-BE-CIT
-```
-
-2. **安裝依賴**
-
-```bash
-npm install
-```
-
+````
 ### 可用的 NPM 命令
 
 ```bash
@@ -105,67 +89,7 @@ npm run lint
 
 # 清理構建檔案
 npm run clean
-```
-
-### 項目結構
-
-```
-Mizuno 16 Craft BE CIT/
-├── behavior_packs/          # 行為包
-│   └── Mizuno 16 Craft BE CIT_1.21.110/
-│       ├── blocks/          # 方塊定義
-│       ├── entities/        # 實體定義
-│       ├── functions/       # 函數檔案
-│       ├── items/           # 物品定義
-│       ├── scripts/         # JavaScript 腳本
-│       │   ├── cit/        # CIT 系統腳本
-│       │   └── system/     # 系統腳本
-│       └── manifest.json   # 行為包清單
-│
-├── resource_packs/          # 資源包
-│   └── Mizuno 16 Craft BE CIT_1.21.110/
-│       ├── animations/      # 動畫
-│       ├── entity/          # 實體模型
-│       ├── models/          # 方塊和實體模型
-│       ├── textures/        # 紋理貼圖
-│       ├── particles/       # 粒子效果
-│       └── manifest.json   # 資源包清單
-│
-├── scripts/                 # TypeScript 原始碼
-│   └── main.ts             # 主入口檔案
-│
-├── package.json            # NPM 配置
-├── tsconfig.json           # TypeScript 配置
-└── just.config.ts          # 構建配置
-```
-
-### 開發工作流
-
-1. 編輯 TypeScript 程式碼在 `scripts/` 目錄
-2. 執行 `npm run 1` 啟動監視模式
-3. 在 Minecraft 中測試變更（使用 `/reload` 命令重新載入腳本）
-4. 準備發布時執行 `npm run 2` 生成 .mcaddon 檔案
-
----
-
-<a id="貢獻"></a>
-
-## 🤝 貢獻
-
-歡迎貢獻！如果你想為項目做出貢獻：
-
-1. Fork 本倉庫
-2. 建立你的特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交你的更改 (`git commit -m '新增某個很棒的功能'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 開啟一個 Pull Request
-
-### 貢獻指南
-
-- 遵循現有的程式碼風格
-- 為新功能新增適當的註解
-- 測試你的更改確保不會破壞現有功能
-- 更新相關文件
+````
 
 ---
 

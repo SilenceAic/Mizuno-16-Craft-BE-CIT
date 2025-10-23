@@ -22,16 +22,16 @@ setupEnvironment(path.resolve(__dirname, ".env"));
 const projectName = getOrThrowFromProcess("PROJECT_NAME");
 
 // You can use `npm run build:production` to build a "production" build that strips out statements labelled with "dev:".
-const isProduction = argv()['production'];
+const isProduction = argv()["production"];
 
 const bundleTaskOptions: BundleTaskParameters = {
   entryPoint: path.join(__dirname, "./scripts/main.ts"),
-  external: ["@minecraft/server", "@minecraft/server-ui"],
+  external: ["@minecraft/server", "@minecraft/server-ui", "./cit/custom_component"],
   outfile: path.resolve(__dirname, "./dist/scripts/main.js"),
   minifyWhitespace: false,
   sourcemap: true,
   outputSourcemapPath: path.resolve(__dirname, "./dist/debug"),
-  dropLabels: isProduction ? ['dev'] : undefined
+  dropLabels: isProduction ? ["dev"] : undefined,
 };
 
 const copyTaskOptions: CopyTaskParameters = {

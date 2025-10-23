@@ -1,0 +1,46 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.None",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "up_0",
+					"parent": "bone",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "up_22_5",
+					"parent": "bone",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "up_45",
+					"parent": "bone",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "up_67_5",
+					"parent": "bone",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "inventory",
+					"parent": "bone",
+					"pivot": [0, 0, 0]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,123 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cit:bed_entity",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "add_invisibility": {
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "invisibility",
+              "duration": 1000000,
+              "visible": false
+            }
+          ]
+        }
+      },
+      "instant_despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["cit_bed", "inanimate"]
+      },
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_mob_effect",
+                  "operator": "!=",
+                  "value": "invisibility"
+                }
+              ]
+            },
+            "event": "add_invisibility"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "rider_count",
+                  "value": 0
+                }
+              ]
+            },
+            "event": "instant_despawn"
+          }
+        ]
+      },
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "pull_in_entities": true,
+        "rider_can_interact": false,
+        "seats": {
+          "position": [0.0, 0.0, 0.0],
+          "lock_rider_rotation": 45,
+          "rotate_rider_by": "q.ride_body_y_rotation"
+        }
+      },
+      "minecraft:custom_hit_test": {
+        "hitboxes": [
+          {
+            "width": 0.0,
+            "height": 0.0,
+            "pivot": [0, 10.0, 0]
+          }
+        ]
+      },
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:persistent": {}
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": ["add_invisibility"]
+        }
+      },
+      "add_invisibility": {
+        "add": {
+          "component_groups": ["add_invisibility"]
+        }
+      },
+      "instant_despawn": {
+        "add": {
+          "component_groups": ["instant_despawn"]
+        }
+      }
+    }
+  }
+}
