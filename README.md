@@ -1,8 +1,8 @@
-# Mizuno 16 Craft BE CIT
+**# Mizuno 16 Craft BE CIT
 
 <div align="center">
 
-![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.90+-green.svg)
+![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.110+-green.svg)
 ![Version](https://img.shields.io/badge/版本-1.2.0-blue.svg)
 ![License](https://img.shields.io/badge/許可證-MIT-yellow.svg)
 
@@ -148,3 +148,4 @@ npm run clean
 **Made with ❤️ for Minecraft Community**
 
 </div>
+**
