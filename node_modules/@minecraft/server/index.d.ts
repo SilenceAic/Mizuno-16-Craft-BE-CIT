@@ -15,7 +15,7 @@
  * ```json
  * {
  *   "module_name": "@minecraft/server",
- *   "version": "2.3.0"
+ *   "version": "2.4.0"
  * }
  * ```
  *
@@ -227,6 +227,20 @@ export enum ContainerRulesErrorReason {
      *
      */
     ZeroWeightItem = 'ZeroWeightItem',
+}
+
+/**
+ * Control Scheme types which define how the player moves in
+ * response to player inputs.
+ * See the following page for more details on control schemes:
+ * https://learn.microsoft.com/en-us/minecraft/creator/documents/controlschemes
+ */
+export enum ControlScheme {
+    CameraRelative = 'CameraRelative',
+    CameraRelativeStrafe = 'CameraRelativeStrafe',
+    LockedPlayerRelativeStrafe = 'LockedPlayerRelativeStrafe',
+    PlayerRelative = 'PlayerRelative',
+    PlayerRelativeStrafe = 'PlayerRelativeStrafe',
 }
 
 /**
@@ -631,6 +645,7 @@ export enum EnchantmentSlot {
     FishingRod = 'FishingRod',
     Flintsteel = 'Flintsteel',
     Hoe = 'Hoe',
+    MeleeSpear = 'MeleeSpear',
     Pickaxe = 'Pickaxe',
     Shears = 'Shears',
     Shield = 'Shield',
@@ -1139,6 +1154,7 @@ export enum EntityDamageCause {
      *
      */
     contact = 'contact',
+    dehydration = 'dehydration',
     /**
      * @remarks
      * Damage caused by an Entity being out of air and inside a
@@ -2010,6 +2026,7 @@ export enum ItemComponentTypes {
      */
     Food = 'minecraft:food',
     Inventory = 'minecraft:inventory',
+    Potion = 'minecraft:potion',
 }
 
 /**
@@ -2035,6 +2052,27 @@ export enum ItemLockMode {
      *
      */
     slot = 'slot',
+}
+
+/**
+ * Specifies how to handle waterloggable blocks overlapping
+ * with existing liquid.
+ */
+export enum LiquidSettings {
+    /**
+     * @remarks
+     * Causes a waterloggable block to become waterlogged, if it
+     * overlaps with existing liquid.
+     *
+     */
+    ApplyWaterlogging = 'ApplyWaterlogging',
+    /**
+     * @remarks
+     * Do not waterlog any waterloggable blocks that overlap
+     * existing liquid.
+     *
+     */
+    IgnoreWaterlogging = 'IgnoreWaterlogging',
 }
 
 /**
@@ -2698,11 +2736,15 @@ export type BlockComponentTypeMap = {
     'minecraft:map_color': BlockMapColorComponent;
     'minecraft:movable': BlockMovableComponent;
     'minecraft:piston': BlockPistonComponent;
+    'minecraft:precipitation_interactions': BlockPrecipitationInteractionsComponent;
     'minecraft:record_player': BlockRecordPlayerComponent;
+    'minecraft:redstone_producer': BlockRedstoneProducerComponent;
     'minecraft:sign': BlockSignComponent;
     movable: BlockMovableComponent;
     piston: BlockPistonComponent;
+    precipitation_interactions: BlockPrecipitationInteractionsComponent;
     record_player: BlockRecordPlayerComponent;
+    redstone_producer: BlockRedstoneProducerComponent;
     sign: BlockSignComponent;
 };
 
@@ -2880,6 +2922,8 @@ export type ItemComponentTypeMap = {
     'minecraft:enchantable': ItemEnchantableComponent;
     'minecraft:food': ItemFoodComponent;
     'minecraft:inventory': ItemInventoryComponent;
+    'minecraft:potion': ItemPotionComponent;
+    potion: ItemPotionComponent;
 };
 
 /**
@@ -3463,6 +3507,34 @@ export class BlockComponent extends Component {
      *
      */
     readonly block: Block;
+}
+
+/**
+ * Contains information regarding a specific block being
+ * broken.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class BlockComponentBlockBreakEvent extends BlockEvent {
+    private constructor();
+    /**
+     * @remarks
+     * The block that caused destruction.
+     *
+     */
+    readonly blockDestructionSource?: Block;
+    /**
+     * @remarks
+     * Returns permutation information about this block before it
+     * was broken.
+     *
+     */
+    readonly brokenBlockPermutation: BlockPermutation;
+    /**
+     * @remarks
+     * The Actor that caused destruction.
+     *
+     */
+    readonly entitySource?: Entity;
 }
 
 /**
@@ -4215,6 +4287,37 @@ export class BlockPistonComponent extends BlockComponent {
     getAttachedBlocksLocations(): Vector3[];
 }
 
+// @ts-ignore Class inheritance allowed for native defined classes
+export class BlockPrecipitationInteractionsComponent extends BlockComponent {
+    private constructor();
+    static readonly componentId = 'minecraft:precipitation_interactions';
+    /**
+     * @remarks
+     * Returns `true` if falling snow will accumulate naturally on
+     * the block. Returns `false` if snow will not accumulate on
+     * the block.
+     *
+     * @throws This function can throw errors.
+     *
+     * {@link LocationInUnloadedChunkError}
+     *
+     * {@link LocationOutOfWorldBoundariesError}
+     */
+    accumulatesSnow(): boolean;
+    /**
+     * @remarks
+     * Returns `true` if rain will not go through the block.
+     * Returns `false` if rain should go through the block.
+     *
+     * @throws This function can throw errors.
+     *
+     * {@link LocationInUnloadedChunkError}
+     *
+     * {@link LocationOutOfWorldBoundariesError}
+     */
+    obstructsRain(): boolean;
+}
+
 /**
  * Represents a block that can play a record.
  */
@@ -4277,6 +4380,52 @@ export class BlockRecordPlayerComponent extends BlockComponent {
      * @throws This function can throw errors.
      */
     setRecord(recordItemType?: ItemType | string, startPlaying?: boolean): void;
+}
+
+/**
+ * Represents a block that can output a redstone signal.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class BlockRedstoneProducerComponent extends BlockComponent {
+    private constructor();
+    /**
+     * @remarks
+     * Gets the power that this block outputs to circuit system.
+     * Returns error if block is no longer valid or if block
+     * doesn't have a 'minecraft:redstone_producer' component.
+     *
+     * @throws This property can throw when used.
+     *
+     * {@link InvalidBlockComponentError}
+     */
+    readonly power: number;
+    static readonly componentId = 'minecraft:redstone_producer';
+    /**
+     * @remarks
+     * Gets the faces of this block that can connect to the circuit
+     * and output power. Returns error if block is no longer valid
+     * or if block doesn't have a 'minecraft:redstone_producer'
+     * component.
+     *
+     * @throws This function can throw errors.
+     *
+     * {@link InvalidBlockComponentError}
+     */
+    getConnectedFaces(): Direction[];
+    /**
+     * @remarks
+     * Gets the block face that strongly powers the block touching
+     * it. If the 'minecraft:redstone_producer' block component
+     * hasn't defined a 'strongly_powered_face' then this method
+     * returns 'undefined'. Returns error if block is no longer
+     * valid or if block doesn't have a
+     * 'minecraft:redstone_producer' component.
+     *
+     * @throws This function can throw errors.
+     *
+     * {@link InvalidBlockComponentError}
+     */
+    getStronglyPoweredFace(): Direction | undefined;
 }
 
 /**
@@ -5859,6 +6008,21 @@ export class CustomComponentParameters {
 }
 
 /**
+ * Loot item condition that checks whether the loot source was
+ * damaged by a specific type of entity.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class DamagedByEntityCondition extends LootItemCondition {
+    private constructor();
+    /**
+     * @remarks
+     * The entity type required for this condition to pass.
+     *
+     */
+    readonly entityType: string;
+}
+
+/**
  * Contains information related to firing of a data driven
  * entity event - for example, the minecraft:ageable_grow_up
  * event on a chicken.
@@ -6928,6 +7092,21 @@ export class EffectTypes {
 }
 
 /**
+ * Represents a completely empty entry in a loot pool. If this
+ * entry is chosen, no items will drop.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class EmptyLootItem extends LootPoolEntry {
+    private constructor();
+}
+
+export class EnchantInfo {
+    private constructor();
+    readonly enchantment: string;
+    readonly range: minecraftcommon.NumberRange;
+}
+
+/**
  * Contains information on a type of enchantment.
  */
 export class EnchantmentType {
@@ -6973,6 +7152,62 @@ export class EnchantmentTypes {
      *
      */
     static getAll(): EnchantmentType[];
+}
+
+/**
+ * Loot item function that applies a random enchant to the
+ * dropped item using the same algorithm used while enchanting
+ * equipment vanilla mobs spawn with.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class EnchantRandomEquipmentFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * Value that determines the likelihood of equipment being
+     * enchanted.
+     *
+     */
+    readonly chance: number;
+}
+
+/**
+ * Loot item function that randomly enchants the dropped item.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class EnchantRandomlyFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * Determines whether or not treasure enchantments are included
+     * in the randomly chosen enchantments.
+     *
+     */
+    readonly treasure: boolean;
+}
+
+/**
+ * Loot item function that applies a random enchant to the
+ * dropped item.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class EnchantWithLevelsFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * The value range from which the function randomly chooses the
+     * level of enchantment to apply. Contains minimum and maximum
+     * values.
+     *
+     */
+    readonly levels: minecraftcommon.NumberRange;
+    /**
+     * @remarks
+     * Value that determines whether or not treasure enchants
+     * should be included in the random enchant selection.
+     *
+     */
+    readonly treasure: boolean;
 }
 
 /**
@@ -7437,6 +7672,33 @@ export class Entity {
     extinguishFire(useEffects?: boolean): boolean;
     /**
      * @remarks
+     * Gets the entity's collision bounds.
+     *
+     * @returns
+     * An axis-aligned bounding box.
+     * @throws This function can throw errors.
+     *
+     * {@link InvalidEntityError}
+     */
+    getAABB(): AABB;
+    /**
+     * @remarks
+     * Gets the solid blocks that this entity is directly standing
+     * on. Ignores pressure plates.
+     *
+     * @param options
+     * Additional configuration options for what blocks are
+     * returned.
+     * @returns
+     * The solid blocks that this entity is directly standing on.
+     * Returns an empty list if the entity is jumping or flying.
+     * @throws This function can throw errors.
+     *
+     * {@link InvalidEntityError}
+     */
+    getAllBlocksStandingOn(options?: GetBlocksStandingOnOptions): Block[];
+    /**
+     * @remarks
      * Returns the first intersecting block from the direction that
      * this entity is looking at.
      *
@@ -7450,6 +7712,23 @@ export class Entity {
      * {@link InvalidEntityError}
      */
     getBlockFromViewDirection(options?: BlockRaycastOptions): BlockRaycastHit | undefined;
+    /**
+     * @remarks
+     * Gets a single solid block closest to the center of the
+     * entity that this entity is directly standing on. Ignores
+     * pressure plates.
+     *
+     * @param options
+     * Additional configuration options for what block is returned.
+     * @returns
+     * A single solid block closest to the center of the entity
+     * that this entity is directly standing on. Undefined if
+     * entity is flying or jumping.
+     * @throws This function can throw errors.
+     *
+     * {@link InvalidEntityError}
+     */
+    getBlockStandingOn(options?: GetBlocksStandingOnOptions): Block | undefined;
     /**
      * @remarks
      * Gets a component (that represents additional capabilities)
@@ -8701,6 +8980,38 @@ export class EntityFrictionModifierComponent extends EntityComponent {
 }
 
 /**
+ * Loot item condition that checks the value of the mark
+ * variant of a mob as it drops its loot.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class EntityHasMarkVariantCondition extends LootItemCondition {
+    private constructor();
+    /**
+     * @remarks
+     * The mark variant value the mob must have for this condition
+     * to pass.
+     *
+     */
+    readonly value: number;
+}
+
+/**
+ * Loot item condition that checks the variant value of a mob
+ * as it drops its loot.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class EntityHasVariantCondition extends LootItemCondition {
+    private constructor();
+    /**
+     * @remarks
+     * The variant value the mob must have for this condition to
+     * pass.
+     *
+     */
+    readonly value: number;
+}
+
+/**
  * Defines the interactions with this entity for healing it.
  */
 // @ts-ignore Class inheritance allowed for native defined classes
@@ -9235,6 +9546,22 @@ export class EntityItemComponent extends EntityComponent {
      */
     readonly itemStack: ItemStack;
     static readonly componentId = 'minecraft:item';
+}
+
+/**
+ * Loot item condition that checks the entity type of the
+ * entity dropping its loot.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class EntityKilledCondition extends LootItemCondition {
+    private constructor();
+    /**
+     * @remarks
+     * The entity type required for this condition to pass.
+     * Example: 'minecraft:skeleton'.
+     *
+     */
+    readonly entityType: string;
 }
 
 /**
@@ -10656,6 +10983,21 @@ export class EntityWantsJockeyComponent extends EntityComponent {
 }
 
 /**
+ * Loot item function that modifies a dropped treasure map to
+ * mark a location.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class ExplorationMapFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * Determines which type of treasure map will drop.
+     *
+     */
+    readonly destination: string;
+}
+
+/**
  * Contains information regarding an explosion that has
  * happened.
  */
@@ -10767,6 +11109,15 @@ export class ExplosionBeforeEventSignal {
 }
 
 /**
+ * Loot item function that determines whether or not loot drops
+ * should be destroyed by explosions.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class ExplosionDecayFunction extends LootItemFunction {
+    private constructor();
+}
+
+/**
  * As part of the Healable component, represents a specific
  * item that can be fed to an entity to cause health effects.
  */
@@ -10831,6 +11182,22 @@ export class FeedItemEffect {
      *
      */
     readonly name: string;
+}
+
+/**
+ * Loot item function that populates a dropped container item
+ * using another loot table.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class FillContainerFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * The path to the loot table with which the container will be
+     * filled.
+     *
+     */
+    readonly lootTable: string;
 }
 
 /**
@@ -11175,6 +11542,15 @@ export class InputInfo {
      * {@link InvalidEntityError}
      */
     getMovementVector(): Vector2;
+}
+
+/**
+ * Loot item condition that checks whether or not the entity
+ * dropping loot is a baby.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class IsBabyCondition extends LootItemCondition {
+    private constructor();
 }
 
 /**
@@ -12089,6 +12465,37 @@ export class ItemInventoryComponent extends ItemComponent {
      */
     readonly container: Container;
     static readonly componentId = 'minecraft:inventory';
+}
+
+/**
+ * When present on an item, this item is a potion item.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class ItemPotionComponent extends ItemComponent {
+    private constructor();
+    /**
+     * @remarks
+     * The PotionDeliveryType associated with the potion item.
+     *
+     * @throws This property can throw when used.
+     *
+     * {@link minecraftcommon.EngineError}
+     *
+     * {@link Error}
+     */
+    readonly potionDeliveryType: PotionDeliveryType;
+    /**
+     * @remarks
+     * The PotionEffectType associated with the potion item.
+     *
+     * @throws This property can throw when used.
+     *
+     * {@link minecraftcommon.EngineError}
+     *
+     * {@link Error}
+     */
+    readonly potionEffectType: PotionEffectType;
+    static readonly componentId = 'minecraft:potion';
 }
 
 /**
@@ -13075,6 +13482,41 @@ export class ItemUseOnEvent {
 }
 
 /**
+ * Loot item condition that checks whether or not the drop
+ * source was killed by a specific type of entity.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class KilledByEntityCondition extends LootItemCondition {
+    private constructor();
+    /**
+     * @remarks
+     * The entity type required for this condition to pass.
+     * Example: 'minecraft:skeleton'.
+     *
+     */
+    readonly entityType: string;
+}
+
+/**
+ * Loot item condition that checks whether or not the source of
+ * the loot drop was killed by the player.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class KilledByPlayerCondition extends LootItemCondition {
+    private constructor();
+}
+
+/**
+ * Loot item condition that checks whether or not the source of
+ * the loot drop was killed by the player or any of the
+ * player's pets.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class KilledByPlayerOrPetsCondition extends LootItemCondition {
+    private constructor();
+}
+
+/**
  * Contains information related to changes to a lever
  * activating or deactivating.
  * @example leverActionEvent.ts
@@ -13226,6 +13668,199 @@ export class ListBlockVolume extends BlockVolumeBase {
 }
 
 /**
+ * Loot item function that drops extra items if the provided
+ * tool has the looting enchant.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class LootingEnchantFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * The value range from which the function randomly chooses the
+     * number of extra items to drop. Contains minimum and maximum
+     * values.
+     *
+     */
+    readonly count: minecraftcommon.NumberRange;
+}
+
+/**
+ * Represents a loot pool entry containing an item to drop.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class LootItem extends LootPoolEntry {
+    private constructor();
+    readonly functions: LootItemFunction[];
+    /**
+     * @remarks
+     * The name of the item contained in this entry.
+     *
+     */
+    readonly name?: ItemType;
+}
+
+/**
+ * An abstract base class from which all loot item conditions
+ * are derived. A loot item condition is a set of rules or
+ * requirements which must be met for a loot drop to happen.
+ */
+export class LootItemCondition {
+    private constructor();
+}
+
+/**
+ * An abstract base class from which all loot item functions
+ * are derived. Loot item functions can modify loot drops in a
+ * variety of ways as they happen, optionally dependent on a
+ * set of conditions which must be met.
+ */
+export class LootItemFunction {
+    private constructor();
+    readonly conditions: LootItemCondition[];
+}
+
+/**
+ * A collection of entries which individually determine loot
+ * drops. Can contain values determining drop outcomes,
+ * including rolls, bonus rolls and tiers.
+ */
+export class LootPool {
+    private constructor();
+    /**
+     * @remarks
+     * Returns the number of extra times a loot pool will be rolled
+     * based on the player's luck level, represented as a range
+     * from minimum to maximum rolls.
+     *
+     */
+    readonly bonusRolls: minecraftcommon.NumberRange;
+    readonly conditions: LootItemCondition[];
+    /**
+     * @remarks
+     * Gets a complete list of all loot pool entries contained in
+     * the loot pool.
+     *
+     */
+    readonly entries: LootPoolEntry[];
+    /**
+     * @remarks
+     * Returns the number of times a loot pool will be rolled,
+     * represented as a range from minimum to maximum rolls.
+     *
+     */
+    readonly rolls: minecraftcommon.NumberRange;
+    /**
+     * @remarks
+     * Gets the loot pool tier values for a given table if they
+     * exist.
+     *
+     */
+    readonly tiers?: LootPoolTiers;
+}
+
+/**
+ * Represents one entry within Loot Table, which describes one
+ * possible drop when a loot drop occurs. Can contain an item,
+ * another loot table, a path to another loot table, or an
+ * empty drop.
+ */
+export class LootPoolEntry {
+    private constructor();
+    /**
+     * @remarks
+     * Gets the quality of a given loot pool entry.
+     *
+     */
+    readonly quality: number;
+    /**
+     * @remarks
+     * Gets the subtable of a given loot pool entry.
+     *
+     */
+    readonly subTable?: LootPoolEntry;
+    /**
+     * @remarks
+     * Gets the weight of a given loot pool entry.
+     *
+     */
+    readonly weight: number;
+}
+
+/**
+ * Represents the values which determine loot drops in a tiered
+ * loot pool. Potential drops from tiered loot pools are
+ * ordered, and chosen via logic controlled by the values in
+ * this object.
+ */
+export class LootPoolTiers {
+    private constructor();
+    /**
+     * @remarks
+     * The chance for each bonus roll attempt to upgrade the tier
+     * of the dropped item.
+     *
+     */
+    readonly bonusChance: number;
+    /**
+     * @remarks
+     * The number of attempts for the loot drop to upgrade its
+     * tier, thereby incrementing its position in the loot pool
+     * entry array, resulting in a higher tier drop.
+     *
+     */
+    readonly bonusRolls: number;
+    /**
+     * @remarks
+     * Represents the upper bound for the starting point in
+     * determining which tier of loot to drop. The lower bound is
+     * always 1. For example, a value of 3 would result in the tier
+     * drop logic starting at a randomly selected position in the
+     * loot pool entry array between 1 and 3.
+     *
+     */
+    readonly initialRange: number;
+}
+
+/**
+ * Represents a single Loot Table, which determines what items
+ * are generated when killing a mob, breaking a block, filling
+ * a container, and more.
+ */
+export class LootTable {
+    private constructor();
+    /**
+     * @remarks
+     * Returns the path to the JSON file that represents this loot
+     * table. Does not include file extension, or 'loot_tables/'
+     * folder prefix. Example: `entities/creeper`.
+     *
+     */
+    readonly path: string;
+    /**
+     * @remarks
+     * Returns the array of loot pools on a given loot table.
+     *
+     */
+    readonly pools: LootPool[];
+}
+
+/**
+ * Represents a loot pool entry containing another separate,
+ * nested loot table.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class LootTableEntry extends LootPoolEntry {
+    private constructor();
+    /**
+     * @remarks
+     * Gets the loot table stored as a subtable in the parent loot
+     * pool.
+     *
+     */
+    readonly lootTable: LootTable;
+}
+
+/**
  * Manager for Loot Table related APIs. Allows for generation
  * of drops from blocks and entities according to their loot
  * tables.
@@ -13308,6 +13943,106 @@ export class LootTableManager {
      * Can be empty if no loot dropped.
      */
     generateLootFromEntityType(entityType: EntityType, tool?: ItemStack): ItemStack[] | undefined;
+    /**
+     * @remarks
+     * Generates loot from a given LootTable.
+     *
+     * @param tool
+     * Optional. The tool to use in the looting operation.
+     * @returns
+     * An array of item stacks dropped from the loot drop event.
+     * Can be empty if no loot dropped, or undefined if the
+     * provided tool is insufficient to mine the block.
+     */
+    generateLootFromTable(lootTable: LootTable, tool?: ItemStack): ItemStack[] | undefined;
+    /**
+     * @remarks
+     * Retrieves a single loot table from the level's current
+     * registry.
+     *
+     * @param path
+     * Path to the table to retrieve. Does not include file
+     * extension, or 'loot_tables/' folder prefix. Example:
+     * `entities/creeper`.
+     * @returns
+     * Returns a LootTable if one is found, or `undefined` if the
+     * provided path does not correspond to an existing loot table.
+     */
+    getLootTable(path: string): LootTable | undefined;
+}
+
+/**
+ * Represents a loot pool entry containing a reference to
+ * another loot table, described by its path.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class LootTableReference extends LootPoolEntry {
+    private constructor();
+    /**
+     * @remarks
+     * The path to the referenced loot table. Example:
+     * `loot_tables/chests/village/village_bundle.json`
+     *
+     */
+    readonly path: string;
+}
+
+/**
+ * Loot item condition that checks whether an appropriate tool
+ * was used to trigger the loot event. Can describe item type,
+ * count, durability, enchantments, or arrays of item tags to
+ * compare against.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class MatchToolCondition extends LootItemCondition {
+    private constructor();
+    /**
+     * @remarks
+     * The stack size, or count, required for this condition to
+     * pass.
+     *
+     */
+    readonly count: minecraftcommon.NumberRange;
+    /**
+     * @remarks
+     * The durability value required for this condition to pass.
+     *
+     */
+    readonly durability: minecraftcommon.NumberRange;
+    /**
+     * @remarks
+     * Array of enchantments required for this condition to pass.
+     *
+     */
+    readonly enchantments: EnchantInfo[];
+    /**
+     * @remarks
+     * The name of the tool item required for this condition to
+     * pass.
+     *
+     */
+    readonly itemName: string;
+    /**
+     * @remarks
+     * Array of item tags which ALL must be matched for this
+     * condition to pass.
+     *
+     */
+    readonly itemTagsAll: string[];
+    /**
+     * @remarks
+     * Array of item tags, from which at least 1 must be matched
+     * for this condition to pass.
+     *
+     */
+    readonly itemTagsAny: string[];
+    /**
+     * @remarks
+     * Array of item tags, from which exactly zero must match for
+     * this condition to pass.
+     *
+     */
+    readonly itemTagsNone: string[];
 }
 
 /**
@@ -13376,6 +14111,21 @@ export class MolangVariableMap {
      * @throws This function can throw errors.
      */
     setVector3(variableName: string, vector: Vector3): void;
+}
+
+/**
+ * Loot item condition that checks whether the looting entity
+ * is currently a passenger of a specific type of entity.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class PassengerOfEntityCondition extends LootItemCondition {
+    private constructor();
+    /**
+     * @remarks
+     * The entity type required for this condition to pass.
+     *
+     */
+    readonly entityType: string;
 }
 
 /**
@@ -13670,12 +14420,21 @@ export class Player extends Entity {
      * This function can't be called in read-only mode.
      *
      * @param targetEntity
-     * The Entity whose Entity Property overrides are being
-     * cleared.
+     * The Entity or the ID of the Entity whose Entity Property
+     * overrides are being cleared.
      * @throws
-     * Throws if the Entity is invalid.
+     * Throws if the Entity or Entity ID is invalid.
      */
-    clearPropertyOverridesForEntity(targetEntity: Entity): void;
+    clearPropertyOverridesForEntity(targetEntity: Entity | string): void;
+    /**
+     * @remarks
+     * Returns the player's current control scheme.
+     *
+     * @throws This function can throw errors.
+     *
+     * {@link InvalidEntityError}
+     */
+    getControlScheme(): ControlScheme;
     /**
      * @remarks
      * Retrieves the active gamemode for this player, if specified.
@@ -13897,6 +14656,32 @@ export class Player extends Entity {
      * ```
      */
     sendMessage(message: (RawMessage | string)[] | RawMessage | string): void;
+    /**
+     * @remarks
+     * Set a player's control scheme. The player's active camera
+     * preset must be set by scripts like with camera.setCamera()
+     * or commands.
+     *
+     * This function can't be called in read-only mode.
+     *
+     * @param controlScheme
+     * Control scheme type. If this argument is undefined, this
+     * method will clear the player's control scheme back to the
+     * player camera's default control scheme.
+     * @returns
+     * Returns nothing if the control scheme was added or updated
+     * successfully. This can throw an InvalidArgumentError if the
+     * control scheme is not allowed by the player's current
+     * camera.
+     * @throws This function can throw errors.
+     *
+     * {@link minecraftcommon.EngineError}
+     *
+     * {@link minecraftcommon.InvalidArgumentError}
+     *
+     * {@link InvalidEntityError}
+     */
+    setControlScheme(controlScheme?: ControlScheme): void;
     /**
      * @remarks
      * Sets a gamemode override for this player.
@@ -15292,6 +16077,94 @@ export class PlayerSpawnAfterEventSignal {
 }
 
 /**
+ * Represents how the potion effect is delivered.
+ */
+export class PotionDeliveryType {
+    private constructor();
+    readonly id: string;
+}
+
+/**
+ * Represents a type of potion effect - like healing or
+ * leaping.
+ */
+export class PotionEffectType {
+    private constructor();
+    /**
+     * @remarks
+     * Duration of the effect when applied to an entity in ticks.
+     * Undefined means the effect does not expire.
+     *
+     * @throws This property can throw when used.
+     *
+     * {@link minecraftcommon.EngineError}
+     */
+    readonly durationTicks?: number;
+    readonly id: string;
+}
+
+/**
+ * Used for accessing all potion effect types, delivery types,
+ * and creating potions.
+ */
+export class Potions {
+    private constructor();
+    /**
+     * @remarks
+     * Retrieves handles for all registered potion delivery types.
+     *
+     * @returns
+     * Array of all registered delivery type handles.
+     */
+    static getAllDeliveryTypes(): PotionDeliveryType[];
+    /**
+     * @remarks
+     * Retrieves all type handle for all registered potion effects.
+     *
+     * @returns
+     * Array of all registered effect type handles.
+     */
+    static getAllEffectTypes(): PotionEffectType[];
+    /**
+     * @remarks
+     * Retrieves a type handle for a specified potion delivery id.
+     *
+     * @returns
+     * A type handle wrapping the valid delivery id, or undefined
+     * for an invalid delivery id.
+     */
+    static getDeliveryType(potionDeliveryId: string): PotionDeliveryType | undefined;
+    /**
+     * @remarks
+     * Retrieves a type handle for a specified potion effect id.
+     *
+     * @param potionEffectId
+     * A valid potion effect id. See
+     * @minecraft/vanilla-data.MinecraftPotionEffectTypes
+     * @returns
+     * A type handle wrapping the valid effect id, or undefined for
+     * an invalid effect id.
+     */
+    static getEffectType(potionEffectId: string): PotionEffectType | undefined;
+    /**
+     * @remarks
+     * Creates a potion given an effect and delivery type.
+     *
+     * @throws This function can throw errors.
+     *
+     * {@link minecraftcommon.EngineError}
+     *
+     * {@link InvalidPotionDeliveryTypeError}
+     *
+     * {@link InvalidPotionEffectTypeError}
+     */
+    static resolve(
+        potionEffectType: PotionEffectType | string,
+        potionDeliveryType: PotionDeliveryType | string,
+    ): ItemStack;
+}
+
+/**
  * Contains information related to changes to a pressure plate
  * pop.
  */
@@ -15555,6 +16428,121 @@ export class ProjectileHitEntityAfterEventSignal {
      *
      */
     unsubscribe(callback: (arg0: ProjectileHitEntityAfterEvent) => void): void;
+}
+
+/**
+ * Loot item function that randomly modifies the data value of
+ * the item dropped.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class RandomAuxValueFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * The value range from which the function randomly chooses the
+     * data value to assign. Contains minimum and maximum values.
+     *
+     */
+    readonly values: minecraftcommon.NumberRange;
+}
+
+/**
+ * Loot item function that randomly modifies the block state of
+ * the item dropped.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class RandomBlockStateFunction extends LootItemFunction {
+    private constructor();
+    readonly blockState: string;
+    /**
+     * @remarks
+     * The range from which the function randomly chooses the value
+     * to assign to the given block state. Contains minimum and
+     * maximum values.
+     *
+     */
+    readonly values: minecraftcommon.NumberRange;
+}
+
+/**
+ * Loot item condition that applies a given value to the
+ * chances that loot will drop.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class RandomChanceCondition extends LootItemCondition {
+    private constructor();
+    /**
+     * @remarks
+     * The chance, from 0.0-1.0, that loot will drop.
+     *
+     */
+    readonly chance: number;
+}
+
+/**
+ * Loot item condition that applies a given value to the
+ * chances that loot will drop, modified by the level of
+ * looting enchantment on the tool used.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class RandomChanceWithLootingCondition extends LootItemCondition {
+    private constructor();
+    /**
+     * @remarks
+     * The base chance, from 0.0-1.0, that loot will drop. Will be
+     * modified by the 'lootingMultiplier' value.
+     *
+     */
+    readonly chance: number;
+    /**
+     * @remarks
+     * The increase in drop chance per looting enchant level.
+     *
+     */
+    readonly lootingMultiplier: number;
+}
+
+/**
+ * Loot item condition that applies given values to the chances
+ * that loot will drop based on the current difficulty level.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class RandomDifficultyChanceCondition extends LootItemCondition {
+    private constructor();
+    /**
+     * @remarks
+     * A four-element array containing the chance of a loot drop
+     * occurring for each difficulty level, in order: Peaceful,
+     * Easy, Normal, Hard.
+     *
+     */
+    readonly chances: number[];
+}
+
+/**
+ * Loot item function that applies a randomly dye to the
+ * dropped item.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class RandomDyeFunction extends LootItemFunction {
+    private constructor();
+}
+
+/**
+ * Loot item condition that applies a given value to the
+ * chances that loot will drop, modified by the region the drop
+ * is happening within.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class RandomRegionalDifficultyChanceCondition extends LootItemCondition {
+    private constructor();
+    /**
+     * @remarks
+     * The base chance, from 0.0-1.0, that loot will drop. Will be
+     * modified by the current region's multiplier.
+     *
+     */
+    readonly maxChance: number;
 }
 
 /**
@@ -16242,6 +17230,221 @@ export class Seat {
 }
 
 /**
+ * Loot item function that modifies the trim on a dropped armor
+ * item.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class SetArmorTrimFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * The material to apply to the armor trim.
+     *
+     */
+    readonly material: string;
+    /**
+     * @remarks
+     * The pattern to apply to the armor trim.
+     *
+     */
+    readonly pattern: string;
+}
+
+/**
+ * Loot item function that modifies the type of a banner that
+ * drops.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class SetBannerDetailsFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * The type of banner to drop.
+     *
+     */
+    readonly 'type': number;
+}
+
+/**
+ * Loot item function that modifies the contents of a dropped
+ * book.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class SetBookContentsFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * The name of the book's author.
+     *
+     */
+    readonly author: string;
+    /**
+     * @remarks
+     * An array of text to be placed in the pages of the book.
+     *
+     */
+    readonly pages: string[];
+    /**
+     * @remarks
+     * The book's title.
+     *
+     */
+    readonly title: string;
+}
+
+/**
+ * Loot item function that modifies the dropped item's data
+ * value based on its color index. Defaults to zero if no color
+ * index is set.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class SetDataFromColorIndexFunction extends LootItemFunction {
+    private constructor();
+}
+
+/**
+ * Loot item function that modifies the number items that drop
+ * from the loot pool entry.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class SetItemCountFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * The value range from which the function randomly chooses the
+     * number of items to drop. Contains minimum and maximum
+     * values.
+     *
+     */
+    readonly count: minecraftcommon.NumberRange;
+}
+
+/**
+ * Loot item function that modifies the durability value of the
+ * item dropped.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class SetItemDamageFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * The value range from which the function randomly chooses the
+     * durability value to assign. Contains minimum and maximum
+     * values. Must always be between 0.0 and 1.0.
+     *
+     */
+    readonly damage: minecraftcommon.NumberRange;
+}
+
+/**
+ * Loot item function that modifies the data value of the item
+ * dropped.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class SetItemDataFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * The value range from which the function randomly chooses the
+     * data value to assign. Contains minimum and maximum values.
+     *
+     */
+    readonly data: minecraftcommon.NumberRange;
+}
+
+/**
+ * Loot item function that modifies the lore of the item
+ * dropped.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class SetItemLoreFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * The lore to apply to the dropped item.
+     *
+     */
+    readonly lore: string[];
+}
+
+/**
+ * Loot item function that modifies the name of the item
+ * dropped.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class SetItemNameFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * The name to apply to the dropped item.
+     *
+     */
+    readonly name: string;
+}
+
+/**
+ * Loot item function that modifies an ominous bottle's
+ * amplifier value.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class SetOminousBottleFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * The value range from which the function randomly chooses the
+     * amplifier value to assign. Contains minimum and maximum
+     * values.
+     *
+     */
+    readonly amplifier: minecraftcommon.NumberRange;
+}
+
+/**
+ * Loot item function that assigns a type to a dropped potion.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class SetPotionFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * The id to be assigned to the dropped potion.
+     *
+     */
+    readonly id: string;
+}
+
+/**
+ * Loot item function that assigns an entity type to a dropped
+ * spawn egg. Does not work on any items other than spawn eggs.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class SetSpawnEggFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * The entity to be assigned to the dropped egg.
+     *
+     */
+    readonly id: string;
+}
+
+/**
+ * Loot item function that modifies the effects of a dropped
+ * stew item.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class SetStewEffectFunction extends LootItemFunction {
+    private constructor();
+    /**
+     * @remarks
+     * An array of integers corresponding to stew effects to be
+     * randomly chosen from and applied to the dropped item.
+     *
+     */
+    readonly effects: number[];
+}
+
+/**
  * Provides an adaptable interface for callers to subscribe to
  * an event that fires before the game world shuts down. This
  * event occurs after players have left, but before the world
@@ -16283,6 +17486,25 @@ export class ShutdownBeforeEventSignal {
  */
 export class ShutdownEvent {
     private constructor();
+}
+
+/**
+ * Loot item function that processes the dropped item as if it
+ * was smelted or cooked in a furnace.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class SmeltItemFunction extends LootItemFunction {
+    private constructor();
+}
+
+/**
+ * Loot item function that applies one or several predefined
+ * enchants to the dropped item.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class SpecificEnchantFunction extends LootItemFunction {
+    private constructor();
+    readonly enchantments: EnchantInfo[];
 }
 
 export class StartupBeforeEventSignal {
@@ -18310,6 +19532,26 @@ export class WorldLoadAfterEventSignal {
 }
 
 /**
+ * Axis-aligned bounding box.
+ */
+export interface AABB {
+    /**
+     * @remarks
+     * The centerpoint of the box.
+     *
+     */
+    center: Vector3;
+    /**
+     * @remarks
+     * Absolute distance from the centerpoint to the bounds of the
+     * box. Equivalent to half of the box's length, height and
+     * width. Will always be treated as positive.
+     *
+     */
+    extent: Vector3;
+}
+
+/**
  * A BlockBoundingBox is an interface to an object which
  * represents an AABB aligned rectangle.
  * The BlockBoundingBox assumes that it was created in a valid
@@ -18354,6 +19596,19 @@ export interface BlockCustomComponent {
      *
      */
     beforeOnPlayerPlace?: (arg0: BlockComponentPlayerPlaceBeforeEvent, arg1: CustomComponentParameters) => void;
+    /**
+     * @remarks
+     * This function will be called when a specific block is
+     * destroyed.
+     * Changes in block permutations will not trigger this event.
+     * Fill Command and SetBlock Command can trigger this event
+     * when changing a block permutation only when using destroy
+     * mode.
+     * Custom blocks with the "minecraft:replaceable" component
+     * will not trigger the event when replaced.
+     *
+     */
+    onBreak?: (arg0: BlockComponentBlockBreakEvent, arg1: CustomComponentParameters) => void;
     /**
      * @remarks
      * This function will be called when an entity falls onto the
@@ -19569,6 +20824,28 @@ export interface ExplosionOptions {
 }
 
 /**
+ * Contains additional options for getBlockStandingOn and
+ * getAllBlocksStandingOn.
+ */
+export interface GetBlocksStandingOnOptions {
+    /**
+     * @remarks
+     * When specified, the function will include / exclude what
+     * block(s) are returned based on the block filter.
+     *
+     */
+    blockFilter?: BlockFilter;
+    /**
+     * @remarks
+     * If true, all blocks of height 0.2 or lower like trapdoors
+     * and carpets will be ignored, and the block underneath will
+     * be returned.
+     *
+     */
+    ignoreThinBlocks?: boolean;
+}
+
+/**
  * Greater than operator.
  */
 export interface GreaterThanComparison {
@@ -19759,6 +21036,13 @@ export interface JigsawPlaceOptions {
      *
      */
     keepJigsaws?: boolean;
+    /**
+     * @remarks
+     * Specifies how to handle waterloggable blocks overlapping
+     * with existing liquid. Defaults to `ApplyWaterlogging`.
+     *
+     */
+    liquidSettings?: LiquidSettings;
 }
 
 /**
@@ -19788,6 +21072,13 @@ export interface JigsawStructurePlaceOptions {
      *
      */
     keepJigsaws?: boolean;
+    /**
+     * @remarks
+     * Specifies how to handle waterloggable blocks overlapping
+     * with existing liquid. Defaults to `ApplyWaterlogging`.
+     *
+     */
+    liquidSettings?: LiquidSettings;
 }
 
 /**
@@ -20636,6 +21927,16 @@ export class EntitySpawnError extends Error {
 }
 
 /**
+ * The error can occur when a block is invalid. This can also
+ * occur when accessing components on a block that doesn't have
+ * them.
+ */
+// @ts-ignore Class inheritance allowed for native defined classes
+export class InvalidBlockComponentError extends Error {
+    private constructor();
+}
+
+/**
  * The container is invalid. This can occur if the container is
  * missing or deleted.
  */
@@ -20697,6 +21998,16 @@ export class InvalidItemStackError extends Error {
 
 // @ts-ignore Class inheritance allowed for native defined classes
 export class InvalidIteratorError extends Error {
+    private constructor();
+}
+
+// @ts-ignore Class inheritance allowed for native defined classes
+export class InvalidPotionDeliveryTypeError extends Error {
+    private constructor();
+}
+
+// @ts-ignore Class inheritance allowed for native defined classes
+export class InvalidPotionEffectTypeError extends Error {
     private constructor();
 }
 

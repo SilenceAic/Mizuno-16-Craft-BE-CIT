@@ -5,7 +5,7 @@
     "description": "Conversion of Mizuno 16 Craft JE CIT_1.20.1",
     "uuid": "6533cb4d-9fb1-4887-8972-4b66d1281ec7",
     "version": [1, 2, 0],
-    "min_engine_version": [1, 21, 114]
+    "min_engine_version": [1, 21, 132]
   },
   "modules": [
     {
