@@ -1,10 +1,10 @@
 {
   "format_version": 2,
   "header": {
-    "name": "Mizuno 16 Craft BE CIT_1.21.114",
+    "name": "Mizuno 16 Craft BE CIT",
     "description": "Conversion of Mizuno 16 Craft JE CIT_1.20.1",
     "uuid": "d053aef2-664e-432c-a18a-3c2e86d8e129",
-    "version": [1, 2, 0],
+    "version": [1, 21, 114],
     "min_engine_version": [1, 21, 80]
   },
   "modules": [
