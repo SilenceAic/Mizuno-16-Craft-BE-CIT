@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@minecraft/math": "^2.2.7",
-    "@minecraft/server": "^2.3.0-beta.1.21.114-stable",
+    "@minecraft/server": "^2.4.0",
     "@minecraft/server-ui": "^2.0.0",
     "@minecraft/vanilla-data": "^1.21.90"
   }
