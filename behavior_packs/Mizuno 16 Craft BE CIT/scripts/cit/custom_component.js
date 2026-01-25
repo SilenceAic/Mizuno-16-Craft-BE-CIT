@@ -495,7 +495,8 @@ system.runInterval(() => {
 
               if (isCustomBed && velocityChange > 0) {
                 try {
-                  player.setVelocity({
+                  player.clearVelocity();
+                  player.applyImpulse({
                     x: velocity.x,
                     y: bounceSpeed,
                     z: velocity.z,
@@ -506,7 +507,8 @@ system.runInterval(() => {
                       const checkVelocity = player.getVelocity();
                       const delta = bounceSpeed - checkVelocity.y;
                       if (delta > 0.001) {
-                        player.setVelocity({
+                        player.clearVelocity();
+                        player.applyImpulse({
                           x: checkVelocity.x,
                           y: bounceSpeed,
                           z: checkVelocity.z,
