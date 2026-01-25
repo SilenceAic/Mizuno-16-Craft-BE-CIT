@@ -33,11 +33,11 @@
       },
       "minecraft:collision_box": {
         "origin": [-3, 0, -3],
-        "size": [6, 25.5, 6]
+        "size": [6, 16, 6]
       },
       "minecraft:selection_box": {
         "origin": [-3, 0, -3],
-        "size": [6, 25.5, 6]
+        "size": [6, 16, 6]
       },
       "minecraft:material_instances": {
         "*": {
