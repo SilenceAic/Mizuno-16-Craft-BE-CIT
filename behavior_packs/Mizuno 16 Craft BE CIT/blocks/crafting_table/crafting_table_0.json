@@ -4,7 +4,7 @@
     "description": {
       "identifier": "cit:crafting_table_0",
       "menu_category": {
-        "category": "nature"
+        "category": "items"
       },
       "traits": {
         "minecraft:placement_position": {
