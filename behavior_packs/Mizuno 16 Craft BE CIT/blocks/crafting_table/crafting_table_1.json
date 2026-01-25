@@ -60,7 +60,7 @@
         },
         "tool": {
           "texture": "crafting_table_tool",
-          "render_method": "alpha_test_single_sided",
+          "render_method": "alpha_test",
           "ambient_occlusion": true,
           "face_dimming": true
         }
@@ -100,7 +100,7 @@
             },
             "tool": {
               "texture": "crafting_table_tool",
-              "render_method": "alpha_test_single_sided",
+              "render_method": "alpha_test",
               "ambient_occlusion": true,
               "face_dimming": true
             }

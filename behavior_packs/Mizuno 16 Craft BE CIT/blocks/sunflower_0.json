@@ -42,25 +42,25 @@
       "minecraft:material_instances": {
         "*": {
           "texture": "flower_pot_l_0c",
-          "render_method": "alpha_test",
+          "render_method": "alpha_test_single_sided",
           "ambient_occlusion": true,
           "face_dimming": false
         },
         "flower_pot": {
           "texture": "flower_pot_l_0c",
-          "render_method": "alpha_test",
+          "render_method": "alpha_test_single_sided",
           "ambient_occlusion": true,
           "face_dimming": true
         },
         "plant_top": {
           "texture": "cit:sunflower_0_top",
-          "render_method": "alpha_test",
+          "render_method": "alpha_test_single_sided",
           "ambient_occlusion": true,
           "face_dimming": true
         },
         "plant_bottom": {
           "texture": "cit:sunflower_0_bottom",
-          "render_method": "alpha_test",
+          "render_method": "alpha_test_single_sided",
           "ambient_occlusion": true,
           "face_dimming": true
         },

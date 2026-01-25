@@ -42,7 +42,7 @@
       "minecraft:material_instances": {
         "*": {
           "texture": "birch_sapling_3",
-          "render_method": "alpha_test",
+          "render_method": "alpha_test_single_sided",
           "ambient_occlusion": true,
           "face_dimming": true
         },

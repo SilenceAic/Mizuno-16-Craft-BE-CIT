@@ -66,7 +66,7 @@
         },
         "oak_sapling_1_01": {
           "texture": "oak_sapling_1_01",
-          "render_method": "alpha_test",
+          "render_method": "alpha_test_single_sided",
           "ambient_occlusion": true,
           "face_dimming": true
         }
@@ -91,7 +91,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "oak_sapling_1_wall",
-              "render_method": "alpha_test",
+              "render_method": "alpha_test_single_sided",
               "ambient_occlusion": true,
               "face_dimming": true
             }
@@ -116,7 +116,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "oak_sapling_1_wall",
-              "render_method": "alpha_test",
+              "render_method": "alpha_test_single_sided",
               "ambient_occlusion": true,
               "face_dimming": true
             },
@@ -143,7 +143,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "oak_sapling_1",
-              "render_method": "alpha_test",
+              "render_method": "alpha_test_single_sided",
               "ambient_occlusion": true,
               "face_dimming": true
             },
@@ -167,7 +167,7 @@
             },
             "oak_sapling_1_wall": {
               "texture": "oak_sapling_1_wall",
-              "render_method": "alpha_test",
+              "render_method": "alpha_test_single_sided",
               "ambient_occlusion": true,
               "face_dimming": true
             }
@@ -216,7 +216,7 @@
             },
             "oak_sapling_1_wall": {
               "texture": "oak_sapling_1_wall",
-              "render_method": "alpha_test",
+              "render_method": "alpha_test_single_sided",
               "ambient_occlusion": true,
               "face_dimming": true
             }
