@@ -24,6 +24,9 @@
       }
     },
     "components": {
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
       "minecraft:geometry": {
         "identifier": "geometry.cit.template_flower_0",
         "bone_visibility": {
