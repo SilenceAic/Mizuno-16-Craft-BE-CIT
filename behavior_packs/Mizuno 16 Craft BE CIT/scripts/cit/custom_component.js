@@ -83,8 +83,12 @@ components.set("cit:switch", {
 
 components.set("cit:multiblock", {
   beforeOnPlayerPlace(event, componentData) {
+    console.warn(`[CustomComponent] cit:multiblock 组件被调用`);
     const { player, permutationToPlace } = event;
-    if (!player) return;
+    if (!player) {
+      console.warn(`[CustomComponent] 没有玩家信息，退出`);
+      return;
+    }
 
     const playerYRotation = player.getRotation().y;
     const rotation = getPreciseRotation(playerYRotation);
