@@ -90,6 +90,12 @@
         "condition": "q.block_state('cit:dynamic_state') == 1",
         "components": {
           "minecraft:material_instances": {
+            "*": {
+              "texture": "white_wool",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
             "sheep": {
               "texture": "sheep_0a",
               "render_method": "alpha_test",
