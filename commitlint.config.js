@@ -13,6 +13,7 @@ module.exports = {
       [
         "feat", // 新功能
         "fix", // 修复 bug
+        "upd", // 更新
         "docs", // 文档变更
         "style", // 代码格式（不影响代码运行的变动）
         "refactor", // 重构（既不是新增功能，也不是修改bug的代码变动）
