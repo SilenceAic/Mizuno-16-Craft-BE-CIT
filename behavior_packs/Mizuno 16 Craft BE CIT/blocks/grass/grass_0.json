@@ -137,7 +137,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:block_face') == 'down' && q.block_state('cit:multiblock_index') == 0",
+        "condition": "q.block_state('minecraft:block_face') == 'down'",
         "components": {
           "cit:multiblock": {
             "size": [1, 2, 1],
@@ -197,7 +197,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:block_face') == 'down' && q.block_state('cit:multiblock_index') == 1",
+        "condition": "q.block_state('cit:multiblock_index') == 1",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.cit.template_flower_0_top_bottom",
