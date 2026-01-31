@@ -18,27 +18,32 @@
 				{
 					"name": "up_0",
 					"parent": "bone",
-					"pivot": [0, 0, 0]
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0]
 				},
 				{
 					"name": "up_22_5",
 					"parent": "bone",
-					"pivot": [0, 0, 0]
+					"pivot": [0, 0, 0],
+					"rotation": [0, -157.5, 0]
 				},
 				{
 					"name": "up_45",
 					"parent": "bone",
-					"pivot": [0, 0, 0]
+					"pivot": [0, 0, 0],
+					"rotation": [0, -135, 0]
 				},
 				{
 					"name": "up_67_5",
 					"parent": "bone",
-					"pivot": [0, 0, 0]
+					"pivot": [0, 0, 0],
+					"rotation": [0, -112.5, 0]
 				},
 				{
 					"name": "inventory",
 					"parent": "bone",
-					"pivot": [0, 0, 0]
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0]
 				}
 			]
 		}

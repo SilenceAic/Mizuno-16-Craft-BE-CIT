@@ -7,8 +7,8 @@
 				"texture_width": 16,
 				"texture_height": 16,
 				"visible_bounds_width": 2,
-				"visible_bounds_height": 3.5,
-				"visible_bounds_offset": [0, 1.25, 0]
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
 			},
 			"bones": [
 				{
@@ -16,7 +16,7 @@
 					"pivot": [0, 3, 0],
 					"cubes": [
 						{
-							"origin": [-3, 3, -3],
+							"origin": [-3, -11, -3],
 							"size": [6, 4, 6],
 							"uv": {
 								"north": {"uv": [10.5, 5], "uv_size": [3, 2.5], "material_instance": "hanging_basket"},
@@ -28,21 +28,21 @@
 							}
 						},
 						{
-							"origin": [0, 7, -3.5],
+							"origin": [0, -7, -3.5],
 							"size": [0, 23, 7],
 							"uv": {
 								"west": {"uv": [0, 0], "uv_size": [3.5, 11.5], "material_instance": "hanging_basket"}
 							}
 						},
 						{
-							"origin": [-3.5, 7, 0],
+							"origin": [-3.5, -7, 0],
 							"size": [7, 23, 0],
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [3.5, 11.5], "material_instance": "hanging_basket"}
 							}
 						},
 						{
-							"origin": [-1.5, 27, 7],
+							"origin": [-1.5, 13, 7],
 							"size": [3, 3, 1],
 							"uv": {
 								"north": {"uv": [2, 13.5], "uv_size": [1.5, 1.5], "material_instance": "hanging_basket"},
@@ -54,7 +54,7 @@
 							}
 						},
 						{
-							"origin": [-0.5, 28, -3],
+							"origin": [-0.5, 14, -3],
 							"size": [1, 1, 10],
 							"uv": {
 								"east": {"uv": [0, 15.5], "uv_size": [5, 0.5], "material_instance": "hanging_basket"},
@@ -64,7 +64,7 @@
 							}
 						},
 						{
-							"origin": [-0.5, 28, -4],
+							"origin": [-0.5, 14, -4],
 							"size": [1, 2, 1],
 							"uv": {
 								"north": {"uv": [0.5, 13.5], "uv_size": [0.5, 1], "material_instance": "hanging_basket"},
@@ -82,57 +82,57 @@
 					"pivot": [0, 3, 0],
 					"cubes": [
 						{
-							"origin": [-8.29367, 7, 1.58192],
-							"size": [15.275, 12, 0],
-							"pivot": [1.58133, 11, 1.58192],
+							"origin": [-7.6367, -7, 0],
+							"size": [15.2735, 12, 0],
+							"pivot": [0, -1, 0],
 							"rotation": [0, -45, 0],
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "plant"}
 							}
 						},
 						{
-							"origin": [-1.58162, 7, -8.29338],
-							"size": [0, 12, 15.275],
-							"pivot": [-1.58162, 11, 1.58162],
+							"origin": [0, -7, -7.63675],
+							"size": [0, 12, 15.2735],
+							"pivot": [0, -1, 0],
 							"rotation": [0, -45, 0],
 							"uv": {
 								"east": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "plant"}
 							}
 						},
 						{
-							"origin": [0, 1, -5.4],
-							"size": [0, 11.25, 10.8],
-							"pivot": [0, 11, 0],
+							"origin": [0, -14, -5.4],
+							"size": [0, 12.25, 10.8],
+							"pivot": [0, -3, 0],
 							"rotation": [0, 22.5, 0],
 							"uv": {
-								"west": {"uv": [0, 0], "uv_size": [16, 15], "material_instance": "plant_01"}
+								"west": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "plant_01"}
 							}
 						},
 						{
-							"origin": [-5.4, 1, 0],
-							"size": [10.8, 11.25, 0],
-							"pivot": [0, 11, 0],
+							"origin": [-5.4, -14, 0],
+							"size": [10.8, 12.25, 0],
+							"pivot": [0, -3, 0],
 							"rotation": [0, -22.5, 0],
 							"uv": {
-								"north": {"uv": [0, 0], "uv_size": [16, 15], "material_instance": "plant_01"}
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "plant_01"}
 							}
 						},
 						{
-							"origin": [-5.4, 1, 0],
-							"size": [10.8, 11.25, 0],
-							"pivot": [0, 11, 0],
+							"origin": [-5.4, -14, 0],
+							"size": [10.8, 12.25, 0],
+							"pivot": [0, -3, 0],
 							"rotation": [0, 22.5, 0],
 							"uv": {
-								"north": {"uv": [0, 0], "uv_size": [16, 15], "material_instance": "plant_01"}
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "plant_01"}
 							}
 						},
 						{
-							"origin": [0, 1, -5.4],
-							"size": [0, 11.25, 10.8],
-							"pivot": [0, 11, 0],
+							"origin": [0, -14, -5.4],
+							"size": [0, 12.25, 10.8],
+							"pivot": [0, -3, 0],
 							"rotation": [0, -22.5, 0],
 							"uv": {
-								"east": {"uv": [0, 0], "uv_size": [16, 15], "material_instance": "plant_01"}
+								"east": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "plant_01"}
 							}
 						}
 					]

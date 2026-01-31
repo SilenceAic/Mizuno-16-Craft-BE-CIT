@@ -34,7 +34,7 @@
           "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
           "up_45": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 2",
           "up_67_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 3",
-          "inventory": "q.block_state('minecraft:block_face') != 'up' && q.block_state('minecraft:block_face') != 'east' && q.block_state('minecraft:block_face') != 'south' && q.block_state('minecraft:block_face') != 'west' && q.block_state('minecraft:block_face') != 'north'"
+          "inventory": false
         }
       },
       "minecraft:collision_box": {
@@ -77,6 +77,43 @@
           "face_dimming": true
         }
       },
+      "minecraft:item_visual": {
+        "geometry": {
+          "identifier": "geometry.cit.template_flower_0_item"
+        },
+        "material_instances": {
+          "*": {
+            "texture": "flower_pot_2c",
+            "render_method": "alpha_test",
+            "ambient_occlusion": true,
+            "face_dimming": true
+          },
+          "flower_pot_": {
+            "texture": "flower_pot_2c",
+            "render_method": "alpha_test",
+            "ambient_occlusion": true,
+            "face_dimming": true
+          },
+          "plant": {
+            "texture": "grass_0",
+            "render_method": "alpha_test",
+            "ambient_occlusion": true,
+            "face_dimming": true
+          },
+          "plant_01": {
+            "texture": "grass_0_01",
+            "render_method": "alpha_test",
+            "ambient_occlusion": true,
+            "face_dimming": true
+          },
+          "hanging_basket": {
+            "texture": "hanging_basket",
+            "render_method": "alpha_test",
+            "ambient_occlusion": true,
+            "face_dimming": true
+          }
+        }
+      },
       "cit:rotation": {}
     },
     "permutations": [
@@ -86,15 +123,21 @@
           "minecraft:geometry": {
             "identifier": "geometry.cit.template_flower_0_wall"
           },
-          "minecraft:collision_box": false,
+          "minecraft:collision_box": {
+            "origin": [-1.5, 13, -4],
+            "size": [3, 4, 12]
+          },
           "minecraft:selection_box": {
-            "origin": [-3, 3, -3],
-            "size": [6, 4, 6]
+            "origin": [-1.5, 13, -4],
+            "size": [3, 4, 12]
+          },
+          "minecraft:transformation": {
+            "translation": [0, -0.0625, 0]
           }
         }
       },
       {
-        "condition": "q.block_state('minecraft:block_face') == 'down'",
+        "condition": "q.block_state('minecraft:block_face') == 'down' && q.block_state('cit:multiblock_index') == 0",
         "components": {
           "cit:multiblock": {
             "size": [1, 2, 1],
@@ -154,7 +197,7 @@
         }
       },
       {
-        "condition": "q.block_state('cit:multiblock_index') == 1",
+        "condition": "q.block_state('minecraft:block_face') == 'down' && q.block_state('cit:multiblock_index') == 1",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.cit.template_flower_0_top_bottom",
@@ -205,21 +248,30 @@
         }
       },
       {
-        "condition": "q.block_state('cit:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
+        "condition": "(q.block_state('cit:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east') && (q.block_state('minecraft:block_face') == 'east' || q.block_state('minecraft:block_face') == 'south' || q.block_state('minecraft:block_face') == 'west' || q.block_state('minecraft:block_face') == 'north')",
         "components": {
-          "minecraft:transformation": { "rotation": [0, -90, 0] }
+          "minecraft:transformation": {
+            "rotation": [0, -90, 0],
+            "translation": [0, -0.0625, 0]
+          }
         }
       },
       {
-        "condition": "q.block_state('cit:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
+        "condition": "(q.block_state('cit:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south') && (q.block_state('minecraft:block_face') == 'east' || q.block_state('minecraft:block_face') == 'south' || q.block_state('minecraft:block_face') == 'west' || q.block_state('minecraft:block_face') == 'north')",
         "components": {
-          "minecraft:transformation": { "rotation": [0, 180, 0] }
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0],
+            "translation": [0, -0.0625, 0]
+          }
         }
       },
       {
-        "condition": "q.block_state('cit:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
+        "condition": "(q.block_state('cit:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west') && (q.block_state('minecraft:block_face') == 'east' || q.block_state('minecraft:block_face') == 'south' || q.block_state('minecraft:block_face') == 'west' || q.block_state('minecraft:block_face') == 'north')",
         "components": {
-          "minecraft:transformation": { "rotation": [0, 90, 0] }
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0],
+            "translation": [0, -0.0625, 0]
+          }
         }
       }
     ]
