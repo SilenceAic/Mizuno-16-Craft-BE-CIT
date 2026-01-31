@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.110",
+  "format_version": "1.21.130",
   "minecraft:block": {
     "description": {
       "identifier": "cit:stone_0",
@@ -28,10 +28,28 @@
           "inventory": "q.block_state('minecraft:block_face') != 'up'"
         }
       },
-      "minecraft:collision_box": {
-        "origin": [-3, 0, -3],
-        "size": [6, 3, 6]
-      },
+      "minecraft:collision_box": [
+        {
+          "origin": [-6, 0, -4],
+          "size": [4, 4, 4]
+        },
+        {
+          "origin": [-1, 0, 2],
+          "size": [2, 2, 2]
+        },
+        {
+          "origin": [3, 0, 3],
+          "size": [3, 3, 3]
+        },
+        {
+          "origin": [1, 0, -1],
+          "size": [1, 1, 1]
+        },
+        {
+          "origin": [-6, 0, 2],
+          "size": [1, 1, 1]
+        }
+      ],
       "minecraft:selection_box": {
         "origin": [-3, 0, -3],
         "size": [6, 3, 6]
