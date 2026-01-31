@@ -19,6 +19,7 @@
 					"name": "up_0",
 					"parent": "template_wool_0",
 					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
 					"cubes": [
 						{
 							"origin": [-3, 6, 5.25],
@@ -127,7 +128,7 @@
 					"name": "up_22_5",
 					"parent": "template_wool_0",
 					"pivot": [0, 0, 0],
-					"rotation": [0, 22.5, 0],
+					"rotation": [0, -157.5, 0],
 					"cubes": [
 						{
 							"origin": [-3, 6, 5.25],
@@ -236,7 +237,7 @@
 					"name": "up_45",
 					"parent": "template_wool_0",
 					"pivot": [0, 0, 0],
-					"rotation": [0, 45, 0],
+					"rotation": [0, -135, 0],
 					"cubes": [
 						{
 							"origin": [-3, 6, 5.25],
@@ -345,7 +346,7 @@
 					"name": "up_67_5",
 					"parent": "template_wool_0",
 					"pivot": [0, 0, 0],
-					"rotation": [0, 67.5, 0],
+					"rotation": [0, -112.5, 0],
 					"cubes": [
 						{
 							"origin": [-3, 6, 5.25],
@@ -454,6 +455,7 @@
 					"name": "inventory",
 					"parent": "template_wool_0",
 					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
 					"cubes": [
 						{
 							"origin": [-3, 6, 5.25],
