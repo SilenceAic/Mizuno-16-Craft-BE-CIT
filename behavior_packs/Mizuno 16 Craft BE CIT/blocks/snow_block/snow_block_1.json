@@ -34,7 +34,7 @@
           "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
           "up_45": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 2",
           "up_67_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 3",
-          "inventory": "q.block_state('minecraft:block_face') != 'up'"
+          "inventory": "q.block_state('minecraft:block_face') == 'down'"
         }
       },
       "minecraft:collision_box": {

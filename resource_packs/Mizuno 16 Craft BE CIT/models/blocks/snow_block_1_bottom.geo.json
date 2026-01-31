@@ -19,6 +19,7 @@
 					"name": "up_0",
 					"parent": "snow_block_1",
 					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
 					"cubes": [
 						{
 							"origin": [-7, 0, -7],
@@ -77,7 +78,7 @@
 					"name": "up_22_5",
 					"parent": "snow_block_1",
 					"pivot": [0, 0, 0],
-					"rotation": [0, 22.5, 0],
+					"rotation": [0, -157.5, 0],
 					"cubes": [
 						{
 							"origin": [-7, 0, -7],
@@ -136,7 +137,7 @@
 					"name": "up_45",
 					"parent": "snow_block_1",
 					"pivot": [0, 0, 0],
-					"rotation": [0, 45, 0],
+					"rotation": [0, -135, 0],
 					"cubes": [
 						{
 							"origin": [-7.64499, 12, -7.35501],
@@ -195,7 +196,7 @@
 					"name": "up_67_5",
 					"parent": "snow_block_1",
 					"pivot": [0, 0, 0],
-					"rotation": [0, 67.5, 0],
+					"rotation": [0, -112.5, 0],
 					"cubes": [
 						{
 							"origin": [-7.5, 12, -7.5],
@@ -254,6 +255,7 @@
 					"name": "inventory",
 					"parent": "snow_block_1",
 					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
 					"cubes": [
 						{
 							"origin": [-7, 0, -7],
