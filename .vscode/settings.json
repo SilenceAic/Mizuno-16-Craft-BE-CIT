@@ -1,4 +1,4 @@
-{   
+{
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -9,6 +9,9 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "git.ignoreLimitWarning": true,
@@ -20,7 +23,7 @@
         "**/lib": true
     },
     "files.exclude": {
-        "**/.git": true,    
+        "**/.git": true,
         "**/.DS_Store": true,
         "**/node_modules": true
     },
@@ -33,5 +36,6 @@
         "zoglin"
     ],
     "editor.tabSize": 2,
-    "eslint.experimental.useFlatConfig": true
+    "eslint.experimental.useFlatConfig": true,
+    "BC-MC.Diagnostics.Json": false
 }
