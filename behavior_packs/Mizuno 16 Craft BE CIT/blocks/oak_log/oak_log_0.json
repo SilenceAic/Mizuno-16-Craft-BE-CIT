@@ -8,16 +8,24 @@
       },
       "traits": {
         "minecraft:placement_position": {
-          "enabled_states": ["minecraft:block_face"]
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
         }
       },
       "states": {
         "cit:rotation": {
-          "values": { "min": 0, "max": 15 }
+          "values": {
+            "min": 0,
+            "max": 15
+          }
         }
       }
     },
     "components": {
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
       "minecraft:geometry": {
         "identifier": "geometry.cit.oak_log_0",
         "bone_visibility": {
@@ -30,21 +38,53 @@
       },
       "minecraft:collision_box": [
         {
-          "origin": [-4, 6, -7],
-          "size": [6, 6, 14]
+          "origin": [
+            -4,
+            6,
+            -7
+          ],
+          "size": [
+            6,
+            6,
+            14
+          ]
         },
         {
-          "origin": [0, 0, -8],
-          "size": [6, 6, 14]
+          "origin": [
+            0,
+            0,
+            -8
+          ],
+          "size": [
+            6,
+            6,
+            14
+          ]
         },
         {
-          "origin": [-7, 0, -6],
-          "size": [6, 6, 14]
+          "origin": [
+            -7,
+            0,
+            -6
+          ],
+          "size": [
+            6,
+            6,
+            14
+          ]
         }
       ],
       "minecraft:selection_box": {
-        "origin": [-4, 0, -4],
-        "size": [8, 9, 8]
+        "origin": [
+          -4,
+          0,
+          -4
+        ],
+        "size": [
+          8,
+          9,
+          8
+        ]
       },
       "minecraft:material_instances": {
         "*": {
@@ -63,7 +103,9 @@
       "minecraft:placement_filter": {
         "conditions": [
           {
-            "allowed_faces": ["up"]
+            "allowed_faces": [
+              "up"
+            ]
           }
         ]
       },
@@ -73,19 +115,37 @@
       {
         "condition": "q.block_state('cit:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
         "components": {
-          "minecraft:transformation": { "rotation": [0, -90, 0] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          }
         }
       },
       {
         "condition": "q.block_state('cit:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
         "components": {
-          "minecraft:transformation": { "rotation": [0, 180, 0] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
         }
       },
       {
         "condition": "q.block_state('cit:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
         "components": {
-          "minecraft:transformation": { "rotation": [0, 90, 0] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
         }
       }
     ]
