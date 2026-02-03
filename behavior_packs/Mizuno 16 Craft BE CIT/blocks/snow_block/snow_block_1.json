@@ -40,6 +40,17 @@
       }
     },
     "components": {
+      "cit:rotation": {},
+      "cit:dynamic_state": {},
+      "cit:multiblock": {
+        "size": [
+          1,
+          2,
+          1
+        ],
+        "index": "cit:multiblock_index",
+        "rotate": true
+      },
       "minecraft:connection_rule": {
         "accepts_connections_from": "none"
       },
@@ -50,7 +61,7 @@
           "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
           "up_45": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 2",
           "up_67_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 3",
-          "inventory": "q.block_state('minecraft:block_face') == 'down'"
+          "inventory": "q.block_state('minecraft:block_face') != 'up' && !q.block_state('cit:multiblock_index')"
         }
       },
       "minecraft:collision_box": {
@@ -118,16 +129,42 @@
           }
         ]
       },
-      "cit:rotation": {},
-      "cit:dynamic_state": {},
-      "cit:multiblock": {
-        "size": [
-          1,
-          2,
-          1
-        ],
-        "index": "cit:multiblock_index",
-        "rotate": true
+      "minecraft:item_visual": {
+        "geometry": {
+          "identifier": "geometry.cit.snow_block_1_item"
+        },
+        "material_instances": {
+          "*": {
+            "texture": "snow",
+            "render_method": "alpha_test",
+            "ambient_occlusion": true,
+            "face_dimming": true
+          },
+          "_wool_side": {
+            "texture": "red_wool_side",
+            "render_method": "alpha_test",
+            "ambient_occlusion": true,
+            "face_dimming": true
+          },
+          "black_wool": {
+            "texture": "black_wool",
+            "render_method": "alpha_test",
+            "ambient_occlusion": true,
+            "face_dimming": true
+          },
+          "snow_block_": {
+            "texture": "snow_block_1",
+            "render_method": "alpha_test",
+            "ambient_occlusion": true,
+            "face_dimming": true
+          },
+          "hat": {
+            "texture": "black_wool",
+            "render_method": "alpha_test",
+            "ambient_occlusion": true,
+            "face_dimming": true
+          }
+        }
       }
     },
     "permutations": [
