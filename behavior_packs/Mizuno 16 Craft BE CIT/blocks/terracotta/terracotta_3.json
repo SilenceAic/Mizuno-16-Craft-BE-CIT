@@ -36,18 +36,128 @@
           "inventory": "q.block_state('minecraft:block_face') != 'up'"
         }
       },
-      "minecraft:collision_box": {
-        "origin": [
-          -8,
-          0,
-          -4.5
-        ],
-        "size": [
-          15,
-          8,
-          9
-        ]
-      },
+      "minecraft:collision_box": [
+        {
+          "origin": [
+            3,
+            8,
+            -2
+          ],
+          "size": [
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "origin": [
+            6,
+            6,
+            -2
+          ],
+          "size": [
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "origin": [
+            0,
+            6,
+            -2
+          ],
+          "size": [
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "origin": [
+            1,
+            7,
+            -4
+          ],
+          "size": [
+            6,
+            1,
+            6
+          ]
+        },
+        {
+          "origin": [
+            0.5,
+            1,
+            -4.5
+          ],
+          "size": [
+            7,
+            5,
+            7
+          ]
+        },
+        {
+          "origin": [
+            1.5,
+            0,
+            -3.5
+          ],
+          "size": [
+            5,
+            7,
+            5
+          ]
+        },
+        {
+          "origin": [
+            -7.25,
+            9,
+            -2
+          ],
+          "size": [
+            6,
+            1,
+            6
+          ]
+        },
+        {
+          "origin": [
+            -5.25,
+            10,
+            0
+          ],
+          "size": [
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "origin": [
+            -7.75,
+            2,
+            -2.5
+          ],
+          "size": [
+            7,
+            6,
+            7
+          ]
+        },
+        {
+          "origin": [
+            -6.75,
+            0,
+            -1.5
+          ],
+          "size": [
+            5,
+            9,
+            5
+          ]
+        }
+      ],
       "minecraft:selection_box": {
         "origin": [
           -8,

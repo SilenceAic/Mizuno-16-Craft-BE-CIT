@@ -38,26 +38,26 @@
       },
       "minecraft:collision_box": {
         "origin": [
-          -4,
+          -6,
           0,
-          -4
+          -6
         ],
         "size": [
+          12,
           8,
-          6,
-          8
+          12
         ]
       },
       "minecraft:selection_box": {
         "origin": [
-          -4,
+          -6,
           0,
-          -4
+          -6
         ],
         "size": [
+          12,
           8,
-          6,
-          8
+          12
         ]
       },
       "minecraft:material_instances": {
