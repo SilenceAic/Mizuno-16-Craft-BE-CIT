@@ -30,6 +30,8 @@
       }
     },
     "components": {
+      "cit:rotation": {},
+      "cit:dynamic_state": {},
       "minecraft:connection_rule": {
         "accepts_connections_from": "none"
       },
@@ -83,9 +85,7 @@
             ]
           }
         ]
-      },
-      "cit:rotation": {},
-      "cit:dynamic_state": {}
+      }
     },
     "permutations": [
       {
