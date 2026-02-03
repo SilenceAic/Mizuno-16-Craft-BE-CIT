@@ -23,6 +23,7 @@
       }
     },
     "components": {
+      "cit:rotation": {},
       "minecraft:connection_rule": {
         "accepts_connections_from": "none"
       },
@@ -69,7 +70,6 @@
         }
       },
       "minecraft:light_emission": 15,
-      "cit:rotation": {}
     },
     "permutations": [
       {
