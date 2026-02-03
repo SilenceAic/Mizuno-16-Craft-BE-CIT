@@ -22,7 +22,7 @@ export class MultiblockComponent {
   }
 
   beforeOnPlayerPlace(event, componentData, onSetPermutation = null) {
-    const { block, permutationToPlace, dimension } = event;
+    const { block, permutationToPlace, dimension, player } = event;
     const params = componentData?.params || componentData || {};
 
     console.warn(`[Multiblock] 开始处理 ${permutationToPlace.type.id}`);
@@ -104,6 +104,25 @@ export class MultiblockComponent {
       }
 
       dimension.playSound(totalBlocks >= 8 ? "dig.stone" : "dig.wood", block.location);
+
+      // 减少玩家手中的物品数量
+      if (player) {
+        try {
+          const container = player.getComponent("inventory")?.container;
+          const item = container?.getItem(player.selectedSlotIndex);
+          if (container && item) {
+            if (item.amount > 1) {
+              item.amount -= 1;
+              container.setItem(player.selectedSlotIndex, item);
+            } else {
+              container.setItem(player.selectedSlotIndex);
+            }
+            console.warn(`[Multiblock] 已消耗物品，剩余数量: ${item.amount > 1 ? item.amount - 1 : 0}`);
+          }
+        } catch (e) {
+          console.error(`[Multiblock] 减少物品失败:`, e);
+        }
+      }
     });
   }
 
