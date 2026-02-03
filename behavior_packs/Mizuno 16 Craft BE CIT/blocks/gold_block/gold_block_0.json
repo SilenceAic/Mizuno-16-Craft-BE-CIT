@@ -8,16 +8,24 @@
       },
       "traits": {
         "minecraft:placement_position": {
-          "enabled_states": ["minecraft:block_face"]
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
         }
       },
       "states": {
         "cit:rotation": {
-          "values": { "min": 0, "max": 15 }
+          "values": {
+            "min": 0,
+            "max": 15
+          }
         }
       }
     },
     "components": {
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
       "minecraft:geometry": {
         "identifier": "geometry.cit.gold_block_0",
         "bone_visibility": {
@@ -30,17 +38,41 @@
       },
       "minecraft:collision_box": [
         {
-          "origin": [-1, 0, -7],
-          "size": [8, 8, 8]
+          "origin": [
+            -1,
+            0,
+            -7
+          ],
+          "size": [
+            8,
+            8,
+            8
+          ]
         },
         {
-          "origin": [-5, 0, -8.5],
-          "size": [3, 7, 15]
+          "origin": [
+            -5,
+            0,
+            -8.5
+          ],
+          "size": [
+            3,
+            7,
+            15
+          ]
         }
       ],
       "minecraft:selection_box": {
-        "origin": [-5, 0, -6],
-        "size": [10, 7, 10]
+        "origin": [
+          -5,
+          0,
+          -6
+        ],
+        "size": [
+          10,
+          7,
+          10
+        ]
       },
       "minecraft:material_instances": {
         "*": {
@@ -59,7 +91,9 @@
       "minecraft:placement_filter": {
         "conditions": [
           {
-            "allowed_faces": ["up"]
+            "allowed_faces": [
+              "up"
+            ]
           }
         ]
       },
@@ -69,19 +103,37 @@
       {
         "condition": "q.block_state('cit:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
         "components": {
-          "minecraft:transformation": { "rotation": [0, -90, 0] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          }
         }
       },
       {
         "condition": "q.block_state('cit:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
         "components": {
-          "minecraft:transformation": { "rotation": [0, 180, 0] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
         }
       },
       {
         "condition": "q.block_state('cit:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
         "components": {
-          "minecraft:transformation": { "rotation": [0, 90, 0] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
         }
       }
     ]

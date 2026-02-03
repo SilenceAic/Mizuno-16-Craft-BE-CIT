@@ -23,6 +23,9 @@
       }
     },
     "components": {
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
       "minecraft:geometry": {
         "identifier": "geometry.cit.gold_block_1",
         "bone_visibility": {
