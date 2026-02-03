@@ -8,24 +8,24 @@
 			"crafting_table"
 		],
 		"pattern": [
-            " S ",
+			" S ",
 			"sRs",
-            " S "
+			" S "
 		],
 		"key": {
 			"S": {
 				"item": "minecraft:snow"
 			},
-            "R": {
+			"R": {
 				"item": "minecraft:red_wool"
 			},
-            "s": {
-                "item": "minecraft:stick"
-            }            
+			"s": {
+				"item": "minecraft:stick"
+			}
 		},
 		"result": {
 			"item": "cit:snow_block_1",
-            "count": 1
+			"count": 1
 		}
 	}
 }
