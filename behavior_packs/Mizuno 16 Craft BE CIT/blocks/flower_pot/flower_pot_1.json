@@ -23,6 +23,7 @@
       }
     },
     "components": {
+      "cit:rotation": {},
       "minecraft:connection_rule": {
         "accepts_connections_from": "none"
       },
@@ -53,7 +54,7 @@
           "origin": [
             -6,
             0,
-            -4
+            -1
           ],
           "size": [
             5,
