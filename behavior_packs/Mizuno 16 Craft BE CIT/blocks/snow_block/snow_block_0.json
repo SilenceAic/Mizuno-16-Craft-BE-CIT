@@ -62,7 +62,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "snow",
+          "texture": "cit:snow",
           "render_method": "alpha_test",
           "ambient_occlusion": true,
           "face_dimming": true

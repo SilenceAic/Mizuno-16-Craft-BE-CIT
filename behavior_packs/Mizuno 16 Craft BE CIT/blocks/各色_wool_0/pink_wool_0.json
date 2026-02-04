@@ -160,7 +160,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "pink_wool",
+          "texture": "cit:pink_wool",
           "render_method": "alpha_test",
           "ambient_occlusion": true,
           "face_dimming": true
@@ -172,7 +172,7 @@
           "face_dimming": true
         },
         "wool": {
-          "texture": "pink_wool",
+          "texture": "cit:pink_wool",
           "render_method": "alpha_test",
           "ambient_occlusion": true,
           "face_dimming": true

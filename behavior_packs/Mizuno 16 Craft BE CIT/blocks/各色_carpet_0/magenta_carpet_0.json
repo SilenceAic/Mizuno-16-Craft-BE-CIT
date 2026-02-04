@@ -9,15 +9,23 @@
       },
       "traits": {
         "minecraft:placement_position": {
-          "enabled_states": ["minecraft:block_face"]
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
         }
       },
       "states": {
         "cit:rotation": {
-          "values": { "min": 0, "max": 15 }
+          "values": {
+            "min": 0,
+            "max": 15
+          }
         },
         "cit:dynamic_state": {
-          "values": { "min": 0, "max": 1 }
+          "values": {
+            "min": 0,
+            "max": 1
+          }
         }
       }
     },
@@ -33,16 +41,32 @@
         }
       },
       "minecraft:collision_box": {
-        "origin": [-8.5, 9, -2],
-        "size": [16, 5, 9]
+        "origin": [
+          -8.5,
+          9,
+          -2
+        ],
+        "size": [
+          16,
+          5,
+          9
+        ]
       },
       "minecraft:selection_box": {
-        "origin": [-8.5, 9, -2],
-        "size": [16, 5, 9]
+        "origin": [
+          -8.5,
+          9,
+          -2
+        ],
+        "size": [
+          16,
+          5,
+          9
+        ]
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "magenta_wool",
+          "texture": "cit:magenta_wool",
           "render_method": "alpha_test",
           "ambient_occlusion": true,
           "face_dimming": true
@@ -57,7 +81,12 @@
       "minecraft:placement_filter": {
         "conditions": [
           {
-            "allowed_faces": ["east", "south", "west", "north"]
+            "allowed_faces": [
+              "east",
+              "south",
+              "west",
+              "north"
+            ]
           }
         ]
       },
@@ -68,19 +97,37 @@
       {
         "condition": "q.block_state('cit:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
         "components": {
-          "minecraft:transformation": { "rotation": [0, -90, 0] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          }
         }
       },
       {
         "condition": "q.block_state('cit:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
         "components": {
-          "minecraft:transformation": { "rotation": [0, 180, 0] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
         }
       },
       {
         "condition": "q.block_state('cit:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
         "components": {
-          "minecraft:transformation": { "rotation": [0, 90, 0] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
         }
       },
       {
@@ -88,13 +135,13 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "magenta_wool",
+              "texture": "cit:magenta_wool",
               "render_method": "alpha_test",
               "ambient_occlusion": true,
               "face_dimming": true
             },
             "white_wool": {
-              "texture": "white_wool",
+              "texture": "cit:white_wool",
               "render_method": "alpha_test",
               "ambient_occlusion": true,
               "face_dimming": true

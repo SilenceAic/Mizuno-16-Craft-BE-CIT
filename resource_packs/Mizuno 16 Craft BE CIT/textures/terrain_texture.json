@@ -29,55 +29,55 @@
     "sheep_0a": {
       "textures": "textures/blocks/cit/sheep_0a"
     },
-    "white_wool": {
+    "cit:white_wool": {
       "textures": "textures/blocks/cit/white_wool"
     },
     "white_wool_0a": {
       "textures": "textures/blocks/cit/white_wool_0a"
     },
-    "light_gray_wool": {
+    "cit:light_gray_wool": {
       "textures": "textures/blocks/cit/light_gray_wool"
     },
-    "gray_wool": {
+    "cit:gray_wool": {
       "textures": "textures/blocks/cit/gray_wool"
     },
-    "black_wool": {
+    "cit:black_wool": {
       "textures": "textures/blocks/cit/black_wool"
     },
-    "brown_wool": {
+    "cit:brown_wool": {
       "textures": "textures/blocks/cit/brown_wool"
     },
-    "red_wool": {
+    "cit:red_wool": {
       "textures": "textures/blocks/cit/red_wool"
     },
-    "orange_wool": {
+    "cit:orange_wool": {
       "textures": "textures/blocks/cit/orange_wool"
     },
-    "yellow_wool": {
+    "cit:yellow_wool": {
       "textures": "textures/blocks/cit/yellow_wool"
     },
-    "lime_wool": {
+    "cit:lime_wool": {
       "textures": "textures/blocks/cit/lime_wool"
     },
-    "green_wool": {
+    "cit:green_wool": {
       "textures": "textures/blocks/cit/green_wool"
     },
-    "cyan_wool": {
+    "cit:cyan_wool": {
       "textures": "textures/blocks/cit/cyan_wool"
     },
-    "light_blue_wool": {
+    "cit:light_blue_wool": {
       "textures": "textures/blocks/cit/light_blue_wool"
     },
-    "blue_wool": {
+    "cit:blue_wool": {
       "textures": "textures/blocks/cit/blue_wool"
     },
-    "purple_wool": {
+    "cit:purple_wool": {
       "textures": "textures/blocks/cit/purple_wool"
     },
-    "magenta_wool": {
+    "cit:magenta_wool": {
       "textures": "textures/blocks/cit/magenta_wool"
     },
-    "pink_wool": {
+    "cit:pink_wool": {
       "textures": "textures/blocks/cit/pink_wool"
     },
     "gold_block_0": {
@@ -101,7 +101,7 @@
     "pumpkin_1_01": {
       "textures": "textures/blocks/cit/pumpkin_1_01"
     },
-    "snow": {
+    "cit:snow": {
       "textures": "textures/blocks/cit/snow"
     },
     "red_wool_side": {

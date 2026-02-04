@@ -42,8 +42,7 @@
 				{
 					"name": "inventory",
 					"parent": "bone",
-					"pivot": [0, 0, 0],
-					"rotation": [0, 180, 0]
+					"pivot": [0, 0, 0]
 				}
 			]
 		}

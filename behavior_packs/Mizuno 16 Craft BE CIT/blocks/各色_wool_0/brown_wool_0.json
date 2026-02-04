@@ -160,7 +160,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "brown_wool",
+          "texture": "cit:brown_wool",
           "render_method": "alpha_test",
           "ambient_occlusion": true,
           "face_dimming": true
@@ -172,7 +172,7 @@
           "face_dimming": true
         },
         "wool": {
-          "texture": "brown_wool",
+          "texture": "cit:brown_wool",
           "render_method": "alpha_test",
           "ambient_occlusion": true,
           "face_dimming": true
