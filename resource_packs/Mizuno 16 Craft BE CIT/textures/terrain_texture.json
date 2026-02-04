@@ -919,6 +919,12 @@
     },
     "white_carpet_3b": {
       "textures": "textures/blocks/cit/white_carpet_3b"
+    },
+    "skeleton_skull_0": {
+      "textures": "textures/blocks/cit/skeleton_skull_0"
+    },
+    "creeper_head_0": {
+      "textures": "textures/blocks/cit/creeper_head_0"
     }
   }
 }

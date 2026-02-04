@@ -198,6 +198,12 @@
   "cit:flower_pot_1": {
     "sound": "wood"
   },
+  "cit:skeleton_skull_0": {
+    "sound": "stone"
+  },
+  "cit:creeper_head_0": {
+    "sound": "cloth"
+  },
   "cit:egg_0": {
     "sound": "wood"
   },

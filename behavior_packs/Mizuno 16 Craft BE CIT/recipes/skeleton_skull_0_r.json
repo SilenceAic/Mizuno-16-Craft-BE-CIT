@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:skeleton_skull_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:skeleton_skull"
+			}
+		},
+		"result": {
+			"item": "cit:skeleton_skull_0",
+			"count": 1
+		}
+	}
+}
