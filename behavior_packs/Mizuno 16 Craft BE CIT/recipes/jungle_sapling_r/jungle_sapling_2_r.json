@@ -8,11 +8,15 @@
 			"crafting_table"
 		],
 		"pattern": [
-			"A"
+			"B",
+			"J"
 		],
 		"key": {
-			"A": {
-				"item": "minecraft:air"
+			"B": {
+				"item": "minecraft:bone_meal"
+			},
+			"J": {
+				"item": "cit:jungle_sapling_1"
 			}
 		},
 		"result": {
