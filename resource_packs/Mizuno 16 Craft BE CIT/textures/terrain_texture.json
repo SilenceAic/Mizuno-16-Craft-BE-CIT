@@ -482,6 +482,9 @@
     "cit:flower_pot": {
       "textures": "textures/blocks/cit/flower_pot"
     },
+    "flower_pot_00": {
+      "textures": "textures/blocks/cit/flower_pot_00"
+    },
     "flower_pot_0": {
       "textures": "textures/blocks/cit/flower_pot_0"
     },

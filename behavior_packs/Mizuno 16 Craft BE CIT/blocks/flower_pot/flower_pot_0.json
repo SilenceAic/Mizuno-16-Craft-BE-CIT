@@ -31,6 +31,7 @@
     "components": {
       "cit:rotation": {},
       "cit:dynamic_state": {},
+      "tag:cit:three_states": {},
       "minecraft:connection_rule": {
         "accepts_connections_from": "none"
       },
@@ -194,6 +195,18 @@
               "render_method": "alpha_test",
               "ambient_occlusion": true,
               "face_dimming": true
+            },
+            "flower_pot": {
+              "texture": "flower_pot_00", //两个重名的
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "dirt": {
+              "texture": "cit:dirt",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
             }
           }
         }
@@ -204,6 +217,18 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "flower_pot_0b",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "flower_pot": {
+              "texture": "flower_pot_1",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            },
+            "dirt": {
+              "texture": "cit:dirt",
               "render_method": "alpha_test",
               "ambient_occlusion": true,
               "face_dimming": true
