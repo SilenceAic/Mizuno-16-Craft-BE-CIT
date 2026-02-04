@@ -8,11 +8,15 @@
 			"crafting_table"
 		],
 		"pattern": [
-			"A"
+			"A",
+			"B"
 		],
 		"key": {
 			"A": {
-				"item": "minecraft:air"
+				"item": "minecraft:mangrove_propagule"
+			},
+			"B": {
+				"item": "minecraft:flower_pot"
 			}
 		},
 		"result": {

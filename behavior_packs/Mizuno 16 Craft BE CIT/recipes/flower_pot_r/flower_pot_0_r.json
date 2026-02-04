@@ -2,25 +2,24 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "cit:flower_pot_1"
+			"identifier": "cit:flower_pot_0"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"pattern": [
-			"A",
-			"B"
+			"BA"
 		],
 		"key": {
 			"A": {
-				"item": "minecraft:mangrove_propagule"
+				"item": "minecraft:iron_ingot"
 			},
 			"B": {
 				"item": "minecraft:flower_pot"
 			}
 		},
 		"result": {
-			"item": "cit:flower_pot_1",
+			"item": "cit:flower_pot_0",
 			"count": 1
 		}
 	}
