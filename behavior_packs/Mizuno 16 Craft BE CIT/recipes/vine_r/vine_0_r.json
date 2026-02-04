@@ -2,26 +2,23 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "cit:glowstone_0"
+			"identifier": "cit:vine_0"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"pattern": [
-			"GGG",
-			"GgG",
-			"GGG"
+			"   ",
+			" V ",
+			"   "
 		],
 		"key": {
-			"G": {
-				"item": "minecraft:glass"
-			},
-			"g": {
-				"item": "minecraft:glowstone"
+			"V": {
+				"item": "minecraft:vine"
 			}
 		},
 		"result": {
-			"item": "cit:glowstone_0",
+			"item": "cit:vine_0",
 			"count": 1
 		}
 	}

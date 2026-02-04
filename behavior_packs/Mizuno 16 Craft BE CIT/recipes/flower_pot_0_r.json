@@ -2,26 +2,24 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "cit:glowstone_0"
+			"identifier": "cit:flower_pot_0"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"pattern": [
-			"GGG",
-			"GgG",
-			"GGG"
+			"AB"
 		],
 		"key": {
-			"G": {
-				"item": "minecraft:glass"
+			"A": {
+				"item": "minecraft:flower_pot"
 			},
-			"g": {
-				"item": "minecraft:glowstone"
+			"B": {
+				"item": "minecraft:iron_ingot"
 			}
 		},
 		"result": {
-			"item": "cit:glowstone_0",
+			"item": "cit:flower_pot_0",
 			"count": 1
 		}
 	}

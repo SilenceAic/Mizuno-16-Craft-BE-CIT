@@ -2,26 +2,23 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "cit:glowstone_0"
+			"identifier": "cit:white_carpet_1"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"pattern": [
-			"GGG",
-			"GgG",
-			"GGG"
+			"C",
+			"C",
+			"C"
 		],
 		"key": {
-			"G": {
-				"item": "minecraft:glass"
-			},
-			"g": {
-				"item": "minecraft:glowstone"
+			"C": {
+				"item": "minecraft:white_carpet"
 			}
 		},
 		"result": {
-			"item": "cit:glowstone_0",
+			"item": "cit:white_carpet_1",
 			"count": 1
 		}
 	}
