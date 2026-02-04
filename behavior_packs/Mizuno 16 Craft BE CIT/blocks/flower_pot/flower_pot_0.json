@@ -2,7 +2,10 @@
   "format_version": "1.21.130",
   "minecraft:block": {
     "description": {
-      "identifier": "cit:chest_2",
+      "identifier": "cit:flower_pot_0",
+      "menu_category": {
+        "category": "items"
+      },
       "traits": {
         "minecraft:placement_position": {
           "enabled_states": [
@@ -41,18 +44,68 @@
           "inventory": "q.block_state('minecraft:block_face') != 'up'"
         }
       },
-      "minecraft:collision_box": {
-        "origin": [
-          -6,
-          0,
-          -6
-        ],
-        "size": [
-          12,
-          11,
-          12
-        ]
-      },
+      "minecraft:collision_box": [
+        {
+          "origin": [
+            -5,
+            0,
+            1
+          ],
+          "size": [
+            4,
+            6,
+            4
+          ]
+        },
+        {
+          "origin": [
+            -4,
+            0,
+            5
+          ],
+          "size": [
+            3,
+            6,
+            1
+          ]
+        },
+        {
+          "origin": [
+            -5,
+            0,
+            0
+          ],
+          "size": [
+            3,
+            6,
+            1
+          ]
+        },
+        {
+          "origin": [
+            -6,
+            0,
+            2
+          ],
+          "size": [
+            1,
+            6,
+            3
+          ]
+        },
+        {
+          "origin": [
+            -1,
+            0,
+            1
+          ],
+          "size": [
+            1,
+            6,
+            3
+          ]
+        }
+      ],
       "minecraft:selection_box": {
         "origin": [
           -6,
