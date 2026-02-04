@@ -46,13 +46,53 @@ export function spawnParticle(dimension, location, params) {
 }
 
 /**
+ * 从 params 中提取所有粒子配置
+ * 支持 particle, particle2, particle3... 格式
+ * @param {object} params - 原始参数
+ * @returns {Array} 粒子配置数组
+ */
+export function extractParticleConfigs(params) {
+  const configs = [];
+
+  // 提取主粒子配置
+  if (params.particle) {
+    configs.push({
+      particle: params.particle,
+      offset: params.offset,
+      molang: params.molang,
+      count: params.count,
+      random: params.random,
+      randomRange: params.randomRange,
+      rotateWithBlock: params.rotateWithBlock,
+    });
+  }
+
+  // 提取额外粒子配置 (particle2, particle3, ...)
+  for (let i = 2; i <= 10; i++) {
+    const particleKey = `particle${i}`;
+    if (params[particleKey]) {
+      configs.push({
+        particle: params[particleKey],
+        offset: params[`offset${i}`] || params.offset,
+        molang: params[`molang${i}`] || params.molang,
+        count: params[`count${i}`] !== undefined ? params[`count${i}`] : params.count,
+        random: params[`random${i}`] !== undefined ? params[`random${i}`] : params.random,
+        randomRange: params[`randomRange${i}`] || params.randomRange,
+        rotateWithBlock: params[`rotateWithBlock${i}`] !== undefined ? params[`rotateWithBlock${i}`] : params.rotateWithBlock,
+      });
+    }
+  }
+
+  return configs;
+}
+
+/**
  * 持续生成粒子（用于方块 tick 事件）
  * @param {object} block - 方块对象
  * @param {object} params - 粒子参数
  * @param {string} params.particle - 粒子类型 ID
  * @param {object} [params.offset] - 相对于方块中心的偏移
  * @param {string} [params.molang] - MoLang 变量字符串
- * @param {number} [params.interval] - 生成间隔 (ticks)，默认 20
  * @param {number} [params.count] - 每次生成的粒子数量，默认 1
  * @param {boolean} [params.random] - 是否在方块范围内随机位置，默认 false
  * @param {object} [params.randomRange] - 随机范围 { x, y, z }，默认 { x: 1, y: 1, z: 1 }

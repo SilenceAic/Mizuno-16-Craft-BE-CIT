@@ -13,6 +13,7 @@ import {
   spawnParticle,
   spawnParticleOnTick,
   rotateOffsetByDirection,
+  extractParticleConfigs,
 } from "./custom_function";
 
 const components = new Map();
@@ -416,19 +417,25 @@ components.set("cit:bed_sleep", {
 components.set("cit:bed_bounce", {});
 
 /**
- * 粒子组件 - 在指定位置生成粒子
+ * 粒子组件 - 在指定位置生成粒子（支持多种粒子）
  *
  * 使用方法（在方块 JSON 中配置）:
  * {
  *   "cit:particle": {
- *     "particle": "minecraft:campfire_smoke_particle",  // 粒子类型 ID（必需）
+ *     "particle": "minecraft:basic_flame_particle",     // 第一种粒子类型 ID（必需）
  *     "offset": { "x": 0.5, "y": 1.0, "z": 0.5 },       // 相对方块的偏移（可选，默认中心）
  *     "molang": "variable.color=1.0",                   // MoLang 变量（可选）
- *     "interval": 20,                                    // 生成间隔 ticks（可选，默认 20）
  *     "count": 1,                                        // 每次生成数量（可选，默认 1）
  *     "random": false,                                   // 是否随机位置（可选，默认 false）
  *     "randomRange": { "x": 1, "y": 1, "z": 1 },        // 随机范围（可选）
- *     "rotateWithBlock": false                           // 是否跟随方块方向旋转偏移（可选）
+ *     "rotateWithBlock": false,                          // 是否跟随方块方向旋转偏移（可选）
+ *
+ *     // 第二种粒子（可选，使用 particle2, offset2, molang2 等）
+ *     "particle2": "minecraft:basic_smoke_particle",
+ *     "offset2": { "x": 0.5, "y": 1.2, "z": 0.5 },      // 如果不指定则使用 offset
+ *     "count2": 2,                                       // 如果不指定则使用 count
+ *
+ *     // 可以继续添加 particle3, particle4... 最多到 particle10
  *   }
  * }
  *
@@ -443,18 +450,18 @@ components.set("cit:particle", {
     if (!block) return;
 
     const params = componentData?.params || componentData || {};
-    if (!params.particle) return;
+    const configs = extractParticleConfigs(params);
+    if (configs.length === 0) return;
 
-    // 处理方向旋转
-    let offset = params.offset;
-    if (params.rotateWithBlock && offset) {
-      const direction = block.permutation.getState("minecraft:cardinal_direction");
-      if (direction) {
+    const direction = block.permutation.getState("minecraft:cardinal_direction");
+
+    for (const config of configs) {
+      let offset = config.offset;
+      if (config.rotateWithBlock && offset && direction) {
         offset = rotateOffsetByDirection(offset, direction);
       }
+      spawnParticleOnTick(block, { ...config, offset });
     }
-
-    spawnParticleOnTick(block, { ...params, offset });
   },
 
   onPlayerInteract(event, componentData) {
@@ -462,29 +469,30 @@ components.set("cit:particle", {
     if (!block || !player) return;
 
     const params = componentData?.params || componentData || {};
-    if (!params.particle) return;
+    const configs = extractParticleConfigs(params);
+    if (configs.length === 0) return;
 
-    // 处理方向旋转
-    let offset = params.offset;
-    if (params.rotateWithBlock && offset) {
-      const direction = block.permutation.getState("minecraft:cardinal_direction");
-      if (direction) {
+    const direction = block.permutation.getState("minecraft:cardinal_direction");
+
+    for (const config of configs) {
+      let offset = config.offset;
+      if (config.rotateWithBlock && offset && direction) {
         offset = rotateOffsetByDirection(offset, direction);
       }
-    }
 
-    const count = params.count || 1;
-    for (let i = 0; i < count; i++) {
-      let particleOffset = offset ? { ...offset } : { x: 0.5, y: 0.5, z: 0.5 };
+      const count = config.count || 1;
+      for (let i = 0; i < count; i++) {
+        let particleOffset = offset ? { ...offset } : { x: 0.5, y: 0.5, z: 0.5 };
 
-      if (params.random) {
-        const range = params.randomRange || { x: 1, y: 1, z: 1 };
-        particleOffset.x += (Math.random() - 0.5) * range.x;
-        particleOffset.y += (Math.random() - 0.5) * range.y;
-        particleOffset.z += (Math.random() - 0.5) * range.z;
+        if (config.random) {
+          const range = config.randomRange || { x: 1, y: 1, z: 1 };
+          particleOffset.x += (Math.random() - 0.5) * range.x;
+          particleOffset.y += (Math.random() - 0.5) * range.y;
+          particleOffset.z += (Math.random() - 0.5) * range.z;
+        }
+
+        spawnParticle(block.dimension, block.location, { ...config, offset: particleOffset });
       }
-
-      spawnParticle(block.dimension, block.location, { ...params, offset: particleOffset });
     }
   },
 
@@ -493,30 +501,31 @@ components.set("cit:particle", {
     if (!block) return;
 
     const params = componentData?.params || componentData || {};
-    if (!params.particle) return;
+    const configs = extractParticleConfigs(params);
+    if (configs.length === 0) return;
 
     system.run(() => {
-      // 处理方向旋转
-      let offset = params.offset;
-      if (params.rotateWithBlock && offset) {
-        const direction = block.permutation.getState("minecraft:cardinal_direction");
-        if (direction) {
+      const direction = block.permutation.getState("minecraft:cardinal_direction");
+
+      for (const config of configs) {
+        let offset = config.offset;
+        if (config.rotateWithBlock && offset && direction) {
           offset = rotateOffsetByDirection(offset, direction);
         }
-      }
 
-      const count = params.count || 1;
-      for (let i = 0; i < count; i++) {
-        let particleOffset = offset ? { ...offset } : { x: 0.5, y: 0.5, z: 0.5 };
+        const count = config.count || 1;
+        for (let i = 0; i < count; i++) {
+          let particleOffset = offset ? { ...offset } : { x: 0.5, y: 0.5, z: 0.5 };
 
-        if (params.random) {
-          const range = params.randomRange || { x: 1, y: 1, z: 1 };
-          particleOffset.x += (Math.random() - 0.5) * range.x;
-          particleOffset.y += (Math.random() - 0.5) * range.y;
-          particleOffset.z += (Math.random() - 0.5) * range.z;
+          if (config.random) {
+            const range = config.randomRange || { x: 1, y: 1, z: 1 };
+            particleOffset.x += (Math.random() - 0.5) * range.x;
+            particleOffset.y += (Math.random() - 0.5) * range.y;
+            particleOffset.z += (Math.random() - 0.5) * range.z;
+          }
+
+          spawnParticle(block.dimension, block.location, { ...config, offset: particleOffset });
         }
-
-        spawnParticle(block.dimension, block.location, { ...params, offset: particleOffset });
       }
     });
   },
