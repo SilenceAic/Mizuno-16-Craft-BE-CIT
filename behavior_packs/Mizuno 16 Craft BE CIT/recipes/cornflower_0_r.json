@@ -2,18 +2,21 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "cit:cornflower_0",
-			"_comment": "⚠️ 空配方 - 需要填写实际合成材料"
+			"identifier": "cit:cornflower_0"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"pattern": [
-			"A"
+			"A",
+			"B"
 		],
 		"key": {
 			"A": {
-				"item": "minecraft:air"
+				"item": "minecraft:cornflower"
+			},
+			"B": {
+				"item": "minecraft:flower_pot"
 			}
 		},
 		"result": {
