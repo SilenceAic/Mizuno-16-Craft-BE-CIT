@@ -1,0 +1,32 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:white_banner_2"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A   ",
+			"B   ",
+			"C   "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:stick"
+			},
+			"B": {
+				"item": "minecraft:white_wool"
+			},
+			"C": {
+				"item": "minecraft:string"
+			}
+		},
+		"result": {
+			"item": "cit:white_banner_2",
+			"count": 1,
+			"data": 4
+		}
+	}
+}

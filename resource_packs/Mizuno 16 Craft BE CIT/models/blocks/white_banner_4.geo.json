@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.cit.white_banner_0",
+				"identifier": "geometry.cit.white_banner_4",
 				"texture_width": 16,
 				"texture_height": 16,
 				"visible_bounds_width": 3,
@@ -12,7 +12,7 @@
 			},
 			"bones": [
 				{
-					"name": "white_banner_0",
+					"name": "white_banner_4",
 					"pivot": [0, 0, 0],
 					"rotation": [0, 180, 0],
 					"cubes": [
@@ -24,6 +24,13 @@
 								"south": {"uv": [0, 15], "uv_size": [11, 1]},
 								"up": {"uv": [11, 16], "uv_size": [-11, -1]},
 								"down": {"uv": [11, 16], "uv_size": [-11, -1]}
+							}
+						},
+						{
+							"origin": [-6.5, 0.12, -7.24],
+							"size": [13, 14, 0.01],
+							"uv": {
+								"north": {"uv": [8.5, 0.5], "uv_size": [6.5, 7]}
 							}
 						},
 						{

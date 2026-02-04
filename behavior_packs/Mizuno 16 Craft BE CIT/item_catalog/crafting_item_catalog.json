@@ -114,6 +114,18 @@
           },
           {
             "group_identifier": {
+              "name": "minecraft:itemGroup.name.banner"
+            },
+            "items": [
+              "cit:white_banner_0",
+              "cit:white_banner_1",
+              "cit:white_banner_2",
+              "cit:white_banner_3",
+              "cit:white_banner_4"
+            ]
+          },
+          {
+            "group_identifier": {
               "icon": "cit:terracotta_0",
               "name": "cit:itemGroup.name.terracotta"
             },

@@ -931,6 +931,12 @@
     },
     "creeper_head_2": {
       "textures": "textures/blocks/cit/creeper_head_2"
+    },
+    "white_banner_0": {
+      "textures": "textures/blocks/cit/white_banner_0"
+    },
+    "white_banner_2": {
+      "textures": "textures/blocks/cit/white_banner_2"
     }
   }
 }

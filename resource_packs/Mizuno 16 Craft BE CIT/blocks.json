@@ -210,6 +210,21 @@
   "cit:creeper_head_2": {
     "sound": "cloth"
   },
+  "cit:white_banner_0": {
+    "sound": "cloth"
+  },
+  "cit:white_banner_1": {
+    "sound": "cloth"
+  },
+  "cit:white_banner_2": {
+    "sound": "cloth"
+  },
+  "cit:white_banner_3": {
+    "sound": "cloth"
+  },
+  "cit:white_banner_4": {
+    "sound": "cloth"
+  },
   "cit:egg_0": {
     "sound": "wood"
   },

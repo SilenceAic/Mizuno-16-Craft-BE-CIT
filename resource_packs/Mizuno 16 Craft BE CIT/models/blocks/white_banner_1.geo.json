@@ -1,18 +1,18 @@
 {
-	"format_version": "1.12.0",
+	"format_version": "1.21.20",
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.cit.white_banner_0",
+				"identifier": "geometry.cit.white_banner_1",
 				"texture_width": 16,
 				"texture_height": 16,
 				"visible_bounds_width": 3,
-				"visible_bounds_height": 2.5,
-				"visible_bounds_offset": [0, 0.75, 0]
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
 			},
 			"bones": [
 				{
-					"name": "white_banner_0",
+					"name": "bone",
 					"pivot": [0, 0, 0],
 					"rotation": [0, 180, 0],
 					"cubes": [
@@ -24,6 +24,13 @@
 								"south": {"uv": [0, 15], "uv_size": [11, 1]},
 								"up": {"uv": [11, 16], "uv_size": [-11, -1]},
 								"down": {"uv": [11, 16], "uv_size": [-11, -1]}
+							}
+						},
+						{
+							"origin": [-6.5, -13.38, -7.49],
+							"size": [13, 27, 0.01],
+							"uv": {
+								"north": {"uv": [0.5, 0.5], "uv_size": [6.5, 13.5]}
 							}
 						},
 						{
@@ -52,7 +59,17 @@
 						}
 					]
 				}
-			]
+			],
+			"item_display_transforms": {
+				"gui": {
+					"rotation": [30, -22.5, 0],
+					"translation": [0, 1.5, 0],
+					"scale": [0.525, 0.525, 0.525],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0],
+					"fit_to_frame": false
+				}
+			}
 		}
 	]
 }
