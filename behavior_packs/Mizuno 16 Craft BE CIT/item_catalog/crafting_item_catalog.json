@@ -87,6 +87,15 @@
           },
           {
             "group_identifier": {
+              "name": "minecraft:itemGroup.name.skull"
+            },
+            "items": [
+              "cit:skeleton_skull_0",
+              "cit:creeper_head_0"
+            ]
+          },
+          {
+            "group_identifier": {
               "icon": "cit:crafting_table_0",
               "name": "cit:itemGroup.name.crafting_table"
             },
@@ -298,9 +307,7 @@
               "cit:egg_0",
               "cit:bamboo_0",
               "cit:flower_pot_0",
-              "cit:flower_pot_1",
-              "cit:skeleton_skull_0",
-              "cit:creeper_head_0"
+              "cit:flower_pot_1"
             ]
           }
         ]
