@@ -1,4 +1,11 @@
+cit:itemGroup.name.terracotta=Terracotta_0
+cit:itemGroup.name.crafting_table=Crafting Table_0
 cit:itemGroup.name.torch=Torch_0
+cit:itemGroup.name.sugar=Sugar_0
+cit:itemGroup.name.vine=Vine_0
+cit:itemGroup.name.cactus=Cactus_0
+cit:itemGroup.name.bamboo=Bamboo_0
+
 tile.cit:stone_0.name=Stone_0
 tile.cit:oak_log_0.name=Oak Log_0
 tile.cit:oak_log_1.name=Oak log_1

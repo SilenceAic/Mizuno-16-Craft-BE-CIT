@@ -70,7 +70,11 @@
               "name": "minecraft:itemGroup.name.bed"
             },
             "items": [
-              "cit:bed_0"
+              "cit:bed_0",
+              "cit:chest_1",
+              "cit:chest_2",
+              "cit:chest_3",
+              "cit:chest_4"
             ]
           },
           {
@@ -117,7 +121,7 @@
           {
             "group_identifier": {
               "icon": "cit:torch_0",
-              "name": "cit:torch_0"
+              "name": "cit:itemGroup.name.torch"
             },
             "items": [
               "cit:torch_0",
@@ -249,12 +253,11 @@
             ]
           },
           {
+            "group_identifier": {
+              "icon": "cit:sugar_0",
+              "name": "cit:itemGroup.name.sugar"
+            },
             "items": [
-              "cit:pumpkin_0",
-              "cit:pumpkin_1",
-              "cit:snow_block_0",
-              "cit:snow_block_1",
-              "cit:egg_0",
               "cit:sugar_0",
               "cit:sugar_1",
               "cit:sugar_2",
@@ -262,17 +265,42 @@
               "cit:sugar_4",
               "cit:sugar_5",
               "cit:sugar_6",
-              "cit:sugar_7",
-              "cit:cactus_0",
-              "cit:cactus_1",
-              "cit:cactus_2",
-              "cit:bamboo_0",
+              "cit:sugar_7"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "cit:vine_0",
+              "name": "cit:itemGroup.name.vine"
+            },
+            "items": [
               "cit:vine_0",
               "cit:vine_1",
               "cit:vine_2",
               "cit:vine_3",
               "cit:vine_4",
               "cit:vine_5"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "cit:cactus_0",
+              "name": "cit:itemGroup.name.cactus"
+            },
+            "items": [
+              "cit:cactus_0",
+              "cit:cactus_1",
+              "cit:cactus_2"
+            ]
+          },
+          {
+            "items": [
+              "cit:pumpkin_0",
+              "cit:pumpkin_1",
+              "cit:snow_block_0",
+              "cit:snow_block_1",
+              "cit:egg_0",
+              "cit:bamboo_0"
             ]
           }
         ]
