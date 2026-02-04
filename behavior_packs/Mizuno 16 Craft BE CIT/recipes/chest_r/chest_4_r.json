@@ -8,23 +8,23 @@
 			"crafting_table"
 		],
 		"pattern": [
-            " G",
-            "CP"
+			" G",
+			"CP"
 		],
 		"key": {
 			"G": {
 				"item": "minecraft:short_grass"
 			},
-            "C": {
+			"C": {
 				"item": "cit:chest_3"
 			},
-            "P": {
+			"P": {
 				"item": "minecraft:flower_pot"
 			}
 		},
 		"result": {
 			"item": "cit:chest_4",
-            "count": 1
+			"count": 1
 		}
 	}
 }

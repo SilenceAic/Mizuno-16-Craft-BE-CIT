@@ -2,18 +2,27 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "cit:crafting_table_6",
-			"_comment": "⚠️ 空配方 - 需要填写实际合成材料"
+			"identifier": "cit:crafting_table_6"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"pattern": [
-			"A"
+			"AC",
+			"BD"
 		],
 		"key": {
 			"A": {
-				"item": "minecraft:air"
+				"item": "minecraft:feather"
+			},
+			"B": {
+				"item": "minecraft:stick"
+			},
+			"C": {
+				"item": "minecraft:green_dye"
+			},
+			"D": {
+				"item": "minecraft:bucket"
 			}
 		},
 		"result": {

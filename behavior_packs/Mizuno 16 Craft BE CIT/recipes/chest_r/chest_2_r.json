@@ -8,21 +8,21 @@
 			"crafting_table"
 		],
 		"pattern": [
-            "BBB",
-            "BCB",
-            "BBB"
+			"BBB",
+			"BCB",
+			"BBB"
 		],
 		"key": {
 			"C": {
 				"item": "minecraft:chest"
 			},
-            "B": {
+			"B": {
 				"item": "minecraft:bamboo"
 			}
 		},
 		"result": {
 			"item": "cit:chest_2",
-            "count": 1
+			"count": 1
 		}
 	}
 }

@@ -2,18 +2,22 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "cit:crafting_table_2",
-			"_comment": "⚠️ 空配方 - 需要填写实际合成材料"
+			"identifier": "cit:crafting_table_2"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"pattern": [
-			"A"
+			"A A",
+			" B ",
+			"A A"
 		],
 		"key": {
 			"A": {
-				"item": "minecraft:air"
+				"item": "minecraft:stick"
+			},
+			"B": {
+				"item": "minecraft:iron_ingot"
 			}
 		},
 		"result": {

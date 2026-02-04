@@ -8,20 +8,20 @@
 			"crafting_table"
 		],
 		"pattern": [
-            "G",
-            "C"
+			"G",
+			"C"
 		],
 		"key": {
 			"G": {
 				"item": "minecraft:gold_nugget"
 			},
-            "C": {
+			"C": {
 				"item": "minecraft:chest"
 			}
 		},
 		"result": {
 			"item": "cit:chest_3",
-            "count": 1
+			"count": 1
 		}
 	}
 }

@@ -8,7 +8,7 @@
 			"crafting_table"
 		],
 		"pattern": [
-            "C"
+			"C"
 		],
 		"key": {
 			"C": {
@@ -17,7 +17,7 @@
 		},
 		"result": {
 			"item": "cit:chest_0",
-            "count": 1
+			"count": 1
 		}
 	}
 }

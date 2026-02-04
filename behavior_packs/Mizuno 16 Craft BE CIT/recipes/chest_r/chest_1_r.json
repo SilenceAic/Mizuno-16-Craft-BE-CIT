@@ -8,21 +8,21 @@
 			"crafting_table"
 		],
 		"pattern": [
-            "O",
-            "C",
-            "O"
+			"O",
+			"C",
+			"O"
 		],
 		"key": {
 			"O": {
 				"item": "minecraft:oak_slab"
 			},
-            "C": {
-                "item": "minecraft:chest"
-            }
+			"C": {
+				"item": "minecraft:chest"
+			}
 		},
 		"result": {
 			"item": "cit:chest_1",
-            "count": 1
+			"count": 1
 		}
 	}
 }
