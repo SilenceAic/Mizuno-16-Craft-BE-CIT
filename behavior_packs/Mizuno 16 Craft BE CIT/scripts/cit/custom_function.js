@@ -1,7 +1,109 @@
 import * as server from "@minecraft/server";
+import { system } from "@minecraft/server";
 import * as create from "../system/create";
 import * as multiblock from "../system/multiblock";
 
+/**
+ * 在指定位置生成粒子
+ * @param {object} dimension - 维度对象
+ * @param {object} location - 方块位置 { x, y, z }
+ * @param {object} params - 粒子参数
+ * @param {string} params.particle - 粒子类型 ID (如 "minecraft:campfire_smoke_particle")
+ * @param {object} [params.offset] - 相对于方块中心的偏移 { x, y, z }，默认 { x: 0.5, y: 0.5, z: 0.5 }
+ * @param {string} [params.molang] - MoLang 变量字符串 (可选)
+ */
+export function spawnParticle(dimension, location, params) {
+  if (!params?.particle) return;
+
+  const offset = params.offset || { x: 0.5, y: 0.5, z: 0.5 };
+  const particleLocation = {
+    x: location.x + offset.x,
+    y: location.y + offset.y,
+    z: location.z + offset.z,
+  };
+
+  try {
+    if (params.molang) {
+      const molangVariables = new server.MolangVariableMap();
+      // 解析 molang 参数，格式: "variable.name=value,variable.name2=value2"
+      const variables = params.molang.split(",");
+      for (const variable of variables) {
+        const [name, value] = variable.trim().split("=");
+        if (name && value !== undefined) {
+          const numValue = parseFloat(value);
+          if (!isNaN(numValue)) {
+            molangVariables.setFloat(name.trim(), numValue);
+          }
+        }
+      }
+      dimension.spawnParticle(params.particle, particleLocation, molangVariables);
+    } else {
+      dimension.spawnParticle(params.particle, particleLocation);
+    }
+  } catch (e) {
+    console.error(`[Particle] 生成粒子失败: ${e}`);
+  }
+}
+
+/**
+ * 持续生成粒子（用于方块 tick 事件）
+ * @param {object} block - 方块对象
+ * @param {object} params - 粒子参数
+ * @param {string} params.particle - 粒子类型 ID
+ * @param {object} [params.offset] - 相对于方块中心的偏移
+ * @param {string} [params.molang] - MoLang 变量字符串
+ * @param {number} [params.interval] - 生成间隔 (ticks)，默认 20
+ * @param {number} [params.count] - 每次生成的粒子数量，默认 1
+ * @param {boolean} [params.random] - 是否在方块范围内随机位置，默认 false
+ * @param {object} [params.randomRange] - 随机范围 { x, y, z }，默认 { x: 1, y: 1, z: 1 }
+ */
+export function spawnParticleOnTick(block, params) {
+  if (!params?.particle) return;
+
+  const dimension = block.dimension;
+  const location = block.location;
+  const count = params.count || 1;
+  const random = params.random || false;
+  const randomRange = params.randomRange || { x: 1, y: 1, z: 1 };
+  const offset = params.offset || { x: 0.5, y: 0.5, z: 0.5 };
+
+  for (let i = 0; i < count; i++) {
+    let particleOffset = { ...offset };
+
+    if (random) {
+      particleOffset.x += (Math.random() - 0.5) * randomRange.x;
+      particleOffset.y += (Math.random() - 0.5) * randomRange.y;
+      particleOffset.z += (Math.random() - 0.5) * randomRange.z;
+    }
+
+    spawnParticle(dimension, location, {
+      ...params,
+      offset: particleOffset,
+    });
+  }
+}
+
+/**
+ * 根据方向调整偏移量
+ * @param {object} offset - 原始偏移 { x, y, z }
+ * @param {string} direction - 方向 ("north", "south", "east", "west")
+ * @returns {object} 调整后的偏移
+ */
+export function rotateOffsetByDirection(offset, direction) {
+  const { x, y, z } = offset;
+
+  switch (direction) {
+    case "south":
+      return { x: 1 - x, y, z: 1 - z };
+    case "east":
+      return { x: 1 - z, y, z: x };
+    case "west":
+      return { x: z, y, z: 1 - x };
+    case "north":
+    default:
+      return { x, y, z };
+  }
+}
 
 export function getPreciseRotation(playerYRotation) {
   if (playerYRotation < 0) playerYRotation += 360;

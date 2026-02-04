@@ -10,6 +10,9 @@ import {
   getMaxSwitch,
   getNextSwitch,
   updateMultiblockDynamicState,
+  spawnParticle,
+  spawnParticleOnTick,
+  rotateOffsetByDirection,
 } from "./custom_function";
 
 const components = new Map();
@@ -411,6 +414,113 @@ components.set("cit:bed_sleep", {
 });
 
 components.set("cit:bed_bounce", {});
+
+/**
+ * 粒子组件 - 在指定位置生成粒子
+ *
+ * 使用方法（在方块 JSON 中配置）:
+ * {
+ *   "cit:particle": {
+ *     "particle": "minecraft:campfire_smoke_particle",  // 粒子类型 ID（必需）
+ *     "offset": { "x": 0.5, "y": 1.0, "z": 0.5 },       // 相对方块的偏移（可选，默认中心）
+ *     "molang": "variable.color=1.0",                   // MoLang 变量（可选）
+ *     "interval": 20,                                    // 生成间隔 ticks（可选，默认 20）
+ *     "count": 1,                                        // 每次生成数量（可选，默认 1）
+ *     "random": false,                                   // 是否随机位置（可选，默认 false）
+ *     "randomRange": { "x": 1, "y": 1, "z": 1 },        // 随机范围（可选）
+ *     "rotateWithBlock": false                           // 是否跟随方块方向旋转偏移（可选）
+ *   }
+ * }
+ *
+ * 支持的事件:
+ * - onTick: 持续生成粒子
+ * - onPlayerInteract: 玩家交互时生成粒子
+ * - onPlace: 放置时生成粒子
+ */
+components.set("cit:particle", {
+  onTick(event, componentData) {
+    const { block } = event;
+    if (!block) return;
+
+    const params = componentData?.params || componentData || {};
+    if (!params.particle) return;
+
+    // 处理方向旋转
+    let offset = params.offset;
+    if (params.rotateWithBlock && offset) {
+      const direction = block.permutation.getState("minecraft:cardinal_direction");
+      if (direction) {
+        offset = rotateOffsetByDirection(offset, direction);
+      }
+    }
+
+    spawnParticleOnTick(block, { ...params, offset });
+  },
+
+  onPlayerInteract(event, componentData) {
+    const { block, player } = event;
+    if (!block || !player) return;
+
+    const params = componentData?.params || componentData || {};
+    if (!params.particle) return;
+
+    // 处理方向旋转
+    let offset = params.offset;
+    if (params.rotateWithBlock && offset) {
+      const direction = block.permutation.getState("minecraft:cardinal_direction");
+      if (direction) {
+        offset = rotateOffsetByDirection(offset, direction);
+      }
+    }
+
+    const count = params.count || 1;
+    for (let i = 0; i < count; i++) {
+      let particleOffset = offset ? { ...offset } : { x: 0.5, y: 0.5, z: 0.5 };
+
+      if (params.random) {
+        const range = params.randomRange || { x: 1, y: 1, z: 1 };
+        particleOffset.x += (Math.random() - 0.5) * range.x;
+        particleOffset.y += (Math.random() - 0.5) * range.y;
+        particleOffset.z += (Math.random() - 0.5) * range.z;
+      }
+
+      spawnParticle(block.dimension, block.location, { ...params, offset: particleOffset });
+    }
+  },
+
+  onPlace(event, componentData) {
+    const { block } = event;
+    if (!block) return;
+
+    const params = componentData?.params || componentData || {};
+    if (!params.particle) return;
+
+    system.run(() => {
+      // 处理方向旋转
+      let offset = params.offset;
+      if (params.rotateWithBlock && offset) {
+        const direction = block.permutation.getState("minecraft:cardinal_direction");
+        if (direction) {
+          offset = rotateOffsetByDirection(offset, direction);
+        }
+      }
+
+      const count = params.count || 1;
+      for (let i = 0; i < count; i++) {
+        let particleOffset = offset ? { ...offset } : { x: 0.5, y: 0.5, z: 0.5 };
+
+        if (params.random) {
+          const range = params.randomRange || { x: 1, y: 1, z: 1 };
+          particleOffset.x += (Math.random() - 0.5) * range.x;
+          particleOffset.y += (Math.random() - 0.5) * range.y;
+          particleOffset.z += (Math.random() - 0.5) * range.z;
+        }
+
+        spawnParticle(block.dimension, block.location, { ...params, offset: particleOffset });
+      }
+    });
+  },
+});
 
 const MINECRAFT_PHYSICS = {
   GRAVITY: 0.08,
