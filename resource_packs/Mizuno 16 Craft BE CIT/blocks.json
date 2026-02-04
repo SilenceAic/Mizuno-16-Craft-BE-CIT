@@ -192,6 +192,12 @@
   "cit:white_carpet_2": {
     "sound": "cloth"
   },
+  "cit:flower_pot_0": {
+    "sound": "wood"
+  },
+  "cit:flower_pot_1": {
+    "sound": "wood"
+  },
   "cit:egg_0": {
     "sound": "wood"
   },

@@ -20,7 +20,7 @@
         "cit:dynamic_state": {
           "values": {
             "min": 0,
-            "max": 1
+            "max": 2
           }
         }
       }
@@ -32,7 +32,7 @@
         "accepts_connections_from": "none"
       },
       "minecraft:geometry": {
-        "identifier": "geometry.cit.chest_2",
+        "identifier": "geometry.cit.flower_pot_0",
         "bone_visibility": {
           "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 0",
           "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
@@ -67,7 +67,19 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "chest_2",
+          "texture": "flower_pot_0",
+          "render_method": "alpha_test",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        },
+        "flower_pot": {
+          "texture": "cit:flower_pot",
+          "render_method": "alpha_test",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        },
+        "dirt": {
+          "texture": "cit:dirt",
           "render_method": "alpha_test",
           "ambient_occlusion": true,
           "face_dimming": true
@@ -125,7 +137,20 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "chest_2a",
+              "texture": "flower_pot_0a",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:dynamic_state') == 2 ",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "flower_pot_0b",
               "render_method": "alpha_test",
               "ambient_occlusion": true,
               "face_dimming": true
