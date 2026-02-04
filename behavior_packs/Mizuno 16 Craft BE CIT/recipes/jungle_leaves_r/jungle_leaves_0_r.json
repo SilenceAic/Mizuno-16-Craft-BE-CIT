@@ -8,11 +8,12 @@
 			"crafting_table"
 		],
 		"pattern": [
+			"A",
 			"A"
 		],
 		"key": {
 			"A": {
-				"item": "minecraft:air"
+				"item": "minecraft:jungle_leaves"
 			}
 		},
 		"result": {

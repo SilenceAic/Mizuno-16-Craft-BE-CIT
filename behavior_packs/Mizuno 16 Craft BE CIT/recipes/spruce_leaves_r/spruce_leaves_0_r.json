@@ -8,11 +8,15 @@
 			"crafting_table"
 		],
 		"pattern": [
+			"B",
 			"A"
 		],
 		"key": {
 			"A": {
-				"item": "minecraft:air"
+				"item": "minecraft:spruce_leaves"
+			},
+			"B": {
+				"item": "minecraft:glowstone_dust"
 			}
 		},
 		"result": {

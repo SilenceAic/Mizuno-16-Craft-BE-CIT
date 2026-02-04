@@ -8,11 +8,15 @@
 			"crafting_table"
 		],
 		"pattern": [
-			"A"
+			"A",
+			"B"
 		],
 		"key": {
 			"A": {
-				"item": "minecraft:air"
+				"item": "minecraft:oak_sapling"
+			},
+			"B": {
+				"item": "minecraft:flower_pot"
 			}
 		},
 		"result": {

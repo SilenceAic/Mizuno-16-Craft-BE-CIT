@@ -8,11 +8,15 @@
 			"crafting_table"
 		],
 		"pattern": [
-			"A"
+			"RR",
+			"PP"
 		],
 		"key": {
-			"A": {
-				"item": "minecraft:air"
+			"R": {
+				"item": "minecraft:white_tulip"
+			},
+			"P": {
+				"item": "minecraft:flower_pot"
 			}
 		},
 		"result": {
