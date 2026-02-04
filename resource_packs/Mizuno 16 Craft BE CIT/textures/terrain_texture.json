@@ -482,11 +482,11 @@
     "cit:flower_pot": {
       "textures": "textures/blocks/cit/flower_pot"
     },
-    "flower_pot_00": {
-      "textures": "textures/blocks/cit/flower_pot_00"
-    },
     "flower_pot_0": {
       "textures": "textures/blocks/cit/flower_pot_0"
+    },
+    "flower_pot_0_1": {
+      "textures": "textures/blocks/cit/flower_pot_0_1"
     },
     "flower_pot_0a": {
       "textures": "textures/blocks/cit/flower_pot_0a"
@@ -706,6 +706,9 @@
     },
     "flower_pot_1": {
       "textures": "textures/blocks/cit/flower_pot_1"
+    },  
+    "flower_pot_1_1": {
+      "textures": "textures/blocks/cit/flower_pot_1_1"
     },
     "spruce_sapling_0": {
       "textures": "textures/blocks/cit/spruce_sapling_0"

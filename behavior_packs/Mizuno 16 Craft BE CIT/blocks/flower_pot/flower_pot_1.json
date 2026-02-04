@@ -2,7 +2,7 @@
   "format_version": "1.21.130",
   "minecraft:block": {
     "description": {
-      "identifier": "cit:flower_pot_0",
+      "identifier": "cit:flower_pot_1",
       "menu_category": {
         "category": "items"
       },
@@ -19,24 +19,16 @@
             "min": 0,
             "max": 15
           }
-        },
-        "cit:dynamic_state": {
-          "values": {
-            "min": 0,
-            "max": 2
-          }
         }
       }
     },
     "components": {
       "cit:rotation": {},
-      "cit:dynamic_state": {},
-      "tag:cit:three_states": {},
       "minecraft:connection_rule": {
         "accepts_connections_from": "none"
       },
       "minecraft:geometry": {
-        "identifier": "geometry.cit.flower_pot_0",
+        "identifier": "geometry.cit.flower_pot_1",
         "bone_visibility": {
           "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 0",
           "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
@@ -48,62 +40,26 @@
       "minecraft:collision_box": [
         {
           "origin": [
-            -5,
+            1,
             0,
-            1
+            -4
           ],
           "size": [
-            4,
-            6,
-            4
-          ]
-        },
-        {
-          "origin": [
-            -4,
-            0,
+            5,
+            5,
             5
-          ],
-          "size": [
-            3,
-            6,
-            1
-          ]
-        },
-        {
-          "origin": [
-            -5,
-            0,
-            0
-          ],
-          "size": [
-            3,
-            6,
-            1
           ]
         },
         {
           "origin": [
             -6,
             0,
-            2
+            -4
           ],
           "size": [
-            1,
-            6,
-            3
-          ]
-        },
-        {
-          "origin": [
-            -1,
-            0,
-            1
-          ],
-          "size": [
-            1,
-            6,
-            3
+            5,
+            5,
+            5
           ]
         }
       ],
@@ -111,29 +67,17 @@
         "origin": [
           -6,
           0,
-          -6
+          -4
         ],
         "size": [
           12,
-          11,
-          12
+          5,
+          8
         ]
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "flower_pot_0",
-          "render_method": "alpha_test",
-          "ambient_occlusion": true,
-          "face_dimming": true
-        },
-        "flower_pot": {
-          "texture": "cit:flower_pot",
-          "render_method": "alpha_test",
-          "ambient_occlusion": true,
-          "face_dimming": true
-        },
-        "dirt": {
-          "texture": "cit:dirt",
+          "texture": "flower_pot_1",
           "render_method": "alpha_test",
           "ambient_occlusion": true,
           "face_dimming": true
@@ -183,56 +127,6 @@
               90,
               0
             ]
-          }
-        }
-      },
-      {
-        "condition": "q.block_state('cit:dynamic_state') == 1 ",
-        "components": {
-          "minecraft:material_instances": {
-            "*": {
-              "texture": "flower_pot_0a",
-              "render_method": "alpha_test",
-              "ambient_occlusion": true,
-              "face_dimming": true
-            },
-            "flower_pot": {
-              "texture": "flower_pot_0_1", //两个重名的
-              "render_method": "alpha_test",
-              "ambient_occlusion": true,
-              "face_dimming": true
-            },
-            "dirt": {
-              "texture": "cit:dirt",
-              "render_method": "alpha_test",
-              "ambient_occlusion": true,
-              "face_dimming": true
-            }
-          }
-        }
-      },
-      {
-        "condition": "q.block_state('cit:dynamic_state') == 2 ",
-        "components": {
-          "minecraft:material_instances": {
-            "*": {
-              "texture": "flower_pot_0b",
-              "render_method": "alpha_test",
-              "ambient_occlusion": true,
-              "face_dimming": true
-            },
-            "flower_pot": {
-              "texture": "flower_pot_1_1",
-              "render_method": "alpha_test",
-              "ambient_occlusion": true,
-              "face_dimming": true
-            },
-            "dirt": {
-              "texture": "cit:dirt",
-              "render_method": "alpha_test",
-              "ambient_occlusion": true,
-              "face_dimming": true
-            }
           }
         }
       }

@@ -2,24 +2,21 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "cit:flower_pot_0"
+			"identifier": "cit:flower_pot_1"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"pattern": [
-			"AB"
+			"A"
 		],
 		"key": {
 			"A": {
-				"item": "minecraft:flower_pot"
-			},
-			"B": {
-				"item": "minecraft:iron_ingot"
+				"item": "minecraft:air"
 			}
 		},
 		"result": {
-			"item": "cit:flower_pot_0",
+			"item": "cit:flower_pot_1",
 			"count": 1
 		}
 	}
