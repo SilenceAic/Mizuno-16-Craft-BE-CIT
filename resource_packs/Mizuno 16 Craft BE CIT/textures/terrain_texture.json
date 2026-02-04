@@ -479,6 +479,9 @@
     "allium_0": {
       "textures": "textures/blocks/cit/allium_0"
     },
+    "cit:flower_pot": {
+      "textures": "textures/blocks/cit/flower_pot"
+    },
     "flower_pot_0": {
       "textures": "textures/blocks/cit/flower_pot_0"
     },
