@@ -2,25 +2,24 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "cit:crafting_table_0"
+      "identifier": "cit:bed_0"
     },
     "tags": [
       "crafting_table"
     ],
     "pattern": [
-      "C",
-      "A"
+      "ABA"
     ],
     "key": {
-      "C": {
-        "item": "minecraft:oak_planks"
-      },
       "A": {
-        "item": "minecraft:iron_ingot"
+        "item": "minecraft:planks"
+      },
+      "B": {
+        "item": "minecraft:bed"
       }
     },
     "result": {
-      "item": "cit:crafting_table_0",
+      "item": "cit:bed_0",
       "count": 1
     }
   }

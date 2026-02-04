@@ -8,20 +8,17 @@
 			"crafting_table"
 		],
 		"pattern": [
-			"AC",
-			"BD"
+			"AB",
+			"CC"
 		],
 		"key": {
 			"A": {
-				"item": "minecraft:feather"
+				"item": "minecraft:red_dye"
 			},
 			"B": {
-				"item": "minecraft:stick"
+				"item": "minecraft:blue_dye"
 			},
 			"C": {
-				"item": "minecraft:green_dye"
-			},
-			"D": {
 				"item": "minecraft:bucket"
 			}
 		},

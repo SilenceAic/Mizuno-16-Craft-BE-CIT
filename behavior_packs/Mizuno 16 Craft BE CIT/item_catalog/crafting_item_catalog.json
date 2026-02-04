@@ -29,7 +29,10 @@
             ]
           },
           {
-            "items": ["cit:gold_block_0", "cit:gold_block_1"]
+            "items": [
+              "cit:gold_block_0",
+              "cit:gold_block_1"
+            ]
           },
           {
             "group_identifier": {
@@ -64,9 +67,23 @@
         "groups": [
           {
             "group_identifier": {
+              "name": "minecraft:itemGroup.name.bed"
+            },
+            "items": [
+              "cit:bed_0"
+            ]
+          },
+          {
+            "group_identifier": {
               "name": "minecraft:itemGroup.name.chest"
             },
-            "items": ["cit:chest_0", "cit:chest_1", "cit:chest_2", "cit:chest_3", "cit:chest_4"]
+            "items": [
+              "cit:chest_0",
+              "cit:chest_1",
+              "cit:chest_2",
+              "cit:chest_3",
+              "cit:chest_4"
+            ]
           },
           {
             "group_identifier": {
@@ -100,7 +117,7 @@
           {
             "group_identifier": {
               "icon": "cit:torch_0",
-              "name": "cit:itemGroup.name.torch"
+              "name": "cit:torch_0"
             },
             "items": [
               "cit:torch_0",
@@ -124,13 +141,19 @@
             "group_identifier": {
               "name": "minecraft:itemGroup.name.stone"
             },
-            "items": ["cit:stone_0"]
+            "items": [
+              "cit:stone_0"
+            ]
           },
           {
             "group_identifier": {
               "name": "minecraft:itemGroup.name.log"
             },
-            "items": ["cit:oak_log_0", "cit:oak_log_1", "cit:oak_log_2"]
+            "items": [
+              "cit:oak_log_0",
+              "cit:oak_log_1",
+              "cit:oak_log_2"
+            ]
           },
           {
             "group_identifier": {

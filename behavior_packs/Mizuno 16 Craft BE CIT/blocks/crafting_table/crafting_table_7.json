@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.110",
+  "format_version": "1.21.130",
   "minecraft:block": {
     "description": {
       "identifier": "cit:crafting_table_7",
@@ -39,18 +39,32 @@
           "inventory": "q.block_state('minecraft:block_face') != 'up'"
         }
       },
-      "minecraft:collision_box": {
-        "origin": [
-          -5,
-          0,
-          0
-        ],
-        "size": [
-          5,
-          7,
-          5
-        ]
-      },
+      "minecraft:collision_box": [
+        {
+          "origin": [
+            -6,
+            0,
+            -4
+          ],
+          "size": [
+            5,
+            7,
+            5
+          ]
+        },
+        {
+          "origin": [
+            1,
+            0,
+            -1
+          ],
+          "size": [
+            5,
+            7,
+            5
+          ]
+        }
+      ],
       "minecraft:selection_box": {
         "origin": [
           -6,

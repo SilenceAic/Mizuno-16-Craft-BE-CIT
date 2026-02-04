@@ -2,25 +2,26 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "cit:crafting_table_0"
+      "identifier": "cit:white_carpet_3"
     },
     "tags": [
       "crafting_table"
     ],
     "pattern": [
-      "C",
-      "A"
+      "A",
+      "B",
+      "B"
     ],
     "key": {
-      "C": {
-        "item": "minecraft:oak_planks"
-      },
       "A": {
-        "item": "minecraft:iron_ingot"
+        "item": "minecraft:stick"
+      },
+      "B": {
+        "item": "minecraft:white_carpet"
       }
     },
     "result": {
-      "item": "cit:crafting_table_0",
+      "item": "cit:white_carpet_3",
       "count": 1
     }
   }
