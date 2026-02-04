@@ -70,11 +70,7 @@
               "name": "minecraft:itemGroup.name.bed"
             },
             "items": [
-              "cit:bed_0",
-              "cit:chest_1",
-              "cit:chest_2",
-              "cit:chest_3",
-              "cit:chest_4"
+              "cit:bed_0"
             ]
           },
           {
