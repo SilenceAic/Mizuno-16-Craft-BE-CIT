@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.110",
+  "format_version": "1.21.130",
   "minecraft:block": {
     "description": {
       "identifier": "cit:spruce_leaves_2",
@@ -8,15 +8,23 @@
       },
       "traits": {
         "minecraft:placement_position": {
-          "enabled_states": ["minecraft:block_face"]
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
         }
       },
       "states": {
         "cit:rotation": {
-          "values": { "min": 0, "max": 15 }
+          "values": {
+            "min": 0,
+            "max": 15
+          }
         },
         "cit:dynamic_state": {
-          "values": { "min": 0, "max": 2 }
+          "values": {
+            "min": 0,
+            "max": 2
+          }
         }
       }
     },
@@ -27,8 +35,16 @@
       },
       "minecraft:collision_box": false,
       "minecraft:selection_box": {
-        "origin": [-9, 7, 2],
-        "size": [16, 9, 6]
+        "origin": [
+          -9,
+          7,
+          2
+        ],
+        "size": [
+          16,
+          9,
+          6
+        ]
       },
       "minecraft:material_instances": {
         "*": {
@@ -41,7 +57,9 @@
       "minecraft:placement_filter": {
         "conditions": [
           {
-            "allowed_faces": ["side"]
+            "allowed_faces": [
+              "side"
+            ]
           }
         ]
       },
@@ -69,19 +87,37 @@
       {
         "condition": "q.block_state('cit:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
         "components": {
-          "minecraft:transformation": { "rotation": [0, -90, 0] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          }
         }
       },
       {
         "condition": "q.block_state('cit:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
         "components": {
-          "minecraft:transformation": { "rotation": [0, 180, 0] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
         }
       },
       {
         "condition": "q.block_state('cit:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
         "components": {
-          "minecraft:transformation": { "rotation": [0, 90, 0] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
         }
       }
     ]

@@ -25,7 +25,10 @@
     },
     "components": {
       "minecraft:type_family": {
-        "family": ["cit_bed", "inanimate"]
+        "family": [
+          "cit_bed",
+          "inanimate"
+        ]
       },
       "minecraft:collision_box": {
         "width": 0,
@@ -67,7 +70,11 @@
         "pull_in_entities": true,
         "rider_can_interact": false,
         "seats": {
-          "position": [0.0, 0.0, 0.0],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
           "lock_rider_rotation": 45,
           "rotate_rider_by": "q.ride_body_y_rotation"
         }
@@ -77,7 +84,11 @@
           {
             "width": 0.0,
             "height": 0.0,
-            "pivot": [0, 10.0, 0]
+            "pivot": [
+              0,
+              10.0,
+              0
+            ]
           }
         ]
       },
@@ -92,7 +103,7 @@
       "minecraft:damage_sensor": {
         "triggers": [
           {
-            "deals_damage": false
+            "deals_damage": "no"
           }
         ]
       },
@@ -105,17 +116,23 @@
     "events": {
       "minecraft:entity_spawned": {
         "add": {
-          "component_groups": ["add_invisibility"]
+          "component_groups": [
+            "add_invisibility"
+          ]
         }
       },
       "add_invisibility": {
         "add": {
-          "component_groups": ["add_invisibility"]
+          "component_groups": [
+            "add_invisibility"
+          ]
         }
       },
       "instant_despawn": {
         "add": {
-          "component_groups": ["instant_despawn"]
+          "component_groups": [
+            "instant_despawn"
+          ]
         }
       }
     }

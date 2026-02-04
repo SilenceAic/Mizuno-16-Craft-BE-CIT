@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.110",
+  "format_version": "1.21.130",
   "minecraft:block": {
     "description": {
       "identifier": "cit:birch_sapling_4",
@@ -8,15 +8,23 @@
       },
       "traits": {
         "minecraft:placement_position": {
-          "enabled_states": ["minecraft:block_face"]
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
         }
       },
       "states": {
         "cit:rotation": {
-          "values": { "min": 0, "max": 15 }
+          "values": {
+            "min": 0,
+            "max": 15
+          }
         },
         "cit:variant": {
-          "values": { "min": 0, "max": 2 }
+          "values": {
+            "min": 0,
+            "max": 2
+          }
         }
       }
     },
@@ -32,12 +40,28 @@
         }
       },
       "minecraft:collision_box": {
-        "origin": [-3, 0, -3],
-        "size": [6, 25.5, 6]
+        "origin": [
+          -3,
+          0,
+          -3
+        ],
+        "size": [
+          6,
+          25.5,
+          6
+        ]
       },
       "minecraft:selection_box": {
-        "origin": [-3, 0, -3],
-        "size": [6, 25.5, 6]
+        "origin": [
+          -3,
+          0,
+          -3
+        ],
+        "size": [
+          6,
+          25.5,
+          6
+        ]
       },
       "minecraft:material_instances": {
         "*": {
@@ -68,7 +92,9 @@
       "minecraft:placement_filter": {
         "conditions": [
           {
-            "allowed_faces": ["up"]
+            "allowed_faces": [
+              "up"
+            ]
           }
         ]
       },
@@ -117,12 +143,28 @@
             }
           },
           "minecraft:collision_box": {
-            "origin": [-4, 0, -4],
-            "size": [8, 7, 8]
+            "origin": [
+              -4,
+              0,
+              -4
+            ],
+            "size": [
+              8,
+              7,
+              8
+            ]
           },
           "minecraft:selection_box": {
-            "origin": [-4, 0, -4],
-            "size": [8, 7, 8]
+            "origin": [
+              -4,
+              0,
+              -4
+            ],
+            "size": [
+              8,
+              7,
+              8
+            ]
           }
         }
       },
@@ -165,19 +207,37 @@
       {
         "condition": "q.block_state('cit:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
         "components": {
-          "minecraft:transformation": { "rotation": [0, -90, 0] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          }
         }
       },
       {
         "condition": "q.block_state('cit:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
         "components": {
-          "minecraft:transformation": { "rotation": [0, 180, 0] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
         }
       },
       {
         "condition": "q.block_state('cit:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
         "components": {
-          "minecraft:transformation": { "rotation": [0, 90, 0] }
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
         }
       }
     ]
