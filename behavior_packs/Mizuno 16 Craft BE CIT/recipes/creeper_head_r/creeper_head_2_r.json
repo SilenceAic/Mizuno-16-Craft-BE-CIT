@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:creeper_head_2"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"C",
+			"A",
+			"B"
+		],
+		"key": {
+			"C": {
+				"item": "minecraft:black_wool"
+			},
+			"A": {
+				"item": "minecraft:creeper_head"
+			},
+			"B": {
+				"item": "minecraft:green_wool"
+			}
+		},
+		"result": {
+			"item": "cit:creeper_head_2",
+			"count": 1
+		}
+	}
+}
