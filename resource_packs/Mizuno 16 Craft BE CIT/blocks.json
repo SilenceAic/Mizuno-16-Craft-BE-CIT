@@ -204,6 +204,12 @@
   "cit:creeper_head_0": {
     "sound": "cloth"
   },
+  "cit:creeper_head_1": {
+    "sound": "cloth"
+  },
+  "cit:creeper_head_2": {
+    "sound": "cloth"
+  },
   "cit:egg_0": {
     "sound": "wood"
   },

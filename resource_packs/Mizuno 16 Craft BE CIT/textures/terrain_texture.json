@@ -925,6 +925,12 @@
     },
     "creeper_head_0": {
       "textures": "textures/blocks/cit/creeper_head_0"
+    },
+    "creeper_head_1": {
+      "textures": "textures/blocks/cit/creeper_head_1"
+    },
+    "creeper_head_2": {
+      "textures": "textures/blocks/cit/creeper_head_2"
     }
   }
 }
