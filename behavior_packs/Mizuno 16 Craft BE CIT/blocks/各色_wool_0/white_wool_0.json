@@ -236,7 +236,7 @@
         "components": {
           "minecraft:material_instances": {
             "*": {
-              "texture": "white_wool",
+              "texture": "cit:white_wool",
               "render_method": "alpha_test",
               "ambient_occlusion": true,
               "face_dimming": true
