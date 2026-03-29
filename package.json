@@ -15,9 +15,9 @@
     "typescript": "^5.5.4"
   },
   "scripts": {
-    "pre1": "node ./scripts/generate-recipes.js",
     "1": "just-scripts local-deploy --watch",
     "2": "just-scripts mcaddon --production",
+    "pre1": "node ./scripts/generate-recipes.js",
     "prebuild": "node ./scripts/sync-project-name.js",
     "premcaddon": "node ./scripts/sync-project-name.js",
     "prepare": "husky",
@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@minecraft/math": "^2.2.7",
-    "@minecraft/server": "^2.4.0",
+    "@minecraft/server": "^2.6.0",
     "@minecraft/server-ui": "^2.0.0",
     "@minecraft/vanilla-data": "^1.21.90"
   }

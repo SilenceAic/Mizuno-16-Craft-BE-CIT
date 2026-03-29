@@ -937,6 +937,15 @@
     },
     "white_banner_2": {
       "textures": "textures/blocks/cit/white_banner_2"
+    },
+    "barrier_0": {
+      "textures": "textures/blocks/cit/barrier_0"
+    },
+    "barrier_1": {
+      "textures": "textures/blocks/cit/barrier_1"
+    },
+    "barrier_2": {
+      "textures": "textures/blocks/cit/barrier_2"
     }
   }
 }

@@ -225,6 +225,15 @@
   "cit:white_banner_4": {
     "sound": "cloth"
   },
+  "cit:barrier_0": {
+    "sound": "wood"
+  },
+  "cit:barrier_1": {
+    "sound": "wood"
+  },
+  "cit:barrier_2": {
+    "sound": "wood"
+  },
   "cit:egg_0": {
     "sound": "wood"
   },

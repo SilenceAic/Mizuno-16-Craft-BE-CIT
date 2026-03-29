@@ -105,7 +105,7 @@
 							}
 						},
 						{
-							"origin": [-4, 16, -2],
+							"origin": [-2, 16, -2],
 							"size": [4, 2, 4],
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [4, 2], "material_instance": "red_wool"},
@@ -231,7 +231,7 @@
 							}
 						},
 						{
-							"origin": [-4, 16, -2],
+							"origin": [-2, 16, -2],
 							"size": [4, 2, 4],
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [4, 2], "material_instance": "red_wool"},
@@ -357,7 +357,7 @@
 							}
 						},
 						{
-							"origin": [-4, 16, -2],
+							"origin": [-2, 16, -2],
 							"size": [4, 2, 4],
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [4, 2], "material_instance": "red_wool"},
@@ -483,7 +483,7 @@
 							}
 						},
 						{
-							"origin": [-4, 16, -2],
+							"origin": [-2, 16, -2],
 							"size": [4, 2, 4],
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [4, 2], "material_instance": "red_wool"},
@@ -608,7 +608,7 @@
 							}
 						},
 						{
-							"origin": [-4, 16, -2],
+							"origin": [-2, 16, -2],
 							"size": [4, 2, 4],
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [4, 2], "material_instance": "red_wool"},
