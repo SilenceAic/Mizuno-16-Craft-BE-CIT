@@ -234,13 +234,13 @@
   "cit:barrel_2": {
     "sound": "wood"
   },
-  "cit:cartography_0": {
+  "cit:cartography_table_0": {
     "sound": "cloth"
   },
-  "cit:cartography_1": {
+  "cit:cartography_table_1": {
     "sound": "stone"
   },
-  "cit:cartography_2": {
+  "cit:cartography_table_2": {
     "sound": "wood"
   },
   "cit:egg_0": {

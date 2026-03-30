@@ -72,19 +72,19 @@
       "minecraft:material_instances": {
         "map_2": {
           "texture": "cit:map_2",
-          "render_method": "alpha_test",
+          "render_method": "alpha_test_single_sided",
           "ambient_occlusion": true,
           "face_dimming": true
         },
         "map_2_1": {
           "texture": "cit:map_2_1",
-          "render_method": "alpha_test",
+          "render_method": "alpha_test_single_sided",
           "ambient_occlusion": true,
           "face_dimming": true
         },
         "map_2_2": {
           "texture": "cit:map_2_2",
-          "render_method": "alpha_test",
+          "render_method": "alpha_test_single_sided",
           "ambient_occlusion": true,
           "face_dimming": true
         },
