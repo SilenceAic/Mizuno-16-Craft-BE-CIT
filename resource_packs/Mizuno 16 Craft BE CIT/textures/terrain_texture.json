@@ -958,6 +958,18 @@
     },
     "cit:barrel_side": {
       "textures": "textures/blocks/cit/barrel_side"
+    },
+    "cit:map_2": {
+      "textures": "textures/blocks/cit/map_2"
+    },
+    "cit:map_2_1": {
+      "textures": "textures/blocks/cit/map_2_1"
+    },
+    "cit:map_2_2": {
+      "textures": "textures/blocks/cit/map_2_2"
+    },
+    "cit:compass_0": {
+      "textures": "textures/blocks/cit/compass_0"
     }
   }
 }
