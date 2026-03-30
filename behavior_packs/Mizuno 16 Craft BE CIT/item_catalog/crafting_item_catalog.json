@@ -114,7 +114,8 @@
           },
           {
             "group_identifier": {
-              "name": "minecraft:itemGroup.name.banner"
+              "icon": "cit:white_banner_0",
+              "name": "cit:itemGroup.name.banner"
             },
             "items": [
               "cit:white_banner_0",
@@ -122,6 +123,17 @@
               "cit:white_banner_2",
               "cit:white_banner_3",
               "cit:white_banner_4"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "cit:barrel_0",
+              "name": "cit:itemGroup.name.barrel"
+            },
+            "items": [
+              "cit:barrel_0",
+              "cit:barrel_1",
+              "cit:barrel_2"
             ]
           },
           {

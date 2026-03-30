@@ -4,8 +4,13 @@
     "description": {
       "identifier": "cit:wither_rose_0"
     },
-    "tags": ["crafting_table"],
-    "pattern": ["W", "F"],
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "W",
+      "F"
+    ],
     "key": {
       "F": {
         "item": "minecraft:flower_pot"
