@@ -2,7 +2,7 @@
   "format_version": "1.21.130",
   "minecraft:block": {
     "description": {
-      "identifier": "cit:cartography_tanle_0",
+      "identifier": "cit:cartography_table_0",
       "menu_category": {
         "category": "items"
       },
@@ -33,7 +33,7 @@
         "accepts_connections_from": "none"
       },
       "minecraft:geometry": {
-        "identifier": "geometry.cit.cartography_tanle_0",
+        "identifier": "geometry.cit.cartography_table_0",
         "bone_visibility": {
           "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 0",
           "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",
@@ -42,8 +42,30 @@
           "inventory": "q.block_state('minecraft:block_face') != 'up'"
         }
       },
-      "minecraft:collision_box": true,
-      "minecraft:selection_box": true,
+      "minecraft:collision_box": {
+        "origin": [
+          0,
+          0,
+          -6
+        ],
+        "size": [
+          7,
+          2,
+          7
+        ]
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -7,
+          0,
+          -7
+        ],
+        "size": [
+          17,
+          2,
+          14
+        ]
+      },
       "minecraft:destruction_particles": {
         "texture": "cit:map_2"
       },
@@ -82,7 +104,7 @@
         "condition": "q.block_state('cit:dynamic_state') == 1",
         "components": {
           "minecraft:geometry": {
-            "identifier": "geometry.cit.cartography_tanle_0a",
+            "identifier": "geometry.cit.cartography_table_0a",
             "bone_visibility": {
               "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 0",
               "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('cit:rotation'), 4) == 1",

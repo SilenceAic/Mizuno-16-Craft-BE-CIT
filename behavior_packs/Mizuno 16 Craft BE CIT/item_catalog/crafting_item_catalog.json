@@ -138,6 +138,17 @@
           },
           {
             "group_identifier": {
+              "icon": "cit:cartography_0",
+              "name": "cit:itemGroup.name.cart"
+            },
+            "items": [
+              "cit:cartography_0",
+              "cit:cartography_1",
+              "cit:cartography_2"
+            ]
+          },
+          {
+            "group_identifier": {
               "icon": "cit:terracotta_0",
               "name": "cit:itemGroup.name.terracotta"
             },
