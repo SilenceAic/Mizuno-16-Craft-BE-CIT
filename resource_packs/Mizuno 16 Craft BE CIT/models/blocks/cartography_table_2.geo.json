@@ -1,0 +1,46 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.cartography_table_2",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-12.5, 0, -8],
+							"size": [25, 20, 1],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [12.5, 10], "material_instance": "cit_back"},
+								"east": {"uv": [0, 10.5], "uv_size": [10, 0.5], "uv_rotation": 270, "material_instance": "map_3"},
+								"south": {"uv": [0, 0], "uv_size": [12.5, 10], "material_instance": "map_3"},
+								"west": {"uv": [0, 10.5], "uv_size": [10, 0.5], "uv_rotation": 90, "material_instance": "map_3"},
+								"up": {"uv": [12.5, 10.5], "uv_size": [-12.5, -0.5], "material_instance": "map_3"},
+								"down": {"uv": [12.5, 10.5], "uv_size": [-12.5, -0.5], "material_instance": "map_3"}
+							}
+						}
+					]
+				}
+			],
+			"item_display_transforms": {
+				"gui": {
+					"rotation": [0, -180, 0],
+					"translation": [0, -1.25, 0],
+					"scale": [0.55, 0.55, 0.55],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0],
+					"fit_to_frame": false
+				}
+			}
+		}
+	]
+}

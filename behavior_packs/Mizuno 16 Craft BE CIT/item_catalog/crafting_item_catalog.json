@@ -138,13 +138,13 @@
           },
           {
             "group_identifier": {
-              "icon": "cit:cartography_0",
+              "icon": "cit:cartography_table_0",
               "name": "cit:itemGroup.name.cartography_table"
             },
             "items": [
-              "cit:cartography_0",
-              "cit:cartography_1",
-              "cit:cartography_2"
+              "cit:cartography_table_0",
+              "cit:cartography_table_1",
+              "cit:cartography_table_2"
             ]
           },
           {

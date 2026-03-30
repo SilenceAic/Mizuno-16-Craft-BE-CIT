@@ -968,6 +968,9 @@
     "cit:map_2_2": {
       "textures": "textures/blocks/cit/map_2_2"
     },
+    "cit:map_3": {
+      "textures": "textures/blocks/cit/map_3"
+    },
     "cit:compass_0": {
       "textures": "textures/blocks/cit/compass_0"
     },
@@ -976,6 +979,9 @@
     },
     "cit:globe_0a": {
       "textures": "textures/blocks/cit/globe_0a"
+    },
+    "cit:cit_back": {
+      "textures": "textures/blocks/cit/cit_back"
     }
   }
 }
