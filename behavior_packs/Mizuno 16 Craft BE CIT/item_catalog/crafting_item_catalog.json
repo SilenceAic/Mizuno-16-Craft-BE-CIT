@@ -139,7 +139,7 @@
           {
             "group_identifier": {
               "icon": "cit:cartography_0",
-              "name": "cit:itemGroup.name.cart"
+              "name": "cit:itemGroup.name.cartography_table"
             },
             "items": [
               "cit:cartography_0",

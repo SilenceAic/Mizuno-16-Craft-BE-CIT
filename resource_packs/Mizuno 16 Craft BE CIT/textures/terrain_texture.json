@@ -970,6 +970,12 @@
     },
     "cit:compass_0": {
       "textures": "textures/blocks/cit/compass_0"
+    },
+    "cit:globe_0": {
+      "textures": "textures/blocks/cit/globe_0"
+    },
+    "cit:globe_0a": {
+      "textures": "textures/blocks/cit/globe_0a"
     }
   }
 }
