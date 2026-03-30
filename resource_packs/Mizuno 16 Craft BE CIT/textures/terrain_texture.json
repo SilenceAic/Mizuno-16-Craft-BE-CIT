@@ -950,6 +950,9 @@
     "cit:barrel_0_01": {
       "textures": "textures/blocks/cit/barrel_0_01"
     },
+    "cit:barrel_2": {
+      "textures": "textures/blocks/cit/barrel_2"
+    },
     "cit:barrel_top": {
       "textures": "textures/blocks/cit/barrel_top"
     },

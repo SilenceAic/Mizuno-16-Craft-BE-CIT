@@ -29,6 +29,9 @@
       }
     },
     "components": {
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
       "minecraft:geometry": {
         "identifier": "geometry.cit.barrel_1",
         "bone_visibility": {
@@ -62,6 +65,9 @@
           8,
           16
         ]
+      },
+      "minecraft:destruction_particles": {
+        "texture": "cit:barrel_top"
       },
       "minecraft:material_instances": {
         "barrel_0": {
