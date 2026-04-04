@@ -982,6 +982,30 @@
     },
     "cit:cit_back": {
       "textures": "textures/blocks/cit/cit_back"
+    },
+    "cit:lantern_0": {
+      "textures": "textures/blocks/cit/lantern_0"
+    },
+    "cit:lantern_0_e": {
+      "textures": "textures/blocks/cit/lantern_0_e"
+    },
+    "cit:lantern_1": {
+      "textures": "textures/blocks/cit/lantern_1"
+    },
+    "cit:lantern_1a": {
+      "textures": "textures/blocks/cit/lantern_1a"
+    },
+    "cit:lantern_1b": {
+      "textures": "textures/blocks/cit/lantern_1b"
+    },
+    "cit:lantern_1_e": {
+      "textures": "textures/blocks/cit/lantern_1_e"
+    },
+    "cit:lantern_1a_e": {
+      "textures": "textures/blocks/cit/lantern_1a_e"
+    },
+    "cit:lantern_1b_e": {
+      "textures": "textures/blocks/cit/lantern_1b_e"
     }
   }
 }

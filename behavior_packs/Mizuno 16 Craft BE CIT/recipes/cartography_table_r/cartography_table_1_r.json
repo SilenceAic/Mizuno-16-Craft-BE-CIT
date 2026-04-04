@@ -2,7 +2,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "cit:cartography_tanle_0"
+			"identifier": "cit:cartography_table_1"
 		},
 		"tags": [
 			"crafting_table"
@@ -16,7 +16,7 @@
 			}
 		},
 		"result": {
-			"item": "cit:cartography_tanle_0",
+			"item": "cit:cartography_table_1",
 			"count": 1
 		}
 	}

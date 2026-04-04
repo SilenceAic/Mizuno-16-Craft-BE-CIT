@@ -1,0 +1,7 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "lantern_1a_e",
+		"metalness_emissive_roughness": "lantern_1_e_mer"
+	}
+}

@@ -1,5 +1,4 @@
 import * as server from "@minecraft/server";
-import { system } from "@minecraft/server";
 import * as create from "../system/create";
 import * as multiblock from "../system/multiblock";
 
@@ -78,7 +77,8 @@ export function extractParticleConfigs(params) {
         count: params[`count${i}`] !== undefined ? params[`count${i}`] : params.count,
         random: params[`random${i}`] !== undefined ? params[`random${i}`] : params.random,
         randomRange: params[`randomRange${i}`] || params.randomRange,
-        rotateWithBlock: params[`rotateWithBlock${i}`] !== undefined ? params[`rotateWithBlock${i}`] : params.rotateWithBlock,
+        rotateWithBlock:
+          params[`rotateWithBlock${i}`] !== undefined ? params[`rotateWithBlock${i}`] : params.rotateWithBlock,
       });
     }
   }
@@ -159,11 +159,9 @@ export function getMaxStates(block) {
   return 2;
 }
 
-
 export function getNextState(currentState, maxStates) {
   return (currentState + 1) % maxStates;
 }
-
 
 export function getMaxSwitch(block) {
   if (block.hasTag("cit:three_switch")) return 3;
@@ -171,11 +169,9 @@ export function getMaxSwitch(block) {
   return 2;
 }
 
-
 export function getNextSwitch(currentSwitch, maxSwitch) {
   return (currentSwitch + 1) % maxSwitch;
 }
-
 
 export function toDirection(cardinalDirection) {
   if (typeof cardinalDirection !== "string") return undefined;
@@ -194,14 +190,10 @@ export function toDirection(cardinalDirection) {
   }
 }
 
-
 export function getMultiblockSize(baseBlock) {
-  if (baseBlock.hasTag("cit:two_height")) {
-    return [1, 2, 1];
-  }
+  if (baseBlock.hasTag("cit:two_wide")) return [2, 1, 1];
   return [1, 2, 1];
 }
-
 
 export function findMultiblockBase(block) {
   const permutation = block.permutation;
@@ -213,7 +205,6 @@ export function findMultiblockBase(block) {
 
   const direction = toDirection(permutation.getState("minecraft:cardinal_direction"));
 
-  
   const baseBlock = multiblock.multiblock.getBaseBlock(
     block,
     permutation,
@@ -221,7 +212,6 @@ export function findMultiblockBase(block) {
     direction
   );
 
-  
   if (baseBlock && baseBlock.permutation.getState("cit:multiblock_index") === 0) {
     return baseBlock;
   }
@@ -229,6 +219,32 @@ export function findMultiblockBase(block) {
   return null;
 }
 
+export function updateMultiblockSwitchState(block, newState) {
+  const currentIndex = block.permutation.getState("cit:multiblock_index");
+  const baseBlock = currentIndex !== 0 ? findMultiblockBase(block) : block;
+
+  if (!baseBlock) return;
+
+  const size = getMultiblockSize(baseBlock);
+  if (!size) return;
+
+  const allBlocks = multiblock.multiblock.getPlacementBlocks(
+    block.dimension,
+    baseBlock.location,
+    size,
+    toDirection(baseBlock.permutation.getState("minecraft:cardinal_direction"))
+  );
+
+  const blockType = block.typeId;
+  const blocksCount = allBlocks.length;
+
+  for (let i = 0; i < blocksCount; i++) {
+    const targetBlock = allBlocks[i];
+    if (targetBlock?.typeId === blockType) {
+      create.TrySetPermutation(targetBlock, "cit:switch", newState);
+    }
+  }
+}
 
 export function updateMultiblockDynamicState(block, newState) {
   const currentIndex = block.permutation.getState("cit:multiblock_index");
@@ -246,7 +262,6 @@ export function updateMultiblockDynamicState(block, newState) {
     toDirection(baseBlock.permutation.getState("minecraft:cardinal_direction"))
   );
 
-  
   const blockType = block.typeId;
   const blocksCount = allBlocks.length;
 

@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cit:cartography_table_2"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:air"
+			}
+		},
+		"result": {
+			"item": "cit:cartography_table_2",
+			"count": 1
+		}
+	}
+}

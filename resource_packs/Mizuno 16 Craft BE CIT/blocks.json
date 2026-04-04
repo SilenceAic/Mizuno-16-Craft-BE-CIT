@@ -243,6 +243,18 @@
   "cit:cartography_table_2": {
     "sound": "wood"
   },
+  "cit:lantern_0": {
+    "sound": "glass"
+  },
+  "cit:lantern_1": {
+    "sound": "glass"
+  },
+  "cit:lantern_2": {
+    "sound": "glass"
+  },
+  "cit:lantern_3": {
+    "sound": "glass"
+  },
   "cit:egg_0": {
     "sound": "wood"
   },
@@ -277,7 +289,7 @@
     "sound": "wood"
   },
   "cit:torch_1": {
-    "sound": "wood"
+    "sound": "glass"
   },
   "cit:torch_2": {
     "sound": "lantern"

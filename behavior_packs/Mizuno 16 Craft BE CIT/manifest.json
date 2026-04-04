@@ -4,37 +4,62 @@
     "name": "Mizuno 16 Craft BE CIT",
     "description": "Conversion of Mizuno 16 Craft JE CIT_1.20.1",
     "uuid": "6533cb4d-9fb1-4887-8972-4b66d1281ec7",
-    "version": [1, 21, 132],
-    "min_engine_version": [1, 21, 80]
+    "version": [
+      1,
+      21,
+      132
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      80
+    ]
   },
   "modules": [
     {
       "description": "Conversion of Mizuno 16 Craft JE CIT_1.20.1",
       "type": "data",
       "uuid": "02f3a426-2801-427c-927c-ca921586c0dd",
-      "version": [1, 21, 132]
+      "version": [
+        1,
+        21,
+        132
+      ]
     },
     {
       "description": "Script resources",
       "language": "javascript",
       "type": "script",
       "uuid": "ed9bfe8e-b626-4b7b-ab3a-29c196098d55",
-      "version": [1, 21, 132],
+      "version": [
+        1,
+        21,
+        132
+      ],
       "entry": "scripts/main.js"
     }
   ],
   "dependencies": [
     {
       "module_name": "@minecraft/server",
-      "version": "2.4.0"
+      "version": "2.6.0"
     },
     {
       "uuid": "d053aef2-664e-432c-a18a-3c2e86d8e129",
-      "version": [1, 21, 132]
+      "version": [
+        1,
+        21,
+        132
+      ]
     }
   ],
   "metadata": {
-    "authors": ["@Mizuno", "@LingAic", "@TBQ4416", "@Fallen."],
+    "authors": [
+      "@Mizuno",
+      "@LingAic",
+      "@TBQ4416",
+      "@Fallen."
+    ],
     "url": "https://space.bilibili.com/487185196?spm_id_from=333.337.0.0"
   }
 }

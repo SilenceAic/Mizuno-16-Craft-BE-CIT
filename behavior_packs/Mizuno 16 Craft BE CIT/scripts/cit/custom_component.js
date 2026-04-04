@@ -10,6 +10,7 @@ import {
   getMaxSwitch,
   getNextSwitch,
   updateMultiblockDynamicState,
+  updateMultiblockSwitchState,
   spawnParticle,
   spawnParticleOnTick,
   rotateOffsetByDirection,
@@ -80,6 +81,11 @@ components.set("cit:switch", {
 
     const maxSwitch = getMaxSwitch(block);
     const newSwitch = getNextSwitch(currentSwitch, maxSwitch);
+    const multiblockIndex = block.permutation.getState("cit:multiblock_index");
+    if (multiblockIndex !== undefined) {
+      updateMultiblockSwitchState(block, newSwitch);
+      return;
+    }
 
     create.TrySetPermutation(block, "cit:switch", newSwitch);
   },

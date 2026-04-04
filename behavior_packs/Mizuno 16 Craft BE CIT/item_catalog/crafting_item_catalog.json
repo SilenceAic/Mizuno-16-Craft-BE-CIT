@@ -149,6 +149,18 @@
           },
           {
             "group_identifier": {
+              "icon": "cit:lantern_0",
+              "name": "cit:itemGroup.name.lantern"
+            },
+            "items": [
+              "cit:lantern_0",
+              "cit:lantern_1",
+              "cit:lantern_2",
+              "cit:lantern_3"
+            ]
+          },
+          {
+            "group_identifier": {
               "icon": "cit:terracotta_0",
               "name": "cit:itemGroup.name.terracotta"
             },
