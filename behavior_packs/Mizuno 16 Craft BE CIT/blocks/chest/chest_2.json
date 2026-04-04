@@ -3,6 +3,10 @@
   "minecraft:block": {
     "description": {
       "identifier": "cit:chest_2",
+      "menu_category": {
+        "category": "items",
+        "group": "minecraft:itemGroup.name.chest"
+      },
       "traits": {
         "minecraft:placement_position": {
           "enabled_states": [

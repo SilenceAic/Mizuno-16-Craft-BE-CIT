@@ -9,6 +9,7 @@ cit:itemGroup.name.banner=Banner_0
 cit:itemGroup.name.barrel=Barrel_0
 cit:itemGroup.name.cartography_table=Cartography Table_0
 cit:itemGroup.name.lantern=Lantern_0
+cit:itemGroup.name.flower_pot=Flower Pot_0
 
 tile.cit:stone_0.name=Stone_0
 tile.cit:oak_log_0.name=Oak Log_0
