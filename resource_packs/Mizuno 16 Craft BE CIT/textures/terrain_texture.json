@@ -1006,6 +1006,27 @@
     },
     "cit:lantern_1b_e": {
       "textures": "textures/blocks/cit/lantern_1b_e"
+    },
+    "cit:oak_trapdoor_0": {
+      "textures": "textures/blocks/cit/oak_trapdoor_0"
+    },
+    "cit:oak_trapdoor_1": {
+      "textures": "textures/blocks/cit/oak_trapdoor_1"
+    },
+    "cit:birch_trapdoor_0": {
+      "textures": "textures/blocks/cit/birch_trapdoor_0"
+    },
+    "cit:birch_trapdoor_1": {
+      "textures": "textures/blocks/cit/birch_trapdoor_1"
+    },
+    "cit:spruce_trapdoor_0": {
+      "textures": "textures/blocks/cit/spruce_trapdoor_0"
+    },
+    "cit:spruce_trapdoor_1": {
+      "textures": "textures/blocks/cit/spruce_trapdoor_1"
+    },
+    "cit:acacia_trapdoor_0": {
+      "textures": "textures/blocks/cit/acacia_trapdoor_0"
     }
   }
 }

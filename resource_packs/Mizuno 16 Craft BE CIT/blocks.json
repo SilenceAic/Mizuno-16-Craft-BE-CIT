@@ -255,6 +255,9 @@
   "cit:lantern_3": {
     "sound": "glass"
   },
+  "cit:oak_trapdoor_0": {
+    "sound": "wood"
+  },
   "cit:egg_0": {
     "sound": "wood"
   },

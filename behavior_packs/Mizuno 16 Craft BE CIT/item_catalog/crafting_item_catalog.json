@@ -7,6 +7,17 @@
         "groups": [
           {
             "group_identifier": {
+              "name": "minecraft:itemGroup.name.trapdoor"
+            },
+            "items": [
+              "cit:oak_trapdoor_0",
+              "cit:spruce_trapdoor_0",
+              "cit:birch_trapdoor_0",
+              "cit:acacia_trapdoor_0"
+            ]
+          },
+          {
+            "group_identifier": {
               "name": "minecraft:itemGroup.name.wool"
             },
             "items": [

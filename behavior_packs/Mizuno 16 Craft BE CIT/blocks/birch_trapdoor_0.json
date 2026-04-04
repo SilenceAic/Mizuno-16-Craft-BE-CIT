@@ -1,0 +1,202 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cit:birch_trapdoor_0",
+      "menu_category": {
+        "category": "construction"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
+        }
+      },
+      "states": {
+        "cit:dynamic_state": {
+          "values": {
+            "min": 0,
+            "max": 2
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.cit.template_trapdoor_0"
+      },
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          7
+        ],
+        "size": [
+          16,
+          16,
+          1
+        ]
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "cit:birch_trapdoor_0",
+          "render_method": "alpha_test",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        }
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [
+              "up"
+            ]
+          }
+        ]
+      },
+      "cit:dynamic_state": {},
+      "tag:cit:three_states": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('cit:dynamic_state') == 1",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cit.template_trapdoor_1"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cit:birch_trapdoor_1",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:dynamic_state') == 2",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.cit.template_trapdoor_2"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cit:birch_trapdoor_1",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          }
+        }
+      },
+      // {
+      //   "condition": "q.block_state('cit:dynamic_state') == 1 && q.block_state('minecraft:block_face') == 'east'",
+      //   "components": {
+      //     "minecraft:transformation": {
+      //       "rotation": [
+      //         0,
+      //         -90,
+      //         0
+      //       ],
+      //       "translation": [
+      //         -0.0625,
+      //         0.5,
+      //         0
+      //       ],
+      //       "scale": [
+      //         2,
+      //         2,
+      //         1
+      //       ]
+      //     }
+      //   }
+      // },
+      // {
+      //   "condition": "q.block_state('cit:dynamic_state') == 1 && q.block_state('minecraft:block_face') == 'south'",
+      //   "components": {
+      //     "minecraft:transformation": {
+      //       "rotation": [
+      //         0,
+      //         180,
+      //         0
+      //       ],
+      //       "translation": [
+      //         -0.0625,
+      //         0.5,
+      //         0
+      //       ],
+      //       "scale": [
+      //         2,
+      //         2,
+      //         1
+      //       ]
+      //     }
+      //   }
+      // },
+      // {
+      //   "condition": "q.block_state('cit:dynamic_state') == 1 && q.block_state('minecraft:block_face') == 'west'",
+      //   "components": {
+      //     "minecraft:transformation": {
+      //       "rotation": [
+      //         0,
+      //         90,
+      //         0
+      //       ],
+      //       "translation": [
+      //         -0.0625,
+      //         0.5,
+      //         0
+      //       ],
+      //       "scale": [
+      //         2,
+      //         2,
+      //         1
+      //       ]
+      //     }
+      //   }
+      // },
+      {
+        "condition": "q.block_state('cit:dynamic_state') != 1 && q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:dynamic_state') != 1 && q.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:dynamic_state') != 1 && q.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
