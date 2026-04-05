@@ -258,6 +258,15 @@
   "cit:oak_trapdoor_0": {
     "sound": "wood"
   },
+  "cit:birch_trapdoor_0": {
+    "sound": "wood"
+  },
+  "cit:spruce_trapdoor_0": {
+    "sound": "wood"
+  },
+  "cit:acacia_trapdoor_0": {
+    "sound": "wood"
+  },
   "cit:egg_0": {
     "sound": "wood"
   },
