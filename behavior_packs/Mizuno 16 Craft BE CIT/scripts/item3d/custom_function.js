@@ -9,7 +9,7 @@ export const item3dList = new Set(["minecraft:stick"]);
  * key: 物品 typeId，value: 需要匹配的 nameTag（null 表示无名称要求，任意名称均触发）
  * 这些物品通过 playerInteractWithBlock 触发（非 itemUse）
  */
-export const blockItem3dNameMap = new Map([["minecraft:heavy_weighted_pressure_plate", ["heavy_weighted_press_0"]]]);
+export const blockItem3dNameMap = new Map([["minecraft:heavy_weighted_pressure_plate", ["HWPP_0"]]]);
 // 物品缓存 - 存储原始物品的克隆，用于完美恢复
 // 键：实体的唯一ID，值：原始ItemStack的克隆
 const itemStackCache = new Map();

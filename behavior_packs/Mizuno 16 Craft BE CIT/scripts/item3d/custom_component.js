@@ -26,7 +26,7 @@ components.set("cit:core", {
     }
     // Get the block the player is looking at
     const viewBlock = source.getBlockFromViewDirection({
-      maxDistance: 3,
+      maxDistance: 5,
       includeLiquidBlocks: false,
       includePassableBlocks: false,
     });
@@ -321,8 +321,8 @@ mc.system.runInterval(() => {
         const dy = targetY - eLoc.y;
         const dz = pLoc.z - eLoc.z;
         const distSq = dx * dx + dy * dy + dz * dz;
-        // If close enough, collect
-        if (ticks > 5 && (distSq < 0.25 || (distSq < 2.25 && ticks > 10))) {
+        // If close enough, collect（3 tick后1.5格内直接回收）
+        if (ticks > 3 && distSq < 2.25) {
           const itemStack = restoreItemStack(entity);
           const inventory = absorber.getComponent(mc.EntityComponentTypes.Inventory);
           const container = inventory.container;
@@ -339,9 +339,10 @@ mc.system.runInterval(() => {
           entity.remove();
           continue;
         }
-        // Apply attraction force
-        const speed = 0.6 + ticks * ticks * 0.005;
+        // Apply attraction force（限制速度防止过冲抽搐）
+        const rawSpeed = 0.6 + ticks * ticks * 0.005;
         const dist = Math.sqrt(distSq) || 0.001;
+        const speed = Math.min(rawSpeed, dist * 0.8);
         entity.clearVelocity();
         entity.applyImpulse({
           x: (dx / dist) * speed,
@@ -373,7 +374,7 @@ mc.system.runInterval(() => {
       }
       try {
         const viewBlock = player.getBlockFromViewDirection({
-          maxDistance: 3,
+          maxDistance: 5,
           includeLiquidBlocks: false,
           includePassableBlocks: false,
         });
