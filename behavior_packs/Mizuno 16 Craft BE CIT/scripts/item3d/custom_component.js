@@ -1,6 +1,7 @@
 import * as mc from "@minecraft/server";
 import {
   item3dList,
+  blockItem3dNameMap,
   getSpawnLocation,
   calculateTargetLocation,
   restoreItemStack,
@@ -8,15 +9,19 @@ import {
 } from "./custom_function";
 import { getVariantByName, shouldDisableGravity, getHitboxSize, getHitboxEvent, getEntityId } from "./item_config";
 const components = new Map();
-components.set("item3d:core", {
+components.set("cit:core", {
   onItemUse(event) {
     const { itemStack, source } = event;
-    // Check if item can be placed as 3D and player is sneaking
-    if (!itemStack || !item3dList.has(itemStack.typeId) || !source.isSneaking) {
-      return;
+    // 检查普通 3D 物品列表或方块类型物品列表
+    if (!itemStack || !source.isSneaking) return;
+    const isBlockItem = !item3dList.has(itemStack.typeId) && blockItem3dNameMap.has(itemStack.typeId);
+    if (!item3dList.has(itemStack.typeId) && !isBlockItem) return;
+    if (isBlockItem) {
+      const requiredNames = blockItem3dNameMap.get(itemStack.typeId);
+      if (requiredNames !== null && requiredNames !== undefined && !requiredNames.includes(itemStack.nameTag)) return;
     }
     // Prevent placing if player already holds an item3d entity
-    if (source.hasTag("item3d")) {
+    if (source.hasTag("cit")) {
       return;
     }
     // Get the block the player is looking at
@@ -61,15 +66,15 @@ components.set("item3d:core", {
         // Spawn entity with initial rotation to avoid visible rotation animation
         const spawnedEntity = source.dimension.spawnEntity(entityId, spawnLocation, {
           initialRotation: yRotation,
-          spawnEvent: "item3d:on_spawn",
+          spawnEvent: "cit:on_spawn",
         });
-        spawnedEntity.addTag("item3d");
+        spawnedEntity.addTag("cit");
         // Set wall/top properties immediately after spawn
         try {
-          spawnedEntity.setProperty("item3d:is_wall", wallProperties.is_wall);
-          spawnedEntity.setProperty("item3d:wall_face", wallProperties.wall_face);
-          spawnedEntity.setProperty("item3d:wall_rotation", 0);
-          spawnedEntity.setProperty("item3d:is_top", !!isTopItem);
+          spawnedEntity.setProperty("cit:is_wall", wallProperties.is_wall);
+          spawnedEntity.setProperty("cit:wall_face", wallProperties.wall_face);
+          spawnedEntity.setProperty("cit:wall_rotation", 0);
+          spawnedEntity.setProperty("cit:is_top", !!isTopItem);
         } catch (e) {
           // Silently handle errors
         }
@@ -97,9 +102,9 @@ components.set("item3d:core", {
           enchantments: enchantments,
         };
         try {
-          spawnedEntity.setDynamicProperty("item3d:item_data", JSON.stringify(itemData));
+          spawnedEntity.setDynamicProperty("cit:item_data", JSON.stringify(itemData));
           if (itemName) {
-            spawnedEntity.setDynamicProperty("item3d:custom_name", itemName);
+            spawnedEntity.setDynamicProperty("cit:custom_name", itemName);
           }
         } catch (e) {
           // Silently handle errors
@@ -109,7 +114,7 @@ components.set("item3d:core", {
           const variant = getVariantByName(itemStack.typeId, itemName);
           if (variant !== null) {
             try {
-              spawnedEntity.setProperty("item3d:variant", variant);
+              spawnedEntity.setProperty("cit:variant", variant);
             } catch (variantError) {
               // Silently handle errors
             }
@@ -117,8 +122,8 @@ components.set("item3d:core", {
           // Check if this item should have gravity disabled
           if (shouldDisableGravity(itemStack.typeId, itemName)) {
             try {
-              spawnedEntity.triggerEvent("item3d:set_no_gravity");
-              spawnedEntity.addTag("item3d:no_gravity");
+              spawnedEntity.triggerEvent("cit:set_no_gravity");
+              spawnedEntity.addTag("cit:no_gravity");
             } catch (e) {
               // Entity might not support this event
             }
@@ -146,11 +151,17 @@ components.set("item3d:core", {
   },
   onPlayerInteractWithBlock(event) {
     const { block, itemStack, player } = event;
-    // Cancel block interaction if player is trying to place a 3D item
-    if (itemStack && item3dList.has(itemStack.typeId) && player.isSneaking) {
-      if (!block.isAir && !block.isLiquid) {
-        event.cancel = true;
-      }
+    if (!itemStack || !player.isSneaking || block.isAir || block.isLiquid) return;
+    // 普通 3D 物品：取消方块交互（生成由 onItemUse 负责）
+    if (item3dList.has(itemStack.typeId)) {
+      event.cancel = true;
+      return;
+    }
+    // 方块类型物品：校验名称后取消放置（生成由 onItemUse 负责）
+    if (blockItem3dNameMap.has(itemStack.typeId)) {
+      const requiredNames = blockItem3dNameMap.get(itemStack.typeId);
+      if (requiredNames !== null && requiredNames !== undefined && !requiredNames.includes(itemStack.nameTag)) return;
+      event.cancel = true;
     }
   },
   onEntityHitEntity(event) {
@@ -160,22 +171,22 @@ components.set("item3d:core", {
       return;
     }
     // Validate entity before accessing properties
-    if (!hitEntity.isValid || !hitEntity.hasTag("item3d")) {
+    if (!hitEntity.isValid || !hitEntity.hasTag("cit")) {
       return;
     }
     // Prevent duplicate triggers for magnet
-    if (hitEntity.hasTag("item3d:magnet")) {
+    if (hitEntity.hasTag("cit:magnet")) {
       return;
     }
     // Mark entity for absorption
-    hitEntity.addTag("item3d:magnet");
-    hitEntity.setDynamicProperty("item3d:absorber", damagingEntity.name);
-    hitEntity.setDynamicProperty("item3d:absorb_time", 0);
+    hitEntity.addTag("cit:magnet");
+    hitEntity.setDynamicProperty("cit:absorber", damagingEntity.name);
+    hitEntity.setDynamicProperty("cit:absorb_time", 0);
     // Initial upward pop
     hitEntity.applyImpulse({ x: 0, y: 0.3, z: 0 });
     // Remove ownership if any
-    hitEntity.setDynamicProperty("item3d:owner", undefined);
-    damagingEntity.removeTag("item3d");
+    hitEntity.setDynamicProperty("cit:owner", undefined);
+    damagingEntity.removeTag("cit");
   },
   onPlayerInteractWithEntity(event) {
     const { player, itemStack, target } = event;
@@ -184,14 +195,14 @@ components.set("item3d:core", {
       return;
     }
     // Validate entity before accessing properties
-    if (!target.isValid || !target.hasTag("item3d")) {
+    if (!target.isValid || !target.hasTag("cit")) {
       return;
     }
     // Normal interaction: Rotate the entity
     if (!player.isSneaking) {
-      const itemName = target.getDynamicProperty("item3d:custom_name") || "";
+      const itemName = target.getDynamicProperty("cit:custom_name") || "";
       const normalizedName = itemName.toLowerCase();
-      const isWallEntity = target.getProperty("item3d:is_wall") === true;
+      const isWallEntity = target.getProperty("cit:is_wall") === true;
       const isTopVariant = normalizedName.includes("_top");
       const hasWallSuffix = normalizedName.endsWith("_wall");
       const rotationMode = isWallEntity && !isTopVariant ? (hasWallSuffix ? "wall_fine" : "wall_cardinal") : "floor";
@@ -199,27 +210,27 @@ components.set("item3d:core", {
         if (!target.isValid) return;
         switch (rotationMode) {
           case "wall_fine": {
-            const currentRotation = target.getProperty("item3d:wall_rotation");
+            const currentRotation = target.getProperty("cit:wall_rotation");
             const newRotation = (currentRotation + 22.5) % 360;
-            target.setProperty("item3d:wall_rotation", newRotation);
+            target.setProperty("cit:wall_rotation", newRotation);
             break;
           }
           case "wall_cardinal": {
-            const currentRotation = target.getProperty("item3d:wall_rotation");
+            const currentRotation = target.getProperty("cit:wall_rotation");
             let newRotation = currentRotation + 90;
             if (newRotation >= 360) {
               newRotation = 0;
             }
-            target.setProperty("item3d:wall_rotation", newRotation);
+            target.setProperty("cit:wall_rotation", newRotation);
             break;
           }
           default: {
             // Check if this is a top/wall variant item
             if (isTopVariant || hasWallSuffix) {
               // Top/wall items on floor: use property rotation (10 degrees)
-              const currentRotation = target.getProperty("item3d:wall_rotation");
+              const currentRotation = target.getProperty("cit:wall_rotation");
               const newRotation = (currentRotation + 10) % 360;
-              target.setProperty("item3d:wall_rotation", newRotation);
+              target.setProperty("cit:wall_rotation", newRotation);
             } else {
               // Normal items: use teleport rotation with jump
               const rotation = target.getRotation();
@@ -239,18 +250,18 @@ components.set("item3d:core", {
       return;
     }
     // Sneaking interaction: Ownership management
-    const owner = target.getDynamicProperty("item3d:owner");
+    const owner = target.getDynamicProperty("cit:owner");
     // If player is the owner
     if (owner === player.name) {
       mc.system.run(() => {
         // Re-validate entity in async context
         if (!target.isValid) {
-          player.removeTag("item3d");
+          player.removeTag("cit");
           return;
         }
         // Release ownership
-        target.setDynamicProperty("item3d:owner", undefined);
-        player.removeTag("item3d");
+        target.setDynamicProperty("cit:owner", undefined);
+        player.removeTag("cit");
       });
       event.cancel = true;
       return;
@@ -261,7 +272,7 @@ components.set("item3d:core", {
       return;
     }
     // If player already holds another item
-    if (player.hasTag("item3d")) {
+    if (player.hasTag("cit")) {
       return;
     }
     // Claim ownership
@@ -270,8 +281,8 @@ components.set("item3d:core", {
       if (!target.isValid) {
         return;
       }
-      target.setDynamicProperty("item3d:owner", player.name);
-      player.addTag("item3d");
+      target.setDynamicProperty("cit:owner", player.name);
+      player.addTag("cit");
     });
     event.cancel = true;
   },
@@ -281,19 +292,19 @@ mc.system.runInterval(() => {
   const players = mc.world.getAllPlayers();
   const activeDimensions = new Set(players.map((p) => p.dimension));
   for (const dim of activeDimensions) {
-    const magnets = dim.getEntities({ tags: ["item3d:magnet"] });
+    const magnets = dim.getEntities({ tags: ["cit:magnet"] });
     for (const entity of magnets) {
       try {
         // Validate entity before processing
         if (!entity.isValid) {
           continue;
         }
-        const absorberName = entity.getDynamicProperty("item3d:absorber");
+        const absorberName = entity.getDynamicProperty("cit:absorber");
         const absorber = players.find((p) => p.name === absorberName);
         // If player left or entity timed out (> 5 seconds), drop normally
-        let ticks = entity.getDynamicProperty("item3d:absorb_time") || 0;
+        let ticks = entity.getDynamicProperty("cit:absorb_time") || 0;
         ticks++;
-        entity.setDynamicProperty("item3d:absorb_time", ticks);
+        entity.setDynamicProperty("cit:absorb_time", ticks);
         if (!absorber || ticks > 100) {
           // Drop logic
           const itemStack = restoreItemStack(entity);
@@ -348,15 +359,15 @@ mc.system.runInterval(() => {
   const players = mc.world.getAllPlayers();
   for (const player of players) {
     // Skip players without the item3d tag (not holding any item)
-    if (!player.hasTag("item3d")) {
+    if (!player.hasTag("cit")) {
       continue;
     }
     const dimension = player.dimension;
     const playerName = player.name;
-    const entities = dimension.getEntities({ tags: ["item3d"] });
+    const entities = dimension.getEntities({ tags: ["cit"] });
     for (const entity of entities) {
       // Skip entities not owned by this player
-      const owner = entity.getDynamicProperty("item3d:owner");
+      const owner = entity.getDynamicProperty("cit:owner");
       if (owner !== playerName) {
         continue;
       }
@@ -367,10 +378,10 @@ mc.system.runInterval(() => {
           includePassableBlocks: false,
         });
         // Get item type and name from entity
-        let itemTypeId = entity.typeId.replace("item3d:", "minecraft:");
+        let itemTypeId = entity.typeId.replace("cit:", "minecraft:");
         // Handle entity override: apple_wall -> apple
         itemTypeId = itemTypeId.replace("_wall", "").replace("_top", "");
-        const itemName = entity.getDynamicProperty("item3d:custom_name");
+        const itemName = entity.getDynamicProperty("cit:custom_name");
         const { targetLocation, properties } = calculateTargetLocation(
           player,
           viewBlock,
@@ -384,11 +395,11 @@ mc.system.runInterval(() => {
           }
         } else {
           // In air: set is_wall to false for free movement
-          entity.setProperty("item3d:is_wall", false);
-          entity.setProperty("item3d:wall_rotation", 0);
+          entity.setProperty("cit:is_wall", false);
+          entity.setProperty("cit:wall_rotation", 0);
         }
         // Teleport entity to target location
-        const isWall = entity.getProperty("item3d:is_wall");
+        const isWall = entity.getProperty("cit:is_wall");
         if (isWall) {
           const typeFamilyComponent = entity.getComponent(mc.EntityComponentTypes.TypeFamily);
           if (
@@ -401,7 +412,7 @@ mc.system.runInterval(() => {
             continue;
           }
           // Wall-mounted items use specific rotation
-          const wallFace = entity.getProperty("item3d:wall_face");
+          const wallFace = entity.getProperty("cit:wall_face");
           entity.teleport(targetLocation, {
             dimension,
             rotation: { x: 0, y: wallFace },
@@ -416,5 +427,5 @@ mc.system.runInterval(() => {
     }
   }
 }, 1);
-console.warn("[Item3D] custom_component.js 已加载");
+console.warn("[CIT] custom_component.js 已加载");
 export default components;

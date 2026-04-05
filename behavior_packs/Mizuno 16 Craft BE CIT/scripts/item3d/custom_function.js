@@ -4,6 +4,12 @@ import { getPlacementConfig } from "./item_config";
  * List of items that can be placed as 3D entities
  */
 export const item3dList = new Set(["minecraft:stick"]);
+/**
+ * 需要被拦截放置、转向 item3d 系统的方块类型物品及其名称要求
+ * key: 物品 typeId，value: 需要匹配的 nameTag（null 表示无名称要求，任意名称均触发）
+ * 这些物品通过 playerInteractWithBlock 触发（非 itemUse）
+ */
+export const blockItem3dNameMap = new Map([["minecraft:heavy_weighted_pressure_plate", ["heavy_weighted_press_0"]]]);
 // 物品缓存 - 存储原始物品的克隆，用于完美恢复
 // 键：实体的唯一ID，值：原始ItemStack的克隆
 const itemStackCache = new Map();
@@ -27,8 +33,8 @@ export function cacheItemStack(entity, originalItem) {
  * @returns 恢复后的物品堆栈
  */
 export function restoreItemStack(entity) {
-  let itemId = entity.typeId.replace("item3d:", "minecraft:");
-  // Handle entity suffix overrides (e.g. item3d:apple_wall -> minecraft:apple)
+  let itemId = entity.typeId.replace("cit:", "minecraft:");
+  // Handle entity suffix overrides (e.g. cit:apple_wall -> minecraft:apple)
   itemId = itemId.replace("_wall", "").replace("_top", "");
   // 优先方案：从缓存中恢复原始物品的克隆
   if (itemStackCache.has(entity.id)) {
@@ -45,7 +51,7 @@ export function restoreItemStack(entity) {
     }
   }
   // 降级方案1：从动态属性恢复
-  const savedItemData = entity.getDynamicProperty("item3d:item_data");
+  const savedItemData = entity.getDynamicProperty("cit:item_data");
   if (savedItemData) {
     try {
       const itemData = JSON.parse(savedItemData);
@@ -88,7 +94,7 @@ export function restoreItemStack(entity) {
   }
   // 降级方案2：使用旧的恢复方式
   const itemStack = new mc.ItemStack(itemId, 1);
-  const customName = entity.getDynamicProperty("item3d:custom_name");
+  const customName = entity.getDynamicProperty("cit:custom_name");
   if (customName) {
     itemStack.nameTag = customName;
   }
@@ -101,12 +107,12 @@ export function getMaxVariants(entity) {
   try {
     const typeFamily = entity.getComponent(mc.EntityComponentTypes.TypeFamily);
     if (typeFamily) {
-      if (typeFamily.hasTypeFamily("item3d:four_variants")) return 4;
-      if (typeFamily.hasTypeFamily("item3d:three_variants")) return 3;
-      if (typeFamily.hasTypeFamily("item3d:two_variants")) return 2;
+      if (typeFamily.hasTypeFamily("cit:four_variants")) return 4;
+      if (typeFamily.hasTypeFamily("cit:three_variants")) return 3;
+      if (typeFamily.hasTypeFamily("cit:two_variants")) return 2;
     }
   } catch (error) {
-    console.error(`[Item3D] Error checking type_family: ${error}`);
+    console.error(`[CIT] Error checking type_family: ${error}`);
   }
   return 1; // Default: no variant switching
 }
@@ -185,7 +191,7 @@ export function calculateTargetLocation(player, viewBlock, itemTypeId, itemName 
           y: block.location.y + config.ground,
           z: block.location.z + faceLocation.z,
         };
-        properties = { "item3d:is_wall": false, "item3d:wall_rotation": 0 };
+        properties = { "cit:is_wall": false, "cit:wall_rotation": 0 };
         break;
       case mc.Direction.Down:
         targetLocation = {
@@ -193,7 +199,7 @@ export function calculateTargetLocation(player, viewBlock, itemTypeId, itemName 
           y: block.location.y + config.ceiling,
           z: block.location.z + faceLocation.z,
         };
-        properties = { "item3d:is_wall": false, "item3d:wall_rotation": 0 };
+        properties = { "cit:is_wall": false, "cit:wall_rotation": 0 };
         break;
       case mc.Direction.North:
         targetLocation = {
@@ -201,7 +207,7 @@ export function calculateTargetLocation(player, viewBlock, itemTypeId, itemName 
           y: block.location.y + faceLocation.y,
           z: block.location.z - config.wall,
         };
-        properties = { "item3d:is_wall": true, "item3d:wall_face": 180 };
+        properties = { "cit:is_wall": true, "cit:wall_face": 180 };
         break;
       case mc.Direction.South:
         targetLocation = {
@@ -209,7 +215,7 @@ export function calculateTargetLocation(player, viewBlock, itemTypeId, itemName 
           y: block.location.y + faceLocation.y,
           z: block.location.z + 1 + config.wall,
         };
-        properties = { "item3d:is_wall": true, "item3d:wall_face": 0 };
+        properties = { "cit:is_wall": true, "cit:wall_face": 0 };
         break;
       case mc.Direction.West:
         targetLocation = {
@@ -217,7 +223,7 @@ export function calculateTargetLocation(player, viewBlock, itemTypeId, itemName 
           y: block.location.y + faceLocation.y,
           z: block.location.z + faceLocation.z,
         };
-        properties = { "item3d:is_wall": true, "item3d:wall_face": 90 };
+        properties = { "cit:is_wall": true, "cit:wall_face": 90 };
         break;
       case mc.Direction.East:
         targetLocation = {
@@ -225,7 +231,7 @@ export function calculateTargetLocation(player, viewBlock, itemTypeId, itemName 
           y: block.location.y + faceLocation.y,
           z: block.location.z + faceLocation.z,
         };
-        properties = { "item3d:is_wall": true, "item3d:wall_face": 270 };
+        properties = { "cit:is_wall": true, "cit:wall_face": 270 };
         break;
       default:
         targetLocation = {
@@ -233,7 +239,7 @@ export function calculateTargetLocation(player, viewBlock, itemTypeId, itemName 
           y: block.location.y + config.ground,
           z: block.location.z + 0.5,
         };
-        properties = { "item3d:is_wall": false, "item3d:wall_rotation": 0 };
+        properties = { "cit:is_wall": false, "cit:wall_rotation": 0 };
     }
     return { targetLocation, properties };
   } else {
@@ -254,8 +260,8 @@ export function calculateTargetLocation(player, viewBlock, itemTypeId, itemName 
     };
     return {
       targetLocation,
-      properties: { "item3d:is_wall": false, "item3d:wall_rotation": 0 },
+      properties: { "cit:is_wall": false, "cit:wall_rotation": 0 },
     };
   }
 }
-console.warn("[Item3D] custom_function.js 已加载");
+console.warn("[CIT] custom_function.js 已加载");

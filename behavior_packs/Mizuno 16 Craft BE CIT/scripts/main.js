@@ -37,6 +37,6 @@ server.world.beforeEvents.playerInteractWithEntity.subscribe((event) => {
 server.world.afterEvents.entityHitEntity.subscribe((event) => {
   dispatch("onEntityHitEntity", event);
 });
-console.warn("[Item3D] main.js 已加载");
+console.warn("[CIT] main.js 已加载");
 
 //# sourceMappingURL=../debug/main.js.map

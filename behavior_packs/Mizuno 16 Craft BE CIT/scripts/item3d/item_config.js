@@ -21,6 +21,17 @@
  * }
  */
 export const itemConfig = {
+  // ==================== 重质测重压力板配置 ====================
+  "minecraft:heavy_weighted_pressure_plate": {
+    _default: {
+      entityOverride: "0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
   // ==================== 苹果配置 ====================
   "minecraft:apple": {
     // 默认配置（所有未特殊配置的苹果使用）
@@ -35,7 +46,7 @@ export const itemConfig = {
       },
     },
     apple_0_wall: {
-      entityOverride: "wall", // 使用 item3d:apple_wall 实体
+      entityOverride: "wall", // 使用 cit:apple_wall 实体
       noGravity: true,
       hitbox: null, // 默认点击区域
       placement: {
@@ -139,9 +150,9 @@ export function getHitboxSize(itemTypeId, itemName) {
 export function getHitboxEvent(hitboxSize) {
   switch (hitboxSize) {
     case "wall":
-      return "item3d:set_hitbox_wall";
+      return "cit:set_hitbox_wall";
     case "top":
-      return "item3d:set_hitbox_top";
+      return "cit:set_hitbox_top";
     default:
       return null;
   }
@@ -154,7 +165,10 @@ export function getHitboxEvent(hitboxSize) {
  */
 export function getEntityId(itemTypeId, itemName) {
   const config = getItemConfig(itemTypeId, itemName);
-  const baseEntityId = itemTypeId.replace("minecraft:", "item3d:");
+  const baseEntityId = itemTypeId.replace("minecraft:", "cit:");
+  if (config === null || config === void 0 ? void 0 : config.entityId) {
+    return config.entityId;
+  }
   if (!(config === null || config === void 0 ? void 0 : config.entityOverride)) {
     return baseEntityId;
   }
@@ -196,4 +210,4 @@ export function getConfiguredNames(itemTypeId) {
   }
   return Object.keys(itemConfigs).filter((name) => name !== "_default");
 }
-console.warn("[Item3D] item_config.js 已加载");
+console.warn("[CIT] item_config.js 已加载");
