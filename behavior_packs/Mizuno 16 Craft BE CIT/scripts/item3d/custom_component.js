@@ -7,8 +7,53 @@ import {
   restoreItemStack,
   cacheItemStack,
 } from "./custom_function";
-import { getVariantByName, shouldDisableGravity, getHitboxSize, getHitboxEvent, getEntityId } from "./item_config";
+import {
+  getVariantByName,
+  shouldDisableGravity,
+  getHitboxSize,
+  getHitboxEvent,
+  getEntityId,
+  getNextVariantEntity,
+} from "./item_config";
 const components = new Map();
+// 记录正在执行 bounce 衰减的实体 ID，防止重复开启衰减链
+const bouncingEntities = new Set();
+/** 触发弹跳动画并开始衰减 */
+function startBounce(entity) {
+  try {
+    const current = entity.getProperty("cit:bounce") || 0;
+    entity.setProperty("cit:bounce", Math.min(current + 0.5, 1.0));
+    if (!bouncingEntities.has(entity.id)) {
+      bouncingEntities.add(entity.id);
+      decayBounce(entity);
+    }
+  } catch (e) {}
+}
+/** 每 tick 衰减 cit:bounce，直到归零 */
+function decayBounce(entity) {
+  mc.system.runTimeout(() => {
+    if (!entity.isValid) {
+      bouncingEntities.delete(entity.id);
+      return;
+    }
+    let val;
+    try {
+      val = entity.getProperty("cit:bounce");
+    } catch {
+      bouncingEntities.delete(entity.id);
+      return;
+    }
+    const next = Math.max(0, val - 0.05);
+    try {
+      entity.setProperty("cit:bounce", next);
+    } catch {}
+    if (next <= 0) {
+      bouncingEntities.delete(entity.id);
+    } else {
+      decayBounce(entity);
+    }
+  }, 1);
+}
 components.set("cit:core", {
   onItemUse(event) {
     const { itemStack, source } = event;
@@ -62,7 +107,7 @@ components.set("cit:core", {
     try {
       mc.system.run(() => {
         // Get entity ID (supports entity override for wall items)
-        const entityId = getEntityId(itemStack.typeId, itemName);
+        const entityId = getEntityId(itemStack.typeId, itemName, wallProperties.is_wall);
         // Spawn entity with initial rotation to avoid visible rotation animation
         const spawnedEntity = source.dimension.spawnEntity(entityId, spawnLocation, {
           initialRotation: yRotation,
@@ -97,6 +142,7 @@ components.set("cit:core", {
           // Item not enchantable or error getting enchantments
         }
         const itemData = {
+          typeId: itemStack.typeId,
           nameTag: itemName,
           lore: itemLore,
           enchantments: enchantments,
@@ -166,27 +212,84 @@ components.set("cit:core", {
   },
   onEntityHitEntity(event) {
     const { damagingEntity, hitEntity } = event;
-    // Check if player hit a 3D item entity
     if (damagingEntity.typeId !== "minecraft:player") {
       return;
     }
-    // Validate entity before accessing properties
     if (!hitEntity.isValid || !hitEntity.hasTag("cit")) {
       return;
     }
-    // Prevent duplicate triggers for magnet
     if (hitEntity.hasTag("cit:magnet")) {
       return;
     }
-    // Mark entity for absorption
-    hitEntity.addTag("cit:magnet");
-    hitEntity.setDynamicProperty("cit:absorber", damagingEntity.name);
-    hitEntity.setDynamicProperty("cit:absorb_time", 0);
-    // Initial upward pop
-    hitEntity.applyImpulse({ x: 0, y: 0.3, z: 0 });
-    // Remove ownership if any
-    hitEntity.setDynamicProperty("cit:owner", undefined);
-    damagingEntity.removeTag("cit");
+    // 实体被持有中，忽略左键
+    if (hitEntity.getDynamicProperty("cit:owner")) {
+      return;
+    }
+    // 下蹲左键：收回物品
+    if (damagingEntity.isSneaking) {
+      hitEntity.addTag("cit:magnet");
+      hitEntity.setDynamicProperty("cit:absorber", damagingEntity.name);
+      hitEntity.setDynamicProperty("cit:absorb_time", 0);
+      hitEntity.applyImpulse({ x: 0, y: 0.3, z: 0 });
+      hitEntity.setDynamicProperty("cit:owner", undefined);
+      damagingEntity.removeTag("cit");
+      return;
+    }
+    // 直接左键：弹跳，有变体则同时切换
+    const isWallType = hitEntity.typeId.endsWith("_wall");
+    const nextTypeId = getNextVariantEntity(hitEntity.typeId);
+    if (nextTypeId) {
+      // 有变体：切换实体（wall 实体不偏移位置）
+      const loc = hitEntity.location;
+      const rot = hitEntity.getRotation();
+      const dim = hitEntity.dimension;
+      // wall 属性仅 _wall 实体有，floor 实体不读取
+      const isWall = isWallType ? hitEntity.getProperty("cit:is_wall") : undefined;
+      const wallFace = isWallType ? hitEntity.getProperty("cit:wall_face") : undefined;
+      const wallRotation = isWallType ? hitEntity.getProperty("cit:wall_rotation") : undefined;
+      const itemData = hitEntity.getDynamicProperty("cit:item_data");
+      const customName = hitEntity.getDynamicProperty("cit:custom_name");
+      hitEntity.remove();
+      mc.system.run(() => {
+        try {
+          const newEntity = dim.spawnEntity(
+            nextTypeId,
+            { x: loc.x, y: isWallType ? loc.y : loc.y + 0.05, z: loc.z },
+            {
+              initialRotation: rot.y,
+              spawnEvent: "cit:on_spawn",
+            }
+          );
+          newEntity.addTag("cit");
+          if (isWallType) {
+            newEntity.setProperty("cit:is_wall", isWall);
+            newEntity.setProperty("cit:wall_face", wallFace);
+            newEntity.setProperty("cit:wall_rotation", wallRotation);
+          }
+          if (itemData) newEntity.setDynamicProperty("cit:item_data", itemData);
+          if (customName) newEntity.setDynamicProperty("cit:custom_name", customName);
+          // 切换变体时同样触发弹跳效果
+          if (isWallType) {
+            startBounce(newEntity);
+          } else {
+            newEntity.applyImpulse({ x: 0, y: 0.15, z: 0 });
+          }
+        } catch (e) {
+          console.error("[CIT] 切换变体失败: " + e);
+        }
+      });
+    } else {
+      if (isWallType) {
+        // wall 实体：触发 cit:bounce 动画
+        startBounce(hitEntity);
+      } else {
+        // 非 wall 实体：物理弹跳冲量
+        mc.system.run(() => {
+          if (!hitEntity.isValid) return;
+          hitEntity.applyImpulse({ x: 0, y: 0.15, z: 0 });
+        });
+      }
+    }
   },
   onPlayerInteractWithEntity(event) {
     const { player, itemStack, target } = event;
@@ -202,49 +305,28 @@ components.set("cit:core", {
     if (!player.isSneaking) {
       const itemName = target.getDynamicProperty("cit:custom_name") || "";
       const normalizedName = itemName.toLowerCase();
-      const isWallEntity = target.getProperty("cit:is_wall") === true;
+      // 用 typeId 判断是否为 wall 实体，避免在无该属性的 floor 实体上崩溃
+      const isWallEntity = target.typeId.endsWith("_wall");
       const isTopVariant = normalizedName.includes("_top");
-      const hasWallSuffix = normalizedName.endsWith("_wall");
-      const rotationMode = isWallEntity && !isTopVariant ? (hasWallSuffix ? "wall_fine" : "wall_cardinal") : "floor";
+      // isWallEntity（typeId 结尾 _wall）直接决定旋转模式
+      const rotationMode = isWallEntity && !isTopVariant ? "wall_10" : "floor";
       mc.system.run(() => {
         if (!target.isValid) return;
-        switch (rotationMode) {
-          case "wall_fine": {
-            const currentRotation = target.getProperty("cit:wall_rotation");
-            const newRotation = (currentRotation + 22.5) % 360;
-            target.setProperty("cit:wall_rotation", newRotation);
-            break;
-          }
-          case "wall_cardinal": {
-            const currentRotation = target.getProperty("cit:wall_rotation");
-            let newRotation = currentRotation + 90;
-            if (newRotation >= 360) {
-              newRotation = 0;
+        if (rotationMode === "wall_10") {
+          // _wall 实体：沿墙面旋转 10°，通过 cit:wall_rotation 属性驱动动画
+          const currentRotation = target.getProperty("cit:wall_rotation");
+          target.setProperty("cit:wall_rotation", (currentRotation + 10) % 360);
+        } else {
+          // floor 实体：teleport 旋转 + 小跳跃（无 wall 属性访问）
+          const rotation = target.getRotation();
+          const location = target.location;
+          target.teleport(
+            { x: location.x, y: location.y + 0.1, z: location.z },
+            {
+              dimension: target.dimension,
+              rotation: { x: rotation.x, y: rotation.y + 10 },
             }
-            target.setProperty("cit:wall_rotation", newRotation);
-            break;
-          }
-          default: {
-            // Check if this is a top/wall variant item
-            if (isTopVariant || hasWallSuffix) {
-              // Top/wall items on floor: use property rotation (10 degrees)
-              const currentRotation = target.getProperty("cit:wall_rotation");
-              const newRotation = (currentRotation + 10) % 360;
-              target.setProperty("cit:wall_rotation", newRotation);
-            } else {
-              // Normal items: use teleport rotation with jump
-              const rotation = target.getRotation();
-              const location = target.location;
-              target.teleport(
-                { x: location.x, y: location.y + 0.1, z: location.z },
-                {
-                  dimension: target.dimension,
-                  rotation: { x: rotation.x, y: rotation.y + 10 },
-                }
-              );
-            }
-            break;
-          }
+          );
         }
       });
       return;
@@ -321,28 +403,31 @@ mc.system.runInterval(() => {
         const dy = targetY - eLoc.y;
         const dz = pLoc.z - eLoc.z;
         const distSq = dx * dx + dy * dy + dz * dz;
-        // If close enough, collect（3 tick后1.5格内直接回收）
-        if (ticks > 3 && distSq < 2.25) {
-          const itemStack = restoreItemStack(entity);
-          const inventory = absorber.getComponent(mc.EntityComponentTypes.Inventory);
-          const container = inventory.container;
+        // If close enough, collect（0.4秒内贴近玩家直接回收防抽搐）
+        if ((ticks <= 8 && distSq < 1.0) || (ticks > 5 && (distSq < 0.25 || (distSq < 2.25 && ticks > 10)))) {
           try {
-            const leftover = container.addItem(itemStack);
-            if (leftover) {
-              absorber.dimension.spawnItem(leftover, absorber.location);
+            const itemStack = restoreItemStack(entity);
+            const inventory = absorber.getComponent(mc.EntityComponentTypes.Inventory);
+            const container = inventory.container;
+            try {
+              const leftover = container.addItem(itemStack);
+              if (leftover) {
+                absorber.dimension.spawnItem(leftover, absorber.location);
+              }
+              // Play pickup sound
+              absorber.playSound("random.pop", { pitch: 2.0, volume: 0.5 });
+            } catch (e) {
+              absorber.dimension.spawnItem(itemStack, absorber.location);
             }
-            // Play pickup sound
-            absorber.playSound("random.pop", { pitch: 2.0, volume: 0.5 });
           } catch (e) {
-            absorber.dimension.spawnItem(itemStack, absorber.location);
+            // 恢复失败，仍移除实体防止无限抽搐
           }
           entity.remove();
           continue;
         }
-        // Apply attraction force（限制速度防止过冲抽搐）
-        const rawSpeed = 0.6 + ticks * ticks * 0.005;
+        // Apply attraction force
+        const speed = 0.6 + ticks * ticks * 0.005;
         const dist = Math.sqrt(distSq) || 0.001;
-        const speed = Math.min(rawSpeed, dist * 0.8);
         entity.clearVelocity();
         entity.applyImpulse({
           x: (dx / dist) * speed,
@@ -380,8 +465,9 @@ mc.system.runInterval(() => {
         });
         // Get item type and name from entity
         let itemTypeId = entity.typeId.replace("cit:", "minecraft:");
-        // Handle entity override: apple_wall -> apple
+        // Handle entity override: apple_wall -> apple, bowl_4_wall -> bowl
         itemTypeId = itemTypeId.replace("_wall", "").replace("_top", "");
+        itemTypeId = itemTypeId.replace(/_\d+[a-zA-Z]*$/, "");
         const itemName = entity.getDynamicProperty("cit:custom_name");
         const { targetLocation, properties } = calculateTargetLocation(
           player,
@@ -389,37 +475,34 @@ mc.system.runInterval(() => {
           itemTypeId,
           itemName !== null && itemName !== void 0 ? itemName : null
         );
-        // Set properties (always set, even if null - for free movement)
+        // 仅 _wall 实体拥有 wall 属性，floor 实体不读写，避免崩溃
+        const isWallEntity = entity.typeId.endsWith("_wall");
         if (properties !== null) {
-          for (const [key, value] of Object.entries(properties)) {
-            entity.setProperty(key, value);
+          if (isWallEntity) {
+            for (const [key, value] of Object.entries(properties)) {
+              entity.setProperty(key, value);
+            }
           }
-        } else {
-          // In air: set is_wall to false for free movement
+        } else if (isWallEntity) {
+          // In air: reset wall state
           entity.setProperty("cit:is_wall", false);
           entity.setProperty("cit:wall_rotation", 0);
         }
         // Teleport entity to target location
-        const isWall = entity.getProperty("cit:is_wall");
-        if (isWall) {
-          const typeFamilyComponent = entity.getComponent(mc.EntityComponentTypes.TypeFamily);
-          if (
-            !(typeFamilyComponent === null || typeFamilyComponent === void 0
-              ? void 0
-              : typeFamilyComponent.hasTypeFamily("is_wall"))
-          ) {
-            // Not a wall item, fallback to normal teleport
+        if (isWallEntity) {
+          const isWall = entity.getProperty("cit:is_wall");
+          if (isWall) {
+            // Wall-mounted items use specific rotation
+            const wallFace = entity.getProperty("cit:wall_face");
+            entity.teleport(targetLocation, {
+              dimension,
+              rotation: { x: 0, y: wallFace },
+            });
+          } else {
             entity.teleport(targetLocation, { dimension });
-            continue;
           }
-          // Wall-mounted items use specific rotation
-          const wallFace = entity.getProperty("cit:wall_face");
-          entity.teleport(targetLocation, {
-            dimension,
-            rotation: { x: 0, y: wallFace },
-          });
         } else {
-          // Floor/ceiling items maintain their current rotation
+          // Floor/ceiling items: simple teleport, no wall logic
           entity.teleport(targetLocation, { dimension });
         }
       } catch (error) {

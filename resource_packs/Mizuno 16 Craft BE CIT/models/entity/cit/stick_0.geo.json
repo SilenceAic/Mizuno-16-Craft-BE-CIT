@@ -1,0 +1,56 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.stick_0",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-1, 0, -5],
+							"size": [2, 2, 10],
+							"uv": {
+								"north": {"uv": [5, 4], "uv_size": [2, 2], "material_instance": "texture"},
+								"east": {"uv": [0, 0], "uv_size": [10, 2], "material_instance": "texture"},
+								"south": {"uv": [5, 4], "uv_size": [2, 2], "material_instance": "texture"},
+								"west": {"uv": [0, 2], "uv_size": [10, 2], "material_instance": "texture"},
+								"up": {"uv": [9, 4.5], "uv_size": [2, 10], "uv_rotation": 180, "material_instance": "texture"},
+								"down": {"uv": [0, 14], "uv_size": [2, -10], "material_instance": "texture"}
+							}
+						},
+						{
+							"origin": [0, 2, -3],
+							"size": [1, 1, 1],
+							"uv": {
+								"north": {"uv": [2, 6], "uv_size": [1, 1], "material_instance": "texture"},
+								"east": {"uv": [2, 6], "uv_size": [1, 1], "material_instance": "texture"},
+								"south": {"uv": [2, 6], "uv_size": [1, 1], "material_instance": "texture"},
+								"west": {"uv": [2, 6], "uv_size": [1, 1], "material_instance": "texture"},
+								"up": {"uv": [3, 6], "uv_size": [1, 1], "material_instance": "texture"}
+							}
+						},
+						{
+							"origin": [0, 3, -6],
+							"size": [0, 2, 3],
+							"pivot": [0, 3, -3],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"east": {"uv": [2, 4], "uv_size": [3, 2], "material_instance": "texture"},
+								"west": {"uv": [5, 4], "uv_size": [-3, 2], "material_instance": "texture"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:bowl_4",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/cit/entity/bowl_4"
+      },
+      "geometry": {
+        "default": "geometry.cit.template_bowl_4"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

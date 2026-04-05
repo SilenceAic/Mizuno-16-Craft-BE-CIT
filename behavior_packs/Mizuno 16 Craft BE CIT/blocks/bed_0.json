@@ -20,78 +20,6 @@
         }
       }
     },
-    "permutations": [
-      {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
-        "components": {
-          "minecraft:transformation": {
-            "rotation": [
-              0,
-              180,
-              0
-            ]
-          }
-        }
-      },
-      {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
-        "components": {
-          "minecraft:transformation": {
-            "rotation": [
-              0,
-              0,
-              0
-            ]
-          }
-        }
-      },
-      {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
-        "components": {
-          "minecraft:transformation": {
-            "rotation": [
-              0,
-              90,
-              0
-            ]
-          }
-        }
-      },
-      {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
-        "components": {
-          "minecraft:transformation": {
-            "rotation": [
-              0,
-              270,
-              0
-            ]
-          }
-        }
-      },
-      {
-        "condition": "q.block_state('cit:multiblock_index') != 0",
-        "components": {
-          "minecraft:loot": "loot_tables/empty.json"
-        }
-      },
-      {
-        "condition": "q.block_state('cit:multiblock_index') == 0",
-        "components": {
-          "minecraft:geometry": {
-            "identifier": "geometry.bed_bottom"
-          }
-        }
-      },
-      {
-        "condition": "q.block_state('cit:multiblock_index') == 1",
-        "components": {
-          "minecraft:geometry": {
-            "identifier": "geometry.bed_front"
-          }
-        }
-      }
-    ],
     "components": {
       "minecraft:item_visual": {
         "geometry": {
@@ -171,6 +99,78 @@
       },
       "cit:bed_sleep": {},
       "cit:bed_bounce": {}
-    }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:multiblock_index') != 0",
+        "components": {
+          "minecraft:loot": "loot_tables/empty.json"
+        }
+      },
+      {
+        "condition": "q.block_state('cit:multiblock_index') == 0",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bed_bottom"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cit:multiblock_index') == 1",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bed_front"
+          }
+        }
+      }
+    ]
   }
 }

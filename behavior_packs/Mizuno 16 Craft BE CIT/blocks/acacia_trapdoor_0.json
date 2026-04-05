@@ -55,7 +55,7 @@
     },
     "permutations": [
       {
-        "condition": "q.block_state('cit:dynamic_state') != 1 && q.block_state('minecraft:block_face') == 'east'",
+        "condition": "q.block_state('minecraft:block_face') == 'east'",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -67,7 +67,7 @@
         }
       },
       {
-        "condition": "q.block_state('cit:dynamic_state') != 1 && q.block_state('minecraft:block_face') == 'south'",
+        "condition": "q.block_state('minecraft:block_face') == 'south'",
         "components": {
           "minecraft:transformation": {
             "rotation": [
@@ -79,7 +79,7 @@
         }
       },
       {
-        "condition": "q.block_state('cit:dynamic_state') != 1 && q.block_state('minecraft:block_face') == 'west'",
+        "condition": "q.block_state('minecraft:block_face') == 'west'",
         "components": {
           "minecraft:transformation": {
             "rotation": [

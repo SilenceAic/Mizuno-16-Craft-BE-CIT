@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.cit.wall": {
+      "loop": true,
+      "bones": {
+        "root": {
+          "rotation": [
+            "q.property('cit:is_wall') ? (q.property('cit:wall_rotation') == 90 || q.property('cit:wall_rotation') == 180 || q.property('cit:wall_rotation') == 270 ? 25 : -25) : 90",
+            0,
+            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') + 25 : 0"
+          ],
+          "position": [
+            0,
+            "q.property('cit:is_wall') ? 0 : -7",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cit.bone_wall": {
+      "loop": true,
+      "bones": {
+        "bone": {
+          "rotation": [
+            0,
+            0,
+            "q.property('cit:wall_rotation')"
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 2",
+            0
+          ]
+        }
+      }
+    }
+  }
+}

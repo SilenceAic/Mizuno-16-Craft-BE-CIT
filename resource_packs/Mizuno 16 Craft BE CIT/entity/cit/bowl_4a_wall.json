@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:bowl_4a_wall",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/cit/entity/bowl_4a_wall"
+      },
+      "geometry": {
+        "default": "geometry.cit.template_bowl_4_wall"
+      },
+      "animations": {
+        "bowl_wall": "animation.cit.bone_wall"
+      },
+      "scripts": {
+        "animate": ["bowl_wall"]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

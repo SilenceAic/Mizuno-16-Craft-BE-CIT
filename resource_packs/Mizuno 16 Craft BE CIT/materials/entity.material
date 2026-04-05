@@ -1,0 +1,972 @@
+{
+    "materials": {
+        "version": "1.0.0",
+        "entity_alphatest_culling:entity": {
+            "+defines": [
+                "ALPHA_TEST"
+            ]
+        },
+        "entity_change_color_culling:entity": {
+            "+defines": [
+                "USE_COLOR_MASK"
+            ]
+        },
+        "entity_alphatest_change_color_culling:entity": {
+            "+defines": [
+                "ALPHA_TEST",
+                "USE_COLOR_MASK"
+            ]
+        },
+        "entity_base_culling:entity_alphatest_culling": {
+            "depthFunc": "LessEqual"
+        },
+        "entity_multitexture_masked_culling:entity_alphatest_culling": {
+            "depthFunc": "LessEqual",
+            "+defines": [
+                "MASKED_MULTITEXTURE"
+            ],
+            "+samplerStates": [
+                {
+                    "samplerIndex": 0,
+                    "textureWrap": "Clamp"
+                },
+                {
+                    "samplerIndex": 1,
+                    "textureWrap": "Clamp"
+                }
+            ]
+        },
+        "rynbocn_vlcjied:entity_multitexture_color_mask": {
+            "+defines": [
+                "ALPHA_TEST"
+            ]
+        },
+        "entity_multitexture_multiplicative_cull:entity": {
+            "+states": [
+                "DisableCulling"
+            ],
+            "+samplerStates": [
+                {
+                    "samplerIndex": 0,
+                    "textureWrap": "Clamp"
+                },
+                {
+                    "samplerIndex": 1,
+                    "textureWrap": "Clamp"
+                }
+            ],
+            "+defines": [
+                "ALPHA_TEST",
+                "USE_COLOR_MASK",
+                "MULTIPLICATIVE_TINT",
+                "MULTIPLICATIVE_TINT_COLOR",
+                "USE_OVERLAY"
+            ]
+        },
+        "xwjyzky:entity_alphablend": {
+            "-defines": [
+                "FANCY"
+            ],
+            "-states": [
+                "DisableCulling"
+            ]
+        },
+        "qlwwqof:xwjyzky": {
+            "+samplerStates": [
+                {
+                    "samplerIndex": 0,
+                    "textureFilter": "Bilinear"
+                }
+            ]
+        },
+        "nmfasxm:xwjyzky": {
+            "+defines": [
+                "USE_UV_ANIM"
+            ],
+            "+samplerStates": [
+                {
+                    "samplerIndex": 0,
+                    "textureFilter": "Bilinear",
+                    "textureWrap": "Repeat"
+                }
+            ]
+        },
+        "ppmshjz:entity_alphablend": {
+            "-defines": [
+                "FANCY"
+            ],
+            "+states": [
+                "DisableCulling"
+            ]
+        },
+        "ppmshjz_ao:entity_alphablend": {
+            "+states": [
+                "DisableCulling"
+            ],
+            "blendSrc": "SourceAlpha",
+            "blendDst": "OneMinusSrcAlpha",
+            "+defines": [
+                "FANCY"
+            ]
+        },
+        "gxaqxgp:entity_alphatest": {
+            "-states": [
+                "DisableCulling"
+            ]
+        },
+        "mbspbvr:entity_alphatest": {},
+        "tnboycb:mbspbvr": {
+            "+defines": [
+                "USE_SKINNING"
+            ],
+            "+states": [
+                "EnableStencilTest",
+                "StencilWrite"
+            ],
+            "frontFace": {
+                "stencilFunc": "Always",
+                "stencilPassOp": "Replace"
+            },
+            "backFace": {
+                "stencilFunc": "Always",
+                "stencilPassOp": "Replace"
+            },
+            "stencilRef": 2
+        },
+        "xttknqx:gxaqxgp": {
+            "-defines": [
+                "FANCY"
+            ]
+        },
+        "ntrstvk:entity_alphatest": {
+            "-defines": [
+                "FANCY"
+            ]
+        },
+        "tscjoqp:ntrstvk": {
+            "+defines": [
+                "USE_SKINNING"
+            ],
+            "+states": [
+                "EnableStencilTest",
+                "StencilWrite"
+            ],
+            "frontFace": {
+                "stencilFunc": "Always",
+                "stencilPassOp": "Replace"
+            },
+            "backFace": {
+                "stencilFunc": "Always",
+                "stencilPassOp": "Replace"
+            },
+            "stencilRef": 2
+        },
+        "sqlhvsh:ntrstvk": {
+            "+defines": [
+                "USE_EMISSIVE"
+            ]
+        },
+        "qtyyuui:entity_emissive": {},
+        "vejvgev:entity_emissive_alpha": {},
+        "yxbnkhe:qtyyuui": {
+            "-defines": [
+                "FANCY"
+            ]
+        },
+        "arueojm:entity_emissive_alpha": {
+            "+defines": [
+                "USE_UV_ANIM"
+            ],
+            "-defines": [
+                "FANCY"
+            ]
+        },
+        "ftikhqi:arueojm": {
+            "+defines": [
+                "USE_SKINNING"
+            ],
+            "+states": [
+                "EnableStencilTest",
+                "StencilWrite"
+            ],
+            "frontFace": {
+                "stencilFunc": "Always",
+                "stencilPassOp": "Replace"
+            },
+            "backFace": {
+                "stencilFunc": "Always",
+                "stencilPassOp": "Replace"
+            },
+            "stencilRef": 2
+        },
+        "swqpabh:arueojm": {
+            "+samplerStates": [
+                {
+                    "samplerIndex": 0,
+                    "textureFilter": "Bilinear"
+                }
+            ]
+        },
+        "dnyjmqc:arueojm": {
+            "-states": [
+                "DisableCulling"
+            ]
+        },
+        "cvtpyls:dnyjmqc": {
+            "+samplerStates": [
+                {
+                    "samplerIndex": 0,
+                    "textureFilter": "Bilinear"
+                }
+            ]
+        },
+        "stbohaj:entity_emissive": {
+            "+states": [
+                "Blending",
+                "DisableCulling",
+                "DisableDepthWrite"
+            ],
+            "+defines": [
+                "USE_UV_ANIM"
+            ],
+            "-defines": [
+                "FANCY"
+            ],
+            "blendSrc": "One",
+            "blendDst": "One"
+        },
+        "fagcukb:stbohaj": {
+            "+samplerStates": [
+                {
+                    "samplerIndex": 0,
+                    "textureFilter": "Bilinear"
+                }
+            ]
+        },
+        "whthznb:stbohaj": {
+            "blendSrc": "SourceAlpha",
+            "+samplerStates": [
+                {
+                    "samplerIndex": 0,
+                    "textureWrap": "Repeat"
+                }
+            ]
+        },
+        "ndkvsmg:whthznb": {
+            "+samplerStates": [
+                {
+                    "samplerIndex": 0,
+                    "textureFilter": "Bilinear"
+                }
+            ]
+        },
+        "kkrisjg:fagcukb": {
+            "blendSrc": "SourceAlpha",
+            "blendDst": "OneMinusSrcAlpha"
+        },
+        "abtjdyn:entity": {},
+        "hnhhphs:abtjdyn": {
+            "+states": [
+                "DisableCulling"
+            ]
+        },
+        "rdvjavl:abtjdyn": {
+            "+defines": [
+                "USE_UV_ANIM"
+            ],
+            "+samplerStates": [
+                {
+                    "samplerIndex": 0,
+                    "textureWrap": "Repeat"
+                }
+            ]
+        },
+        "kcdpwjz:abtjdyn": {
+            "-defines": [
+                "FANCY"
+            ]
+        },
+        "dpncysc:kcdpwjz": {
+            "+defines": [
+                "USE_SKINNING"
+            ],
+            "+states": [
+                "EnableStencilTest",
+                "StencilWrite"
+            ],
+            "frontFace": {
+                "stencilFunc": "Always",
+                "stencilPassOp": "Replace"
+            },
+            "backFace": {
+                "stencilFunc": "Always",
+                "stencilPassOp": "Replace"
+            },
+            "stencilRef": 2
+        },
+        "xiujgoa:dpncysc": {},
+        "jscwate:tnboycb": {},
+        "rgtcago:ftikhqi": {},
+        "cmzuccn:xiujgoa": {
+            "+states": [
+                "DisableCulling"
+            ]
+        },
+        "kxwyxif:jscwate": {
+            "+states": [
+                "DisableCulling"
+            ]
+        },
+        "awxwzgc:entity_emissive": {
+            "+states": [
+                "EnableStencilTest"
+            ],
+            "frontFace": {
+                "stencilFunc": "NotEqual"
+            },
+            "backFace": {
+                "stencilFunc": "NotEqual"
+            },
+            "stencilRef": 2,
+            "variants": [
+                {
+                    "olzaiyc": {
+                        "stencilRef": 3
+                    }
+                },
+                {
+                    "zxaydmm": {
+                        "stencilRef": 4
+                    }
+                },
+                {
+                    "ybbudwz": {
+                        "stencilRef": 5
+                    }
+                }
+            ]
+        },
+        "fltmlta:awxwzgc": {
+            "frontFace": {
+                "stencilFunc": "NotEqual",
+                "stencilPassOp": "Replace"
+            },
+            "backFace": {
+                "stencilFunc": "NotEqual",
+                "stencilPassOp": "Replace"
+            },
+            "variants": [
+                {
+                    "olzaiyc": {
+                        "stencilRef": 3
+                    }
+                },
+                {
+                    "zxaydmm": {
+                        "stencilRef": 4
+                    }
+                },
+                {
+                    "ybbudwz": {
+                        "stencilRef": 5
+                    }
+                }
+            ],
+            "+states": [
+                "Blending",
+                "DisableDepthWrite"
+            ],
+            "-defines": [
+                "FANCY"
+            ],
+            "blendSrc": "One",
+            "blendDst": "One"
+        },
+        "zwlltmj:vejvgev": {
+            "+states": [
+                "EnableStencilTest",
+                "StencilWrite"
+            ],
+            "frontFace": {
+                "stencilFunc": "Always",
+                "stencilPassOp": "Replace"
+            },
+            "backFace": {
+                "stencilFunc": "Always",
+                "stencilPassOp": "Replace"
+            },
+            "stencilRef": 2
+        },
+        "tulkhnt:llqlmgj": {
+            "-defines": [
+                "FANCY"
+            ],
+            "-states": [
+                "DisableCulling"
+            ],
+            "+states": [
+                "InvertCulling"
+            ]
+        },
+        "azbmbbn:awxwzgc": {
+            "+defines": [
+                "ALPHA_TEST"
+            ]
+        },
+        "llqlmgj:azbmbbn": {
+            "+samplerStates": [
+                {
+                    "samplerIndex": 0,
+                    "textureFilter": "Bilinear"
+                }
+            ]
+        },
+        "lrygrjl:awxwzgc": {
+            "-defines": [
+                "FANCY"
+            ]
+        },
+        "vvwpvxv:velsehk": {
+            "+samplerStates": [
+                {
+                    "samplerIndex": 0,
+                    "textureFilter": "Bilinear"
+                }
+            ]
+        },
+        "dbveqqi:ntrstvk": {
+            "+defines": [
+                "USE_UV_ANIM"
+            ],
+            "+samplerStates": [
+                {
+                    "samplerIndex": 0,
+                    "textureFilter": "Bilinear",
+                    "textureWrap": "Repeat"
+                }
+            ]
+        },
+        "gkcgmtt:awxwzgc": {
+            "+defines": [
+                "ALPHA_TEST"
+            ]
+        },
+        "velsehk:lrygrjl": {
+            "+defines": [
+                "ALPHA_TEST"
+            ]
+        },
+        "zddcdbc:lrygrjl": {
+            "+states": [
+                "Blending",
+                "DisableAlphaWrite",
+                "DisableDepthWrite"
+            ],
+            "frontFace": {
+                "stencilFunc": "NotEqual",
+                "stencilPassOp": "Replace"
+            },
+            "backFace": {
+                "stencilFunc": "NotEqual",
+                "stencilPassOp": "Replace"
+            }
+        },
+        "dfsdrlj:lrygrjl": {},
+        "hkzrzou:velsehk": {},
+        "vnwpndv:entity_alphablend": {
+            "+defines": [
+                "USE_EMISSIVE",
+                "USE_UV_ANIM"
+            ],
+            "+states": [
+                "DisableDepthWrite",
+                "EnableStencilTest",
+                "StencilWrite"
+            ],
+            "-defines": [
+                "FANCY"
+            ],
+            "frontFace": {
+                "stencilFunc": "NotEqual",
+                "stencilPassOp": "Replace"
+            },
+            "backFace": {
+                "stencilFunc": "NotEqual",
+                "stencilPassOp": "Replace"
+            },
+            "stencilRef": 6
+        },
+        "ksbsuee:vnwpndv": {
+            "+samplerStates": [
+                {
+                    "samplerIndex": 0,
+                    "textureFilter": "Bilinear"
+                }
+            ]
+        },
+        "jwaonnc:entity_alphablend": {
+            "+defines": [
+                "USE_EMISSIVE"
+            ],
+            "+states": [
+                "DisableDepthWrite",
+                "EnableStencilTest",
+                "StencilWrite"
+            ],
+            "-defines": [
+                "FANCY"
+            ],
+            "frontFace": {
+                "stencilFunc": "NotEqual",
+                "stencilPassOp": "Replace"
+            },
+            "backFace": {
+                "stencilFunc": "NotEqual",
+                "stencilPassOp": "Replace"
+            },
+            "stencilRef": 6,
+            "blendSrc": "One",
+            "blendDst": "One"
+        },
+        "qpibfxq:entity_alphablend": {
+            "+defines": [
+                "USE_UV_ANIM"
+            ],
+            "+states": [
+                "DisableDepthWrite"
+            ],
+            "-defines": [
+                "FANCY"
+            ],
+            "blendSrc": "One",
+            "blendDst": "OneMinusSrcAlpha"
+        },
+        "heidbva:qpibfxq": {
+            "+defines": [
+                "USE_EMISSIVE"
+            ],
+            "+states": [
+                "DisableDepthWrite",
+                "EnableStencilTest",
+                "StencilWrite"
+            ],
+            "-defines": [
+                "FANCY"
+            ],
+            "frontFace": {
+                "stencilFunc": "NotEqual",
+                "stencilPassOp": "Replace"
+            },
+            "backFace": {
+                "stencilFunc": "NotEqual",
+                "stencilPassOp": "Replace"
+            },
+            "stencilRef": 6
+        },
+        "tyyvyjj:abtjdyn": {
+            "-defines": [
+                "FANCY"
+            ],
+            "+samplerStates": [
+                {
+                    "samplerIndex": 0,
+                    "textureFilter": "Bilinear"
+                }
+            ]
+        },
+        "entity_emissive_layer_alpha_test:entity_nocull": {
+            "+defines": [
+                "USE_COLOR_MASK",
+                "ALPHA_TEST",
+                "USE_UV_ANIM"
+            ],
+            "depthFunc": "Equal"
+        },
+        "gismjsz:ntrstvk": {
+            "+states": [
+                "EnableStencilTest",
+                "StencilWrite"
+            ],
+            "frontFace": {
+                "stencilFunc": "Always",
+                "stencilPassOp": "Replace"
+            },
+            "backFace": {
+                "stencilFunc": "Always",
+                "stencilPassOp": "Replace"
+            },
+            "stencilRef": 0
+        },
+        "ylaadvp:abtjdyn": {
+            "+states": [
+                "EnableStencilTest",
+                "StencilWrite",
+                "DisableColorWrite",
+                "DisableAlphaWrite"
+            ],
+            "frontFace": {
+                "stencilFunc": "Always",
+                "stencilPassOp": "Replace"
+            },
+            "backFace": {
+                "stencilFunc": "Always",
+                "stencilPassOp": "Replace"
+            },
+            "stencilRef": 3
+        },
+        "covkyyq:ntrstvk": {
+            "+states": [
+                "EnableStencilTest"
+            ],
+            "frontFace": {
+                "stencilFunc": "Equal"
+            },
+            "backFace": {
+                "stencilFunc": "Equal"
+            },
+            "stencilRef": 3
+        },
+        "dqsozib:kcdpwjz": {
+            "+defines": [
+                "GLINT"
+            ],
+            "+samplerStates": [
+                {
+                    "samplerIndex": 0,
+                    "textureFilter": "Point"
+                },
+                {
+                    "samplerIndex": 1,
+                    "textureWrap": "Repeat"
+                }
+            ],
+            "+states": [
+                "EnableStencilTest",
+                "StencilWrite"
+            ],
+            "frontFace": {
+                "stencilFunc": "Always",
+                "stencilPassOp": "Replace"
+            },
+            "backFace": {
+                "stencilFunc": "Always",
+                "stencilPassOp": "Replace"
+            },
+            "stencilRef": 2
+        },
+        "regbcii:stbohaj": {
+            "depthFunc": "Equal"
+        },
+        "beluatc:dqsozib": {
+            "+defines": [
+                "ALPHA_TEST"
+            ],
+            "+states": [
+                "DisableCulling"
+            ]
+        },
+        "yxhglhs:dqsozib": {
+            "+states": [
+                "DisableCulling"
+            ]
+        },
+        "fgquvha:dqsozib": {
+            "+states": [
+                "Blending",
+                "DisableAlphaWrite",
+                "DisableDepthWrite"
+            ],
+            "-states": [
+                "EnableStencilTest",
+                "StencilWrite"
+            ],
+            "depthFunc": "Equal",
+            "blendSrc": "One",
+            "blendDst": "One"
+        },
+        "dezyzln:dqsozib": {
+            "frontFace": {
+                "stencilFunc": "Equal",
+                "stencilPassOp": "Replace"
+            },
+            "backFace": {
+                "stencilFunc": "Equal",
+                "stencilPassOp": "Replace"
+            },
+            "+states": [
+                "EnableStencilTest",
+                "Blending",
+                "DisableAlphaWrite",
+                "DisableDepthWrite"
+            ],
+            "depthFunc": "Equal",
+            "blendSrc": "One",
+            "blendDst": "One"
+        },
+        "ujvkvfo:fgquvha": {
+            "+states": [
+                "DisableCulling"
+            ]
+        },
+        "ypyhpcp:fltmlta": {},
+        "nvaufep:ndkvsmg": {},
+        "jijpgcf_ymkymju:entity_multitexture_multiplicative_blend": {
+            "-defines": [
+                "USE_OVERLAY"
+            ],
+            "-states": [
+                "DisableCulling"
+            ],
+            "+states": [
+                "Blending"
+            ],
+            "blendDst": "One"
+        },
+        "gnqcoei:entity_emissive_alpha": {
+            "+defines": [
+                "USE_ONLY_EMISSIVE"
+            ]
+        },
+        "armortrim:entity_alphatest": {
+            "+defines": [
+                "USE_EMISSIVE"
+            ],
+            "-defines": [
+                "FANCY"
+            ],
+            "depthFunc": "LessEqual"
+        },
+        "armor:entity_alphatest_change_color": {},
+        "boat:entity_alphatest": {},
+        "chicken:entity_alphatest": {},
+        "cow:entity_alphatest": {},
+        "creaking:entity_alphatest": {},
+        "hpqojlb_lwpkbas:entity_static": {
+            "+defines": [
+                "USE_UV_ANIM",
+                "ALPHA_TEST"
+            ],
+            "-defines": [
+                "FANCY"
+            ],
+            "+states": [
+                "Blending",
+                "DisableCulling",
+                "DisableDepthWrite",
+                "DisableAlphaWrite"
+            ],
+            "blendSrc": "One",
+            "blendDst": "One",
+            "+samplerStates": [
+                {
+                    "samplerIndex": 0,
+                    "textureWrap": "Repeat"
+                }
+            ]
+        },
+        "ender_crystal:entity_emissive": {},
+        "fox:entity_alphatest": {},
+        "glow_squid:entity_emissive_alpha": {},
+        "mooshroom:entity_alphatest": {},
+        "panda:entity_alphatest": {},
+        "pig:entity_alphatest": {},
+        "rabbit:entity_alphatest": {},
+        "sheep:entity_alphatest_change_color": {},
+        "snow_golem:entity_alphatest": {},
+        "snow_golem_pumpkin:entity_emissive_alpha": {
+            "+defines": [
+                "USE_ONLY_EMISSIVE"
+            ]
+        },
+        "qcjgjsh_xlvwauz:entity_emissive_alpha": {},
+        "squid:entity_alphatest": {},
+        "turtle:entity_alphatest": {},
+        "wither_boss:entity_emissive_alpha": {},
+        "wither_skull:entity_emissive_alpha": {},
+        "wolf:entity_alphatest": {},
+        "jijpgcf_ynmnqeu:entity_alphatest_change_color": {
+            "-defines": [
+                "USE_OVERLAY"
+            ]
+        },
+        "entity_static": {
+            "vertexShader": "shaders/entity.vertex",
+            "vrGeometryShader": "shaders/entity.geometry",
+            "fragmentShader": "shaders/entity.fragment",
+            "vertexFields": [
+                {
+                    "field": "Position"
+                },
+                {
+                    "field": "Normal"
+                },
+                {
+                    "field": "UV0"
+                }
+            ],
+            "variants": [
+                {
+                    "kqxjqkd": {
+                        "+defines": [
+                            "USE_SKINNING"
+                        ],
+                        "+states": [
+                            "EnableStencilTest",
+                            "StencilWrite"
+                        ],
+                        "frontFace": {
+                            "stencilFunc": "Always",
+                            "stencilPassOp": "Replace"
+                        },
+                        "backFace": {
+                            "stencilFunc": "Always",
+                            "stencilPassOp": "Replace"
+                        },
+                        "stencilRef": 2
+                    }
+                },
+                {
+                    "kqxjqkd_olzaiyc": {
+                        "+defines": [
+                            "USE_SKINNING"
+                        ],
+                        "+states": [
+                            "EnableStencilTest",
+                            "StencilWrite"
+                        ],
+                        "frontFace": {
+                            "stencilFunc": "Always",
+                            "stencilPassOp": "Replace"
+                        },
+                        "backFace": {
+                            "stencilFunc": "Always",
+                            "stencilPassOp": "Replace"
+                        },
+                        "stencilRef": 3
+                    }
+                },
+                {
+                    "kqxjqkd_zxaydmm": {
+                        "+defines": [
+                            "USE_SKINNING"
+                        ],
+                        "+states": [
+                            "EnableStencilTest",
+                            "StencilWrite"
+                        ],
+                        "frontFace": {
+                            "stencilFunc": "Always",
+                            "stencilPassOp": "Replace"
+                        },
+                        "backFace": {
+                            "stencilFunc": "Always",
+                            "stencilPassOp": "Replace"
+                        },
+                        "stencilRef": 4
+                    }
+                },
+                {
+                    "kqxjqkd_ybbudwz": {
+                        "+defines": [
+                            "USE_SKINNING"
+                        ],
+                        "+states": [
+                            "EnableStencilTest",
+                            "StencilWrite"
+                        ],
+                        "frontFace": {
+                            "stencilFunc": "Always",
+                            "stencilPassOp": "Replace"
+                        },
+                        "backFace": {
+                            "stencilFunc": "Always",
+                            "stencilPassOp": "Replace"
+                        },
+                        "stencilRef": 5
+                    }
+                },
+                {
+                    "skinning": {
+                        "+defines": [
+                            "USE_SKINNING"
+                        ],
+                        "vertexFields": [
+                            {
+                                "field": "Position"
+                            },
+                            {
+                                "field": "BoneId0"
+                            },
+                            {
+                                "field": "Normal"
+                            },
+                            {
+                                "field": "UV0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "skinning_color": {
+                        "+defines": [
+                            "USE_SKINNING",
+                            "USE_OVERLAY"
+                        ],
+                        "+states": [
+                            "Blending"
+                        ],
+                        "vertexFields": [
+                            {
+                                "field": "Position"
+                            },
+                            {
+                                "field": "BoneId0"
+                            },
+                            {
+                                "field": "Color"
+                            },
+                            {
+                                "field": "Normal"
+                            },
+                            {
+                                "field": "UV0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "skinning_alphatest": {
+                        "+defines": [
+                            "USE_SKINNING",
+                            "ALPHA_TEST"
+                        ],
+                        "+states": [
+                            "DisableCulling"
+                        ],
+                        "vertexFields": [
+                            {
+                                "field": "Position"
+                            },
+                            {
+                                "field": "BoneId0"
+                            },
+                            {
+                                "field": "Normal"
+                            },
+                            {
+                                "field": "UV0"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "msaaSupport": "Both",
+            "+samplerStates": [
+                {
+                    "samplerIndex": 0,
+                    "textureFilter": "Point"
+                }
+            ]
+        }
+    }
+}

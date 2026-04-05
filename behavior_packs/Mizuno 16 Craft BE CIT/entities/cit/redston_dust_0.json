@@ -2,7 +2,7 @@
   "format_version": "1.21.80",
   "minecraft:entity": {
     "description": {
-      "identifier": "cit:stick",
+      "identifier": "cit:redstone_0",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false,
@@ -52,24 +52,25 @@
     "components": {
       "minecraft:type_family": {
         "family": [
-          "stick",
+          "redstone_0",
           "cit",
           "inanimate"
         ]
       },
+      "minecraft:is_collidable": {},
       "minecraft:collision_box": {
-        "width": 0.2,
-        "height": 0.02
+        "width": 0.5,
+        "height": 0.3125
       },
       "minecraft:custom_hit_test": {
         "hitboxes": [
           {
             "width": 0.5,
-            "height": 0.5,
+            "height": 0.3125,
             "pivot": [
-              0,
-              0.0,
-              0
+              0.2,
+              0.15625,
+              0.1
             ]
           }
         ]

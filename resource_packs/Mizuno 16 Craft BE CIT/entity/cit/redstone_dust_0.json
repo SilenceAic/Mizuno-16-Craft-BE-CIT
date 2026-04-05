@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:redstone_0",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/cit/entity/redstone_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.redstone_0"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

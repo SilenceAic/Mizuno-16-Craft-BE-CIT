@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:bowl_3",
+      "materials": {
+        "opaque": "entity_alphatest",
+        "transparent": "ppmshjz_ao"
+      },
+      "textures": {
+        "default": "textures/cit/entity/bowl_3"
+      },
+      "geometry": {
+        "default": "geometry.cit.bowl_3"
+      },
+      "render_controllers": [
+        "controller.render.cit.bowl_3"
+      ]
+    }
+  }
+}

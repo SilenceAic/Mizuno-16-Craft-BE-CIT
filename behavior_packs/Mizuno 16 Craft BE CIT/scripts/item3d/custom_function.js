@@ -3,13 +3,22 @@ import { getPlacementConfig } from "./item_config";
 /**
  * List of items that can be placed as 3D entities
  */
-export const item3dList = new Set(["minecraft:stick"]);
+export const item3dList = new Set([
+  "minecraft:stick",
+  "minecraft:iron_ingot",
+  "minecraft:gold_ingot",
+  "minecraft:bowl",
+]);
 /**
  * 需要被拦截放置、转向 item3d 系统的方块类型物品及其名称要求
  * key: 物品 typeId，value: 需要匹配的 nameTag（null 表示无名称要求，任意名称均触发）
  * 这些物品通过 playerInteractWithBlock 触发（非 itemUse）
  */
-export const blockItem3dNameMap = new Map([["minecraft:heavy_weighted_pressure_plate", ["HWPP_0"]]]);
+export const blockItem3dNameMap = new Map([
+  ["minecraft:heavy_weighted_pressure_plate", ["HWPP_0"]],
+  ["minecraft:light_weighted_pressure_plate", ["LWPP_0"]],
+  ["minecraft:redstone", ["Redstone Dust_0"]],
+]);
 // 物品缓存 - 存储原始物品的克隆，用于完美恢复
 // 键：实体的唯一ID，值：原始ItemStack的克隆
 const itemStackCache = new Map();
@@ -34,8 +43,9 @@ export function cacheItemStack(entity, originalItem) {
  */
 export function restoreItemStack(entity) {
   let itemId = entity.typeId.replace("cit:", "minecraft:");
-  // Handle entity suffix overrides (e.g. cit:apple_wall -> minecraft:apple)
+  // Handle entity suffix overrides (e.g. cit:apple_wall -> minecraft:apple, cit:stick_0 -> minecraft:stick)
   itemId = itemId.replace("_wall", "").replace("_top", "");
+  itemId = itemId.replace(/_\d+$/, "");
   // 优先方案：从缓存中恢复原始物品的克隆
   if (itemStackCache.has(entity.id)) {
     try {
@@ -55,7 +65,7 @@ export function restoreItemStack(entity) {
   if (savedItemData) {
     try {
       const itemData = JSON.parse(savedItemData);
-      const itemStack = new mc.ItemStack(itemId, 1);
+      const itemStack = new mc.ItemStack(itemData.typeId || itemId, 1);
       // 恢复名称
       if (itemData.nameTag) {
         itemStack.nameTag = itemData.nameTag;
@@ -142,25 +152,25 @@ export function getSpawnLocation(viewBlock, itemTypeId, itemName = null) {
     case mc.Direction.North:
       return {
         x: blockLoc.x + faceLocation.x,
-        y: blockLoc.y + faceLocation.y,
+        y: blockLoc.y + faceLocation.y + (config.wallY || 0),
         z: blockLoc.z - config.wall,
       };
     case mc.Direction.South:
       return {
         x: blockLoc.x + faceLocation.x,
-        y: blockLoc.y + faceLocation.y,
+        y: blockLoc.y + faceLocation.y + (config.wallY || 0),
         z: blockLoc.z + 1 + config.wall,
       };
     case mc.Direction.West:
       return {
         x: blockLoc.x - config.wall,
-        y: blockLoc.y + faceLocation.y,
+        y: blockLoc.y + faceLocation.y + (config.wallY || 0),
         z: blockLoc.z + faceLocation.z,
       };
     case mc.Direction.East:
       return {
         x: blockLoc.x + 1 + config.wall,
-        y: blockLoc.y + faceLocation.y,
+        y: blockLoc.y + faceLocation.y + (config.wallY || 0),
         z: blockLoc.z + faceLocation.z,
       };
     default:
@@ -204,7 +214,7 @@ export function calculateTargetLocation(player, viewBlock, itemTypeId, itemName 
       case mc.Direction.North:
         targetLocation = {
           x: block.location.x + faceLocation.x,
-          y: block.location.y + faceLocation.y,
+          y: block.location.y + faceLocation.y + (config.wallY || 0),
           z: block.location.z - config.wall,
         };
         properties = { "cit:is_wall": true, "cit:wall_face": 180 };
@@ -212,7 +222,7 @@ export function calculateTargetLocation(player, viewBlock, itemTypeId, itemName 
       case mc.Direction.South:
         targetLocation = {
           x: block.location.x + faceLocation.x,
-          y: block.location.y + faceLocation.y,
+          y: block.location.y + faceLocation.y + (config.wallY || 0),
           z: block.location.z + 1 + config.wall,
         };
         properties = { "cit:is_wall": true, "cit:wall_face": 0 };
@@ -220,7 +230,7 @@ export function calculateTargetLocation(player, viewBlock, itemTypeId, itemName 
       case mc.Direction.West:
         targetLocation = {
           x: block.location.x - config.wall,
-          y: block.location.y + faceLocation.y,
+          y: block.location.y + faceLocation.y + (config.wallY || 0),
           z: block.location.z + faceLocation.z,
         };
         properties = { "cit:is_wall": true, "cit:wall_face": 90 };
@@ -228,7 +238,7 @@ export function calculateTargetLocation(player, viewBlock, itemTypeId, itemName 
       case mc.Direction.East:
         targetLocation = {
           x: block.location.x + 1 + config.wall,
-          y: block.location.y + faceLocation.y,
+          y: block.location.y + faceLocation.y + (config.wallY || 0),
           z: block.location.z + faceLocation.z,
         };
         properties = { "cit:is_wall": true, "cit:wall_face": 270 };

@@ -24,9 +24,129 @@ export const itemConfig = {
   // ==================== 重质测重压力板配置 ====================
   "minecraft:heavy_weighted_pressure_plate": {
     _default: {
-      entityOverride: "0",
       placement: {
         wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  "minecraft:light_weighted_pressure_plate": {
+    _default: {
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  "minecraft:redstone": {
+    _default: {
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 铁粒配置 ====================
+  "minecraft:iron_ingot": {
+    _default: {
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 金粒配置 ====================
+  "minecraft:gold_ingot": {
+    _default: {
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 棍子配置 ====================
+  "minecraft:stick": {
+    _default: {
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 碗配置 ====================
+  // 物品不命名或命名为其他 → cit:bowl_0；命名为 Bowl_1 → cit:bowl_1
+  "minecraft:bowl": {
+    _default: {
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bowl_1: {
+      entityId: "cit:bowl_1",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bowl_2: {
+      entityId: "cit:bowl_2",
+      variantEntities: ["cit:bowl_2", "cit:bowl_2a"],
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bowl_3: {
+      entityId: "cit:bowl_3",
+      variantEntities: ["cit:bowl_3", "cit:bowl_3a"],
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bowl_4: {
+      entityId: "cit:bowl_4",
+      wallEntityId: "cit:bowl_4_wall",
+      variantEntities: ["cit:bowl_4", "cit:bowl_4a", "cit:bowl_4b"],
+      wallVariantEntities: ["cit:bowl_4_wall", "cit:bowl_4a_wall", "cit:bowl_4b_wall"],
+      placement: {
+        wall: 0.5,
+        wallY: -0.5,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bowl_4a: {
+      entityId: "cit:bowl_4a",
+      wallEntityId: "cit:bowl_4a_wall",
+      variantEntities: ["cit:bowl_4", "cit:bowl_4a", "cit:bowl_4b"],
+      wallVariantEntities: ["cit:bowl_4_wall", "cit:bowl_4a_wall", "cit:bowl_4b_wall"],
+      placement: {
+        wall: 0.5,
+        wallY: -0.5,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bowl_4b: {
+      entityId: "cit:bowl_4b",
+      wallEntityId: "cit:bowl_4b_wall",
+      variantEntities: ["cit:bowl_4", "cit:bowl_4a", "cit:bowl_4b"],
+      wallVariantEntities: ["cit:bowl_4_wall", "cit:bowl_4a_wall", "cit:bowl_4b_wall"],
+      placement: {
+        wall: 0.5,
+        wallY: -0.5,
         ground: 1.0,
         ceiling: -0.01,
       },
@@ -163,16 +283,21 @@ export function getHitboxEvent(hitboxSize) {
  * @param itemName - 物品自定义名称
  * @returns 实体ID
  */
-export function getEntityId(itemTypeId, itemName) {
+export function getEntityId(itemTypeId, itemName, isWall = false) {
   const config = getItemConfig(itemTypeId, itemName);
   const baseEntityId = itemTypeId.replace("minecraft:", "cit:");
+  // 墙面放置且有 wallEntityId 配置时使用独立 wall 实体
+  if (isWall && (config === null || config === void 0 ? void 0 : config.wallEntityId)) {
+    return config.wallEntityId;
+  }
   if (config === null || config === void 0 ? void 0 : config.entityId) {
     return config.entityId;
   }
-  if (!(config === null || config === void 0 ? void 0 : config.entityOverride)) {
-    return baseEntityId;
+  if (config === null || config === void 0 ? void 0 : config.entityOverride) {
+    return `${baseEntityId}_${config.entityOverride}`;
   }
-  return `${baseEntityId}_${config.entityOverride}`;
+  // 默认追加 _0 后缀
+  return `${baseEntityId}_0`;
 }
 /**
  * 获取放置配置
@@ -197,6 +322,35 @@ export function getPlacementConfig(itemTypeId, itemName) {
  */
 export function hasVariantConfig(itemTypeId) {
   return itemTypeId in itemConfig;
+}
+/**
+ * 获取某个物品的所有配置名称
+ * @param itemTypeId - 物品类型ID
+ * @returns 配置名称数组（不包括 _default）
+ */
+/**
+ * 获取下一个变体实体 ID（下蹲左键循环切换）
+ * @param currentEntityTypeId - 当前实体 typeId（如 "cit:bowl_0"）
+ * @returns 下一个实体 typeId，若无变体则返回 null
+ */
+export function getNextVariantEntity(currentEntityTypeId) {
+  for (const itemConfigs of Object.values(itemConfig)) {
+    for (const subConfig of Object.values(itemConfigs)) {
+      // 检查地面变体链
+      let variants = subConfig?.variantEntities;
+      if (variants) {
+        const idx = variants.indexOf(currentEntityTypeId);
+        if (idx !== -1) return variants[(idx + 1) % variants.length];
+      }
+      // 检查墙面变体链
+      variants = subConfig?.wallVariantEntities;
+      if (variants) {
+        const idx = variants.indexOf(currentEntityTypeId);
+        if (idx !== -1) return variants[(idx + 1) % variants.length];
+      }
+    }
+  }
+  return null;
 }
 /**
  * 获取某个物品的所有配置名称
