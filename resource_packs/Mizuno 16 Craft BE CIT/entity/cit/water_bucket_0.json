@@ -1,0 +1,54 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:water_bucket_0",
+      "materials": {
+        "opaque": "entity_alphatest",
+        "water": "ppmshjz_ao"
+      },
+      "textures": {
+        "default": "textures/cit/entity/bucket_0",
+        "ws0": "textures/cit/entity/water_still_0",
+        "ws1": "textures/cit/entity/water_still_1",
+        "ws2": "textures/cit/entity/water_still_2",
+        "ws3": "textures/cit/entity/water_still_3",
+        "ws4": "textures/cit/entity/water_still_4",
+        "ws5": "textures/cit/entity/water_still_5",
+        "ws6": "textures/cit/entity/water_still_6",
+        "ws7": "textures/cit/entity/water_still_7",
+        "ws8": "textures/cit/entity/water_still_8",
+        "ws9": "textures/cit/entity/water_still_9",
+        "ws10": "textures/cit/entity/water_still_10",
+        "ws11": "textures/cit/entity/water_still_11",
+        "ws12": "textures/cit/entity/water_still_12",
+        "ws13": "textures/cit/entity/water_still_13",
+        "ws14": "textures/cit/entity/water_still_14",
+        "ws15": "textures/cit/entity/water_still_15",
+        "ws16": "textures/cit/entity/water_still_16",
+        "ws17": "textures/cit/entity/water_still_17",
+        "ws18": "textures/cit/entity/water_still_18",
+        "ws19": "textures/cit/entity/water_still_19",
+        "ws20": "textures/cit/entity/water_still_20",
+        "ws21": "textures/cit/entity/water_still_21",
+        "ws22": "textures/cit/entity/water_still_22",
+        "ws23": "textures/cit/entity/water_still_23",
+        "ws24": "textures/cit/entity/water_still_24",
+        "ws25": "textures/cit/entity/water_still_25",
+        "ws26": "textures/cit/entity/water_still_26",
+        "ws27": "textures/cit/entity/water_still_27",
+        "ws28": "textures/cit/entity/water_still_28",
+        "ws29": "textures/cit/entity/water_still_29",
+        "ws30": "textures/cit/entity/water_still_30",
+        "ws31": "textures/cit/entity/water_still_31"
+      },
+      "geometry": {
+        "default": "geometry.cit.water_bucket_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.water_bucket_0.base",
+        "controller.render.cit.water_bucket_0.water"
+      ]
+    }
+  }
+}

@@ -8,6 +8,12 @@ export const item3dList = new Set([
   "minecraft:iron_ingot",
   "minecraft:gold_ingot",
   "minecraft:bowl",
+  "minecraft:gunpowder",
+  "minecraft:wheat_seeds",
+  "minecraft:wheat",
+  "minecraft:bucket",
+  "minecraft:water_bucket",
+  "minecraft:lava_bucket",
 ]);
 /**
  * 需要被拦截放置、转向 item3d 系统的方块类型物品及其名称要求

@@ -1,0 +1,81 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.lava_bucket_0.base": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.opaque"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ],
+            "part_visibility": [
+                {
+                    "*": true
+                },
+                {
+                    "water": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.lava_bucket_0.lava": {
+            "arrays": {
+                "textures": {
+                    "Array.lava": [
+                        "Texture.ls0",
+                        "Texture.ls1",
+                        "Texture.ls2",
+                        "Texture.ls3",
+                        "Texture.ls4"
+                    ]
+                }
+            },
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.lava"
+                }
+            ],
+            "textures": [
+                "Array.lava[math.floor(math.mod(query.life_time * 2, 5))]"
+            ],
+            "part_visibility": [
+                {
+                    "*": false
+                },
+                {
+                    "water": true
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false,
+            "light_color_multiplier": 5.0
+        }
+    }
+}

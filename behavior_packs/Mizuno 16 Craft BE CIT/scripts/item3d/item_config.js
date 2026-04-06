@@ -31,6 +31,7 @@ export const itemConfig = {
       },
     },
   },
+  // ==================== 轻质测重压力板配置 ====================
   "minecraft:light_weighted_pressure_plate": {
     _default: {
       placement: {
@@ -40,6 +41,7 @@ export const itemConfig = {
       },
     },
   },
+  // ==================== 红石粉配置 ====================
   "minecraft:redstone": {
     _default: {
       placement: {
@@ -69,7 +71,7 @@ export const itemConfig = {
       },
     },
   },
-  // ==================== 棍子配置 ====================
+  // ==================== 木棍配置 ====================
   "minecraft:stick": {
     _default: {
       placement: {
@@ -79,7 +81,7 @@ export const itemConfig = {
       },
     },
   },
-  // ==================== 碗配置 ====================
+  // ==================== 碗配置 =====================
   // 物品不命名或命名为其他 → cit:bowl_0；命名为 Bowl_1 → cit:bowl_1
   "minecraft:bowl": {
     _default: {
@@ -147,6 +149,154 @@ export const itemConfig = {
       placement: {
         wall: 0.5,
         wallY: -0.5,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bowl_5: {
+      entityId: "cit:bowl_5",
+      variantEntities: ["cit:bowl_5", "cit:bowl_5a", "cit:bowl_5b", "cit:bowl_5c"],
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bowl_6: {
+      entityId: "cit:bowl_6",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 火药配置 ====================
+  "minecraft:gunpowder": {
+    _default: {
+      entityId: "cit:gunpowder_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 小麦种子配置 ====================
+  "minecraft:wheat_seeds": {
+    _default: {
+      entityId: "cit:wheat_seeds_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 小麦配置 ====================
+  "minecraft:wheat": {
+    _default: {
+      entityId: "cit:wheat_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Wheat_1: {
+      entityId: "cit:wheat_1",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 桶配置 ====================
+  "minecraft:bucket": {
+    _default: {
+      entityId: "cit:bucket_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bucket_1: {
+      entityId: "cit:bucket_1",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bucket_2: {
+      entityId: "cit:bucket_2",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bucket_3: {
+      entityId: "cit:bucket_3",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 水桶配置 ====================
+  "minecraft:water_bucket": {
+    _default: {
+      entityId: "cit:water_bucket_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Water Bucket_1": {
+      entityId: "cit:water_bucket_1",
+      variantEntities: ["cit:water_bucket_1", "cit:water_bucket_1a"],
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Water Bucket_2": {
+      entityId: "cit:water_bucket_2",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Water Bucket_3": {
+      entityId: "cit:water_bucket_3",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Water Bucket_4": {
+      entityId: "cit:water_bucket_4",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 熔岩桶配置 ====================
+  "minecraft:lava_bucket": {
+    _default: {
+      entityId: "cit:lava_bucket_0",
+      placement: {
+        wall: 0.3,
         ground: 1.0,
         ceiling: -0.01,
       },

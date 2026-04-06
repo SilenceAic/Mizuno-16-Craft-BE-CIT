@@ -221,11 +221,69 @@ components.set("cit:core", {
     if (hitEntity.hasTag("cit:magnet")) {
       return;
     }
-    // 实体被持有中，忽略左键
-    if (hitEntity.getDynamicProperty("cit:owner")) {
+    // 实体被持有中：仅响应持有者操作
+    const heldOwner = hitEntity.getDynamicProperty("cit:owner");
+    if (heldOwner) {
+      if (heldOwner !== damagingEntity.name) return;
+      if (damagingEntity.isSneaking) {
+        // 下蹲+左键：直接归还背包
+        const itemStack = restoreItemStack(hitEntity);
+        const player = damagingEntity;
+        mc.system.run(() => {
+          if (!hitEntity.isValid) {
+            player.removeTag("cit");
+            return;
+          }
+          try {
+            const inventory = player.getComponent(mc.EntityComponentTypes.Inventory);
+            const leftover = inventory?.container?.addItem(itemStack);
+            if (leftover) player.dimension.spawnItem(leftover, player.location);
+            else player.playSound("random.pop", { pitch: 2.0, volume: 0.5 });
+          } catch (e) {
+            player.dimension.spawnItem(itemStack, player.location);
+          }
+          hitEntity.remove();
+          player.removeTag("cit");
+        });
+        return;
+      }
+      // 左键：切换变体，转移持有权给新实体
+      const nextTypeId = getNextVariantEntity(hitEntity.typeId);
+      if (nextTypeId) {
+        const loc = hitEntity.location;
+        const rot = hitEntity.getRotation();
+        const dim = hitEntity.dimension;
+        const isWallType = hitEntity.typeId.endsWith("_wall");
+        const isWall = isWallType ? hitEntity.getProperty("cit:is_wall") : undefined;
+        const wallFace = isWallType ? hitEntity.getProperty("cit:wall_face") : undefined;
+        const wallRotation = isWallType ? hitEntity.getProperty("cit:wall_rotation") : undefined;
+        const itemData = hitEntity.getDynamicProperty("cit:item_data");
+        const customName = hitEntity.getDynamicProperty("cit:custom_name");
+        const ownerName = heldOwner;
+        hitEntity.remove();
+        mc.system.run(() => {
+          try {
+            const newEntity = dim.spawnEntity(nextTypeId, loc, {
+              initialRotation: rot.y,
+              spawnEvent: "cit:on_spawn",
+            });
+            newEntity.addTag("cit");
+            if (isWallType) {
+              newEntity.setProperty("cit:is_wall", isWall);
+              newEntity.setProperty("cit:wall_face", wallFace);
+              newEntity.setProperty("cit:wall_rotation", wallRotation);
+            }
+            if (itemData) newEntity.setDynamicProperty("cit:item_data", itemData);
+            if (customName) newEntity.setDynamicProperty("cit:custom_name", customName);
+            newEntity.setDynamicProperty("cit:owner", ownerName);
+          } catch (e) {
+            console.error("[CIT] 持有中切换变体失败: " + e);
+          }
+        });
+      }
       return;
     }
-    // 下蹲左键：收回物品
+    // 下蹲左键：收回物品（已放置实体）
     if (damagingEntity.isSneaking) {
       hitEntity.addTag("cit:magnet");
       hitEntity.setDynamicProperty("cit:absorber", damagingEntity.name);
@@ -252,14 +310,11 @@ components.set("cit:core", {
       hitEntity.remove();
       mc.system.run(() => {
         try {
-          const newEntity = dim.spawnEntity(
-            nextTypeId,
-            { x: loc.x, y: isWallType ? loc.y : loc.y + 0.05, z: loc.z },
-            {
-              initialRotation: rot.y,
-              spawnEvent: "cit:on_spawn",
-            }
-          );
+          // 先在原位生成新实体（不偏移），让客户端先渲染新外观
+          const newEntity = dim.spawnEntity(nextTypeId, loc, {
+            initialRotation: rot.y,
+            spawnEvent: "cit:on_spawn",
+          });
           newEntity.addTag("cit");
           if (isWallType) {
             newEntity.setProperty("cit:is_wall", isWall);
@@ -268,12 +323,15 @@ components.set("cit:core", {
           }
           if (itemData) newEntity.setDynamicProperty("cit:item_data", itemData);
           if (customName) newEntity.setDynamicProperty("cit:custom_name", customName);
-          // 切换变体时同样触发弹跳效果
-          if (isWallType) {
-            startBounce(newEntity);
-          } else {
-            newEntity.applyImpulse({ x: 0, y: 0.15, z: 0 });
-          }
+          // 下一 tick 再播放弹跳，确保切换先于动画
+          mc.system.run(() => {
+            if (!newEntity.isValid) return;
+            if (isWallType) {
+              startBounce(newEntity);
+            } else {
+              newEntity.applyImpulse({ x: 0, y: 0.15, z: 0 });
+            }
+          });
         } catch (e) {
           console.error("[CIT] 切换变体失败: " + e);
         }

@@ -1,0 +1,58 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.wheat_1",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-8.25, 2, -6.25],
+							"size": [1, 1, 12],
+							"uv": {
+								"north": {"uv": [15, 6], "uv_size": [1, 1], "material_instance": "texture"},
+								"east": {"uv": [14, 5], "uv_size": [12, 1], "material_instance": "texture"},
+								"south": {"uv": [15, 6], "uv_size": [1, 1], "material_instance": "texture"},
+								"up": {"uv": [14, 6], "uv_size": [1, 12], "material_instance": "texture"},
+								"down": {"uv": [14, 18], "uv_size": [1, -12], "material_instance": "texture"}
+							}
+						},
+						{
+							"origin": [6.75, 2, -6.25],
+							"size": [1, 1, 12],
+							"uv": {
+								"north": {"uv": [15, 6], "uv_size": [1, 1], "material_instance": "texture"},
+								"south": {"uv": [15, 6], "uv_size": [1, 1], "material_instance": "texture"},
+								"west": {"uv": [14, 5], "uv_size": [12, 1], "material_instance": "texture"},
+								"up": {"uv": [14, 6], "uv_size": [1, 12], "material_instance": "texture"},
+								"down": {"uv": [14, 18], "uv_size": [1, -12], "material_instance": "texture"}
+							}
+						},
+						{
+							"origin": [-7.25, 0, -6.25],
+							"size": [14, 5, 12],
+							"uv": {
+								"north": {"uv": [0, 12], "uv_size": [14, 5], "material_instance": "texture"},
+								"east": {"uv": [14, 0], "uv_size": [12, 5], "material_instance": "texture"},
+								"south": {"uv": [0, 12], "uv_size": [14, 5], "material_instance": "texture"},
+								"west": {"uv": [14, 0], "uv_size": [12, 5], "material_instance": "texture"},
+								"up": {"uv": [0, 0], "uv_size": [14, 12], "material_instance": "texture"},
+								"down": {"uv": [0, 12], "uv_size": [14, -12], "material_instance": "texture"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

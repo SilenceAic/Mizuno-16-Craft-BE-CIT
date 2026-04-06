@@ -1,0 +1,27 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:lava_bucket_0",
+      "materials": {
+        "opaque": "entity_alphatest",
+        "lava": "charged_creeper"
+      },
+      "textures": {
+        "default": "textures/cit/entity/bucket_0",
+        "ls0": "textures/cit/entity/lava_still_0",
+        "ls1": "textures/cit/entity/lava_still_1",
+        "ls2": "textures/cit/entity/lava_still_2",
+        "ls3": "textures/cit/entity/lava_still_3",
+        "ls4": "textures/cit/entity/lava_still_4"
+      },
+      "geometry": {
+        "default": "geometry.cit.water_bucket_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.lava_bucket_0.base",
+        "controller.render.cit.lava_bucket_0.lava"
+      ]
+    }
+  }
+}

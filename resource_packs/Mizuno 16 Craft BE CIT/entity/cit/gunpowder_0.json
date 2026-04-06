@@ -2,15 +2,15 @@
   "format_version": "1.21.50",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "cit:redstone_0",
+      "identifier": "cit:gunpowder_0",
       "materials": {
-        "default": "enderman"
+        "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/cit/entity/redstone_0"
+        "default": "textures/cit/entity/gunpowder_0"
       },
       "geometry": {
-        "default": "geometry.cit.redstone_0"
+        "default": "geometry.cit.gunpowder_0"
       },
       "render_controllers": [
         "controller.render.default"

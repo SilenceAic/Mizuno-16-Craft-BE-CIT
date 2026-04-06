@@ -1,0 +1,102 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.bowl_6",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-7, 1, -7],
+							"size": [2, 3, 14],
+							"uv": {
+								"north": {"uv": [1, 13], "uv_size": [2, 3], "material_instance": "basket"},
+								"east": {"uv": [1, 13], "uv_size": [14, 3], "material_instance": "basket"},
+								"south": {"uv": [13, 13], "uv_size": [2, 3], "material_instance": "basket"},
+								"west": {"uv": [1, 13], "uv_size": [14, 3], "material_instance": "basket"},
+								"up": {"uv": [15, 14], "uv_size": [-2, -14], "material_instance": "basket"},
+								"down": {"uv": [15, 14], "uv_size": [-2, -14], "material_instance": "basket"}
+							}
+						},
+						{
+							"origin": [5, 1, -7],
+							"size": [2, 3, 14],
+							"uv": {
+								"north": {"uv": [13, 13], "uv_size": [2, 3], "material_instance": "basket"},
+								"east": {"uv": [1, 13], "uv_size": [14, 3], "material_instance": "basket"},
+								"south": {"uv": [1, 13], "uv_size": [2, 3], "material_instance": "basket"},
+								"west": {"uv": [1, 13], "uv_size": [14, 3], "material_instance": "basket"},
+								"up": {"uv": [3, 14], "uv_size": [-2, -14], "material_instance": "basket"},
+								"down": {"uv": [3, 14], "uv_size": [-2, -14], "material_instance": "basket"}
+							}
+						},
+						{
+							"origin": [-5, 1, 5],
+							"size": [10, 3, 2],
+							"uv": {
+								"north": {"uv": [3, 13], "uv_size": [10, 3], "material_instance": "basket"},
+								"south": {"uv": [3, 13], "uv_size": [10, 3], "material_instance": "basket"},
+								"up": {"uv": [13, 14], "uv_size": [-10, -2], "material_instance": "basket"},
+								"down": {"uv": [13, 14], "uv_size": [-10, -2], "material_instance": "basket"}
+							}
+						},
+						{
+							"origin": [-5, 1, -7],
+							"size": [10, 3, 2],
+							"uv": {
+								"north": {"uv": [3, 13], "uv_size": [10, 3], "material_instance": "basket"},
+								"south": {"uv": [3, 13], "uv_size": [10, 3], "material_instance": "basket"},
+								"up": {"uv": [13, 2], "uv_size": [-10, -2], "material_instance": "basket"},
+								"down": {"uv": [13, 2], "uv_size": [-10, -2], "material_instance": "basket"}
+							}
+						},
+						{
+							"origin": [-6, 0, -6],
+							"size": [12, 1, 12],
+							"uv": {
+								"north": {"uv": [2, 15], "uv_size": [12, 1], "material_instance": "basket"},
+								"east": {"uv": [2, 15], "uv_size": [12, 1], "material_instance": "basket"},
+								"south": {"uv": [2, 15], "uv_size": [12, 1], "material_instance": "basket"},
+								"west": {"uv": [2, 15], "uv_size": [12, 1], "material_instance": "basket"},
+								"up": {"uv": [14, 13], "uv_size": [-12, -12], "material_instance": "basket"},
+								"down": {"uv": [14, 13], "uv_size": [-12, -12], "material_instance": "basket"}
+							}
+						},
+						{
+							"origin": [-9, 2, -3],
+							"size": [2, 1, 6],
+							"uv": {
+								"north": {"uv": [16, 4], "uv_size": [-2, 1], "material_instance": "basket"},
+								"east": {"uv": [16, 4], "uv_size": [-1, 6], "uv_rotation": 90, "material_instance": "basket"},
+								"south": {"uv": [14, 9], "uv_size": [2, 1], "material_instance": "basket"},
+								"up": {"uv": [16, 10], "uv_size": [-2, -6], "material_instance": "basket"},
+								"down": {"uv": [16, 4], "uv_size": [-2, 6], "material_instance": "basket"}
+							}
+						},
+						{
+							"origin": [7, 2, -3],
+							"size": [2, 1, 6],
+							"uv": {
+								"north": {"uv": [2, 4], "uv_size": [-2, 1], "material_instance": "basket"},
+								"south": {"uv": [0, 9], "uv_size": [2, 1], "material_instance": "basket"},
+								"west": {"uv": [0, 4], "uv_size": [1, 6], "uv_rotation": 90, "material_instance": "basket"},
+								"up": {"uv": [2, 10], "uv_size": [-2, -6], "material_instance": "basket"},
+								"down": {"uv": [2, 4], "uv_size": [-2, 6], "material_instance": "basket"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
