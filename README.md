@@ -1,5 +1,3 @@
-**# Mizuno 16 Craft BE CIT
-
 <div align="center">
 
 ![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.110+-green.svg)
