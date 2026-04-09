@@ -302,6 +302,17 @@ export const itemConfig = {
       },
     },
   },
+  "minecraft:snowball": {
+    _default: {
+      entityId: "cit:snowball_0_wall",
+      placement: {
+        wall: 0.5,
+        wallY: -0.5,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
   // ==================== 苹果配置 ====================
   "minecraft:apple": {
     // 默认配置（所有未特殊配置的苹果使用）

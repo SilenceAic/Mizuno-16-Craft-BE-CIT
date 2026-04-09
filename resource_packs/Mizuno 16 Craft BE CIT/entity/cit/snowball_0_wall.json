@@ -1,0 +1,28 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:snowball_0_wall",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/cit/entity/snowball_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.snowball_0_wall"
+      },
+      "animations": {
+        "bowl_wall": "animation.cit.bone_wall"
+      },
+      "scripts": {
+        "animate": [
+          "bowl_wall"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}
