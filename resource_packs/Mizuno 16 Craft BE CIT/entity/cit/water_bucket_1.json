@@ -40,14 +40,46 @@
         "ws28": "textures/cit/entity/water_still_28",
         "ws29": "textures/cit/entity/water_still_29",
         "ws30": "textures/cit/entity/water_still_30",
-        "ws31": "textures/cit/entity/water_still_31"
+        "ws31": "textures/cit/entity/water_still_31",
+        "wb0": "textures/cit/entity/water_still_brown_0",
+        "wb1": "textures/cit/entity/water_still_brown_1",
+        "wb2": "textures/cit/entity/water_still_brown_2",
+        "wb3": "textures/cit/entity/water_still_brown_3",
+        "wb4": "textures/cit/entity/water_still_brown_4",
+        "wb5": "textures/cit/entity/water_still_brown_5",
+        "wb6": "textures/cit/entity/water_still_brown_6",
+        "wb7": "textures/cit/entity/water_still_brown_7",
+        "wb8": "textures/cit/entity/water_still_brown_8",
+        "wb9": "textures/cit/entity/water_still_brown_9",
+        "wb10": "textures/cit/entity/water_still_brown_10",
+        "wb11": "textures/cit/entity/water_still_brown_11",
+        "wb12": "textures/cit/entity/water_still_brown_12",
+        "wb13": "textures/cit/entity/water_still_brown_13",
+        "wb14": "textures/cit/entity/water_still_brown_14",
+        "wb15": "textures/cit/entity/water_still_brown_15",
+        "wb16": "textures/cit/entity/water_still_brown_16",
+        "wb17": "textures/cit/entity/water_still_brown_17",
+        "wb18": "textures/cit/entity/water_still_brown_18",
+        "wb19": "textures/cit/entity/water_still_brown_19",
+        "wb20": "textures/cit/entity/water_still_brown_20",
+        "wb21": "textures/cit/entity/water_still_brown_21",
+        "wb22": "textures/cit/entity/water_still_brown_22",
+        "wb23": "textures/cit/entity/water_still_brown_23",
+        "wb24": "textures/cit/entity/water_still_brown_24",
+        "wb25": "textures/cit/entity/water_still_brown_25",
+        "wb26": "textures/cit/entity/water_still_brown_26",
+        "wb27": "textures/cit/entity/water_still_brown_27",
+        "wb28": "textures/cit/entity/water_still_brown_28",
+        "wb29": "textures/cit/entity/water_still_brown_29",
+        "wb30": "textures/cit/entity/water_still_brown_30",
+        "wb31": "textures/cit/entity/water_still_brown_31"
       },
       "geometry": {
         "default": "geometry.cit.water_bucket_1"
       },
       "render_controllers": [
         "controller.render.cit.water_bucket_1.base",
-        "controller.render.cit.water_bucket_1.water"
+        "controller.render.cit.water_bucket_1.water_variant"
       ]
     }
   }

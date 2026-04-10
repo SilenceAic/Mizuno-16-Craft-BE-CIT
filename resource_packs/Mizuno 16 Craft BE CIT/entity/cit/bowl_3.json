@@ -8,10 +8,26 @@
         "transparent": "ppmshjz_ao"
       },
       "textures": {
-        "default": "textures/cit/entity/bowl_3"
+        "bowl_3": "textures/cit/entity/bowl_3",
+        "bowl_3a": "textures/cit/entity/bowl_3a"
       },
       "geometry": {
-        "default": "geometry.cit.bowl_3"
+        "bowl_3": "geometry.cit.bowl_3",
+        "bowl_3a": "geometry.cit.bowl_3a"
+      },
+      "animations": {
+        "bounce_v0": "animation.cit.bowl_3_floor",
+        "bounce_v1": "animation.cit.bowl_3a_floor"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "bounce_v0": "q.property('cit:variant') == 0"
+          },
+          {
+            "bounce_v1": "q.property('cit:variant') == 1"
+          }
+        ]
       },
       "render_controllers": [
         "controller.render.cit.bowl_3"

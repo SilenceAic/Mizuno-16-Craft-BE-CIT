@@ -1,0 +1,111 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.leather_2",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-1.5, 13, -8],
+							"size": [3, 3, 1],
+							"uv": {
+								"north": {"uv": [13, 12], "uv_size": [3, 3], "material_instance": "leather_2"},
+								"east": {"uv": [13, 15], "uv_size": [3, 1], "uv_rotation": 90, "material_instance": "leather_2"},
+								"south": {"uv": [13, 12], "uv_size": [3, 3], "material_instance": "leather_2"},
+								"west": {"uv": [13, 15], "uv_size": [3, 1], "uv_rotation": 90, "material_instance": "leather_2"},
+								"up": {"uv": [16, 16], "uv_size": [-3, -1], "uv_rotation": 90, "material_instance": "leather_2"},
+								"down": {"uv": [16, 16], "uv_size": [-3, -1], "uv_rotation": 90, "material_instance": "leather_2"}
+							}
+						},
+						{
+							"origin": [-0.5, 14, -7],
+							"size": [1, 1, 2.5],
+							"uv": {
+								"east": {"uv": [13, 15], "uv_size": [2.5, 1], "material_instance": "leather_2"},
+								"south": {"uv": [15, 15], "uv_size": [1, 1], "material_instance": "leather_2"},
+								"west": {"uv": [13.5, 15], "uv_size": [2.5, 1], "material_instance": "leather_2"},
+								"up": {"uv": [12.5, 16], "uv_size": [-2.5, -1], "uv_rotation": 270, "material_instance": "leather_2"},
+								"down": {"uv": [15.5, 16], "uv_size": [-2.5, -1], "uv_rotation": 90, "material_instance": "leather_2"}
+							}
+						},
+						{
+							"origin": [-0.5, 15, -5.5],
+							"size": [1, 1, 1],
+							"uv": {
+								"north": {"uv": [15, 15], "uv_size": [1, 1], "material_instance": "leather_2"},
+								"east": {"uv": [15, 15], "uv_size": [1, 1], "material_instance": "leather_2"},
+								"south": {"uv": [15, 15], "uv_size": [1, 1], "material_instance": "leather_2"},
+								"west": {"uv": [15, 15], "uv_size": [1, 1], "material_instance": "leather_2"},
+								"up": {"uv": [16, 16], "uv_size": [-1, -1], "material_instance": "leather_2"}
+							}
+						},
+						{
+							"origin": [0, -4, -7.5],
+							"size": [5, 8, 3],
+							"uv": {
+								"north": {"uv": [5, 3], "uv_size": [5, 8], "material_instance": "leather_2"},
+								"south": {"uv": [0, 3], "uv_size": [5, 8], "material_instance": "leather_2"},
+								"west": {"uv": [10, 3], "uv_size": [3, 8], "material_instance": "leather_2"},
+								"up": {"uv": [5, 3], "uv_size": [-5, -3], "material_instance": "leather_2"},
+								"down": {"uv": [5, 14], "uv_size": [-5, -3], "material_instance": "leather_2"}
+							}
+						},
+						{
+							"origin": [-5, -4, -7.5],
+							"size": [5, 8, 3],
+							"uv": {
+								"north": {"uv": [10, 3], "uv_size": [-5, 8], "material_instance": "leather_2"},
+								"east": {"uv": [13, 3], "uv_size": [-3, 8], "material_instance": "leather_2"},
+								"south": {"uv": [5, 3], "uv_size": [-5, 8], "material_instance": "leather_2"},
+								"up": {"uv": [10, 3], "uv_size": [-5, -3], "material_instance": "leather_2"},
+								"down": {"uv": [10, 14], "uv_size": [-5, -3], "material_instance": "leather_2"}
+							}
+						},
+						{
+							"origin": [5.05206, 4, -6.5],
+							"size": [0, 11.88475, 1],
+							"pivot": [5, 4, -6],
+							"rotation": [0, 0, -22.5],
+							"uv": {
+								"east": {"uv": [15, 0], "uv_size": [1, 11.885], "material_instance": "leather_2"},
+								"west": {"uv": [15, 0], "uv_size": [1, 11.885], "material_instance": "leather_2"}
+							}
+						},
+						{
+							"origin": [-5.05206, 4, -6.5],
+							"size": [0, 11.88475, 1],
+							"pivot": [-5, 4, -6],
+							"rotation": [0, 0, 22.5],
+							"uv": {
+								"east": {"uv": [15, 0], "uv_size": [1, 11.885], "material_instance": "leather_2"},
+								"west": {"uv": [15, 0], "uv_size": [1, 11.885], "material_instance": "leather_2"}
+							}
+						},
+						{
+							"origin": [-1, -0.5, -5],
+							"size": [2, 1, 1],
+							"uv": {
+								"east": {"uv": [11, 0], "uv_size": [1, 1], "material_instance": "leather_2"},
+								"south": {"uv": [10, 0], "uv_size": [2, 1], "material_instance": "leather_2"},
+								"west": {"uv": [10, 0], "uv_size": [1, 1], "material_instance": "leather_2"},
+								"up": {"uv": [12, 1], "uv_size": [-2, -1], "material_instance": "leather_2"},
+								"down": {"uv": [12, 1], "uv_size": [-2, -1], "material_instance": "leather_2"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

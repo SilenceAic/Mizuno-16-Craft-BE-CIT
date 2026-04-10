@@ -1,0 +1,103 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.template_leather_0",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-6, 18.5, -4],
+							"size": [12, 2, 2],
+							"pivot": [0, 10.5, -3],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [14, 0], "uv_size": [12, 2], "material_instance": "leateher_0"},
+								"south": {"uv": [14, 0], "uv_size": [12, 2], "material_instance": "leateher_0"},
+								"up": {"uv": [14, 0], "uv_size": [12, 2], "material_instance": "leateher_0"},
+								"down": {"uv": [14, 2], "uv_size": [12, -2], "material_instance": "leateher_0"}
+							}
+						},
+						{
+							"origin": [-6, 0.5, -4],
+							"size": [12, 2, 2],
+							"pivot": [0, 10.5, -3],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [14, 2], "uv_size": [12, 2], "material_instance": "leateher_0"},
+								"south": {"uv": [14, 2], "uv_size": [12, 2], "material_instance": "leateher_0"},
+								"up": {"uv": [14, 2], "uv_size": [12, 2], "material_instance": "leateher_0"},
+								"down": {"uv": [14, 4], "uv_size": [12, -2], "material_instance": "leateher_0"}
+							}
+						},
+						{
+							"origin": [6, -0.5, -4],
+							"size": [2, 22, 2],
+							"pivot": [0, 10.5, -3],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [12, 0], "uv_size": [2, 22], "material_instance": "leateher_0"},
+								"east": {"uv": [12, 0], "uv_size": [2, 22], "material_instance": "leateher_0"},
+								"south": {"uv": [12, 0], "uv_size": [2, 22], "material_instance": "leateher_0"},
+								"west": {"uv": [12, 0], "uv_size": [2, 22], "material_instance": "leateher_0"},
+								"up": {"uv": [14, 4], "uv_size": [2, 2], "material_instance": "leateher_0"},
+								"down": {"uv": [14, 6], "uv_size": [2, -2], "material_instance": "leateher_0"}
+							}
+						},
+						{
+							"origin": [-8, -0.5, -4],
+							"size": [2, 22, 2],
+							"pivot": [0, 10.5, -3],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [12, 0], "uv_size": [2, 22], "material_instance": "leateher_0"},
+								"east": {"uv": [12, 0], "uv_size": [2, 22], "material_instance": "leateher_0"},
+								"south": {"uv": [12, 0], "uv_size": [2, 22], "material_instance": "leateher_0"},
+								"west": {"uv": [12, 0], "uv_size": [2, 22], "material_instance": "leateher_0"},
+								"up": {"uv": [14, 4], "uv_size": [2, 2], "material_instance": "leateher_0"},
+								"down": {"uv": [14, 6], "uv_size": [2, -2], "material_instance": "leateher_0"}
+							}
+						},
+						{
+							"origin": [-6, 2.5, -3],
+							"size": [12, 16, 0],
+							"pivot": [0, 10.5, -3],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [12, 16], "material_instance": "leateher_0"},
+								"south": {"uv": [0, 0], "uv_size": [12, 16], "material_instance": "leateher_0"}
+							}
+						}
+					]
+				}
+			],
+			"item_display_transforms": {
+				"firstperson_righthand": {
+					"rotation": [0, -45, 0],
+					"translation": [5, -2, 1],
+					"scale": [0.7, 0.7, 0.7],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				},
+				"gui": {
+					"rotation": [30, 45, 0],
+					"translation": [0, -1.75, 0],
+					"scale": [0.625, 0.625, 0.625],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0],
+					"fit_to_frame": false
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,91 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.water_bucket_1.water_variant": {
+            "arrays": {
+                "textures": {
+                    "Array.water": [
+                        "Texture.ws0",
+                        "Texture.ws1",
+                        "Texture.ws2",
+                        "Texture.ws3",
+                        "Texture.ws4",
+                        "Texture.ws5",
+                        "Texture.ws6",
+                        "Texture.ws7",
+                        "Texture.ws8",
+                        "Texture.ws9",
+                        "Texture.ws10",
+                        "Texture.ws11",
+                        "Texture.ws12",
+                        "Texture.ws13",
+                        "Texture.ws14",
+                        "Texture.ws15",
+                        "Texture.ws16",
+                        "Texture.ws17",
+                        "Texture.ws18",
+                        "Texture.ws19",
+                        "Texture.ws20",
+                        "Texture.ws21",
+                        "Texture.ws22",
+                        "Texture.ws23",
+                        "Texture.ws24",
+                        "Texture.ws25",
+                        "Texture.ws26",
+                        "Texture.ws27",
+                        "Texture.ws28",
+                        "Texture.ws29",
+                        "Texture.ws30",
+                        "Texture.ws31",
+                        "Texture.wb0",
+                        "Texture.wb1",
+                        "Texture.wb2",
+                        "Texture.wb3",
+                        "Texture.wb4",
+                        "Texture.wb5",
+                        "Texture.wb6",
+                        "Texture.wb7",
+                        "Texture.wb8",
+                        "Texture.wb9",
+                        "Texture.wb10",
+                        "Texture.wb11",
+                        "Texture.wb12",
+                        "Texture.wb13",
+                        "Texture.wb14",
+                        "Texture.wb15",
+                        "Texture.wb16",
+                        "Texture.wb17",
+                        "Texture.wb18",
+                        "Texture.wb19",
+                        "Texture.wb20",
+                        "Texture.wb21",
+                        "Texture.wb22",
+                        "Texture.wb23",
+                        "Texture.wb24",
+                        "Texture.wb25",
+                        "Texture.wb26",
+                        "Texture.wb27",
+                        "Texture.wb28",
+                        "Texture.wb29",
+                        "Texture.wb30",
+                        "Texture.wb31"
+                    ]
+                }
+            },
+            "geometry": "Geometry.default",
+            "materials": [
+                { "*": "Material.water" }
+            ],
+            "textures": [
+                "Array.water[math.floor(q.property('cit:variant') * 32 + math.mod(q.life_time * 10, 32))]"
+            ],
+            "part_visibility": [
+                { "*": false },
+                { "water": true }
+            ],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "ignore_lighting": false
+        }
+    }
+}

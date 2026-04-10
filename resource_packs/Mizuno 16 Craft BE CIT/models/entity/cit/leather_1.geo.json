@@ -1,0 +1,92 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.leather_1",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "group",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-0.5, -0.75, -8],
+							"size": [6, 9, 3],
+							"pivot": [0, 8.25, -8],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [6, 3], "uv_size": [6, 9], "material_instance": "leather_1"},
+								"south": {"uv": [0, 3], "uv_size": [6, 9], "material_instance": "leather_1"},
+								"west": {"uv": [12, 3], "uv_size": [3, 9], "material_instance": "leather_1"},
+								"up": {"uv": [6, 3], "uv_size": [-6, -3], "material_instance": "leather_1"},
+								"down": {"uv": [6, 15], "uv_size": [-6, -3], "material_instance": "leather_1"}
+							}
+						},
+						{
+							"origin": [-5.5, -0.75, -8],
+							"size": [5, 9, 3],
+							"pivot": [0, 8.25, -8],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [12, 3], "uv_size": [-5, 9], "material_instance": "leather_1"},
+								"east": {"uv": [15, 3], "uv_size": [-3, 9], "material_instance": "leather_1"},
+								"south": {"uv": [5, 3], "uv_size": [-5, 9], "material_instance": "leather_1"},
+								"up": {"uv": [11, 3], "uv_size": [-5, -3], "material_instance": "leather_1"},
+								"down": {"uv": [11, 15], "uv_size": [-5, -3], "material_instance": "leather_1"}
+							}
+						},
+						{
+							"origin": [-0.5, 0.25, -5],
+							"size": [1, 4, 1],
+							"pivot": [0, 8.25, -8],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"east": {"uv": [5, 7], "uv_size": [1, 4], "material_instance": "leather_1"},
+								"south": {"uv": [5, 7], "uv_size": [1, 4], "material_instance": "leather_1"},
+								"west": {"uv": [5, 7], "uv_size": [1, 4], "material_instance": "leather_1"},
+								"up": {"uv": [6, 8], "uv_size": [-1, -1], "material_instance": "leather_1"},
+								"down": {"uv": [6, 11], "uv_size": [-1, -1], "material_instance": "leather_1"}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [1.5, 8.25, -8],
+							"size": [2, 2, 1],
+							"uv": {
+								"north": {"uv": [14, 1], "uv_size": [2, 2], "material_instance": "leather_1"},
+								"east": {"uv": [13, 1], "uv_size": [1, 2], "material_instance": "leather_1"},
+								"south": {"uv": [14, 1], "uv_size": [2, 2], "material_instance": "leather_1"},
+								"west": {"uv": [13, 1], "uv_size": [1, 2], "material_instance": "leather_1"},
+								"up": {"uv": [16, 1], "uv_size": [-2, -1], "material_instance": "leather_1"}
+							}
+						},
+						{
+							"origin": [-3.5, 8.25, -8],
+							"size": [2, 2, 1],
+							"uv": {
+								"north": {"uv": [14, 1], "uv_size": [2, 2], "material_instance": "leather_1"},
+								"east": {"uv": [13, 1], "uv_size": [1, 2], "material_instance": "leather_1"},
+								"south": {"uv": [14, 1], "uv_size": [2, 2], "material_instance": "leather_1"},
+								"west": {"uv": [13, 1], "uv_size": [1, 2], "material_instance": "leather_1"},
+								"up": {"uv": [16, 1], "uv_size": [-2, -1], "material_instance": "leather_1"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

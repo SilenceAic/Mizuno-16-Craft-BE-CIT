@@ -2,18 +2,18 @@
   "format_version": "1.21.50",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "cit:bowl_3a",
+      "identifier": "cit:leather_1",
       "materials": {
         "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/cit/entity/bowl_3a"
+        "default": "textures/cit/entity/leather_1"
       },
       "geometry": {
-        "default": "geometry.cit.bowl_3a"
+        "default": "geometry.cit.leather_1"
       },
       "animations": {
-        "floor_bounce": "animation.cit.bowl_3a_floor"
+        "floor_bounce": "animation.cit.leather_1_floor"
       },
       "scripts": {
         "animate": [

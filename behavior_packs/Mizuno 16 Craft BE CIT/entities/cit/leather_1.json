@@ -2,11 +2,34 @@
   "format_version": "1.21.80",
   "minecraft:entity": {
     "description": {
-      "identifier": "cit:bowl_5b",
+      "identifier": "cit:leather_1",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false,
       "properties": {
+        "cit:is_wall": {
+          "type": "bool",
+          "default": false,
+          "client_sync": true
+        },
+        "cit:wall_face": {
+          "type": "int",
+          "range": [
+            0,
+            270
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "cit:wall_rotation": {
+          "type": "int",
+          "range": [
+            0,
+            359
+          ],
+          "default": 0,
+          "client_sync": true
+        },
         "cit:bounce": {
           "type": "float",
           "range": [
@@ -38,24 +61,23 @@
     "components": {
       "minecraft:type_family": {
         "family": [
-          "bowl_5b",
+          "leather_1",
           "cit",
           "inanimate"
         ]
       },
-      "minecraft:is_collidable": {},
       "minecraft:collision_box": {
-        "width": 0.8625,
-        "height": 0.0875
+        "width": 0.6,
+        "height": 0.65
       },
       "minecraft:custom_hit_test": {
         "hitboxes": [
           {
-            "width": 0.8625,
-            "height": 0.0875,
+            "width": 0.7,
+            "height": 0.7,
             "pivot": [
               0,
-              0.04375,
+              0.3,
               0
             ]
           }
@@ -80,7 +102,9 @@
       },
       "minecraft:conditional_bandwidth_optimization": {},
       "minecraft:is_stackable": {},
-      "minecraft:push_through": 1
+      "minecraft:push_through": {
+        "value": 1
+      }
     },
     "events": {
       "cit:despawn": {

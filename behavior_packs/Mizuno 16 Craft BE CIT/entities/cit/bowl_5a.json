@@ -5,7 +5,18 @@
       "identifier": "cit:bowl_5a",
       "is_spawnable": false,
       "is_summonable": true,
-      "is_experimental": false
+      "is_experimental": false,
+      "properties": {
+        "cit:bounce": {
+          "type": "float",
+          "range": [
+            0.0,
+            1.0
+          ],
+          "default": 0.0,
+          "client_sync": true
+        }
+      }
     },
     "component_groups": {
       "cit:despawn": {

@@ -5,7 +5,18 @@
       "identifier": "cit:bowl_4b",
       "is_spawnable": false,
       "is_summonable": true,
-      "is_experimental": false
+      "is_experimental": false,
+      "properties": {
+        "cit:bounce": {
+          "type": "float",
+          "range": [
+            0.0,
+            1.0
+          ],
+          "default": 0.0,
+          "client_sync": true
+        }
+      }
     },
     "component_groups": {
       "cit:despawn": {
@@ -41,7 +52,11 @@
           {
             "width": 0.3625,
             "height": 0.78,
-            "pivot": [0, 0.4, 0]
+            "pivot": [
+              0,
+              0.4,
+              0
+            ]
           }
         ]
       },
@@ -69,12 +84,16 @@
     "events": {
       "cit:despawn": {
         "add": {
-          "component_groups": ["cit:despawn"]
+          "component_groups": [
+            "cit:despawn"
+          ]
         }
       },
       "cit:on_spawn": {
         "add": {
-          "component_groups": ["cit:invisible"]
+          "component_groups": [
+            "cit:invisible"
+          ]
         }
       }
     }

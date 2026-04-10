@@ -38,6 +38,15 @@
           ],
           "default": 0.0,
           "client_sync": true
+        },
+        "cit:variant": {
+          "type": "int",
+          "range": [
+            0,
+            2
+          ],
+          "default": 0,
+          "client_sync": true
         }
       }
     },

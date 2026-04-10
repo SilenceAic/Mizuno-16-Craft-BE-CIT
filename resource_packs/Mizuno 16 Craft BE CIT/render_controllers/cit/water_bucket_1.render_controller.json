@@ -4,17 +4,33 @@
         "controller.render.cit.water_bucket_1.base": {
             "geometry": "Geometry.default",
             "materials": [
-                { "*": "Material.opaque" }
+                {
+                    "*": "Material.opaque"
+                }
             ],
             "textures": [
                 "Texture.default"
             ],
             "part_visibility": [
-                { "*": true },
-                { "water": false }
+                {
+                    "*": true
+                },
+                {
+                    "water": false
+                }
             ],
-            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
-            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
             "ignore_lighting": false
         },
         "controller.render.cit.water_bucket_1.water": {
@@ -58,17 +74,33 @@
             },
             "geometry": "Geometry.default",
             "materials": [
-                { "*": "Material.water" }
+                {
+                    "*": "Material.water"
+                }
             ],
             "textures": [
                 "Array.water[math.floor(math.mod(query.life_time * 10, 32))]"
             ],
             "part_visibility": [
-                { "*": false },
-                { "water": true }
+                {
+                    "*": false
+                },
+                {
+                    "water": true
+                }
             ],
-            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
-            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
             "ignore_lighting": false
         }
     }

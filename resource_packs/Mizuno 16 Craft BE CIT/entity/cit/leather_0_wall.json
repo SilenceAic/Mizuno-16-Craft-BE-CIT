@@ -2,17 +2,16 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "cit:bowl_4_wall",
+      "identifier": "cit:leather_0_wall",
       "materials": {
-        "default": "entity_alphatest"
+        "default": "entity_emissive_alpha_one_sided"
       },
       "textures": {
-        "v0": "textures/cit/entity/bowl_4_wall",
-        "v1": "textures/cit/entity/bowl_4a_wall",
-        "v2": "textures/cit/entity/bowl_4b_wall"
+        "v0": "textures/cit/entity/leather_0",
+        "v1": "textures/cit/entity/leather_0a"
       },
       "geometry": {
-        "default": "geometry.cit.template_bowl_4_wall"
+        "default": "geometry.cit.template_leather_0_wall"
       },
       "animations": {
         "bowl_wall": "animation.cit.bone_wall"
@@ -23,7 +22,7 @@
         ]
       },
       "render_controllers": [
-        "controller.render.cit.bowl_4_wall"
+        "controller.render.cit.leather_0_wall"
       ]
     }
   }

@@ -101,7 +101,7 @@ export const itemConfig = {
     },
     Bowl_2: {
       entityId: "cit:bowl_2",
-      variantEntities: ["cit:bowl_2", "cit:bowl_2a"],
+      variantCount: 2,
       placement: {
         wall: 0.3,
         ground: 1.0,
@@ -110,7 +110,7 @@ export const itemConfig = {
     },
     Bowl_3: {
       entityId: "cit:bowl_3",
-      variantEntities: ["cit:bowl_3", "cit:bowl_3a"],
+      variantCount: 2,
       placement: {
         wall: 0.3,
         ground: 1.0,
@@ -120,8 +120,8 @@ export const itemConfig = {
     Bowl_4: {
       entityId: "cit:bowl_4",
       wallEntityId: "cit:bowl_4_wall",
-      variantEntities: ["cit:bowl_4", "cit:bowl_4a", "cit:bowl_4b"],
-      wallVariantEntities: ["cit:bowl_4_wall", "cit:bowl_4a_wall", "cit:bowl_4b_wall"],
+      variantCount: 3,
+      wallVariantCount: 3,
       placement: {
         wall: 0.5,
         wallY: -0.5,
@@ -130,10 +130,10 @@ export const itemConfig = {
       },
     },
     Bowl_4a: {
-      entityId: "cit:bowl_4a",
-      wallEntityId: "cit:bowl_4a_wall",
-      variantEntities: ["cit:bowl_4", "cit:bowl_4a", "cit:bowl_4b"],
-      wallVariantEntities: ["cit:bowl_4_wall", "cit:bowl_4a_wall", "cit:bowl_4b_wall"],
+      entityId: "cit:bowl_4",
+      wallEntityId: "cit:bowl_4_wall",
+      spawnVariant: 1,
+      wallSpawnVariant: 1,
       placement: {
         wall: 0.5,
         wallY: -0.5,
@@ -142,10 +142,10 @@ export const itemConfig = {
       },
     },
     Bowl_4b: {
-      entityId: "cit:bowl_4b",
-      wallEntityId: "cit:bowl_4b_wall",
-      variantEntities: ["cit:bowl_4", "cit:bowl_4a", "cit:bowl_4b"],
-      wallVariantEntities: ["cit:bowl_4_wall", "cit:bowl_4a_wall", "cit:bowl_4b_wall"],
+      entityId: "cit:bowl_4",
+      wallEntityId: "cit:bowl_4_wall",
+      spawnVariant: 2,
+      wallSpawnVariant: 2,
       placement: {
         wall: 0.5,
         wallY: -0.5,
@@ -155,7 +155,7 @@ export const itemConfig = {
     },
     Bowl_5: {
       entityId: "cit:bowl_5",
-      variantEntities: ["cit:bowl_5", "cit:bowl_5a", "cit:bowl_5b", "cit:bowl_5c"],
+      variantCount: 4,
       placement: {
         wall: 0.3,
         ground: 1.0,
@@ -259,7 +259,7 @@ export const itemConfig = {
     },
     "Water Bucket_1": {
       entityId: "cit:water_bucket_1",
-      variantEntities: ["cit:water_bucket_1", "cit:water_bucket_1a"],
+      variantCount: 2,
       placement: {
         wall: 0.3,
         ground: 1.0,
@@ -302,9 +302,56 @@ export const itemConfig = {
       },
     },
   },
+  // ==================== 雪球配置 ====================
   "minecraft:snowball": {
     _default: {
       entityId: "cit:snowball_0_wall",
+      placement: {
+        wall: 0.5,
+        wallY: -0.5,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  //==================== 皮革配置 ====================
+  "minecraft:leather": {
+    _default: {
+      entityId: "cit:leather_0",
+      wallEntityId: "cit:leather_0_wall",
+      variantCount: 2,
+      wallVariantCount: 2,
+      placement: {
+        wall: 0.5,
+        wallY: -0.5,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    leather_0a: {
+      entityId: "cit:leather_0a",
+      wallEntityId: "cit:leather_0a_wall",
+      variantCount: 2,
+      wallVariantCount: 2,
+      placement: {
+        wall: 0.5,
+        wallY: -0.5,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Leather_1: {
+      entityId: "cit:leather_1",
+      wallEntityId: null,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Leather_2_wall: {
+      entityId: "cit:leather_2_wall",
+      wallEntityId: "cit:leather_2_wall",
       placement: {
         wall: 0.5,
         wallY: -0.5,
@@ -524,5 +571,36 @@ export function getConfiguredNames(itemTypeId) {
     return [];
   }
   return Object.keys(itemConfigs).filter((name) => name !== "_default");
+}
+/**
+ * 获取实体的属性变体总数（仅限用 variantCount 声明的实体）
+ * @param entityTypeId - 实体 typeId（如 "cit:bowl_2"）
+ * @returns 变体数量，不存在则返回 0
+ */
+export function getVariantCount(entityTypeId) {
+  for (const itemConfigs of Object.values(itemConfig)) {
+    for (const subConfig of Object.values(itemConfigs)) {
+      if (subConfig?.entityId === entityTypeId && subConfig?.variantCount) {
+        return subConfig.variantCount;
+      }
+      if (subConfig?.wallEntityId === entityTypeId && subConfig?.wallVariantCount) {
+        return subConfig.wallVariantCount;
+      }
+    }
+  }
+  return 0;
+}
+/**
+ * 获取生成时应设置的初始 variant 值（用于直接命名生成指定变体）
+ * @param itemTypeId - 物品 typeId
+ * @param itemName - 物品自定义名称
+ * @param isWall - 是否墙面放置
+ * @returns variant 值，不需要则返回 null
+ */
+export function getSpawnVariant(itemTypeId, itemName, isWall = false) {
+  const config = getItemConfig(itemTypeId, itemName);
+  if (!config) return null;
+  if (isWall) return config.wallSpawnVariant ?? null;
+  return config.spawnVariant ?? null;
 }
 console.warn("[CIT] item_config.js 已加载");

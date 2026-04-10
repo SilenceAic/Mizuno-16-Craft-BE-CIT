@@ -15,6 +15,7 @@ export const item3dList = new Set([
   "minecraft:water_bucket",
   "minecraft:lava_bucket",
   "minecraft:snowball",
+  "minecraft:leather",
 ]);
 /**
  * 需要被拦截放置、转向 item3d 系统的方块类型物品及其名称要求

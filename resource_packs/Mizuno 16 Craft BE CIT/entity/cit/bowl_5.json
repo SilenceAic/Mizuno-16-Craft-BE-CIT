@@ -7,13 +7,24 @@
         "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/cit/entity/bowl_5"
+        "v0": "textures/cit/entity/bowl_5",
+        "v1": "textures/cit/entity/bowl_5a",
+        "v2": "textures/cit/entity/bowl_5b",
+        "v3": "textures/cit/entity/bowl_5c"
       },
       "geometry": {
         "default": "geometry.cit.template_bowl_5"
       },
+      "animations": {
+        "floor_bounce": "animation.cit.bowl_5_floor"
+      },
+      "scripts": {
+        "animate": [
+          "floor_bounce"
+        ]
+      },
       "render_controllers": [
-        "controller.render.default"
+        "controller.render.cit.bowl_5"
       ]
     }
   }

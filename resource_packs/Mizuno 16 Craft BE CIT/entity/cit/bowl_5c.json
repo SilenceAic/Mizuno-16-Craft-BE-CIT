@@ -12,6 +12,14 @@
       "geometry": {
         "default": "geometry.cit.template_bowl_5"
       },
+      "animations": {
+        "floor_bounce": "animation.cit.bowl_5_floor"
+      },
+      "scripts": {
+        "animate": [
+          "floor_bounce"
+        ]
+      },
       "render_controllers": [
         "controller.render.default"
       ]

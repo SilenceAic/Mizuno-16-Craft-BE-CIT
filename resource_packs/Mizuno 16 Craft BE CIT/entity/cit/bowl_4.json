@@ -7,13 +7,23 @@
         "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/cit/entity/bowl_4"
+        "v0": "textures/cit/entity/bowl_4",
+        "v1": "textures/cit/entity/bowl_4a",
+        "v2": "textures/cit/entity/bowl_4b"
       },
       "geometry": {
         "default": "geometry.cit.template_bowl_4"
       },
+      "animations": {
+        "floor_bounce": "animation.cit.bowl_4_floor"
+      },
+      "scripts": {
+        "animate": [
+          "floor_bounce"
+        ]
+      },
       "render_controllers": [
-        "controller.render.default"
+        "controller.render.cit.bowl_4_floor"
       ]
     }
   }

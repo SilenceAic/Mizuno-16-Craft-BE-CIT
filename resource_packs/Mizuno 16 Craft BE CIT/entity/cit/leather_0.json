@@ -2,18 +2,19 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "cit:bowl_4b",
+      "identifier": "cit:leather_0",
       "materials": {
-        "default": "entity_alphatest"
+        "default": "entity_emissive_alpha_one_sided"
       },
       "textures": {
-        "default": "textures/cit/entity/bowl_4b"
+        "v0": "textures/cit/entity/leather_0",
+        "v1": "textures/cit/entity/leather_0a"
       },
       "geometry": {
-        "default": "geometry.cit.template_bowl_4"
+        "default": "geometry.cit.template_leather_0"
       },
       "animations": {
-        "floor_bounce": "animation.cit.bowl_4_floor"
+        "floor_bounce": "animation.cit.leather_0_floor"
       },
       "scripts": {
         "animate": [
@@ -21,7 +22,7 @@
         ]
       },
       "render_controllers": [
-        "controller.render.default"
+        "controller.render.cit.leather_0"
       ]
     }
   }

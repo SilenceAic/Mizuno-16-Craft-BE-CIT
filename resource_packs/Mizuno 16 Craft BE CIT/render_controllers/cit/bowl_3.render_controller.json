@@ -2,17 +2,17 @@
     "format_version": "1.8.0",
     "render_controllers": {
         "controller.render.cit.bowl_3": {
-            "geometry": "Geometry.default",
+            "geometry": "q.property('cit:variant') == 0 ? Geometry.bowl_3 : Geometry.bowl_3a",
             "materials": [
                 {
                     "*": "Material.opaque"
                 },
                 {
-                    "bottle": "Material.transparent"
+                    "bottle": "q.property('cit:variant') == 0 ? Material.transparent : Material.opaque"
                 }
             ],
             "textures": [
-                "Texture.default"
+                "q.property('cit:variant') == 0 ? Texture.bowl_3 : Texture.bowl_3a"
             ],
             "part_visibility": [
                 {

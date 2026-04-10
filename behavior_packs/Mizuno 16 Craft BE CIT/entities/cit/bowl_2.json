@@ -29,6 +29,24 @@
           ],
           "default": 0,
           "client_sync": true
+        },
+        "cit:bounce": {
+          "type": "float",
+          "range": [
+            0.0,
+            1.0
+          ],
+          "default": 0.0,
+          "client_sync": true
+        },
+        "cit:variant": {
+          "type": "int",
+          "range": [
+            0,
+            1
+          ],
+          "default": 0,
+          "client_sync": true
         }
       }
     },

@@ -1,7 +1,7 @@
 {
     "format_version": "1.8.0",
     "render_controllers": {
-        "controller.render.cit.bowl_4_floor": {
+        "controller.render.cit.bowl_5": {
             "geometry": "Geometry.default",
             "materials": [
                 {
@@ -9,7 +9,7 @@
                 }
             ],
             "textures": [
-                "q.property('cit:variant') == 0 ? Texture.v0 : (q.property('cit:variant') == 1 ? Texture.v1 : Texture.v2)"
+                "q.property('cit:variant') == 0 ? Texture.v0 : (q.property('cit:variant') == 1 ? Texture.v1 : (q.property('cit:variant') == 2 ? Texture.v2 : Texture.v3))"
             ],
             "is_hurt_color": {
                 "r": 0,
