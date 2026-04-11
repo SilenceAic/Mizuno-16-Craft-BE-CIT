@@ -1,0 +1,94 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.milk_bucket_3",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "pot",
+					"pivot": [5, 0, -7],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [3.5, 8, -14.5],
+							"size": [2, 1, 1],
+							"uv": {
+								"north": {"uv": [6, 8], "uv_size": [2, 1], "material_instance": "milk_bucket_3"},
+								"east": {"uv": [5, 8], "uv_size": [1, 1], "material_instance": "milk_bucket_3"},
+								"south": {"uv": [6, 8], "uv_size": [2, 1], "material_instance": "milk_bucket_3"},
+								"west": {"uv": [7, 8], "uv_size": [1, 1], "material_instance": "milk_bucket_3"},
+								"up": {"uv": [8, 9], "uv_size": [-2, -1], "uv_rotation": 180, "material_instance": "milk_bucket_3"},
+								"down": {"uv": [8, 9], "uv_size": [-2, -1], "uv_rotation": 180, "material_instance": "milk_bucket_3"}
+							}
+						},
+						{
+							"origin": [9.5, 11, -14.5],
+							"size": [1, 1, 1],
+							"uv": {
+								"north": {"uv": [12, 2], "uv_size": [1, 1], "material_instance": "milk_bucket_3"},
+								"east": {"uv": [12, 2], "uv_size": [1, 1], "material_instance": "milk_bucket_3"},
+								"south": {"uv": [12, 2], "uv_size": [1, 1], "material_instance": "milk_bucket_3"},
+								"west": {"uv": [12, 2], "uv_size": [1, 1], "material_instance": "milk_bucket_3"},
+								"up": {"uv": [13, 3], "uv_size": [-1, -1], "uv_rotation": 180, "material_instance": "milk_bucket_3"}
+							}
+						},
+						{
+							"origin": [7.5, 0, -16.5],
+							"size": [5, 11, 5],
+							"uv": {
+								"north": {"uv": [10, 5], "uv_size": [5, 11], "material_instance": "milk_bucket_3"},
+								"east": {"uv": [10, 5], "uv_size": [5, 11], "material_instance": "milk_bucket_3"},
+								"south": {"uv": [10, 5], "uv_size": [5, 11], "material_instance": "milk_bucket_3"},
+								"west": {"uv": [10, 5], "uv_size": [5, 11], "material_instance": "milk_bucket_3"},
+								"up": {"uv": [15, 5], "uv_size": [-5, -5], "material_instance": "milk_bucket_3"},
+								"down": {"uv": [15, 5], "uv_size": [-5, -5], "material_instance": "milk_bucket_3"}
+							}
+						},
+						{
+							"origin": [6.5, 1, -17.5],
+							"size": [7, 5, 7],
+							"uv": {
+								"north": {"uv": [9, 10], "uv_size": [7, 5], "material_instance": "milk_bucket_3"},
+								"east": {"uv": [9, 10], "uv_size": [7, 5], "material_instance": "milk_bucket_3"},
+								"south": {"uv": [9, 10], "uv_size": [7, 5], "material_instance": "milk_bucket_3"},
+								"west": {"uv": [9, 10], "uv_size": [7, 5], "material_instance": "milk_bucket_3"},
+								"up": {"uv": [7, 8], "uv_size": [-7, -7], "material_instance": "milk_bucket_3"},
+								"down": {"uv": [7, 8], "uv_size": [-7, -7], "material_instance": "milk_bucket_3"}
+							}
+						},
+						{
+							"origin": [12.5, 3, -14.5],
+							"size": [3, 5, 1],
+							"uv": {
+								"north": {"uv": [7, 0], "uv_size": [3, 5], "material_instance": "milk_bucket_3"},
+								"south": {"uv": [10, 0], "uv_size": [3, 5], "material_instance": "milk_bucket_3"},
+								"west": {"uv": [9, 0], "uv_size": [1, 5], "material_instance": "milk_bucket_3"},
+								"up": {"uv": [10, 1], "uv_size": [-3, -1], "uv_rotation": 180, "material_instance": "milk_bucket_3"},
+								"down": {"uv": [10, 5], "uv_size": [-3, -1], "uv_rotation": 180, "material_instance": "milk_bucket_3"}
+							}
+						},
+						{
+							"origin": [4.5, 3, -14.5],
+							"size": [2, 5, 1],
+							"uv": {
+								"north": {"uv": [7, 9], "uv_size": [2, 5], "material_instance": "milk_bucket_3"},
+								"east": {"uv": [7, 9], "uv_size": [1, 5], "material_instance": "milk_bucket_3"},
+								"south": {"uv": [7, 9], "uv_size": [2, 5], "uv_rotation": 180, "material_instance": "milk_bucket_3"},
+								"west": {"uv": [8, 9], "uv_size": [1, 5], "material_instance": "milk_bucket_3"},
+								"up": {"uv": [9, 10], "uv_size": [-2, -1], "uv_rotation": 180, "material_instance": "milk_bucket_3"},
+								"down": {"uv": [9, 14], "uv_size": [-2, -1], "uv_rotation": 180, "material_instance": "milk_bucket_3"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

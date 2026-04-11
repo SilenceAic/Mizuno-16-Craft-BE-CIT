@@ -1,0 +1,36 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:milk_bucket_4",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/cit/entity/milk_bucket_4"
+      },
+      "geometry": {
+        "v0": "geometry.cit.milk_bucket_4",
+        "v1": "geometry.cit.milk_bucket_4a",
+        "v2": "geometry.cit.milk_bucket_4b"
+      },
+      "animations": {
+        "floor_bounce": "animation.cit.milk_bucket_4_floor",
+        "wall_rotate": "animation.cit.bone_wall"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "floor_bounce": "!q.property('cit:is_wall')"
+          },
+          {
+            "wall_rotate": "q.property('cit:is_wall')"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cit.milk_bucket_4"
+      ]
+    }
+  }
+}

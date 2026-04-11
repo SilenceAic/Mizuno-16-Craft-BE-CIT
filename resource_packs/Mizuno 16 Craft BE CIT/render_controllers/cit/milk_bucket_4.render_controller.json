@@ -1,0 +1,29 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.milk_bucket_4": {
+            "geometry": "q.property('cit:variant') == 0 ? Geometry.v0 : (q.property('cit:variant') == 1 ? Geometry.v1 : Geometry.v2)",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        }
+    }
+}

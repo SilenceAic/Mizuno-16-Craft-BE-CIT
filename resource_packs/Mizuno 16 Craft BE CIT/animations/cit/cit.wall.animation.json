@@ -168,6 +168,18 @@
         }
       }
     },
+    "animation.cit.milk_bucket_4_floor": {
+      "loop": true,
+      "bones": {
+        "bone": {
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 2",
+            0
+          ]
+        }
+      }
+    },
     "animation.cit.water_bucket_1_floor": {
       "loop": true,
       "bones": {

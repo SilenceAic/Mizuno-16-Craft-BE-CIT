@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:milk_bucket_5",
+      "materials": {
+        "opaque": "entity_alphatest",
+        "outer_transparent": "ppmshjz_ao",
+        "transparent": "entity_alphablend"
+      },
+      "textures": {
+        "default": "textures/cit/entity/milk_bucket_5"
+      },
+      "geometry": {
+        "default": "geometry.cit.milk_bucket_5"
+      },
+      "render_controllers": [
+        "controller.render.cit.milk_bucket_5"
+      ]
+    }
+  }
+}

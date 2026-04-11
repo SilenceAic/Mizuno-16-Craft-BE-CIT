@@ -360,6 +360,90 @@ export const itemConfig = {
       },
     },
   },
+  "minecraft:milk_bucket": {
+    _default: {
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Milk Bucket_1": {
+      entityId: "cit:milk_bucket_1",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Milk Bucket_2": {
+      entityId: "cit:milk_bucket_2",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Milk Bucket_3": {
+      entityId: "cit:milk_bucket_3",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Milk Bucket_4": {
+      entityId: "cit:milk_bucket_4",
+      variantCount: 3,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Milk Bucket_4a": {
+      entityId: "cit:milk_bucket_4a",
+      spawnVariant: 1,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Milk Bucket_4b": {
+      entityId: "cit:milk_bucket_4b",
+      spawnVariant: 2,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Milk Bucket_5": {
+      entityId: "cit:milk_bucket_5",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Milk Bucket_6": {
+      entityId: "cit:milk_bucket_6",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Milk Bucket_7": {
+      entityId: "cit:milk_bucket_7",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
   // ==================== 苹果配置 ====================
   "minecraft:apple": {
     // 默认配置（所有未特殊配置的苹果使用）

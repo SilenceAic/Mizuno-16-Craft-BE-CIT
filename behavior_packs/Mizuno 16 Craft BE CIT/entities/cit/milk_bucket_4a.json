@@ -2,14 +2,32 @@
   "format_version": "1.21.80",
   "minecraft:entity": {
     "description": {
-      "identifier": "cit:leather_2_wall",
+      "identifier": "cit:milk_bucket_4a",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false,
       "properties": {
+        "cit:bounce": {
+          "type": "float",
+          "range": [
+            0.0,
+            1.0
+          ],
+          "default": 0.0,
+          "client_sync": true
+        },
+        "cit:variant": {
+          "type": "int",
+          "range": [
+            0,
+            2
+          ],
+          "default": 1,
+          "client_sync": true
+        },
         "cit:is_wall": {
           "type": "bool",
-          "default": true,
+          "default": false,
           "client_sync": true
         },
         "cit:wall_face": {
@@ -25,18 +43,9 @@
           "type": "int",
           "range": [
             0,
-            359
+            270
           ],
           "default": 0,
-          "client_sync": true
-        },
-        "cit:bounce": {
-          "type": "float",
-          "range": [
-            0.0,
-            1.0
-          ],
-          "default": 0.0,
           "client_sync": true
         }
       }
@@ -61,25 +70,25 @@
     "components": {
       "minecraft:type_family": {
         "family": [
-          "leather_2_wall",
+          "milk_bucket_4a",
           "cit",
-          "inanimate",
-          "is_wall"
+          "inanimate"
         ]
       },
+      "minecraft:is_collidable": {},
       "minecraft:collision_box": {
-        "width": 0,
-        "height": 0
+        "width": 0.25,
+        "height": 0.25
       },
       "minecraft:custom_hit_test": {
         "hitboxes": [
           {
-            "width": 0.5,
-            "height": 1.26125,
+            "width": 0.25,
+            "height": 0.25,
             "pivot": [
               0,
-              0.36938,
-              -0.5
+              0.125,
+              0
             ]
           }
         ]
@@ -95,6 +104,7 @@
       "minecraft:knockback_resistance": {
         "value": 1.0
       },
+      "minecraft:physics": {},
       "minecraft:persistent": {},
       "minecraft:pushable": {
         "is_pushable": false,

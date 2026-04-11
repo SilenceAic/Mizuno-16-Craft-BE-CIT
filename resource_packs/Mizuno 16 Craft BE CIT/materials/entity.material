@@ -101,17 +101,13 @@
         },
         "ppmshjz_ao:entity_alphablend": {
             "+states": [
-                "DisableCulling"
+                "DisableCulling",
+                "DisableDepthWrite"
             ],
             "blendSrc": "SourceAlpha",
             "blendDst": "OneMinusSrcAlpha",
             "+defines": [
                 "FANCY"
-            ]
-        },
-        "gxaqxgp:entity_alphatest": {
-            "-states": [
-                "DisableCulling"
             ]
         },
         "mbspbvr:entity_alphatest": {},

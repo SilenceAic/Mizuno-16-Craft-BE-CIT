@@ -1,0 +1,40 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.milk_bucket_5": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.opaque"
+                },
+                {
+                    "inner": "Material.transparent"
+                },
+                {
+                    "bottle": "Material.outer_transparent"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ],
+            "part_visibility": [
+                {
+                    "*": true
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        }
+    }
+}
