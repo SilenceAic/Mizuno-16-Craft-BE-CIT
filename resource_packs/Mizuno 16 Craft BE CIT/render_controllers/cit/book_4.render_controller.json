@@ -1,0 +1,71 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.book_4.book_0": {
+            "geometry": "q.property('cit:variant') == 0 ? Geometry.book_4 : Geometry.book_4a",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "q.property('cit:variant') == 0 ? Texture.book_0 : Texture.book_0a"
+            ],
+            "part_visibility": [
+                {
+                    "*": false
+                },
+                {
+                    "book_0": true
+                },
+                {
+                    "book_0a": true
+                }
+            ]
+        },
+        "controller.render.cit.book_4.book_2": {
+            "geometry": "q.property('cit:variant') == 0 ? Geometry.book_4 : Geometry.book_4a",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "q.property('cit:variant') == 0 ? Texture.book_2 : Texture.book_2a"
+            ],
+            "part_visibility": [
+                {
+                    "*": false
+                },
+                {
+                    "book_2": true
+                },
+                {
+                    "book_2a": true
+                }
+            ]
+        },
+        "controller.render.cit.book_4.book_3": {
+            "geometry": "q.property('cit:variant') == 0 ? Geometry.book_4 : Geometry.book_4a",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "q.property('cit:variant') == 0 ? Texture.book_3 : Texture.book_3a"
+            ],
+            "part_visibility": [
+                {
+                    "*": false
+                },
+                {
+                    "book_3": true
+                },
+                {
+                    "book_3a": true
+                }
+            ]
+        }
+    }
+}

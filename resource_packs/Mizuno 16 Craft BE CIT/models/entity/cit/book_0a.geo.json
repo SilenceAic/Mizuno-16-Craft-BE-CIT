@@ -1,0 +1,36 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.book_0a",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-4, 0, -5],
+							"size": [7, 3, 10],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [7, 3], "material_instance": "book_0a"},
+								"east": {"uv": [10, 3], "uv_size": [3, 10], "uv_rotation": 90, "material_instance": "book_0a"},
+								"south": {"uv": [7, 0], "uv_size": [7, 3], "material_instance": "book_0a"},
+								"west": {"uv": [0, 3], "uv_size": [3, 10], "uv_rotation": 270, "material_instance": "book_0a"},
+								"up": {"uv": [10, 13], "uv_size": [-7, -10], "material_instance": "book_0a"},
+								"down": {"uv": [10, 3], "uv_size": [-7, 10], "material_instance": "book_0a"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

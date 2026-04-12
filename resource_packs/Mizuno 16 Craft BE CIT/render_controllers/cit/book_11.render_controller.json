@@ -1,0 +1,43 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.book_11.book_10": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.book_10"
+            ],
+            "part_visibility": [
+                {
+                    "*": false
+                },
+                {
+                    "book_10": true
+                }
+            ]
+        },
+        "controller.render.cit.book_11.book_11": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.book_11"
+            ],
+            "part_visibility": [
+                {
+                    "*": false
+                },
+                {
+                    "book_11": true
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:paper_4",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/cit/entity/paper_3"
+      },
+      "geometry": {
+        "default": "geometry.cit.paper_4"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.paper_0",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [0, 0.1, -7],
+							"size": [7, 0.01, 10],
+							"uv": {
+								"up": {"uv": [15, 10], "uv_size": [-7, -10], "material_instance": "paper_0"},
+								"down": {"uv": [15, 10], "uv_size": [-7, -10], "material_instance": "paper_0"}
+							}
+						},
+						{
+							"origin": [-4.5, 0.3, -3],
+							"size": [7, 0.01, 10],
+							"pivot": [-2.5, 0, 5],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"up": {"uv": [7, 10], "uv_size": [-7, -10], "uv_rotation": 180, "material_instance": "paper_0"},
+								"down": {"uv": [15, 10], "uv_size": [-7, -10], "material_instance": "paper_0"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

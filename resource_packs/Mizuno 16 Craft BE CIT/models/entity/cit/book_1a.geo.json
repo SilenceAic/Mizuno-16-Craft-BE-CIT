@@ -1,0 +1,65 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.book_1a",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "book_0a",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [0, 0, -5],
+							"size": [7, 1, 10],
+							"uv": {
+								"north": {"uv": [7, 0], "uv_size": [7, 1], "material_instance": "book_1a"},
+								"east": {"uv": [10, 3], "uv_size": [1, 10], "uv_rotation": 90, "material_instance": "book_1a"},
+								"south": {"uv": [0, 0], "uv_size": [8, 1], "material_instance": "book_1a"},
+								"west": {"uv": [10, 3], "uv_size": [1, 10], "uv_rotation": 90, "material_instance": "book_1a"},
+								"up": {"uv": [7, 13], "uv_size": [-7, -10], "material_instance": "book_1a"},
+								"down": {"uv": [3, 3], "uv_size": [7, 10], "material_instance": "book_1a"}
+							}
+						},
+						{
+							"origin": [-7.5, 0, -5],
+							"size": [7, 1, 10],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [8, 1], "material_instance": "book_1a"},
+								"east": {"uv": [12, 3], "uv_size": [1, 10], "uv_rotation": 90, "material_instance": "book_1a"},
+								"south": {"uv": [6, 0], "uv_size": [8, 1], "material_instance": "book_1a"},
+								"west": {"uv": [12, 3], "uv_size": [1, 10], "uv_rotation": 270, "material_instance": "book_1a"},
+								"up": {"uv": [10, 13], "uv_size": [-7, -10], "material_instance": "book_1a"},
+								"down": {"uv": [10, 3], "uv_size": [-7, 10], "material_instance": "book_1a"}
+							}
+						}
+					]
+				},
+				{
+					"name": "book_1a",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-7, 1, -5],
+							"size": [7, 1, 10],
+							"uv": {
+								"north": {"uv": [1, 1], "uv_size": [7, 1], "material_instance": "book_1a"},
+								"east": {"uv": [11, 3], "uv_size": [1, 10], "uv_rotation": 90, "material_instance": "book_1a"},
+								"south": {"uv": [1, 1], "uv_size": [7, 1], "material_instance": "book_1a"},
+								"west": {"uv": [11, 3], "uv_size": [1, 10], "uv_rotation": 90, "material_instance": "book_1a"},
+								"up": {"uv": [14, 13], "uv_size": [-7, -10], "material_instance": "book_1a"},
+								"down": {"uv": [8, 3], "uv_size": [7, 10], "material_instance": "book_1a"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:book_3",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "book_0": "textures/cit/entity/book_0",
+        "book_2": "textures/cit/entity/book_2",
+        "book_3": "textures/cit/entity/book_3",
+        "book_0a": "textures/cit/entity/book_0a",
+        "book_2a": "textures/cit/entity/book_2a",
+        "book_3a": "textures/cit/entity/book_3a"
+      },
+      "geometry": {
+        "book_3": "geometry.cit.book_3",
+        "book_3a": "geometry.cit.book_3a"
+      },
+      "render_controllers": [
+        "controller.render.cit.book_3.book_2",
+        "controller.render.cit.book_3.book_0",
+        "controller.render.cit.book_3.book_3"
+      ]
+    }
+  }
+}

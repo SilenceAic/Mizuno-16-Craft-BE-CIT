@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:book_11",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "book_10": "textures/cit/entity/book_10",
+        "book_11": "textures/cit/entity/book_11"
+      },
+      "geometry": {
+        "default": "geometry.cit.book_11"
+      },
+      "render_controllers": [
+        "controller.render.cit.book_11.book_10",
+        "controller.render.cit.book_11.book_11"
+      ]
+    }
+  }
+}

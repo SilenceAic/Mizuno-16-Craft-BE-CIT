@@ -17,6 +17,13 @@ export const item3dList = new Set([
   "minecraft:snowball",
   "minecraft:leather",
   "minecraft:milk_bucket",
+  "minecraft:pufferfish_bucket",
+  "minecraft:salmon_bucket",
+  "minecraft:cod_bucket",
+  "minecraft:tropical_fish_bucket",
+  "minecraft:brick",
+  "minecraft:paper",
+  "minecraft:book",
 ]);
 /**
  * 需要被拦截放置、转向 item3d 系统的方块类型物品及其名称要求

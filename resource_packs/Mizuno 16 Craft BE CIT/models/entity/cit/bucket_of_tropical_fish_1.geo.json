@@ -1,0 +1,241 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.bucket_of_tropical_fish_1",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bucket_0",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-5, 0, -5],
+							"size": [10, 8, 10],
+							"uv": {
+								"north": {"uv": [0, 3], "uv_size": [5, 4], "material_instance": "bucket_0"},
+								"east": {"uv": [0, 3], "uv_size": [5, 4], "material_instance": "bucket_0"},
+								"south": {"uv": [0, 3], "uv_size": [5, 4], "material_instance": "bucket_0"},
+								"west": {"uv": [0, 3], "uv_size": [5, 4], "material_instance": "bucket_0"},
+								"up": {"uv": [16, 16], "uv_size": [-5, -5], "material_instance": "bucket_0"},
+								"down": {"uv": [5, 12], "uv_size": [-5, -5], "material_instance": "bucket_0"}
+							}
+						},
+						{
+							"origin": [-5, 8, -6],
+							"size": [10, 3, 1],
+							"uv": {
+								"north": {"uv": [0.5, 0.5], "uv_size": [5, 1.5], "material_instance": "bucket_0"},
+								"south": {"uv": [0.5, 0.5], "uv_size": [5, 1.5], "material_instance": "bucket_0"},
+								"up": {"uv": [5.5, 0.5], "uv_size": [-5, -0.5], "material_instance": "bucket_0"},
+								"down": {"uv": [5.5, 2.5], "uv_size": [-5, -0.5], "material_instance": "bucket_0"}
+							}
+						},
+						{
+							"origin": [-5, 8, 5],
+							"size": [10, 3, 1],
+							"uv": {
+								"north": {"uv": [0.5, 0.5], "uv_size": [5, 1.5], "material_instance": "bucket_0"},
+								"south": {"uv": [0.5, 0.5], "uv_size": [5, 1.5], "material_instance": "bucket_0"},
+								"up": {"uv": [5.5, 0.5], "uv_size": [-5, -0.5], "material_instance": "bucket_0"},
+								"down": {"uv": [5.5, 2.5], "uv_size": [-5, -0.5], "material_instance": "bucket_0"}
+							}
+						},
+						{
+							"origin": [5, 8, -6],
+							"size": [1, 3, 12],
+							"uv": {
+								"north": {"uv": [5.5, 0.5], "uv_size": [0.5, 1.5], "material_instance": "bucket_0"},
+								"east": {"uv": [0, 0.5], "uv_size": [6, 1.5], "material_instance": "bucket_0"},
+								"south": {"uv": [0, 0.5], "uv_size": [0.5, 1.5], "material_instance": "bucket_0"},
+								"west": {"uv": [0, 0.5], "uv_size": [6, 1.5], "material_instance": "bucket_0"},
+								"up": {"uv": [6, 0.5], "uv_size": [-6, -0.5], "uv_rotation": 90, "material_instance": "bucket_0"},
+								"down": {"uv": [6, 2.5], "uv_size": [-6, -0.5], "uv_rotation": 90, "material_instance": "bucket_0"}
+							}
+						},
+						{
+							"origin": [-6, 8, -6],
+							"size": [1, 3, 12],
+							"uv": {
+								"north": {"uv": [0, 0.5], "uv_size": [0.5, 1.5], "material_instance": "bucket_0"},
+								"east": {"uv": [0, 0.5], "uv_size": [6, 1.5], "material_instance": "bucket_0"},
+								"south": {"uv": [5.5, 0.5], "uv_size": [0.5, 1.5], "material_instance": "bucket_0"},
+								"west": {"uv": [0, 0.5], "uv_size": [6, 1.5], "material_instance": "bucket_0"},
+								"up": {"uv": [6, 0.5], "uv_size": [-6, -0.5], "uv_rotation": 90, "material_instance": "bucket_0"},
+								"down": {"uv": [6, 2.5], "uv_size": [-6, -0.5], "uv_rotation": 90, "material_instance": "bucket_0"}
+							}
+						},
+						{
+							"origin": [-6, 6.99, -0.5],
+							"size": [12, 1, 1],
+							"uv": {
+								"north": {"uv": [9.5, 0], "uv_size": [6, 0.5], "material_instance": "bucket_0"},
+								"south": {"uv": [9.5, 0], "uv_size": [6, 0.5], "material_instance": "bucket_0"},
+								"up": {"uv": [15.5, 0.5], "uv_size": [-6, -0.5], "material_instance": "bucket_0"},
+								"down": {"uv": [15.5, 0.5], "uv_size": [-6, -0.5], "material_instance": "bucket_0"}
+							}
+						},
+						{
+							"origin": [-6, 6.75, -0.51],
+							"size": [12, 1, 1],
+							"pivot": [0, 7.25, 0],
+							"rotation": [-45, 0, 0],
+							"uv": {
+								"north": {"uv": [9.5, 0], "uv_size": [6, 0.5], "uv_rotation": 180, "material_instance": "bucket_0"},
+								"south": {"uv": [9.5, 0], "uv_size": [6, 0.5], "material_instance": "bucket_0"},
+								"up": {"uv": [15.5, 0.5], "uv_size": [-6, -0.5], "uv_rotation": 180, "material_instance": "bucket_0"},
+								"down": {"uv": [15.5, 0.5], "uv_size": [-6, -0.5], "material_instance": "bucket_0"}
+							}
+						},
+						{
+							"origin": [6, 6.75, -0.5],
+							"size": [1, 1, 9],
+							"pivot": [0, 7.25, 0],
+							"rotation": [-45, 0, 0],
+							"uv": {
+								"north": {"uv": [15.5, 4], "uv_size": [0.5, 0.5], "uv_rotation": 180, "material_instance": "bucket_0"},
+								"east": {"uv": [15.5, 0], "uv_size": [0.5, 4.5], "uv_rotation": 270, "material_instance": "bucket_0"},
+								"south": {"uv": [15.5, 0], "uv_size": [0.5, 0.5], "material_instance": "bucket_0"},
+								"west": {"uv": [15.5, 0], "uv_size": [0.5, 4.5], "uv_rotation": 90, "material_instance": "bucket_0"},
+								"up": {"uv": [16, 4.5], "uv_size": [-0.5, -4.5], "uv_rotation": 180, "material_instance": "bucket_0"},
+								"down": {"uv": [16, 4.5], "uv_size": [-0.5, -4.5], "material_instance": "bucket_0"}
+							}
+						},
+						{
+							"origin": [-6, 6.75, 7.5],
+							"size": [12, 1, 1],
+							"pivot": [0, 7.25, 0],
+							"rotation": [-45, 0, 0],
+							"uv": {
+								"north": {"uv": [9.5, 0], "uv_size": [6, 0.5], "uv_rotation": 180, "material_instance": "bucket_0"},
+								"south": {"uv": [9.5, 0], "uv_size": [6, 0.5], "material_instance": "bucket_0"},
+								"up": {"uv": [15.5, 0.5], "uv_size": [-6, -0.5], "uv_rotation": 180, "material_instance": "bucket_0"},
+								"down": {"uv": [15.5, 0.5], "uv_size": [-6, -0.5], "material_instance": "bucket_0"}
+							}
+						},
+						{
+							"origin": [-3.5, 6.25, 7],
+							"size": [7, 2, 2],
+							"pivot": [0, 7.25, 0],
+							"rotation": [-45, 0, 0],
+							"uv": {
+								"north": {"uv": [1.5, 13.5], "uv_size": [3.5, 1], "uv_rotation": 180, "material_instance": "bucket_0"},
+								"east": {"uv": [0, 14], "uv_size": [1, 1], "uv_rotation": 270, "material_instance": "bucket_0"},
+								"south": {"uv": [1.5, 13.5], "uv_size": [3.5, 1], "material_instance": "bucket_0"},
+								"west": {"uv": [0, 14], "uv_size": [1, 1], "uv_rotation": 90, "material_instance": "bucket_0"},
+								"up": {"uv": [5, 15], "uv_size": [-3.5, -1], "uv_rotation": 180, "material_instance": "bucket_0"},
+								"down": {"uv": [5, 15], "uv_size": [-3.5, -1], "material_instance": "bucket_0"}
+							}
+						},
+						{
+							"origin": [-7, 6.75, -0.5],
+							"size": [1, 1, 9],
+							"pivot": [0, 7.25, 0],
+							"rotation": [-45, 0, 0],
+							"uv": {
+								"north": {"uv": [15.5, 4], "uv_size": [0.5, 0.5], "uv_rotation": 180, "material_instance": "bucket_0"},
+								"east": {"uv": [15.5, 0], "uv_size": [0.5, 4.5], "uv_rotation": 270, "material_instance": "bucket_0"},
+								"south": {"uv": [15.5, 0], "uv_size": [0.5, 0.5], "material_instance": "bucket_0"},
+								"west": {"uv": [15.5, 0], "uv_size": [0.5, 4.5], "uv_rotation": 90, "material_instance": "bucket_0"},
+								"up": {"uv": [16, 4.5], "uv_size": [-0.5, -4.5], "uv_rotation": 180, "material_instance": "bucket_0"},
+								"down": {"uv": [16, 4.5], "uv_size": [-0.5, -4.5], "material_instance": "bucket_0"}
+							}
+						}
+					]
+				},
+				{
+					"name": "water",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-5, 8.25, -5],
+							"size": [10, 0, 10],
+							"uv": {
+								"up": {"uv": [13, 13], "uv_size": [-10, -10], "material_instance": "bucket_0"}
+							}
+						}
+					]
+				},
+				{
+					"name": "tropical_fish_1",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [1.49, 6, 1.5],
+							"size": [0.01, 2, 2],
+							"pivot": [0.5, 8.41667, 0.5],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"east": {"uv": [1, 14], "uv_size": [2, 2], "material_instance": "tropical_fish_1"},
+								"west": {"uv": [1, 11], "uv_size": [2, 2], "material_instance": "tropical_fish_1"}
+							}
+						},
+						{
+							"origin": [1.49, 6, -2.5],
+							"size": [0.01, 2, 2],
+							"pivot": [0.5, 8.41667, 0.5],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"east": {"uv": [3, 14], "uv_size": [-2, 2], "material_instance": "tropical_fish_1"},
+								"west": {"uv": [1, 14], "uv_size": [2, 2], "material_instance": "tropical_fish_1"}
+							}
+						},
+						{
+							"origin": [-1.5, 6, -0.5],
+							"size": [6, 6, 2],
+							"pivot": [0.5, 8.41667, 0.5],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": {"uv": [8, 2], "uv_size": [-6, 6], "material_instance": "tropical_fish_1"},
+								"east": {"uv": [8, 2], "uv_size": [2, 6], "material_instance": "tropical_fish_1"},
+								"south": {"uv": [2, 2], "uv_size": [6, 6], "material_instance": "tropical_fish_1"},
+								"west": {"uv": [0, 2], "uv_size": [2, 6], "material_instance": "tropical_fish_1"},
+								"up": {"uv": [8, 2], "uv_size": [-6, -2], "material_instance": "tropical_fish_1"},
+								"down": {"uv": [8, 10], "uv_size": [-6, -2], "material_instance": "tropical_fish_1"}
+							}
+						},
+						{
+							"origin": [-6.5, 6, 0.5],
+							"size": [5, 6, 0.01],
+							"pivot": [0.5, 8.41667, 0.5],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": {"uv": [11, 10], "uv_size": [5, 6], "material_instance": "tropical_fish_1"},
+								"south": {"uv": [16, 10], "uv_size": [-5, 6], "material_instance": "tropical_fish_1"}
+							}
+						},
+						{
+							"origin": [-0.5, 5, 0.5],
+							"size": [4, 1, 0.01],
+							"pivot": [0.5, 8.41667, 0.5],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": {"uv": [15, 3], "uv_size": [-4, 1], "material_instance": "tropical_fish_1"},
+								"south": {"uv": [11, 3], "uv_size": [4, 1], "material_instance": "tropical_fish_1"}
+							}
+						},
+						{
+							"origin": [-1.5, 12, 0.5],
+							"size": [5, 2, 0.01],
+							"pivot": [0.5, 8.41667, 0.5],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": {"uv": [11, 0], "uv_size": [5, 2], "material_instance": "tropical_fish_1"},
+								"south": {"uv": [11, 0], "uv_size": [5, 2], "material_instance": "tropical_fish_1"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

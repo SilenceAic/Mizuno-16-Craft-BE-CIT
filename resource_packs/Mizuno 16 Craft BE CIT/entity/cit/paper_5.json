@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:paper_5",
+      "materials": {
+        "paper_5": "entity_alphatest",
+        "paper_5_01": "entity_alphatest"
+      },
+      "textures": {
+        "paper_5": "textures/cit/entity/paper_5",
+        "paper_5_01": "textures/cit/entity/paper_5_01"
+      },
+      "geometry": {
+        "default": "geometry.cit.paper_5"
+      },
+      "render_controllers": [
+        "controller.render.cit.paper_5.base",
+        "controller.render.cit.paper_5.detail"
+      ]
+    }
+  }
+}

@@ -291,6 +291,7 @@ export const itemConfig = {
       },
     },
   },
+
   // ==================== 熔岩桶配置 ====================
   "minecraft:lava_bucket": {
     _default: {
@@ -360,6 +361,7 @@ export const itemConfig = {
       },
     },
   },
+  //牛奶桶配置
   "minecraft:milk_bucket": {
     _default: {
       placement: {
@@ -437,6 +439,322 @@ export const itemConfig = {
     },
     "Milk Bucket_7": {
       entityId: "cit:milk_bucket_7",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 河豚桶配置 ====================
+  "minecraft:pufferfish_bucket": {
+    _default: {
+      entityId: "cit:bucket_of_pufferfish_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 鲑鱼桶配置 ====================
+  "minecraft:salmon_bucket": {
+    _default: {
+      entityId: "cit:bucket_of_salmon_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 鳕鱼桶配置 ====================
+  "minecraft:cod_bucket": {
+    _default: {
+      entityId: "cit:bucket_of_cod_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 热带鱼桶配置 ====================
+  "minecraft:tropical_fish_bucket": {
+    _default: {
+      entityId: "cit:bucket_of_tropical_fish_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Tropical Fish Bucket_1": {
+      entityId: "cit:bucket_of_tropical_fish_1",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 砖块配置 ====================
+  "minecraft:brick": {
+    _default: {
+      entityId: "cit:brick_0",
+      variantEntities: ["cit:brick_0", "cit:brick_0_01"],
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 纸配置 ====================
+  "minecraft:paper": {
+    _default: {
+      entityId: "cit:paper_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Paper_0: {
+      entityId: "cit:paper_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Paper_1: {
+      entityId: "cit:paper_1",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Paper_2: {
+      entityId: "cit:paper_2",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Paper_3: {
+      entityId: "cit:paper_3",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Paper_4: {
+      entityId: "cit:paper_4",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Paper_5: {
+      entityId: "cit:paper_5",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 书配置 ====================
+  "minecraft:book": {
+    _default: {
+      variantCount: 2,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_0: {
+      entityId: "cit:book_0",
+      variantCount: 2,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_0a: {
+      entityId: "cit:book_0a",
+      spawnVariant: 1,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_1: {
+      entityId: "cit:book_1",
+      variantCount: 2,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_1a: {
+      entityId: "cit:book_1a",
+      spawnVariant: 1,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_2: {
+      entityId: "cit:book_2",
+      variantCount: 2,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_2a: {
+      entityId: "cit:book_2a",
+      spawnVariant: 1,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_3: {
+      entityId: "cit:book_3",
+      variantCount: 2,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_3a: {
+      entityId: "cit:book_3a",
+      spawnVariant: 1,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_4: {
+      entityId: "cit:book_4",
+      variantCount: 2,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_4a: {
+      entityId: "cit:book_4a",
+      spawnVariant: 1,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_5: {
+      entityId: "cit:book_5",
+      variantCount: 2,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_5a: {
+      entityId: "cit:book_5a",
+      spawnVariant: 1,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_6: {
+      entityId: "cit:book_6",
+      variantCount: 2,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_6a: {
+      entityId: "cit:book_6a",
+      spawnVariant: 1,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_7: {
+      entityId: "cit:book_7",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_8: {
+      entityId: "cit:book_8",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_9: {
+      entityId: "cit:book_9",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_10: {
+      entityId: "cit:book_10",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_11: {
+      entityId: "cit:book_11",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_12: {
+      entityId: "cit:book_12",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Book_13: {
+      entityId: "cit:book_13",
       placement: {
         wall: 0.3,
         ground: 1.0,

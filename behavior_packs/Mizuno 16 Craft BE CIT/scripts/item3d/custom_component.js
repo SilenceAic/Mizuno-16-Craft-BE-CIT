@@ -20,6 +20,10 @@ import {
 const components = new Map();
 // 记录正在执行 bounce 衰减的实体 ID，防止重复开启衰减链
 const bouncingEntities = new Set();
+const transitionVariantEntities = new Set(["cit:brick_0", "cit:brick_0_01"]);
+// switch_out 动画时长 0.2s × 20 = 4 ticks
+const transitionSwitchOutTicks = 4;
+const transitionSpawnGuardTicks = 2;
 /** 触发弹跳动画并开始衰减 */
 function startBounce(entity) {
   try {
@@ -55,6 +59,68 @@ function decayBounce(entity) {
       decayBounce(entity);
     }
   }, 1);
+}
+function usesVariantTransition(currentTypeId, nextTypeId) {
+  return transitionVariantEntities.has(currentTypeId) && transitionVariantEntities.has(nextTypeId);
+}
+function switchVariantWithTransition(hitEntity, nextTypeId, ownerName) {
+  const loc = hitEntity.location;
+  const rot = hitEntity.getRotation();
+  const dim = hitEntity.dimension;
+  const isWallType = hitEntity.typeId.endsWith("_wall");
+  const isWall = isWallType ? hitEntity.getProperty("cit:is_wall") : undefined;
+  const wallFace = isWallType ? hitEntity.getProperty("cit:wall_face") : undefined;
+  const wallRotation = isWallType ? hitEntity.getProperty("cit:wall_rotation") : undefined;
+  const itemData = hitEntity.getDynamicProperty("cit:item_data");
+  const customName = hitEntity.getDynamicProperty("cit:custom_name");
+  const nextOwnerName = ownerName ?? hitEntity.getDynamicProperty("cit:owner");
+  try {
+    hitEntity.addTag("cit:switching");
+  } catch {}
+  try {
+    hitEntity.setProperty("cit:transition_state", 2);
+  } catch {}
+  mc.system.runTimeout(() => {
+    if (!hitEntity.isValid) {
+      return;
+    }
+    try {
+      const newEntity = dim.spawnEntity(nextTypeId, loc, {
+        initialRotation: rot.y,
+        spawnEvent: "cit:on_spawn",
+      });
+      newEntity.addTag("cit");
+      newEntity.addTag("cit:switching");
+      if (isWallType) {
+        newEntity.setProperty("cit:is_wall", isWall);
+        newEntity.setProperty("cit:wall_face", wallFace);
+        newEntity.setProperty("cit:wall_rotation", wallRotation);
+      }
+      if (itemData) newEntity.setDynamicProperty("cit:item_data", itemData);
+      if (customName) newEntity.setDynamicProperty("cit:custom_name", customName);
+      if (nextOwnerName) newEntity.setDynamicProperty("cit:owner", nextOwnerName);
+      try {
+        newEntity.setProperty("cit:transition_state", 0);
+      } catch {}
+      hitEntity.remove();
+      mc.system.runTimeout(() => {
+        if (!newEntity.isValid) {
+          return;
+        }
+        try {
+          newEntity.removeTag("cit:switching");
+        } catch {}
+      }, transitionSpawnGuardTicks);
+    } catch (e) {
+      try {
+        hitEntity.setProperty("cit:transition_state", 0);
+      } catch {}
+      try {
+        hitEntity.removeTag("cit:switching");
+      } catch {}
+      console.error("[CIT] 切换变体失败: " + e);
+    }
+  }, transitionSwitchOutTicks);
 }
 function getStackedFloorEntities(baseEntity) {
   const baseLocation = baseEntity.location;
@@ -274,6 +340,9 @@ components.set("cit:core", {
     if (hitEntity.hasTag("cit:magnet")) {
       return;
     }
+    if (hitEntity.hasTag("cit:switching")) {
+      return;
+    }
     // 实体被持有中：仅响应持有者操作
     const heldOwner = hitEntity.getDynamicProperty("cit:owner");
     if (heldOwner) {
@@ -309,36 +378,40 @@ components.set("cit:core", {
       } else {
         const nextTypeId = getNextVariantEntity(hitEntity.typeId);
         if (nextTypeId) {
-          const loc = hitEntity.location;
-          const rot = hitEntity.getRotation();
-          const dim = hitEntity.dimension;
-          const isWallType = hitEntity.typeId.endsWith("_wall");
-          const isWall = isWallType ? hitEntity.getProperty("cit:is_wall") : undefined;
-          const wallFace = isWallType ? hitEntity.getProperty("cit:wall_face") : undefined;
-          const wallRotation = isWallType ? hitEntity.getProperty("cit:wall_rotation") : undefined;
-          const itemData = hitEntity.getDynamicProperty("cit:item_data");
-          const customName = hitEntity.getDynamicProperty("cit:custom_name");
-          const ownerName = heldOwner;
-          hitEntity.remove();
-          mc.system.run(() => {
-            try {
-              const newEntity = dim.spawnEntity(nextTypeId, loc, {
-                initialRotation: rot.y,
-                spawnEvent: "cit:on_spawn",
-              });
-              newEntity.addTag("cit");
-              if (isWallType) {
-                newEntity.setProperty("cit:is_wall", isWall);
-                newEntity.setProperty("cit:wall_face", wallFace);
-                newEntity.setProperty("cit:wall_rotation", wallRotation);
+          if (usesVariantTransition(hitEntity.typeId, nextTypeId)) {
+            switchVariantWithTransition(hitEntity, nextTypeId, heldOwner);
+          } else {
+            const loc = hitEntity.location;
+            const rot = hitEntity.getRotation();
+            const dim = hitEntity.dimension;
+            const isWallType = hitEntity.typeId.endsWith("_wall");
+            const isWall = isWallType ? hitEntity.getProperty("cit:is_wall") : undefined;
+            const wallFace = isWallType ? hitEntity.getProperty("cit:wall_face") : undefined;
+            const wallRotation = isWallType ? hitEntity.getProperty("cit:wall_rotation") : undefined;
+            const itemData = hitEntity.getDynamicProperty("cit:item_data");
+            const customName = hitEntity.getDynamicProperty("cit:custom_name");
+            const ownerName = heldOwner;
+            hitEntity.remove();
+            mc.system.run(() => {
+              try {
+                const newEntity = dim.spawnEntity(nextTypeId, loc, {
+                  initialRotation: rot.y,
+                  spawnEvent: "cit:on_spawn",
+                });
+                newEntity.addTag("cit");
+                if (isWallType) {
+                  newEntity.setProperty("cit:is_wall", isWall);
+                  newEntity.setProperty("cit:wall_face", wallFace);
+                  newEntity.setProperty("cit:wall_rotation", wallRotation);
+                }
+                if (itemData) newEntity.setDynamicProperty("cit:item_data", itemData);
+                if (customName) newEntity.setDynamicProperty("cit:custom_name", customName);
+                newEntity.setDynamicProperty("cit:owner", ownerName);
+              } catch (e) {
+                console.error("[CIT] 持有中切换变体失败: " + e);
               }
-              if (itemData) newEntity.setDynamicProperty("cit:item_data", itemData);
-              if (customName) newEntity.setDynamicProperty("cit:custom_name", customName);
-              newEntity.setDynamicProperty("cit:owner", ownerName);
-            } catch (e) {
-              console.error("[CIT] 持有中切换变体失败: " + e);
-            }
-          });
+            });
+          }
         }
       }
       return;
@@ -364,38 +437,41 @@ components.set("cit:core", {
     } else {
       const nextTypeId = getNextVariantEntity(hitEntity.typeId);
       if (nextTypeId) {
-        // 旧方案：切换实体
-        const loc = hitEntity.location;
-        const rot = hitEntity.getRotation();
-        const dim = hitEntity.dimension;
-        const isWall = isWallType ? hitEntity.getProperty("cit:is_wall") : undefined;
-        const wallFace = isWallType ? hitEntity.getProperty("cit:wall_face") : undefined;
-        const wallRotation = isWallType ? hitEntity.getProperty("cit:wall_rotation") : undefined;
-        const itemData = hitEntity.getDynamicProperty("cit:item_data");
-        const customName = hitEntity.getDynamicProperty("cit:custom_name");
-        hitEntity.remove();
-        mc.system.run(() => {
-          try {
-            const newEntity = dim.spawnEntity(nextTypeId, loc, {
-              initialRotation: rot.y,
-              spawnEvent: "cit:on_spawn",
-            });
-            newEntity.addTag("cit");
-            if (isWallType) {
-              newEntity.setProperty("cit:is_wall", isWall);
-              newEntity.setProperty("cit:wall_face", wallFace);
-              newEntity.setProperty("cit:wall_rotation", wallRotation);
+        if (usesVariantTransition(hitEntity.typeId, nextTypeId)) {
+          switchVariantWithTransition(hitEntity, nextTypeId);
+        } else {
+          const loc = hitEntity.location;
+          const rot = hitEntity.getRotation();
+          const dim = hitEntity.dimension;
+          const isWall = isWallType ? hitEntity.getProperty("cit:is_wall") : undefined;
+          const wallFace = isWallType ? hitEntity.getProperty("cit:wall_face") : undefined;
+          const wallRotation = isWallType ? hitEntity.getProperty("cit:wall_rotation") : undefined;
+          const itemData = hitEntity.getDynamicProperty("cit:item_data");
+          const customName = hitEntity.getDynamicProperty("cit:custom_name");
+          hitEntity.remove();
+          mc.system.run(() => {
+            try {
+              const newEntity = dim.spawnEntity(nextTypeId, loc, {
+                initialRotation: rot.y,
+                spawnEvent: "cit:on_spawn",
+              });
+              newEntity.addTag("cit");
+              if (isWallType) {
+                newEntity.setProperty("cit:is_wall", isWall);
+                newEntity.setProperty("cit:wall_face", wallFace);
+                newEntity.setProperty("cit:wall_rotation", wallRotation);
+              }
+              if (itemData) newEntity.setDynamicProperty("cit:item_data", itemData);
+              if (customName) newEntity.setDynamicProperty("cit:custom_name", customName);
+              mc.system.run(() => {
+                if (!newEntity.isValid) return;
+                startBounce(newEntity);
+              });
+            } catch (e) {
+              console.error("[CIT] 切换变体失败: " + e);
             }
-            if (itemData) newEntity.setDynamicProperty("cit:item_data", itemData);
-            if (customName) newEntity.setDynamicProperty("cit:custom_name", customName);
-            mc.system.run(() => {
-              if (!newEntity.isValid) return;
-              startBounce(newEntity);
-            });
-          } catch (e) {
-            console.error("[CIT] 切换变体失败: " + e);
-          }
-        });
+          });
+        }
       } else {
         // 无变体：仅弹跳
         if (isWallType) {

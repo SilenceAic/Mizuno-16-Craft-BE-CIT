@@ -1,0 +1,30 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:brick_0",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/cit/entity/brick_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.brick_0"
+      },
+      "animations": {
+        "switch_out": "animation.cit.brick.switch_out"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "switch_out": "q.property('cit:transition_state') == 2"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}
