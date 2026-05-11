@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:egg_0",
+      "materials": {
+        "basket": "entity_alphatest",
+        "egg": "entity_alphatest"
+      },
+      "textures": {
+        "basket": "textures/cit/entity/basket",
+        "egg": "textures/cit/entity/egg_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.entity.egg_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.egg_0.basket",
+        "controller.render.cit.egg_0.egg"
+      ]
+    }
+  }
+}

@@ -61,6 +61,40 @@ export const itemConfig = {
       },
     },
   },
+  // ==================== 鸡蛋配置 ====================
+  "minecraft:egg": {
+    _default: {
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Egg_0: {
+      entityId: "cit:egg_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Egg_1: {
+      entityId: "cit:egg_1",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Egg_2: {
+      entityId: "cit:egg_2",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
   // ==================== 金粒配置 ====================
   "minecraft:gold_ingot": {
     _default: {
