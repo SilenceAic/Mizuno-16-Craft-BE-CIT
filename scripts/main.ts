@@ -2,6 +2,29 @@ import * as server from "@minecraft/server";
 import blockComponents from "./cit/custom_component";
 import item3dComponents from "./item3d/custom_component";
 
+// === 玩家身份标识实验 ===
+// 玩家首次生成时，在聊天栏和控制台输出身份信息
+server.world.afterEvents.playerSpawn.subscribe((event) => {
+  const player = event.player;
+  server.system.run(() => {
+    console.warn(`[Identity] playerSpawn → id: "${player.id}", name: "${player.name}", typeId: "${player.typeId}"`);
+
+    // 仅首次生成时发送聊天消息，避免死亡复活时刷屏
+    if (event.initialSpawn) {
+      player.sendMessage(`§a你的 id: §e${player.id}`);
+      player.sendMessage(`§a你的 name: §e${player.name}`);
+      player.sendMessage(`§a你的 typeId: §e${player.typeId}`);
+    }
+  });
+});
+
+// 玩家加入世界时控制台打印（playerSpawn 在每次重生都触发，playerJoin 只触发一次）
+// 注：PlayerJoinAfterEvent 只暴露 playerId 和 playerName，不含 Player 对象
+server.world.afterEvents.playerJoin.subscribe((event) => {
+  console.warn(`[Identity] playerJoin  → id: "${event.playerId}", name: "${event.playerName}"`);
+});
+// === 实验代码结束 ===
+
 // 注册方块自定义组件
 server.system.beforeEvents.startup.subscribe((data) => {
   const blockCustoms = [...blockComponents.values()];

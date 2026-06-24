@@ -24,6 +24,7 @@ export const item3dList = new Set([
   "minecraft:brick",
   "minecraft:paper",
   "minecraft:book",
+  "minecraft:enchanted_book",
   "minecraft:egg",
 ]);
 /**

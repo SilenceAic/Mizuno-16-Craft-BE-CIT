@@ -86,6 +86,14 @@ export const itemConfig = {
         ceiling: -0.01,
       },
     },
+    鸡蛋_1: {
+      entityId: "cit:egg_1",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
     Egg_2: {
       entityId: "cit:egg_2",
       placement: {
@@ -789,6 +797,24 @@ export const itemConfig = {
     },
     Book_13: {
       entityId: "cit:book_13",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 附魔书配置 ====================
+  "minecraft:enchanted_book": {
+    _default: {
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Enchanted Book_0": {
+      entityId: "cit:enchanted_book_0",
       placement: {
         wall: 0.3,
         ground: 1.0,

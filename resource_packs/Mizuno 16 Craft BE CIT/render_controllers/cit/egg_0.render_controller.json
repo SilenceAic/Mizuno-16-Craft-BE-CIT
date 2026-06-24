@@ -64,6 +64,35 @@
                 "a": 0
             },
             "ignore_lighting": false
+        },
+        "controller.render.cit.egg_0.glint": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.glint"
+                }
+            ],
+            "textures": [
+                "Texture.glint"
+            ],
+            "color": {
+                "r": 0.25,
+                "g": 0.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "uv_anim": {
+                "offset": [
+                    "(Math.floor(query.life_time * 20.0) + query.frame_alpha) * -0.02",
+                    "(Math.floor(query.life_time * 20.0) + query.frame_alpha) * 0.03"
+                ],
+                "scale": [
+                    1.0,
+                    1.0
+                ]
+            },
+            "light_color_multiplier": 1,
+            "ignore_lighting": true
         }
     }
 }

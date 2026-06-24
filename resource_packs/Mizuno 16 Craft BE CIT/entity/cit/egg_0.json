@@ -5,7 +5,8 @@
       "identifier": "cit:egg_0",
       "materials": {
         "basket": "entity_alphatest",
-        "egg": "entity_alphatest"
+        "egg": "entity_alphatest",
+        "glint": "cit:enchant_glint"
       },
       "textures": {
         "basket": "textures/cit/entity/basket",

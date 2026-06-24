@@ -785,182 +785,23 @@
                 "USE_OVERLAY"
             ]
         },
-        "entity_static": {
-            "vertexShader": "shaders/entity.vertex",
-            "vrGeometryShader": "shaders/entity.geometry",
-            "fragmentShader": "shaders/entity.fragment",
-            "vertexFields": [
-                {
-                    "field": "Position"
-                },
-                {
-                    "field": "Normal"
-                },
-                {
-                    "field": "UV0"
-                }
+        "cit:enchant_glint:entity_static": {
+            "+defines": [
+                "USE_UV_ANIM",
+                "USE_EMISSIVE",
+                "USE_COLOR_MASK"
             ],
-            "variants": [
-                {
-                    "kqxjqkd": {
-                        "+defines": [
-                            "USE_SKINNING"
-                        ],
-                        "+states": [
-                            "EnableStencilTest",
-                            "StencilWrite"
-                        ],
-                        "frontFace": {
-                            "stencilFunc": "Always",
-                            "stencilPassOp": "Replace"
-                        },
-                        "backFace": {
-                            "stencilFunc": "Always",
-                            "stencilPassOp": "Replace"
-                        },
-                        "stencilRef": 2
-                    }
-                },
-                {
-                    "kqxjqkd_olzaiyc": {
-                        "+defines": [
-                            "USE_SKINNING"
-                        ],
-                        "+states": [
-                            "EnableStencilTest",
-                            "StencilWrite"
-                        ],
-                        "frontFace": {
-                            "stencilFunc": "Always",
-                            "stencilPassOp": "Replace"
-                        },
-                        "backFace": {
-                            "stencilFunc": "Always",
-                            "stencilPassOp": "Replace"
-                        },
-                        "stencilRef": 3
-                    }
-                },
-                {
-                    "kqxjqkd_zxaydmm": {
-                        "+defines": [
-                            "USE_SKINNING"
-                        ],
-                        "+states": [
-                            "EnableStencilTest",
-                            "StencilWrite"
-                        ],
-                        "frontFace": {
-                            "stencilFunc": "Always",
-                            "stencilPassOp": "Replace"
-                        },
-                        "backFace": {
-                            "stencilFunc": "Always",
-                            "stencilPassOp": "Replace"
-                        },
-                        "stencilRef": 4
-                    }
-                },
-                {
-                    "kqxjqkd_ybbudwz": {
-                        "+defines": [
-                            "USE_SKINNING"
-                        ],
-                        "+states": [
-                            "EnableStencilTest",
-                            "StencilWrite"
-                        ],
-                        "frontFace": {
-                            "stencilFunc": "Always",
-                            "stencilPassOp": "Replace"
-                        },
-                        "backFace": {
-                            "stencilFunc": "Always",
-                            "stencilPassOp": "Replace"
-                        },
-                        "stencilRef": 5
-                    }
-                },
-                {
-                    "skinning": {
-                        "+defines": [
-                            "USE_SKINNING"
-                        ],
-                        "vertexFields": [
-                            {
-                                "field": "Position"
-                            },
-                            {
-                                "field": "BoneId0"
-                            },
-                            {
-                                "field": "Normal"
-                            },
-                            {
-                                "field": "UV0"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "skinning_color": {
-                        "+defines": [
-                            "USE_SKINNING",
-                            "USE_OVERLAY"
-                        ],
-                        "+states": [
-                            "Blending"
-                        ],
-                        "vertexFields": [
-                            {
-                                "field": "Position"
-                            },
-                            {
-                                "field": "BoneId0"
-                            },
-                            {
-                                "field": "Color"
-                            },
-                            {
-                                "field": "Normal"
-                            },
-                            {
-                                "field": "UV0"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "skinning_alphatest": {
-                        "+defines": [
-                            "USE_SKINNING",
-                            "ALPHA_TEST"
-                        ],
-                        "+states": [
-                            "DisableCulling"
-                        ],
-                        "vertexFields": [
-                            {
-                                "field": "Position"
-                            },
-                            {
-                                "field": "BoneId0"
-                            },
-                            {
-                                "field": "Normal"
-                            },
-                            {
-                                "field": "UV0"
-                            }
-                        ]
-                    }
-                }
+            "+states": [
+                "Blending",
+                "DisableCulling"
             ],
-            "msaaSupport": "Both",
+            "blendSrc": "One",
+            "blendDst": "One",
+            "depthFunc": "Equal",
             "+samplerStates": [
                 {
                     "samplerIndex": 0,
-                    "textureFilter": "Point"
+                    "textureWrap": "Repeat"
                 }
             ]
         }

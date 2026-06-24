@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:enchanted_book_0",
+      "materials": {
+        "default": "entity_alphatest",
+        "glint": "cit:enchant_glint"
+      },
+      "textures": {
+        "default": "textures/cit/entity/enchanted_book_0",
+        "glint": "textures/misc/enchanted_entity_glint_white"
+      },
+      "geometry": {
+        "default": "geometry.cit.enchanted_book_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.enchanted_book_0",
+        "controller.render.cit.enchanted_book_0.glint"
+      ]
+    }
+  }
+}
