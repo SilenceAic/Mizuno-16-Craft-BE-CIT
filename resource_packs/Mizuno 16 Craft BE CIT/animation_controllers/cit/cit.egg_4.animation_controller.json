@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.cit.egg_4.bounce": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"transitions": [
+						{
+							"playing": "q.property('cit:transition_state') == 2"
+						}
+					]
+				},
+				"playing": {
+					"animations": [
+						"switch_place"
+					],
+					"transitions": [
+						{
+							"idle": "q.property('cit:transition_state') != 2"
+						}
+					]
+				}
+			}
+		}
+	}
+}

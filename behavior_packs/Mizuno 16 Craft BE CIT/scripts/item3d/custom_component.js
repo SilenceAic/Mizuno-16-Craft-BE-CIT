@@ -428,6 +428,27 @@ components.set("cit:core", {
     }
     // 直接左键：弹跳，有变体则同时切换
     const isWallType = hitEntity.typeId.endsWith("_wall");
+
+    // egg_4 专属动画触发（单实体可重触）
+    if (hitEntity.typeId === "cit:egg_4") {
+      // 防止连续点击打断动画：已在播放中则忽略
+      if (hitEntity.getProperty("cit:transition_state") === 2) return;
+
+      hitEntity.setProperty("cit:transition_state", 2);
+      mc.system.runTimeout(() => {
+        if (hitEntity.isValid) {
+          hitEntity.setProperty("cit:transition_state", 1);
+        }
+      }, 49);
+      if (!isWallType) {
+        mc.system.run(() => {
+          if (!hitEntity.isValid) return;
+          hopFloorStack(hitEntity);
+        });
+      }
+      return;
+    }
+
     const variantCount2 = getVariantCount(hitEntity.typeId);
     if (variantCount2 > 1) {
       // 属性切换（渲染控制器方案）：setProperty + 弹跳动画，无需重生成实体

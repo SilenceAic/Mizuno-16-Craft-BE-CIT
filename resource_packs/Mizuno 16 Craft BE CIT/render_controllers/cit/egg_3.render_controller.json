@@ -1,0 +1,69 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.egg_3.egg_3": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.egg_3"
+                }
+            ],
+            "textures": [
+                "Texture.egg_3"
+            ],
+            "part_visibility": [
+                {
+                    "egg_3": true
+                },
+                {
+                    "iron_block_0": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.egg_3.iron_block_0": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.iron_block_0"
+                }
+            ],
+            "textures": [
+                "Texture.iron_block_0"
+            ],
+            "part_visibility": [
+                {
+                    "egg_3": false
+                },
+                {
+                    "iron_block_0": true
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        }
+    }
+}

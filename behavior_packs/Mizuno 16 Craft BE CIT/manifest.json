@@ -1,8 +1,8 @@
 {
   "format_version": 2,
   "header": {
-    "name": "Mizuno 16 Craft BE CIT",
-    "description": "Conversion of Mizuno 16 Craft JE CIT_1.20.1",
+    "name": "Mizuno's 16 Craft Bedrock Edition CIT",
+    "description": "Conversion of Mizuno's 16 Craft Java Edition CIT_1.20.1",
     "uuid": "6533cb4d-9fb1-4887-8972-4b66d1281ec7",
     "version": [
       1,
@@ -11,8 +11,8 @@
     ],
     "min_engine_version": [
       1,
-      21,
-      80
+      26,
+      31
     ]
   },
   "modules": [

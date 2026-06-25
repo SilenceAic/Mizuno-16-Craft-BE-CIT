@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:egg_4a",
+      "materials": {
+        "iron_skillet_0": "entity_alphatest",
+        "egg_4": "entity_alphatest"
+      },
+      "textures": {
+        "iron_skillet_0": "textures/cit/entity/iron_skillet_0",
+        "egg_4": "textures/cit/entity/egg_4"
+      },
+      "geometry": {
+        "default": "geometry.cit.egg_4a"
+      },
+      "render_controllers": [
+        "controller.render.cit.egg_4a.iron_skillet_0",
+        "controller.render.cit.egg_4a.egg_4"
+      ]
+    }
+  }
+}

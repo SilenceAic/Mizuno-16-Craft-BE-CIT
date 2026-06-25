@@ -102,6 +102,32 @@ export const itemConfig = {
         ceiling: -0.01,
       },
     },
+    Egg_3: {
+      entityId: "cit:egg_3",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Egg_4: {
+      entityId: "cit:egg_4",
+      variantEntities: ["cit:egg_4", "cit:egg_4a"],
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Egg_4a: {
+      entityId: "cit:egg_4a",
+      variantEntities: ["cit:egg_4", "cit:egg_4a"],
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
   },
   // ==================== 金粒配置 ====================
   "minecraft:gold_ingot": {

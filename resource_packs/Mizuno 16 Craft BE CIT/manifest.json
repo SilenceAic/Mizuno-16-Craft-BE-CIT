@@ -1,29 +1,52 @@
 {
   "format_version": 2,
   "header": {
-    "name": "Mizuno 16 Craft BE CIT",
-    "description": "Conversion of Mizuno 16 Craft JE CIT_1.20.1",
+    "name": "Mizuno's 16 Craft Bedrock Edition CIT",
+    "description": "Conversion of Mizuno's 16 Craft Java Edition CIT_1.20.1",
     "uuid": "d053aef2-664e-432c-a18a-3c2e86d8e129",
-    "version": [1, 21, 132],
-    "min_engine_version": [1, 21, 80]
+    "version": [
+      1,
+      21,
+      132
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      31
+    ]
   },
   "modules": [
     {
       "description": "Conversion of Mizuno 16 Craft JE CIT_1.20.1",
       "type": "resources",
       "uuid": "11482dcf-f341-4341-9653-3ae9fa09a13a",
-      "version": [1, 21, 132]
+      "version": [
+        1,
+        21,
+        132
+      ]
     }
   ],
-  "capabilities": ["raytraced"],
+  "capabilities": [
+    "raytraced"
+  ],
   "dependencies": [
     {
       "uuid": "6533cb4d-9fb1-4887-8972-4b66d1281ec7",
-      "version": [1, 21, 132]
+      "version": [
+        1,
+        21,
+        132
+      ]
     }
   ],
   "metadata": {
-    "authors": ["@Mizuno", "@LingAic", "@TBQ4416", "@Fallen."],
+    "authors": [
+      "@Mizuno",
+      "@LingAic",
+      "@TBQ4416",
+      "@Fallen."
+    ],
     "url": "https://space.bilibili.com/487185196?spm_id_from=333.337.0.0"
   }
 }

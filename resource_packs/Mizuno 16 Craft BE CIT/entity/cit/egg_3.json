@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:egg_3",
+      "materials": {
+        "egg_3": "entity_alphatest",
+        "iron_block_0": "entity_alphatest"
+      },
+      "textures": {
+        "egg_3": "textures/cit/entity/egg_3",
+        "iron_block_0": "textures/cit/entity/iron_block_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.egg_3"
+      },
+      "render_controllers": [
+        "controller.render.cit.egg_3.egg_3",
+        "controller.render.cit.egg_3.iron_block_0"
+      ]
+    }
+  }
+}

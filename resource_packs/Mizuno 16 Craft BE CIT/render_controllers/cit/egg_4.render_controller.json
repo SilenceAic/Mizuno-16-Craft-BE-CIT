@@ -1,0 +1,75 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.egg_4.iron_skillet_0": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.iron_skillet_0"
+                }
+            ],
+            "textures": [
+                "Texture.iron_skillet_0"
+            ],
+            "part_visibility": [
+                {
+                    "iron_skillet_0": true
+                },
+                {
+                    "egg_4": false
+                },
+                {
+                    "egg_4_01": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.egg_4.egg_4": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.egg_4"
+                }
+            ],
+            "textures": [
+                "Texture.egg_4"
+            ],
+            "part_visibility": [
+                {
+                    "iron_skillet_0": false
+                },
+                {
+                    "egg_4": true
+                },
+                {
+                    "egg_4_01": true
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        }
+    }
+}

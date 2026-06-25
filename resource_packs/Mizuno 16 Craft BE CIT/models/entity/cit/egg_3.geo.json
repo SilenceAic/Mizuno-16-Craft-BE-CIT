@@ -1,0 +1,153 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.egg_3",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "iron_block_0",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-4, -8, -4],
+							"size": [8, 11, 8],
+							"uv": {
+								"north": {"uv": [1, 1], "uv_size": [8, 11], "material_instance": "egg"},
+								"east": {"uv": [1, 1], "uv_size": [8, 11], "material_instance": "egg"},
+								"south": {"uv": [1, 1], "uv_size": [8, 11], "material_instance": "egg"},
+								"west": {"uv": [1, 1], "uv_size": [8, 11], "material_instance": "egg"},
+								"up": {"uv": [9, 9], "uv_size": [-8, -8], "material_instance": "egg"},
+								"down": {"uv": [9, 9], "uv_size": [-8, -8], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-3, 3, -3],
+							"size": [6, 2, 6],
+							"uv": {
+								"north": {"uv": [1, 1], "uv_size": [6, 2], "material_instance": "egg"},
+								"east": {"uv": [1, 1], "uv_size": [6, 2], "material_instance": "egg"},
+								"south": {"uv": [1, 1], "uv_size": [6, 2], "material_instance": "egg"},
+								"west": {"uv": [1, 1], "uv_size": [6, 2], "material_instance": "egg"},
+								"up": {"uv": [7, 7], "uv_size": [-6, -6], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-1, 5, -1],
+							"size": [2, 5, 2],
+							"uv": {
+								"north": {"uv": [1, 11], "uv_size": [2, 5], "material_instance": "egg"},
+								"east": {"uv": [1, 11], "uv_size": [2, 5], "material_instance": "egg"},
+								"south": {"uv": [1, 11], "uv_size": [2, 5], "material_instance": "egg"},
+								"west": {"uv": [1, 11], "uv_size": [2, 5], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-4, 10, -2],
+							"size": [8, 6, 4],
+							"uv": {
+								"north": {"uv": [1, 1], "uv_size": [8, 6], "material_instance": "egg"},
+								"east": {"uv": [1, 1], "uv_size": [4, 6], "material_instance": "egg"},
+								"south": {"uv": [1, 1], "uv_size": [8, 6], "material_instance": "egg"},
+								"west": {"uv": [1, 1], "uv_size": [4, 6], "material_instance": "egg"},
+								"up": {"uv": [16, 5], "uv_size": [-8, -4], "material_instance": "egg"},
+								"down": {"uv": [16, 5], "uv_size": [-8, -4], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-3, 11, -3],
+							"size": [6, 4, 1],
+							"uv": {
+								"north": {"uv": [1, 1], "uv_size": [6, 4], "material_instance": "egg"},
+								"east": {"uv": [15, 1], "uv_size": [1, 4], "material_instance": "egg"},
+								"west": {"uv": [15, 1], "uv_size": [1, 4], "material_instance": "egg"},
+								"up": {"uv": [16, 2], "uv_size": [-6, -1], "material_instance": "egg"},
+								"down": {"uv": [16, 2], "uv_size": [-6, -1], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-3, 11, 2],
+							"size": [6, 4, 1],
+							"uv": {
+								"east": {"uv": [1, 1], "uv_size": [1, 4], "material_instance": "egg"},
+								"south": {"uv": [1, 1], "uv_size": [6, 4], "material_instance": "egg"},
+								"west": {"uv": [1, 1], "uv_size": [1, 4], "material_instance": "egg"},
+								"up": {"uv": [7, 2], "uv_size": [-6, -1], "material_instance": "egg"},
+								"down": {"uv": [7, 2], "uv_size": [-6, -1], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [2, 14, -1.5],
+							"size": [4, 6, 3],
+							"uv": {
+								"north": {"uv": [1, 1], "uv_size": [4, 6], "material_instance": "egg"},
+								"east": {"uv": [1, 1], "uv_size": [3, 6], "material_instance": "egg"},
+								"south": {"uv": [1, 1], "uv_size": [4, 6], "material_instance": "egg"},
+								"west": {"uv": [1, 1], "uv_size": [3, 6], "material_instance": "egg"},
+								"up": {"uv": [5, 4], "uv_size": [-4, -3], "material_instance": "egg"},
+								"down": {"uv": [5, 4], "uv_size": [-4, -3], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [6, 16, -0.5],
+							"size": [2, 2, 1],
+							"uv": {
+								"north": {"uv": [14, 1], "uv_size": [2, 2], "material_instance": "egg"},
+								"south": {"uv": [14, 1], "uv_size": [2, 2], "material_instance": "egg"},
+								"west": {"uv": [1, 1], "uv_size": [1, 2], "material_instance": "egg"},
+								"up": {"uv": [16, 2], "uv_size": [-2, -1], "material_instance": "egg"},
+								"down": {"uv": [16, 2], "uv_size": [-2, -1], "material_instance": "egg"}
+							}
+						}
+					]
+				},
+				{
+					"name": "egg_3",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-8, 5, 0],
+							"size": [16, 5, 0.01],
+							"uv": {
+								"north": {"uv": [16, 11], "uv_size": [-16, 5], "material_instance": "egg"},
+								"south": {"uv": [0, 11], "uv_size": [16, 5], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-0.01, 6, -8],
+							"size": [0.01, 3, 16],
+							"uv": {
+								"east": {"uv": [0, 7], "uv_size": [16, 3], "material_instance": "egg"},
+								"west": {"uv": [0, 7], "uv_size": [16, 3], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [1, 20, 0],
+							"size": [6, 3, 0.01],
+							"uv": {
+								"north": {"uv": [7, 1], "uv_size": [-6, 3], "material_instance": "egg"},
+								"south": {"uv": [1, 1], "uv_size": [6, 3], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-9, 14, 0],
+							"size": [6, 5, 0.01],
+							"uv": {
+								"north": {"uv": [15, 0], "uv_size": [-6, 5], "material_instance": "egg"},
+								"south": {"uv": [9, 0], "uv_size": [6, 5], "material_instance": "egg"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
