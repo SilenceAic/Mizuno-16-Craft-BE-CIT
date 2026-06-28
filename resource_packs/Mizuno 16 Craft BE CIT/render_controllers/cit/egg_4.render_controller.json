@@ -2,7 +2,7 @@
     "format_version": "1.8.0",
     "render_controllers": {
         "controller.render.cit.egg_4.iron_skillet_0": {
-            "geometry": "Geometry.default",
+            "geometry": "q.property('cit:variant') == 0 ? Geometry.default : Geometry.egg_4a",
             "materials": [
                 {
                     "*": "Material.iron_skillet_0"
@@ -37,7 +37,7 @@
             "ignore_lighting": false
         },
         "controller.render.cit.egg_4.egg_4": {
-            "geometry": "Geometry.default",
+            "geometry": "q.property('cit:variant') == 0 ? Geometry.default : Geometry.egg_4a",
             "materials": [
                 {
                     "*": "Material.egg_4"

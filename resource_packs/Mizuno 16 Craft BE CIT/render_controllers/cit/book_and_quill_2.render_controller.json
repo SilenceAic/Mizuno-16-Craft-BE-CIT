@@ -1,0 +1,29 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.book_and_quill_2.book_and_quill_0": {
+            "geometry": "Geometry.default",
+            "materials": [{ "*": "Material.book_and_quill_0" }],
+            "textures": ["Texture.book_and_quill_0"],
+            "part_visibility": [
+                { "book_and_quill_0": true },
+                { "paper_3": false }
+            ],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.book_and_quill_2.paper_3": {
+            "geometry": "Geometry.default",
+            "materials": [{ "*": "Material.paper_3" }],
+            "textures": ["Texture.paper_3"],
+            "part_visibility": [
+                { "book_and_quill_0": false },
+                { "paper_3": true }
+            ],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "ignore_lighting": false
+        }
+    }
+}

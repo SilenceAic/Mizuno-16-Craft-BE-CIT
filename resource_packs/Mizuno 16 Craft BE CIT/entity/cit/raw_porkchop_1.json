@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:raw_porkchop_1",
+      "materials": {
+        "cutting_board": "entity_alphatest",
+        "raw_porkchop_1": "entity_alphatest"
+      },
+      "textures": {
+        "cutting_board": "textures/cit/entity/cutting_board",
+        "raw_porkchop_1": "textures/cit/entity/raw_porkchop_1"
+      },
+      "geometry": {
+        "default": "geometry.cit.raw_porkchop_1"
+      },
+      "render_controllers": [
+        "controller.render.cit.raw_porkchop_1.cutting_board",
+        "controller.render.cit.raw_porkchop_1.raw_porkchop_1"
+      ]
+    }
+  }
+}

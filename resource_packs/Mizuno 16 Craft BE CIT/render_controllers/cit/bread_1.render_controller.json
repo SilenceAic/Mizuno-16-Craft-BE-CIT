@@ -1,0 +1,23 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.bread_1.oak_planks": {
+            "geometry": "Geometry.default",
+            "materials": [{ "*": "Material.oak_planks" }],
+            "textures": ["Texture.oak_planks"],
+            "part_visibility": [{ "oak_planks": true }, { "bread_1": false }],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.bread_1.bread_1": {
+            "geometry": "Geometry.default",
+            "materials": [{ "*": "Material.bread_1" }],
+            "textures": ["Texture.bread_1"],
+            "part_visibility": [{ "oak_planks": false }, { "bread_1": true }],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "ignore_lighting": false
+        }
+    }
+}

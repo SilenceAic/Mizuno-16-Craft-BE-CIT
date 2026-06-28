@@ -1,0 +1,118 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.book_and_quill_4.pc_0_1": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "pc_0_1": "Material.pc_0_1"
+                }
+            ],
+            "textures": [
+                "Texture.pc_0_1"
+            ],
+            "part_visibility": [
+                {
+                    "pc_0_1": true
+                },
+                {
+                    "pc_0_2": false
+                },
+                {
+                    "pc_0": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.book_and_quill_4.pc_0_2": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "pc_0_2": "Material.pc_0_2"
+                }
+            ],
+            "textures": [
+                "Texture.pc_0_2"
+            ],
+            "part_visibility": [
+                {
+                    "pc_0_1": false
+                },
+                {
+                    "pc_0_2": true
+                },
+                {
+                    "pc_0": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.book_and_quill_4.pc_0": {
+            "arrays": {
+                "textures": {
+                    "Array.pc_0": [
+                        "Texture.s0",
+                        "Texture.s1"
+                    ]
+                }
+            },
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "pc_0": "Material.pc_0"
+                }
+            ],
+            "textures": [
+                "Array.pc_0[math.floor(math.mod(query.life_time * 20 / 12, 2))]"
+            ],
+            "part_visibility": [
+                {
+                    "pc_0_1": false
+                },
+                {
+                    "pc_0_2": false
+                },
+                {
+                    "pc_0": true
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        }
+    }
+}

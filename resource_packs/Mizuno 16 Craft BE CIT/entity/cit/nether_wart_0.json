@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:nether_wart_0",
+      "materials": {
+        "weighing_paper": "entity_alphatest",
+        "nether_wart_1": "entity_alphatest"
+      },
+      "textures": {
+        "weighing_paper": "textures/cit/entity/weighing_paper",
+        "nether_wart_1": "textures/cit/entity/nether_wart_1"
+      },
+      "geometry": {
+        "default": "geometry.cit.nether_wart_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.nether_wart_0.weighing_paper",
+        "controller.render.cit.nether_wart_0.nether_wart_1"
+      ]
+    }
+  }
+}

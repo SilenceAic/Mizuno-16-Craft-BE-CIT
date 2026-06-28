@@ -1,0 +1,15 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.bread_3.bread_2": {
+            "geometry": "Geometry.default", "materials": [{ "*": "Material.bread_2" }], "textures": ["Texture.bread_2"],
+            "part_visibility": [{ "bread_2": true }, { "bread_3": false }],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 }, "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 }, "ignore_lighting": false
+        },
+        "controller.render.cit.bread_3.bread_3": {
+            "geometry": "Geometry.default", "materials": [{ "*": "Material.bread_3" }], "textures": ["Texture.bread_3"],
+            "part_visibility": [{ "bread_2": false }, { "bread_3": true }],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 }, "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 }, "ignore_lighting": false
+        }
+    }
+}

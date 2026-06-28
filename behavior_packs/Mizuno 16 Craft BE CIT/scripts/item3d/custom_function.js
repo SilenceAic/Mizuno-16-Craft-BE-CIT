@@ -26,6 +26,20 @@ export const item3dList = new Set([
   "minecraft:book",
   "minecraft:enchanted_book",
   "minecraft:egg",
+  "minecraft:glowstone_dust",
+  "minecraft:cocoa_beans",
+  "minecraft:bone",
+  "minecraft:pumpkin_seeds",
+  "minecraft:melon_seeds",
+  "minecraft:nether_wart",
+  "minecraft:writable_book",
+  "minecraft:netherbrick",
+  "minecraft:rabbit_hide",
+  "minecraft:beetroot_seeds",
+  "minecraft:apple",
+  "minecraft:mushroom_stew",
+  "minecraft:bread",
+  "minecraft:porkchop",
 ]);
 /**
  * 需要被拦截放置、转向 item3d 系统的方块类型物品及其名称要求

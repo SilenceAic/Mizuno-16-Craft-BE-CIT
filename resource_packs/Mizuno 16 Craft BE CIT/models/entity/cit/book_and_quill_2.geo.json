@@ -1,0 +1,318 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.book_and_quill_2",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [
+					0,
+					0.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "book_and_quill_0",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"rotation": [
+						0,
+						180,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-5,
+								0.1,
+								2
+							],
+							"size": [
+								7,
+								0.009999999999999995,
+								5
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										7,
+										10
+									],
+									"uv_size": [
+										-7,
+										-5
+									],
+									"material_instance": "book_and_quill_0"
+								},
+								"down": {
+									"uv": [
+										7,
+										5
+									],
+									"uv_size": [
+										-7,
+										5
+									],
+									"material_instance": "book_and_quill_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-5,
+								0.1,
+								-3
+							],
+							"size": [
+								7,
+								0.009999999999999995,
+								5
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										7,
+										5
+									],
+									"uv_size": [
+										-7,
+										-5
+									],
+									"material_instance": "book_and_quill_0"
+								},
+								"down": {
+									"uv": [
+										7,
+										0
+									],
+									"uv_size": [
+										-7,
+										5
+									],
+									"material_instance": "book_and_quill_0"
+								}
+							},
+							"pivot": [
+								-2,
+								0.1,
+								2
+							],
+							"rotation": [
+								-22.5,
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-2,
+								0.5,
+								5
+							],
+							"size": [
+								1,
+								1.0,
+								3
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										13
+									],
+									"uv_size": [
+										1,
+										1
+									],
+									"material_instance": "book_and_quill_0"
+								},
+								"east": {
+									"uv": [
+										0,
+										13
+									],
+									"uv_size": [
+										1,
+										3
+									],
+									"uv_rotation": 90,
+									"material_instance": "book_and_quill_0"
+								},
+								"south": {
+									"uv": [
+										0,
+										15
+									],
+									"uv_size": [
+										1,
+										1
+									],
+									"material_instance": "book_and_quill_0"
+								},
+								"west": {
+									"uv": [
+										0,
+										13
+									],
+									"uv_size": [
+										1,
+										3
+									],
+									"uv_rotation": 270,
+									"material_instance": "book_and_quill_0"
+								},
+								"up": {
+									"uv": [
+										1,
+										16
+									],
+									"uv_size": [
+										-1,
+										-3
+									],
+									"material_instance": "book_and_quill_0"
+								},
+								"down": {
+									"uv": [
+										1,
+										16
+									],
+									"uv_size": [
+										-1,
+										-3
+									],
+									"material_instance": "book_and_quill_0"
+								}
+							},
+							"pivot": [
+								-6.5,
+								1,
+								7
+							],
+							"rotation": [
+								0,
+								45,
+								0
+							]
+						},
+						{
+							"origin": [
+								-7,
+								1,
+								-5
+							],
+							"size": [
+								7,
+								0.010000000000000009,
+								10
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										15,
+										16
+									],
+									"uv_size": [
+										-7,
+										-10
+									],
+									"material_instance": "book_and_quill_0"
+								},
+								"down": {
+									"uv": [
+										8,
+										16
+									],
+									"uv_size": [
+										7,
+										-10
+									],
+									"uv_rotation": 180,
+									"material_instance": "book_and_quill_0"
+								}
+							},
+							"pivot": [
+								-6.5,
+								1,
+								7
+							],
+							"rotation": [
+								0,
+								45,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "paper_3",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"rotation": [
+						0,
+						180,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								0.3,
+								-7
+							],
+							"size": [
+								7.0,
+								0.010000000000000009,
+								5
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										16,
+										15
+									],
+									"uv_size": [
+										-7,
+										-5
+									],
+									"material_instance": "paper_3"
+								},
+								"down": {
+									"uv": [
+										16,
+										5
+									],
+									"uv_size": [
+										-7,
+										5
+									],
+									"material_instance": "paper_3"
+								}
+							},
+							"pivot": [
+								-0.5,
+								0.5,
+								-1.5
+							],
+							"rotation": [
+								0,
+								-22.5,
+								0
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

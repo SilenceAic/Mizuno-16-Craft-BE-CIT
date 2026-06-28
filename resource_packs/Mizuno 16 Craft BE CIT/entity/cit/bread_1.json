@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:bread_1",
+      "materials": {
+        "oak_planks": "entity_alphatest",
+        "bread_1": "entity_alphatest"
+      },
+      "textures": {
+        "oak_planks": "textures/blocks/cit/oak_planks",
+        "bread_1": "textures/cit/entity/bread_1"
+      },
+      "geometry": {
+        "default": "geometry.cit.bread_1"
+      },
+      "render_controllers": [
+        "controller.render.cit.bread_1.oak_planks",
+        "controller.render.cit.bread_1.bread_1"
+      ]
+    }
+  }
+}

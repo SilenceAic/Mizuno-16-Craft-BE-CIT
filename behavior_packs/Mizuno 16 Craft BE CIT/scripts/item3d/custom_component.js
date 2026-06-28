@@ -20,7 +20,12 @@ import {
 const components = new Map();
 // 记录正在执行 bounce 衰减的实体 ID，防止重复开启衰减链
 const bouncingEntities = new Set();
-const transitionVariantEntities = new Set(["cit:brick_0", "cit:brick_0_01"]);
+const transitionVariantEntities = new Set([
+  "cit:brick_0",
+  "cit:brick_0_01",
+  "cit:nether_brick_0",
+  "cit:nether_brick_0_01",
+]);
 // switch_out 动画时长 0.2s × 20 = 4 ticks
 const transitionSwitchOutTicks = 4;
 const transitionSpawnGuardTicks = 2;
@@ -202,28 +207,30 @@ components.set("cit:core", {
     // Get wall properties based on placement face
     const face = viewBlock.face;
     let wallProperties = { is_wall: false, wall_face: 0 };
+    let isCeil = false;
     // Items with "_top" suffix are always ground/ceiling items, never wall-mounted
     const isTopItem = itemName && itemName.toLowerCase().includes("_top");
-    if (!isTopItem) {
-      switch (face) {
-        case mc.Direction.North:
-          wallProperties = { is_wall: true, wall_face: 180 };
-          break;
-        case mc.Direction.South:
-          wallProperties = { is_wall: true, wall_face: 0 };
-          break;
-        case mc.Direction.West:
-          wallProperties = { is_wall: true, wall_face: 90 };
-          break;
-        case mc.Direction.East:
-          wallProperties = { is_wall: true, wall_face: 270 };
-          break;
-      }
+    switch (face) {
+      case mc.Direction.North:
+        wallProperties = { is_wall: true, wall_face: 180 };
+        break;
+      case mc.Direction.South:
+        wallProperties = { is_wall: true, wall_face: 0 };
+        break;
+      case mc.Direction.West:
+        wallProperties = { is_wall: true, wall_face: 90 };
+        break;
+      case mc.Direction.East:
+        wallProperties = { is_wall: true, wall_face: 270 };
+        break;
+    }
+    if (face === mc.Direction.Down) {
+      isCeil = true;
     }
     try {
       mc.system.run(() => {
         // Get entity ID (supports entity override for wall items)
-        const entityId = getEntityId(itemStack.typeId, itemName, wallProperties.is_wall);
+        const entityId = getEntityId(itemStack.typeId, itemName, wallProperties.is_wall, isCeil);
         // Spawn entity with initial rotation to avoid visible rotation animation
         const spawnedEntity = source.dimension.spawnEntity(entityId, spawnLocation, {
           initialRotation: yRotation,
@@ -429,24 +436,30 @@ components.set("cit:core", {
     // 直接左键：弹跳，有变体则同时切换
     const isWallType = hitEntity.typeId.endsWith("_wall");
 
-    // egg_4 专属动画触发（单实体可重触）
+    // egg_4：铲子左键播动画，空手/其他左键切换变体模型
     if (hitEntity.typeId === "cit:egg_4") {
-      // 防止连续点击打断动画：已在播放中则忽略
-      if (hitEntity.getProperty("cit:transition_state") === 2) return;
+      const inv = damagingEntity.getComponent("inventory");
+      const heldItem = inv?.container?.getItem(damagingEntity.selectedSlotIndex);
+      const isShovel = heldItem?.getTags?.()?.includes("minecraft:is_shovel");
 
-      hitEntity.setProperty("cit:transition_state", 2);
-      mc.system.runTimeout(() => {
-        if (hitEntity.isValid) {
-          hitEntity.setProperty("cit:transition_state", 1);
+      if (isShovel) {
+        if (hitEntity.getProperty("cit:transition_state") !== 2) {
+          hitEntity.setProperty("cit:transition_state", 2);
+          mc.system.runTimeout(() => {
+            if (hitEntity.isValid) {
+              hitEntity.setProperty("cit:transition_state", 1);
+            }
+          }, 49);
         }
-      }, 49);
-      if (!isWallType) {
-        mc.system.run(() => {
-          if (!hitEntity.isValid) return;
-          hopFloorStack(hitEntity);
-        });
+        if (!isWallType) {
+          mc.system.run(() => {
+            if (!hitEntity.isValid) return;
+            hopFloorStack(hitEntity);
+          });
+        }
+        return;
       }
-      return;
+      // 非铲子：不 return，走下面的 variantCount 切换逻辑
     }
 
     const variantCount2 = getVariantCount(hitEntity.typeId);
@@ -495,7 +508,8 @@ components.set("cit:core", {
         }
       } else {
         // 无变体：仅弹跳
-        if (isWallType) {
+        const isTopType = hitEntity.typeId.endsWith("_top");
+        if (isWallType || isTopType) {
           startBounce(hitEntity);
         } else {
           mc.system.run(() => {
@@ -522,9 +536,9 @@ components.set("cit:core", {
       const normalizedName = itemName.toLowerCase();
       // 用 typeId 判断是否为 wall 实体，避免在无该属性的 floor 实体上崩溃
       const isWallEntity = target.typeId.endsWith("_wall");
-      const isTopVariant = normalizedName.includes("_top");
-      // isWallEntity（typeId 结尾 _wall）直接决定旋转模式
-      const rotationMode = isWallEntity && !isTopVariant ? "wall_10" : "floor";
+      const isTopEntity = target.typeId.endsWith("_top");
+      // _wall / _top 实体走纯动画旋转（cit:wall_rotation），floor 实体走 teleport 旋转+跳动
+      const rotationMode = (isWallEntity || isTopEntity) ? "wall_10" : "floor";
       mc.system.run(() => {
         if (!target.isValid) return;
         if (rotationMode === "wall_10") {

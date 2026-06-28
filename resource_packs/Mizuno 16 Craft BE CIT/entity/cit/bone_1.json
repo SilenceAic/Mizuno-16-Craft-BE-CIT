@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:bone_1",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "v0": "textures/cit/entity/bone_0",
+        "v1": "textures/cit/entity/bone_0a"
+      },
+      "geometry": {
+        "default": "geometry.cit.bone_1"
+      },
+      "render_controllers": [
+        "controller.render.cit.bone_1"
+      ]
+    }
+  }
+}

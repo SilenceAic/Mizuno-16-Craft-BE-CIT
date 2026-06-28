@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:bread_3",
+      "materials": {
+        "bread_2": "entity_alphatest",
+        "bread_3": "entity_alphatest"
+      },
+      "textures": {
+        "bread_2": "textures/cit/entity/bread_2",
+        "bread_3": "textures/cit/entity/bread_3"
+      },
+      "geometry": {
+        "default": "geometry.cit.bread_3"
+      },
+      "render_controllers": [
+        "controller.render.cit.bread_3.bread_2",
+        "controller.render.cit.bread_3.bread_3"
+      ]
+    }
+  }
+}

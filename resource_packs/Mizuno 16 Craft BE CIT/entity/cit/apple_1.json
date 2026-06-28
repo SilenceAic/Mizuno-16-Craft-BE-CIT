@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:apple_1",
+      "materials": {
+        "basket": "entity_alphatest",
+        "apple_0": "entity_alphatest"
+      },
+      "textures": {
+        "basket": "textures/cit/entity/basket",
+        "apple_0": "textures/cit/entity/apple_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.apple_1"
+      },
+      "render_controllers": [
+        "controller.render.cit.apple_1.basket",
+        "controller.render.cit.apple_1.apple_0"
+      ]
+    }
+  }
+}

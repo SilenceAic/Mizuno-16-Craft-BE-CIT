@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:book_and_quill_3",
+      "materials": {
+        "typewriter_0": "entity_alphatest",
+        "typewriter_0_1": "entity_alphatest",
+        "typewriter_0_2": "entity_alphatest"
+      },
+      "textures": {
+        "typewriter_0": "textures/cit/entity/typewriter_0",
+        "typewriter_0_1": "textures/cit/entity/typewriter_0_1",
+        "typewriter_0_2": "textures/cit/entity/typewriter_0_2"
+      },
+      "geometry": {
+        "default": "geometry.cit.book_and_quill_3"
+      },
+      "render_controllers": [
+        "controller.render.cit.book_and_quill_3.typewriter_0",
+        "controller.render.cit.book_and_quill_3.typewriter_0_1",
+        "controller.render.cit.book_and_quill_3.typewriter_0_2"
+      ]
+    }
+  }
+}

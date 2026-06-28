@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:raw_porkchop_3_top",
+      "materials": {
+        "raw_meat_hook": "entity_alphatest",
+        "raw_porkchop_2": "entity_alphatest",
+        "raw_porkchop_3": "entity_alphatest"
+      },
+      "textures": {
+        "raw_meat_hook": "textures/cit/entity/raw_meat_hook",
+        "raw_porkchop_2": "textures/cit/entity/raw_porkchop_2",
+        "raw_porkchop_3": "textures/cit/entity/raw_porkchop_3"
+      },
+      "geometry": { "default": "geometry.cit.raw_porkchop_3_top" },
+      "animations": { "pork_top": "animation.cit.porkchop_3_top" },
+      "scripts": { "animate": ["pork_top"] },
+      "render_controllers": [
+        "controller.render.cit.raw_porkchop_3_top.raw_meat_hook",
+        "controller.render.cit.raw_porkchop_3_top.raw_porkchop_2",
+        "controller.render.cit.raw_porkchop_3_top.raw_porkchop_3"
+      ]
+    }
+  }
+}

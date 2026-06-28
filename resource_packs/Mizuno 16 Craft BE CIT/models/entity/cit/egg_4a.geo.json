@@ -91,8 +91,9 @@
 				},
 				{
 					"name": "egg_4",
+					"parent": "iron_skillet_0",
 					"pivot": [0, 0, 0],
-					"rotation": [0, 180, 0],
+					"rotation": [0, 0, 0],
 					"cubes": [
 						{
 							"origin": [-3.5, 1, -3.5],
@@ -102,7 +103,8 @@
 								"east": {"uv": [9, 7], "uv_size": [7, 1], "material_instance": "egg_4"},
 								"south": {"uv": [9, 7], "uv_size": [7, 1], "material_instance": "egg_4"},
 								"west": {"uv": [9, 7], "uv_size": [7, 1], "material_instance": "egg_4"},
-								"up": {"uv": [16, 7], "uv_size": [-7, -7], "material_instance": "egg_4"}
+								"up": {"uv": [16, 7], "uv_size": [-7, -7], "material_instance": "egg_4"},
+								"down": {"uv": [16, 7], "uv_size": [-7, -7]}
 							}
 						},
 						{

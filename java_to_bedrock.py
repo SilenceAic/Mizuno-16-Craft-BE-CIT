@@ -264,7 +264,7 @@ def get_cube_primary_material(cube: dict) -> str:
 def group_cubes_by_material(cubes: list) -> list[dict]:
     """
     将 cubes 按 material_instance 分组，每组生成一个骨骼。
-    骨骼 pivot 统一为 [8, 0, -8]（Java 根组 origin 转换值）。
+    骨骼 pivot 统一为 [0, 0, 0]。
     """
     groups: dict[str, list] = {}
     for cube in cubes:
@@ -276,7 +276,8 @@ def group_cubes_by_material(cubes: list) -> list[dict]:
         bone_name = mat if mat != "default" else "bone"
         bones.append({
             "name": bone_name,
-            "pivot": [8, 0, -8],
+            "pivot": [0, 0, 0],
+            "rotation": [0, 180, 0],
             "cubes": cube_list,
         })
     return bones
@@ -329,7 +330,7 @@ def convert_java_to_bedrock(
     if group_by_material and len(cubes) > 1:
         bones = group_cubes_by_material(cubes)
     else:
-        bones = [{"name": "bone", "pivot": [8, 0, -8], "cubes": cubes}]
+        bones = [{"name": "bone", "pivot": [0, 0, 0], "rotation": [0, 180, 0], "cubes": cubes}]
 
     geometry = {
         "description": {

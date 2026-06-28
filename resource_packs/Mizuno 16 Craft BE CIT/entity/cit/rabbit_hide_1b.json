@@ -1,0 +1,25 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:rabbit_hide_1b",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "v0": "textures/cit/entity/rabbit_hide_1",
+        "v1": "textures/cit/entity/rabbit_hide_1a",
+        "v2": "textures/cit/entity/rabbit_hide_1b",
+        "v3": "textures/cit/entity/rabbit_hide_1c",
+        "v4": "textures/cit/entity/rabbit_hide_1d",
+        "v5": "textures/cit/entity/rabbit_hide_1e"
+      },
+      "geometry": {
+        "default": "geometry.cit.template_rabbit_hide_1"
+      },
+      "render_controllers": [
+        "controller.render.cit.rabbit_hide_1"
+      ]
+    }
+  }
+}

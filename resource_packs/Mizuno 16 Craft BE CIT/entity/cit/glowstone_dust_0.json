@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:glowstone_dust_0",
+      "materials": {
+        "bowl_glay_0": "entity_alphatest",
+        "powder": "entity_alphatest"
+      },
+      "textures": {
+        "bowl_glay_0": "textures/blocks/cit/bowl_glay_0",
+        "powder": "textures/blocks/cit/powder"
+      },
+      "geometry": {
+        "default": "geometry.cit.entity.glowstone_dust_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.glowstone_dust_0.bowl_glay_0",
+        "controller.render.cit.glowstone_dust_0.powder"
+      ]
+    }
+  }
+}

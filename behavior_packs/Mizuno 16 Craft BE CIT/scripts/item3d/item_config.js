@@ -112,7 +112,7 @@ export const itemConfig = {
     },
     Egg_4: {
       entityId: "cit:egg_4",
-      variantEntities: ["cit:egg_4", "cit:egg_4a"],
+      variantCount: 2,
       placement: {
         wall: 0.3,
         ground: 1.0,
@@ -120,8 +120,301 @@ export const itemConfig = {
       },
     },
     Egg_4a: {
-      entityId: "cit:egg_4a",
-      variantEntities: ["cit:egg_4", "cit:egg_4a"],
+      entityId: "cit:egg_4",
+      spawnVariant: 1,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Egg_5: {
+      entityId: "cit:egg_5",
+      variantCount: 2,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Egg_5a: {
+      entityId: "cit:egg_5",
+      spawnVariant: 1,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 萤石粉配置 ====================
+  "minecraft:glowstone_dust": {
+    _default: {
+      entityId: "cit:glowstone_dust_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 可可豆配置 ====================
+  "minecraft:cocoa_beans": {
+    _default: {
+      entityId: "cit:cocoa_beans_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  }, // ==================== 骨头配置 ====================
+  "minecraft:bone": {
+    _default: {
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bone_0: {
+      entityId: "cit:bone_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bone_1: {
+      entityId: "cit:bone_1",
+      variantCount: 2,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bone_1a: {
+      entityId: "cit:bone_1a",
+      spawnVariant: 1,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bone_2: {
+      entityId: "cit:bone_2",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 南瓜种子配置 ====================
+  "minecraft:pumpkin_seeds": {
+    _default: {
+      entityId: "cit:pumpkin_seeds_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 西瓜种子配置 ====================
+  "minecraft:melon_seeds": {
+    _default: {
+      entityId: "cit:melon_seeds_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 地狱疣配置 ====================
+  "minecraft:nether_wart": {
+    _default: {
+      entityId: "cit:nether_wart_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Nether Wart_0": {
+      entityId: "cit:nether_wart_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Nether Wart_1": {
+      entityId: "cit:nether_wart_1",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 书与笔配置 ====================
+  "minecraft:writable_book": {
+    _default: {
+      entityId: "cit:book_and_quill_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Book and Quill_0": {
+      entityId: "cit:book_and_quill_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Book and Quill_1": {
+      entityId: "cit:book_and_quill_1",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Book and Quill_2": {
+      entityId: "cit:book_and_quill_2",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Book and Quill_3": {
+      entityId: "cit:book_and_quill_3",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Book and Quill_4": {
+      entityId: "cit:book_and_quill_4",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 下界砖块配置 ====================
+  "minecraft:netherbrick": {
+    _default: {
+      entityId: "cit:nether_brick_0",
+      variantEntities: ["cit:nether_brick_0", "cit:nether_brick_0_01"],
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  //==================== 兔子皮配置 ====================
+  "minecraft:rabbit_hide": {
+    _default: {
+      entityId: "cit:rabbit_hide_0",
+      wallEntityId: "cit:rabbit_hide_0_wall",
+      variantCount: 2,
+      wallVariantCount: 2,
+      placement: {
+        wall: 0.5,
+        wallY: -0.5,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Rabbit Hide_0a": {
+      entityId: "cit:rabbit_hide_0a",
+      wallEntityId: "cit:rabbit_hide_0a_wall",
+      variantCount: 2,
+      wallVariantCount: 2,
+      placement: {
+        wall: 0.5,
+        wallY: -0.5,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Rabbit Hide_1": {
+      entityId: "cit:rabbit_hide_1",
+      wallEntityId: null,
+      variantCount: 6,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Rabbit Hide_1a": {
+      entityId: "cit:rabbit_hide_1a",
+      wallEntityId: null,
+      spawnVariant: 1,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Rabbit Hide_1b": {
+      entityId: "cit:rabbit_hide_1b",
+      wallEntityId: null,
+      spawnVariant: 2,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Rabbit Hide_1c": {
+      entityId: "cit:rabbit_hide_1c",
+      wallEntityId: null,
+      spawnVariant: 3,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Rabbit Hide_1d": {
+      entityId: "cit:rabbit_hide_1d",
+      wallEntityId: null,
+      spawnVariant: 4,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Rabbit Hide_1e": {
+      entityId: "cit:rabbit_hide_1e",
+      wallEntityId: null,
+      spawnVariant: 5,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 甜菜种子配置 ====================
+  "minecraft:beetroot_seeds": {
+    _default: {
+      entityId: "cit:beetroot_seeds_0",
       placement: {
         wall: 0.3,
         ground: 1.0,
@@ -429,7 +722,7 @@ export const itemConfig = {
       },
     },
   },
-  //牛奶桶配置
+  // ==================== 牛奶桶配置 ====================
   "minecraft:milk_bucket": {
     _default: {
       placement: {
@@ -852,49 +1145,218 @@ export const itemConfig = {
   "minecraft:apple": {
     // 默认配置（所有未特殊配置的苹果使用）
     _default: {
-      model: 0, // 普通苹果模型
+      wallEntityId: "cit:apple_0_wall",
+      ceilEntityId: "cit:apple_0_top",
       noGravity: false, // 受重力影响
       hitbox: null, // 默认点击区域 (0.06 × 0.06)
       placement: {
-        wall: 0.120834, // 墙面距离
+        wall: 0.21875, // 墙面距离
         ground: 1.0, // 地面高度
-        ceiling: -0.01, // 天花板高度
+        ceiling: -0.4453125, // 天花板高度 7又1/8个方块
       },
     },
-    apple_0_wall: {
-      entityOverride: "wall", // 使用 cit:apple_wall 实体
+    Apple_0: {
+      entityId: "cit:apple_0",
+      wallEntityId: "cit:apple_0_wall",
+      ceilEntityId: "cit:apple_0_top",
+      noGravity: false,
+      hitbox: null,
+      placement: {
+        wall: 0.21875,
+        ground: 1.0,
+        ceiling: -0.4453125,
+      },
+    },
+    Apple_0_wall: {
+      wallEntityId: "cit:apple_0_wall",
+      ceilEntityId: "cit:apple_0_top",
       noGravity: true,
       hitbox: null, // 默认点击区域
       placement: {
-        wall: 0.120834, // 墙面距离
+        wall: 0.21875, // 墙面距离
         ground: 1.0, // 地面高度
-        ceiling: -0.01, // 天花板高度
+        ceiling: -0.4453125, // 天花板高度 7又1/8个方块
       },
     },
-    apple_0_top: {
-      model: 0, // 普通苹果模型
+    Apple_0_top: {
+      wallEntityId: "cit:apple_0_wall",
+      ceilEntityId: "cit:apple_0_top",
       noGravity: true,
-      hitbox: "top", // 顶部点击区域 (1 × 1)
+      hitbox: null, // 顶部点击区域 (1 × 1)
       placement: {
-        wall: 0.120834, // 墙面距离
+        wall: 0.21875, // 墙面距离
         ground: 1.0, // 地面高度
-        ceiling: -0.01, // 天花板高度
+        ceiling: -0.4453125, // 天花板高度 (scale=2 时苹果顶部贴天花)
       },
     },
-    // 金苹果
-    apple_1: {
-      model: 1, // 金苹果模型
+    Apple_1: {
+      entityId: "cit:apple_1",
+      wallEntityId: null,
+      ceilEntityId: null,
       noGravity: false,
-    },
-    // 附魔金苹果
-    apple_1_top: {
-      model: 2, // 附魔金苹果模型
-      noGravity: true,
-      hitbox: "top", // 顶部点击区域 (1 × 1)
+      hitbox: null,
       placement: {
-        wall: 0.120834, // 墙面距离
-        ground: 1.0, // 地面高度
-        ceiling: -0.01, // 天花板高度
+        wall: 0.21875,
+        ground: 1.0,
+        ceiling: -0.4453125,
+      },
+    },
+    Apple_1_top: {
+      entityId: "cit:apple_1_top",
+      wallEntityId: null,
+      ceilEntityId: "cit:apple_1_top",
+      noGravity: true,
+      placement: {
+        wall: 0.21875,
+        ground: 1.0,
+        ceiling: -1.765625,
+      },
+    },
+  },
+  // ==================== 蘑菇煲配置 ====================
+  "minecraft:mushroom_stew": {
+    _default: {
+      entityId: "cit:mushroom_stew_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 面包配置 ====================
+  "minecraft:bread": {
+    _default: {
+      wallEntityId: null,
+      ceilEntityId: null,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bread_0: {
+      entityId: "cit:bread_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bread_1: {
+      entityId: "cit:bread_1",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bread_2: {
+      entityId: "cit:bread_2",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bread_3: {
+      entityId: "cit:bread_3",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bread_4: {
+      entityId: "cit:bread_4",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bread_5: {
+      entityId: "cit:bread_5",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bread_6: {
+      entityId: "cit:bread_6",
+      variantCount: 2,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Bread_6a: {
+      entityId: "cit:bread_6",
+      spawnVariant: 1,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 生猪排配置 ====================
+  "minecraft:porkchop": {
+    _default: {
+      wallEntityId: null,
+      ceilEntityId: null,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -1.5703125,
+      },
+    },
+    "Raw Porkchop_0": {
+      entityId: "cit:raw_porkchop_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Raw Porkchop_1": {
+      entityId: "cit:raw_porkchop_1",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Raw Porkchop_2_top": {
+      entityId: "cit:raw_porkchop_2_top",
+      wallEntityId: null,
+      ceilEntityId: "cit:raw_porkchop_2_top",
+      noGravity: true,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -1.5703125,
+      },
+    },
+    "Raw Porkchop_3_top": {
+      entityId: "cit:raw_porkchop_3_top",
+      wallEntityId: null,
+      ceilEntityId: "cit:raw_porkchop_3_top",
+      noGravity: true,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -1.5703125,
+      },
+    },
+    "Raw Porkchop_4": {
+      entityId: "cit:raw_porkchop_4",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
       },
     },
   },
@@ -979,9 +1441,13 @@ export function getHitboxEvent(hitboxSize) {
  * @param itemName - 物品自定义名称
  * @returns 实体ID
  */
-export function getEntityId(itemTypeId, itemName, isWall = false) {
+export function getEntityId(itemTypeId, itemName, isWall = false, isCeil = false) {
   const config = getItemConfig(itemTypeId, itemName);
   const baseEntityId = itemTypeId.replace("minecraft:", "cit:");
+  // 天花板放置且有 ceilEntityId 配置时使用独立 top 实体
+  if (isCeil && (config === null || config === void 0 ? void 0 : config.ceilEntityId)) {
+    return config.ceilEntityId;
+  }
   // 墙面放置且有 wallEntityId 配置时使用独立 wall 实体
   if (isWall && (config === null || config === void 0 ? void 0 : config.wallEntityId)) {
     return config.wallEntityId;

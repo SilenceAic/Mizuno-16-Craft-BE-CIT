@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:pumpkin_seeds_0",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/cit/entity/pumpkin_seeds_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.pumpkin_seeds_0"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:nether_wart_1",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/cit/entity/nether_wart_1"
+      },
+      "geometry": {
+        "default": "geometry.cit.nether_wart_1"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

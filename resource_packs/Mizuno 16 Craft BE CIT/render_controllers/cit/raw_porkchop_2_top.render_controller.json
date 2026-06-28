@@ -1,0 +1,110 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.cit.raw_porkchop_2_top.raw_meat_hook": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.raw_meat_hook"
+        }
+      ],
+      "textures": [
+        "Texture.raw_meat_hook"
+      ],
+      "part_visibility": [
+        {
+          "raw_meat_hook": true
+        },
+        {
+          "raw_porkchop_2": false
+        },
+        {
+          "raw_porkchop_2_01": false
+        }
+      ],
+      "is_hurt_color": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "on_fire_color": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "ignore_lighting": false
+    },
+    "controller.render.cit.raw_porkchop_2_top.raw_porkchop_2": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.raw_porkchop_2"
+        }
+      ],
+      "textures": [
+        "Texture.raw_porkchop_2"
+      ],
+      "part_visibility": [
+        {
+          "raw_meat_hook": false
+        },
+        {
+          "raw_porkchop_2": true
+        },
+        {
+          "raw_porkchop_2_01": false
+        }
+      ],
+      "is_hurt_color": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "on_fire_color": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "ignore_lighting": false
+    },
+    "controller.render.cit.raw_porkchop_2_top.raw_porkchop_2_01": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.raw_porkchop_2_01"
+        }
+      ],
+      "textures": [
+        "Texture.raw_porkchop_2_01"
+      ],
+      "part_visibility": [
+        {
+          "raw_meat_hook": false
+        },
+        {
+          "raw_porkchop_2": false
+        },
+        {
+          "raw_porkchop_2_01": true
+        }
+      ],
+      "is_hurt_color": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "on_fire_color": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "ignore_lighting": false
+    }
+  }
+}

@@ -1,0 +1,1522 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.pumpkin_seeds_0",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [
+					0,
+					0.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "pumpkin_seeds_0",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"rotation": [
+						0,
+						180,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								0,
+								-5.5
+							],
+							"size": [
+								7.0,
+								3,
+								7.0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										9,
+										7
+									],
+									"uv_size": [
+										7,
+										3
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"east": {
+									"uv": [
+										9,
+										7
+									],
+									"uv_size": [
+										7,
+										3
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"south": {
+									"uv": [
+										9,
+										7
+									],
+									"uv_size": [
+										7,
+										3
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"west": {
+									"uv": [
+										9,
+										7
+									],
+									"uv_size": [
+										7,
+										3
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"down": {
+									"uv": [
+										9,
+										7
+									],
+									"uv_size": [
+										-7,
+										-7
+									],
+									"material_instance": "pumpkin_seeds_0"
+								}
+							},
+							"pivot": [
+								2,
+								0,
+								-2
+							],
+							"rotation": [
+								0,
+								-22.5,
+								0
+							]
+						},
+						{
+							"origin": [
+								-1.5,
+								3,
+								-5.5
+							],
+							"size": [
+								7.0,
+								1,
+								7.0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										9,
+										0
+									],
+									"uv_size": [
+										7,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"east": {
+									"uv": [
+										15,
+										0
+									],
+									"uv_size": [
+										1,
+										7
+									],
+									"uv_rotation": 90,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"south": {
+									"uv": [
+										9,
+										6
+									],
+									"uv_size": [
+										7,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"west": {
+									"uv": [
+										9,
+										0
+									],
+									"uv_size": [
+										1,
+										7
+									],
+									"uv_rotation": 270,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"up": {
+									"uv": [
+										16,
+										7
+									],
+									"uv_size": [
+										-7,
+										-7
+									],
+									"material_instance": "pumpkin_seeds_0"
+								}
+							},
+							"pivot": [
+								2,
+								1,
+								-2
+							],
+							"rotation": [
+								0,
+								-22.5,
+								0
+							]
+						},
+						{
+							"origin": [
+								-0.5,
+								4,
+								-4.5
+							],
+							"size": [
+								5.0,
+								1,
+								5.0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										10,
+										1
+									],
+									"uv_size": [
+										5,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"east": {
+									"uv": [
+										14,
+										1
+									],
+									"uv_size": [
+										1,
+										5
+									],
+									"uv_rotation": 90,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"south": {
+									"uv": [
+										10,
+										5
+									],
+									"uv_size": [
+										5,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"west": {
+									"uv": [
+										10,
+										1
+									],
+									"uv_size": [
+										1,
+										5
+									],
+									"uv_rotation": 270,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"up": {
+									"uv": [
+										15,
+										6
+									],
+									"uv_size": [
+										-5,
+										-5
+									],
+									"material_instance": "pumpkin_seeds_0"
+								}
+							},
+							"pivot": [
+								2,
+								0,
+								-2
+							],
+							"rotation": [
+								0,
+								-22.5,
+								0
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								1,
+								-6.5
+							],
+							"size": [
+								9.0,
+								2,
+								1.0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										9
+									],
+									"uv_size": [
+										9,
+										2
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"east": {
+									"uv": [
+										0,
+										9
+									],
+									"uv_size": [
+										1,
+										2
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"west": {
+									"uv": [
+										8,
+										9
+									],
+									"uv_size": [
+										1,
+										2
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"up": {
+									"uv": [
+										1,
+										9
+									],
+									"uv_size": [
+										-1,
+										-9
+									],
+									"uv_rotation": 90,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"down": {
+									"uv": [
+										2,
+										9
+									],
+									"uv_size": [
+										-1,
+										-9
+									],
+									"uv_rotation": 90,
+									"material_instance": "pumpkin_seeds_0"
+								}
+							},
+							"pivot": [
+								2,
+								0,
+								-2
+							],
+							"rotation": [
+								0,
+								-22.5,
+								0
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								1,
+								1.5
+							],
+							"size": [
+								9.0,
+								2,
+								1.0
+							],
+							"uv": {
+								"east": {
+									"uv": [
+										8,
+										9
+									],
+									"uv_size": [
+										1,
+										2
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"south": {
+									"uv": [
+										0,
+										9
+									],
+									"uv_size": [
+										9,
+										2
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"west": {
+									"uv": [
+										0,
+										9
+									],
+									"uv_size": [
+										1,
+										2
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"up": {
+									"uv": [
+										1,
+										9
+									],
+									"uv_size": [
+										-1,
+										-9
+									],
+									"uv_rotation": 90,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"down": {
+									"uv": [
+										2,
+										9
+									],
+									"uv_size": [
+										-1,
+										-9
+									],
+									"uv_rotation": 90,
+									"material_instance": "pumpkin_seeds_0"
+								}
+							},
+							"pivot": [
+								2,
+								0,
+								-2
+							],
+							"rotation": [
+								0,
+								-22.5,
+								0
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								1,
+								-5.5
+							],
+							"size": [
+								1.0,
+								2,
+								7.0
+							],
+							"uv": {
+								"east": {
+									"uv": [
+										1,
+										9
+									],
+									"uv_size": [
+										7,
+										2
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"up": {
+									"uv": [
+										1,
+										8
+									],
+									"uv_size": [
+										-1,
+										-7
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"down": {
+									"uv": [
+										2,
+										8
+									],
+									"uv_size": [
+										-1,
+										-7
+									],
+									"material_instance": "pumpkin_seeds_0"
+								}
+							},
+							"pivot": [
+								2,
+								0,
+								-2
+							],
+							"rotation": [
+								0,
+								-22.5,
+								0
+							]
+						},
+						{
+							"origin": [
+								5.5,
+								1,
+								-5.5
+							],
+							"size": [
+								1.0,
+								2,
+								7.0
+							],
+							"uv": {
+								"west": {
+									"uv": [
+										1,
+										9
+									],
+									"uv_size": [
+										7,
+										2
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"up": {
+									"uv": [
+										1,
+										8
+									],
+									"uv_size": [
+										-1,
+										-7
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"down": {
+									"uv": [
+										2,
+										8
+									],
+									"uv_size": [
+										-1,
+										-7
+									],
+									"material_instance": "pumpkin_seeds_0"
+								}
+							},
+							"pivot": [
+								2,
+								0,
+								-2
+							],
+							"rotation": [
+								0,
+								-22.5,
+								0
+							]
+						},
+						{
+							"origin": [
+								2.0,
+								5,
+								-2
+							],
+							"size": [
+								1.5,
+								0.75,
+								1.5
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										14,
+										14
+									],
+									"uv_size": [
+										-2,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"east": {
+									"uv": [
+										12,
+										16
+									],
+									"uv_size": [
+										1,
+										-2
+									],
+									"uv_rotation": 270,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"south": {
+									"uv": [
+										14,
+										15
+									],
+									"uv_size": [
+										-2,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"west": {
+									"uv": [
+										13,
+										16
+									],
+									"uv_size": [
+										1,
+										-2
+									],
+									"uv_rotation": 90,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"up": {
+									"uv": [
+										12,
+										16
+									],
+									"uv_size": [
+										2,
+										-2
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"down": {
+									"uv": [
+										12,
+										14
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "pumpkin_seeds_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								2.0,
+								5,
+								-2.75
+							],
+							"size": [
+								0.75,
+								0.75,
+								0.75
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										13,
+										13
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"east": {
+									"uv": [
+										13,
+										13
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"west": {
+									"uv": [
+										13,
+										13
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"up": {
+									"uv": [
+										12,
+										14
+									],
+									"uv_size": [
+										1,
+										-1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"down": {
+									"uv": [
+										12,
+										14
+									],
+									"uv_size": [
+										1,
+										-1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-4.5,
+								0,
+								-3.5
+							],
+							"size": [
+								1.5,
+								0.75,
+								1.5
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										16,
+										14
+									],
+									"uv_size": [
+										-2,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"east": {
+									"uv": [
+										14,
+										16
+									],
+									"uv_size": [
+										1,
+										-2
+									],
+									"uv_rotation": 270,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"south": {
+									"uv": [
+										16,
+										15
+									],
+									"uv_size": [
+										-2,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"west": {
+									"uv": [
+										15,
+										16
+									],
+									"uv_size": [
+										1,
+										-2
+									],
+									"uv_rotation": 90,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"up": {
+									"uv": [
+										14,
+										16
+									],
+									"uv_size": [
+										2,
+										-2
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"down": {
+									"uv": [
+										14,
+										14
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "pumpkin_seeds_0"
+								}
+							},
+							"pivot": [
+								-3.9375,
+								8,
+								-3.3125
+							],
+							"rotation": [
+								0,
+								22.5,
+								0
+							]
+						},
+						{
+							"origin": [
+								-4.5,
+								0,
+								-4.25
+							],
+							"size": [
+								0.75,
+								0.75,
+								0.75
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										15,
+										13
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"east": {
+									"uv": [
+										15,
+										13
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"west": {
+									"uv": [
+										15,
+										13
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"up": {
+									"uv": [
+										14,
+										14
+									],
+									"uv_size": [
+										1,
+										-1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"down": {
+									"uv": [
+										14,
+										14
+									],
+									"uv_size": [
+										1,
+										-1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								}
+							},
+							"pivot": [
+								-3.9375,
+								8,
+								-3.3125
+							],
+							"rotation": [
+								0,
+								22.5,
+								0
+							]
+						},
+						{
+							"origin": [
+								-5.5,
+								0,
+								1.5
+							],
+							"size": [
+								1.5,
+								0.75,
+								1.5
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										13,
+										16
+									],
+									"uv_size": [
+										1,
+										-2
+									],
+									"uv_rotation": 90,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"east": {
+									"uv": [
+										14,
+										14
+									],
+									"uv_size": [
+										-2,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"south": {
+									"uv": [
+										12,
+										16
+									],
+									"uv_size": [
+										1,
+										-2
+									],
+									"uv_rotation": 270,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"west": {
+									"uv": [
+										14,
+										15
+									],
+									"uv_size": [
+										-2,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"up": {
+									"uv": [
+										12,
+										16
+									],
+									"uv_size": [
+										2,
+										-2
+									],
+									"uv_rotation": 90,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"down": {
+									"uv": [
+										12,
+										14
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"uv_rotation": 270,
+									"material_instance": "pumpkin_seeds_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-6.25,
+								0,
+								2.25
+							],
+							"size": [
+								0.75,
+								0.75,
+								0.75
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										13,
+										13
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"east": {
+									"uv": [
+										13,
+										13
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"south": {
+									"uv": [
+										13,
+										13
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"up": {
+									"uv": [
+										12,
+										14
+									],
+									"uv_size": [
+										1,
+										-1
+									],
+									"uv_rotation": 90,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"down": {
+									"uv": [
+										12,
+										14
+									],
+									"uv_size": [
+										1,
+										-1
+									],
+									"uv_rotation": 270,
+									"material_instance": "pumpkin_seeds_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-3.5,
+								0,
+								4.5
+							],
+							"size": [
+								1.5,
+								0.75,
+								1.5
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										16,
+										14
+									],
+									"uv_size": [
+										-2,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"east": {
+									"uv": [
+										14,
+										16
+									],
+									"uv_size": [
+										1,
+										-2
+									],
+									"uv_rotation": 270,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"south": {
+									"uv": [
+										16,
+										15
+									],
+									"uv_size": [
+										-2,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"west": {
+									"uv": [
+										15,
+										16
+									],
+									"uv_size": [
+										1,
+										-2
+									],
+									"uv_rotation": 90,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"up": {
+									"uv": [
+										14,
+										16
+									],
+									"uv_size": [
+										2,
+										-2
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"down": {
+									"uv": [
+										14,
+										14
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "pumpkin_seeds_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-3.5,
+								0,
+								3.75
+							],
+							"size": [
+								0.75,
+								0.75,
+								0.75
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										15,
+										13
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"east": {
+									"uv": [
+										15,
+										13
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"west": {
+									"uv": [
+										15,
+										13
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"up": {
+									"uv": [
+										14,
+										14
+									],
+									"uv_size": [
+										1,
+										-1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"down": {
+									"uv": [
+										14,
+										14
+									],
+									"uv_size": [
+										1,
+										-1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-1.0,
+								0,
+								3
+							],
+							"size": [
+								1.5,
+								0.75,
+								1.5
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										13,
+										16
+									],
+									"uv_size": [
+										1,
+										-2
+									],
+									"uv_rotation": 90,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"east": {
+									"uv": [
+										14,
+										14
+									],
+									"uv_size": [
+										-2,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"south": {
+									"uv": [
+										12,
+										16
+									],
+									"uv_size": [
+										1,
+										-2
+									],
+									"uv_rotation": 270,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"west": {
+									"uv": [
+										14,
+										15
+									],
+									"uv_size": [
+										-2,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"up": {
+									"uv": [
+										12,
+										16
+									],
+									"uv_size": [
+										2,
+										-2
+									],
+									"uv_rotation": 90,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"down": {
+									"uv": [
+										12,
+										14
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"uv_rotation": 270,
+									"material_instance": "pumpkin_seeds_0"
+								}
+							},
+							"pivot": [
+								-0.8125,
+								8,
+								3.9375
+							],
+							"rotation": [
+								0,
+								-22.5,
+								0
+							]
+						},
+						{
+							"origin": [
+								-1.75,
+								0,
+								3.75
+							],
+							"size": [
+								0.75,
+								0.75,
+								0.75
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										13,
+										13
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"east": {
+									"uv": [
+										13,
+										13
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"south": {
+									"uv": [
+										13,
+										13
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"up": {
+									"uv": [
+										12,
+										14
+									],
+									"uv_size": [
+										1,
+										-1
+									],
+									"uv_rotation": 90,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"down": {
+									"uv": [
+										12,
+										14
+									],
+									"uv_size": [
+										1,
+										-1
+									],
+									"uv_rotation": 270,
+									"material_instance": "pumpkin_seeds_0"
+								}
+							},
+							"pivot": [
+								-0.8125,
+								8,
+								3.9375
+							],
+							"rotation": [
+								0,
+								-22.5,
+								0
+							]
+						},
+						{
+							"origin": [
+								1.0,
+								0,
+								5.5
+							],
+							"size": [
+								1.5,
+								0.75,
+								1.5
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										14,
+										16
+									],
+									"uv_size": [
+										1,
+										-2
+									],
+									"uv_rotation": 270,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"east": {
+									"uv": [
+										16,
+										15
+									],
+									"uv_size": [
+										-2,
+										1
+									],
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"south": {
+									"uv": [
+										15,
+										16
+									],
+									"uv_size": [
+										1,
+										-2
+									],
+									"uv_rotation": 90,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"west": {
+									"uv": [
+										16,
+										14
+									],
+									"uv_size": [
+										-2,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"up": {
+									"uv": [
+										14,
+										16
+									],
+									"uv_size": [
+										2,
+										-2
+									],
+									"uv_rotation": 270,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"down": {
+									"uv": [
+										14,
+										14
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"uv_rotation": 90,
+									"material_instance": "pumpkin_seeds_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								2.5,
+								0,
+								5.5
+							],
+							"size": [
+								0.75,
+								0.75,
+								0.75
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										15,
+										13
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"uv_rotation": 270,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"south": {
+									"uv": [
+										15,
+										13
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"uv_rotation": 270,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"west": {
+									"uv": [
+										15,
+										13
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"uv_rotation": 270,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"up": {
+									"uv": [
+										14,
+										14
+									],
+									"uv_size": [
+										1,
+										-1
+									],
+									"uv_rotation": 270,
+									"material_instance": "pumpkin_seeds_0"
+								},
+								"down": {
+									"uv": [
+										14,
+										14
+									],
+									"uv_size": [
+										1,
+										-1
+									],
+									"uv_rotation": 270,
+									"material_instance": "pumpkin_seeds_0"
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

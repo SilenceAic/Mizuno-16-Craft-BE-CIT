@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:bread_5",
+      "materials": {
+        "bread_5_02": "entity_alphatest",
+        "bread_5_01": "entity_alphatest",
+        "bread_5": "entity_alphatest"
+      },
+      "textures": {
+        "bread_5_02": "textures/cit/entity/bread_5_02",
+        "bread_5_01": "textures/cit/entity/bread_5_01",
+        "bread_5": "textures/cit/entity/bread_5"
+      },
+      "geometry": {
+        "default": "geometry.cit.bread_5"
+      },
+      "render_controllers": [
+        "controller.render.cit.bread_5.bread_5_02",
+        "controller.render.cit.bread_5.bread_5_01",
+        "controller.render.cit.bread_5.bread_5"
+      ]
+    }
+  }
+}

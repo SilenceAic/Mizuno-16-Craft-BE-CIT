@@ -1,0 +1,210 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.melon_seeds_0",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [
+					0,
+					1.0,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "melon_seeds_0",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"rotation": [
+						0,
+						180,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.5,
+								0,
+								-3.5
+							],
+							"size": [
+								7.0,
+								10,
+								7.0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										7,
+										10
+									],
+									"material_instance": "melon_seeds_0"
+								},
+								"east": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										7,
+										10
+									],
+									"material_instance": "melon_seeds_0"
+								},
+								"south": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										7,
+										10
+									],
+									"material_instance": "melon_seeds_0"
+								},
+								"west": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										7,
+										10
+									],
+									"material_instance": "melon_seeds_0"
+								},
+								"up": {
+									"uv": [
+										15,
+										7
+									],
+									"uv_size": [
+										-7,
+										-7
+									],
+									"material_instance": "melon_seeds_0"
+								},
+								"down": {
+									"uv": [
+										15,
+										7
+									],
+									"uv_size": [
+										-7,
+										-7
+									],
+									"material_instance": "melon_seeds_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-2.5,
+								3,
+								3.51
+							],
+							"size": [
+								5.0,
+								3,
+								0.0
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										2,
+										12
+									],
+									"uv_size": [
+										5,
+										3
+									],
+									"material_instance": "melon_seeds_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-2.5,
+								9,
+								-2.5
+							],
+							"size": [
+								5.0,
+								2,
+								5.0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										11,
+										9
+									],
+									"uv_size": [
+										5,
+										2
+									],
+									"material_instance": "melon_seeds_0"
+								},
+								"east": {
+									"uv": [
+										11,
+										9
+									],
+									"uv_size": [
+										5,
+										2
+									],
+									"material_instance": "melon_seeds_0"
+								},
+								"south": {
+									"uv": [
+										11,
+										9
+									],
+									"uv_size": [
+										5,
+										2
+									],
+									"material_instance": "melon_seeds_0"
+								},
+								"west": {
+									"uv": [
+										11,
+										9
+									],
+									"uv_size": [
+										5,
+										2
+									],
+									"material_instance": "melon_seeds_0"
+								},
+								"up": {
+									"uv": [
+										16,
+										16
+									],
+									"uv_size": [
+										-5,
+										-5
+									],
+									"material_instance": "melon_seeds_0"
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

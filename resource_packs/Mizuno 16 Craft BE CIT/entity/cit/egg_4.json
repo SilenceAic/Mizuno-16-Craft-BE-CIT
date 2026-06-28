@@ -13,7 +13,8 @@
         "iron_skillet_0": "textures/cit/entity/iron_skillet_0"
       },
       "geometry": {
-        "default": "geometry.cit.egg_4"
+        "default": "geometry.cit.egg_4",
+        "egg_4a": "geometry.cit.egg_4a"
       },
       "animations": {
         "switch_place": "animation.cit.egg_4.switch_place",

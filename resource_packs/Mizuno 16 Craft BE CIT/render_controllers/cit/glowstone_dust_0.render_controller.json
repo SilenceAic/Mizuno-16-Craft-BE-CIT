@@ -1,0 +1,69 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.glowstone_dust_0.bowl_glay_0": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.bowl_glay_0"
+                }
+            ],
+            "textures": [
+                "Texture.bowl_glay_0"
+            ],
+            "part_visibility": [
+                {
+                    "bowl_glay_0": true
+                },
+                {
+                    "powder": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.glowstone_dust_0.powder": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.powder"
+                }
+            ],
+            "textures": [
+                "Texture.powder"
+            ],
+            "part_visibility": [
+                {
+                    "bowl_glay_0": false
+                },
+                {
+                    "powder": true
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        }
+    }
+}

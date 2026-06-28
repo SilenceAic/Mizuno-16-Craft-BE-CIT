@@ -1,0 +1,497 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.nether_wart_0",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [
+					0,
+					0.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "weighing_paper",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"rotation": [
+						0,
+						180,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-6,
+								0.1,
+								-6
+							],
+							"size": [
+								12,
+								0.009999999999999995,
+								12
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										14,
+										14
+									],
+									"uv_size": [
+										-12,
+										-12
+									],
+									"material_instance": "weighing_paper"
+								},
+								"down": {
+									"uv": [
+										14,
+										2
+									],
+									"uv_size": [
+										-12,
+										12
+									],
+									"material_instance": "weighing_paper"
+								}
+							},
+							"pivot": [
+								0,
+								8,
+								0
+							],
+							"rotation": [
+								0,
+								22.5,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "nether_wart_1",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"rotation": [
+						0,
+						180,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								0.11,
+								-3
+							],
+							"size": [
+								2.0,
+								1.9999999999999998,
+								2
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										14,
+										0
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"east": {
+									"uv": [
+										14,
+										0
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"south": {
+									"uv": [
+										14,
+										0
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"west": {
+									"uv": [
+										14,
+										0
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"up": {
+									"uv": [
+										16,
+										2
+									],
+									"uv_size": [
+										-2,
+										-2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"down": {
+									"uv": [
+										16,
+										2
+									],
+									"uv_size": [
+										-2,
+										-2
+									],
+									"material_instance": "nether_wart_1"
+								}
+							}
+						},
+						{
+							"origin": [
+								0.5,
+								0.11,
+								0
+							],
+							"size": [
+								2.0,
+								1.9999999999999998,
+								2
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										14,
+										0
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"east": {
+									"uv": [
+										14,
+										0
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"south": {
+									"uv": [
+										14,
+										0
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"west": {
+									"uv": [
+										14,
+										0
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"up": {
+									"uv": [
+										16,
+										2
+									],
+									"uv_size": [
+										-2,
+										-2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"down": {
+									"uv": [
+										16,
+										2
+									],
+									"uv_size": [
+										-2,
+										-2
+									],
+									"material_instance": "nether_wart_1"
+								}
+							}
+						},
+						{
+							"origin": [
+								1.5,
+								0.11,
+								-2
+							],
+							"size": [
+								2.0,
+								1.9999999999999998,
+								2
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										12,
+										2
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"east": {
+									"uv": [
+										12,
+										2
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"south": {
+									"uv": [
+										12,
+										2
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"west": {
+									"uv": [
+										12,
+										2
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"up": {
+									"uv": [
+										14,
+										4
+									],
+									"uv_size": [
+										-2,
+										-2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"down": {
+									"uv": [
+										14,
+										4
+									],
+									"uv_size": [
+										-2,
+										-2
+									],
+									"material_instance": "nether_wart_1"
+								}
+							}
+						},
+						{
+							"origin": [
+								0,
+								2.11,
+								-1
+							],
+							"size": [
+								2,
+								2.0000000000000004,
+								2
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										12,
+										0
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"east": {
+									"uv": [
+										12,
+										0
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"south": {
+									"uv": [
+										12,
+										0
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"west": {
+									"uv": [
+										12,
+										0
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"up": {
+									"uv": [
+										14,
+										2
+									],
+									"uv_size": [
+										-2,
+										-2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"down": {
+									"uv": [
+										14,
+										2
+									],
+									"uv_size": [
+										-2,
+										-2
+									],
+									"material_instance": "nether_wart_1"
+								}
+							}
+						},
+						{
+							"origin": [
+								-3.5,
+								0.11,
+								1
+							],
+							"size": [
+								2.0,
+								1.9999999999999998,
+								2
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										14,
+										0
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"east": {
+									"uv": [
+										14,
+										0
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"south": {
+									"uv": [
+										14,
+										0
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"west": {
+									"uv": [
+										14,
+										0
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"up": {
+									"uv": [
+										16,
+										2
+									],
+									"uv_size": [
+										-2,
+										-2
+									],
+									"material_instance": "nether_wart_1"
+								},
+								"down": {
+									"uv": [
+										16,
+										2
+									],
+									"uv_size": [
+										-2,
+										-2
+									],
+									"material_instance": "nether_wart_1"
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

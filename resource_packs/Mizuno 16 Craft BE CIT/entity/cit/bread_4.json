@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:bread_4",
+      "materials": {
+        "bread_4_01": "entity_alphatest",
+        "bread_4": "entity_alphatest"
+      },
+      "textures": {
+        "bread_4_01": "textures/cit/entity/bread_4_01",
+        "bread_4": "textures/cit/entity/bread_4"
+      },
+      "geometry": {
+        "default": "geometry.cit.bread_4"
+      },
+      "render_controllers": [
+        "controller.render.cit.bread_4.bread_4_01",
+        "controller.render.cit.bread_4.bread_4"
+      ]
+    }
+  }
+}

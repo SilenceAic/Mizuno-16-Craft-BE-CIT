@@ -1,0 +1,29 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.nether_wart_0.weighing_paper": {
+            "geometry": "Geometry.default",
+            "materials": [{ "*": "Material.weighing_paper" }],
+            "textures": ["Texture.weighing_paper"],
+            "part_visibility": [
+                { "weighing_paper": true },
+                { "nether_wart_1": false }
+            ],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.nether_wart_0.nether_wart_1": {
+            "geometry": "Geometry.default",
+            "materials": [{ "*": "Material.nether_wart_1" }],
+            "textures": ["Texture.nether_wart_1"],
+            "part_visibility": [
+                { "weighing_paper": false },
+                { "nether_wart_1": true }
+            ],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "ignore_lighting": false
+        }
+    }
+}

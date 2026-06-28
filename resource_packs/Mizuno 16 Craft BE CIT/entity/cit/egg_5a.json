@@ -1,0 +1,24 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:egg_5a",
+      "materials": {
+        "plate_white": "entity_alphatest",
+        "egg_4": "entity_alphatest"
+      },
+      "textures": {
+        "plate_white": "textures/cit/entity/plate_white",
+        "egg_4": "textures/cit/entity/egg_4"
+      },
+      "geometry": {
+        "default": "geometry.cit.egg_5",
+        "egg_5a": "geometry.cit.egg_5a"
+      },
+      "render_controllers": [
+        "controller.render.cit.egg_5a.plate_white",
+        "controller.render.cit.egg_5a.egg_4"
+      ]
+    }
+  }
+}

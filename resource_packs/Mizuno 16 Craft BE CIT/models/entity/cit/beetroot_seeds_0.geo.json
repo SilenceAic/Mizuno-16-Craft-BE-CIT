@@ -1,0 +1,1326 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.beetroot_seeds_0",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [
+					0,
+					0.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "beetroot_seeds_0",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"rotation": [
+						0,
+						180,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-5,
+								0,
+								-5.5
+							],
+							"size": [
+								10,
+								3,
+								6.0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										12
+									],
+									"uv_size": [
+										10,
+										3
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"east": {
+									"uv": [
+										10,
+										12
+									],
+									"uv_size": [
+										6,
+										3
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"south": {
+									"uv": [
+										0,
+										12
+									],
+									"uv_size": [
+										10,
+										3
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"west": {
+									"uv": [
+										10,
+										12
+									],
+									"uv_size": [
+										6,
+										3
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"down": {
+									"uv": [
+										10,
+										6
+									],
+									"uv_size": [
+										-10,
+										-6
+									],
+									"material_instance": "beetroot_seeds_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-5,
+								3,
+								-5.5
+							],
+							"size": [
+								10,
+								1,
+								6.0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										6
+									],
+									"uv_size": [
+										10,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"east": {
+									"uv": [
+										9,
+										6
+									],
+									"uv_size": [
+										1,
+										6
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"south": {
+									"uv": [
+										0,
+										11
+									],
+									"uv_size": [
+										10,
+										1
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"west": {
+									"uv": [
+										0,
+										6
+									],
+									"uv_size": [
+										1,
+										6
+									],
+									"uv_rotation": 270,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"up": {
+									"uv": [
+										10,
+										12
+									],
+									"uv_size": [
+										-10,
+										-6
+									],
+									"material_instance": "beetroot_seeds_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-3,
+								4,
+								-4.5
+							],
+							"size": [
+								6,
+								1,
+								4.0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										2,
+										7
+									],
+									"uv_size": [
+										6,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"east": {
+									"uv": [
+										7,
+										7
+									],
+									"uv_size": [
+										1,
+										4
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"south": {
+									"uv": [
+										2,
+										10
+									],
+									"uv_size": [
+										6,
+										1
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"west": {
+									"uv": [
+										2,
+										7
+									],
+									"uv_size": [
+										1,
+										4
+									],
+									"uv_rotation": 270,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"up": {
+									"uv": [
+										8,
+										11
+									],
+									"uv_size": [
+										-6,
+										-4
+									],
+									"material_instance": "beetroot_seeds_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-6,
+								1,
+								-6.5
+							],
+							"size": [
+								12,
+								2,
+								1.0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										14,
+										0
+									],
+									"uv_size": [
+										2,
+										12
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"east": {
+									"uv": [
+										11,
+										2
+									],
+									"uv_size": [
+										2,
+										1
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"west": {
+									"uv": [
+										11,
+										9
+									],
+									"uv_size": [
+										2,
+										1
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"up": {
+									"uv": [
+										14,
+										12
+									],
+									"uv_size": [
+										-1,
+										-12
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"down": {
+									"uv": [
+										14,
+										12
+									],
+									"uv_size": [
+										-1,
+										-12
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-6,
+								1,
+								0.5
+							],
+							"size": [
+								12,
+								2,
+								1.0
+							],
+							"uv": {
+								"east": {
+									"uv": [
+										11,
+										9
+									],
+									"uv_size": [
+										2,
+										1
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"south": {
+									"uv": [
+										14,
+										0
+									],
+									"uv_size": [
+										2,
+										12
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"west": {
+									"uv": [
+										11,
+										2
+									],
+									"uv_size": [
+										2,
+										1
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"up": {
+									"uv": [
+										14,
+										12
+									],
+									"uv_size": [
+										-1,
+										-12
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"down": {
+									"uv": [
+										14,
+										12
+									],
+									"uv_size": [
+										-1,
+										-12
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								5,
+								1,
+								-5.5
+							],
+							"size": [
+								1,
+								2,
+								6.0
+							],
+							"uv": {
+								"west": {
+									"uv": [
+										11,
+										3
+									],
+									"uv_size": [
+										2,
+										6
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"up": {
+									"uv": [
+										11,
+										9
+									],
+									"uv_size": [
+										-1,
+										-6
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"down": {
+									"uv": [
+										2,
+										8
+									],
+									"uv_size": [
+										-1,
+										-7
+									],
+									"material_instance": "beetroot_seeds_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-6,
+								1,
+								-5.5
+							],
+							"size": [
+								1,
+								2,
+								6.0
+							],
+							"uv": {
+								"east": {
+									"uv": [
+										11,
+										3
+									],
+									"uv_size": [
+										2,
+										6
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"up": {
+									"uv": [
+										11,
+										9
+									],
+									"uv_size": [
+										-1,
+										-6
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"down": {
+									"uv": [
+										2,
+										8
+									],
+									"uv_size": [
+										-1,
+										-7
+									],
+									"material_instance": "beetroot_seeds_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-1.0,
+								5,
+								-3.5
+							],
+							"size": [
+								2.25,
+								0.75,
+								2.25
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										7,
+										8
+									],
+									"uv_size": [
+										1,
+										3
+									],
+									"uv_rotation": 270,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"east": {
+									"uv": [
+										7,
+										8
+									],
+									"uv_size": [
+										3,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"south": {
+									"uv": [
+										9,
+										8
+									],
+									"uv_size": [
+										1,
+										3
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"west": {
+									"uv": [
+										7,
+										10
+									],
+									"uv_size": [
+										3,
+										1
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"up": {
+									"uv": [
+										10,
+										11
+									],
+									"uv_size": [
+										-3,
+										-3
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								}
+							},
+							"pivot": [
+								-0.625,
+								8,
+								-2.1875
+							],
+							"rotation": [
+								0,
+								22.5,
+								0
+							]
+						},
+						{
+							"origin": [
+								-1.75,
+								5,
+								-2.75
+							],
+							"size": [
+								0.75,
+								0.75,
+								1.5
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										8,
+										7
+									],
+									"uv_size": [
+										1,
+										1
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"east": {
+									"uv": [
+										8,
+										7
+									],
+									"uv_size": [
+										2,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"south": {
+									"uv": [
+										9,
+										7
+									],
+									"uv_size": [
+										1,
+										1
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"up": {
+									"uv": [
+										10,
+										8
+									],
+									"uv_size": [
+										-2,
+										-1
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								}
+							},
+							"pivot": [
+								-0.625,
+								8,
+								-2.1875
+							],
+							"rotation": [
+								0,
+								22.5,
+								0
+							]
+						},
+						{
+							"origin": [
+								3.75,
+								0,
+								2.75
+							],
+							"size": [
+								2.25,
+								0.75,
+								2.25
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										10,
+										8
+									],
+									"uv_size": [
+										-3,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"east": {
+									"uv": [
+										7,
+										11
+									],
+									"uv_size": [
+										1,
+										-3
+									],
+									"uv_rotation": 270,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"south": {
+									"uv": [
+										10,
+										10
+									],
+									"uv_size": [
+										-3,
+										1
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"west": {
+									"uv": [
+										9,
+										11
+									],
+									"uv_size": [
+										1,
+										-3
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"up": {
+									"uv": [
+										7,
+										11
+									],
+									"uv_size": [
+										3,
+										-3
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"down": {
+									"uv": [
+										7,
+										8
+									],
+									"uv_size": [
+										3,
+										3
+									],
+									"material_instance": "beetroot_seeds_0"
+								}
+							},
+							"pivot": [
+								5.0625,
+								8,
+								3.125
+							],
+							"rotation": [
+								0,
+								45,
+								0
+							]
+						},
+						{
+							"origin": [
+								4.5,
+								0,
+								2
+							],
+							"size": [
+								1.5,
+								0.75,
+								0.75
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										10,
+										7
+									],
+									"uv_size": [
+										-2,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"east": {
+									"uv": [
+										9,
+										7
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"west": {
+									"uv": [
+										10,
+										7
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"up": {
+									"uv": [
+										8,
+										8
+									],
+									"uv_size": [
+										2,
+										-1
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"down": {
+									"uv": [
+										8,
+										7
+									],
+									"uv_size": [
+										2,
+										1
+									],
+									"material_instance": "beetroot_seeds_0"
+								}
+							},
+							"pivot": [
+								5.0625,
+								8,
+								3.125
+							],
+							"rotation": [
+								0,
+								45,
+								0
+							]
+						},
+						{
+							"origin": [
+								-3.25,
+								0,
+								4.5
+							],
+							"size": [
+								2.25,
+								0.75,
+								2.25
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										7,
+										11
+									],
+									"uv_size": [
+										1,
+										-3
+									],
+									"uv_rotation": 270,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"east": {
+									"uv": [
+										10,
+										10
+									],
+									"uv_size": [
+										-3,
+										1
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"south": {
+									"uv": [
+										9,
+										11
+									],
+									"uv_size": [
+										1,
+										-3
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"west": {
+									"uv": [
+										10,
+										8
+									],
+									"uv_size": [
+										-3,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"up": {
+									"uv": [
+										7,
+										11
+									],
+									"uv_size": [
+										3,
+										-3
+									],
+									"uv_rotation": 270,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"down": {
+									"uv": [
+										7,
+										8
+									],
+									"uv_size": [
+										3,
+										3
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								}
+							},
+							"pivot": [
+								-1.375,
+								8,
+								5.8125
+							],
+							"rotation": [
+								0,
+								22.5,
+								0
+							]
+						},
+						{
+							"origin": [
+								-1.0,
+								0,
+								5.25
+							],
+							"size": [
+								0.75,
+								0.75,
+								1.5
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										9,
+										7
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"south": {
+									"uv": [
+										10,
+										7
+									],
+									"uv_size": [
+										-1,
+										1
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"west": {
+									"uv": [
+										10,
+										7
+									],
+									"uv_size": [
+										-2,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"up": {
+									"uv": [
+										8,
+										8
+									],
+									"uv_size": [
+										2,
+										-1
+									],
+									"uv_rotation": 270,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"down": {
+									"uv": [
+										8,
+										7
+									],
+									"uv_size": [
+										2,
+										1
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								}
+							},
+							"pivot": [
+								-1.375,
+								8,
+								5.8125
+							],
+							"rotation": [
+								0,
+								22.5,
+								0
+							]
+						},
+						{
+							"origin": [
+								-6.25,
+								0,
+								3
+							],
+							"size": [
+								2.25,
+								0.75,
+								2.25
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										7,
+										8
+									],
+									"uv_size": [
+										1,
+										3
+									],
+									"uv_rotation": 270,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"east": {
+									"uv": [
+										7,
+										8
+									],
+									"uv_size": [
+										3,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"south": {
+									"uv": [
+										9,
+										8
+									],
+									"uv_size": [
+										1,
+										3
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"west": {
+									"uv": [
+										7,
+										10
+									],
+									"uv_size": [
+										3,
+										1
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"up": {
+									"uv": [
+										10,
+										11
+									],
+									"uv_size": [
+										-3,
+										-3
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"down": {
+									"uv": [
+										10,
+										8
+									],
+									"uv_size": [
+										-3,
+										3
+									],
+									"uv_rotation": 270,
+									"material_instance": "beetroot_seeds_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-7.0,
+								0,
+								3.75
+							],
+							"size": [
+								0.75,
+								0.75,
+								1.5
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										8,
+										7
+									],
+									"uv_size": [
+										1,
+										1
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"east": {
+									"uv": [
+										8,
+										7
+									],
+									"uv_size": [
+										2,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"south": {
+									"uv": [
+										9,
+										7
+									],
+									"uv_size": [
+										1,
+										1
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"up": {
+									"uv": [
+										10,
+										8
+									],
+									"uv_size": [
+										-2,
+										-1
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"down": {
+									"uv": [
+										10,
+										7
+									],
+									"uv_size": [
+										-2,
+										1
+									],
+									"uv_rotation": 270,
+									"material_instance": "beetroot_seeds_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-3.25,
+								0,
+								2.6500000000000004
+							],
+							"size": [
+								2.25,
+								2.25,
+								0.75
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										7,
+										11
+									],
+									"uv_size": [
+										3,
+										-3
+									],
+									"uv_rotation": 180,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"east": {
+									"uv": [
+										9,
+										8
+									],
+									"uv_size": [
+										1,
+										3
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"south": {
+									"uv": [
+										7,
+										8
+									],
+									"uv_size": [
+										3,
+										3
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"west": {
+									"uv": [
+										7,
+										8
+									],
+									"uv_size": [
+										1,
+										3
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"up": {
+									"uv": [
+										10,
+										9
+									],
+									"uv_size": [
+										-3,
+										-1
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"down": {
+									"uv": [
+										10,
+										11
+									],
+									"uv_size": [
+										-3,
+										-1
+									],
+									"material_instance": "beetroot_seeds_0"
+								}
+							},
+							"pivot": [
+								-2,
+								0,
+								2.75
+							],
+							"rotation": [
+								22.5,
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-3.25,
+								2.25,
+								2.6500000000000004
+							],
+							"size": [
+								1.5,
+								0.75,
+								0.75
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										8,
+										8
+									],
+									"uv_size": [
+										2,
+										-1
+									],
+									"uv_rotation": 180,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"east": {
+									"uv": [
+										9,
+										7
+									],
+									"uv_size": [
+										1,
+										1
+									],
+									"uv_rotation": 270,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"south": {
+									"uv": [
+										8,
+										7
+									],
+									"uv_size": [
+										2,
+										1
+									],
+									"material_instance": "beetroot_seeds_0"
+								},
+								"west": {
+									"uv": [
+										8,
+										7
+									],
+									"uv_size": [
+										1,
+										1
+									],
+									"uv_rotation": 90,
+									"material_instance": "beetroot_seeds_0"
+								},
+								"up": {
+									"uv": [
+										10,
+										8
+									],
+									"uv_size": [
+										-2,
+										-1
+									],
+									"material_instance": "beetroot_seeds_0"
+								}
+							},
+							"pivot": [
+								-2,
+								0,
+								2.75
+							],
+							"rotation": [
+								22.5,
+								0,
+								0
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

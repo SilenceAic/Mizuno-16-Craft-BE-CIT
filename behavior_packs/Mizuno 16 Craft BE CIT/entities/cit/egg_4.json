@@ -30,6 +30,15 @@
           "default": 0,
           "client_sync": true
         },
+        "cit:variant": {
+          "type": "int",
+          "range": [
+            0,
+            1
+          ],
+          "default": 0,
+          "client_sync": true
+        },
         "cit:transition_state": {
           "type": "int",
           "range": [

@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:book_and_quill_0",
+      "materials": {
+        "book_and_quill_1": "entity_alphatest",
+        "book_and_quill_0": "entity_alphatest"
+      },
+      "textures": {
+        "book_and_quill_1": "textures/cit/entity/book_and_quill_1",
+        "book_and_quill_0": "textures/cit/entity/book_and_quill_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.book_and_quill_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.book_and_quill_0.book_and_quill_1",
+        "controller.render.cit.book_and_quill_0.book_and_quill_0"
+      ]
+    }
+  }
+}

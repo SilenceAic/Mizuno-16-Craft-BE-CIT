@@ -1,0 +1,28 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:apple_0_wall",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/cit/entity/apple_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.apple_0_wall"
+      },
+      "animations": {
+        "apple_wall": "animation.cit.apple_0_wall"
+      },
+      "scripts": {
+        "animate": [
+          "apple_wall"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cit.apple_0_wall"
+      ]
+    }
+  }
+}
