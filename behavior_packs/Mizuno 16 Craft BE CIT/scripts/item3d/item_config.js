@@ -1612,8 +1612,8 @@ export const itemConfig = {
       wallEntityId: "cit:pufferfish_0",
       noGravity: true,
       placement: {
-        wall: 0.3,
-        ground: 1.01,
+        wall: 0,
+        ground: 0.9921875, //1÷128*127=0.9921875
         ceiling: -0.01,
       },
     },
@@ -1622,8 +1622,8 @@ export const itemConfig = {
       wallEntityId: "cit:pufferfish_0",
       noGravity: true,
       placement: {
-        wall: 0.3,
-        ground: 1.01,
+        wall: 0,
+        ground: 0.9921875, //1÷128*127=0.9921875
         ceiling: -0.01,
       },
     },
@@ -1633,7 +1633,110 @@ export const itemConfig = {
       noGravity: true,
       placement: {
         wall: 0.3,
-        ground: 1.01,
+        ground: 1.0,
+        ceiling: -1.1484375,
+      },
+    },
+  },
+  // ==================== 熟鳕鱼配置 ====================
+  "minecraft:cooked_cod": {
+    _default: {
+      entityId: "cit:cooked_cod_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    "Cooked Cod_0": {
+      entityId: "cit:cooked_cod_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 熟鲑鱼配置 ====================
+  "minecraft:cooked_salmon": {
+    _default: {
+      entityId: "cit:cooked_salmon_0",
+      wallEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    "Cooked Salmon_0": {
+      entityId: "cit:cooked_salmon_0",
+      wallEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 蛋糕配置 ====================
+  "minecraft:cake": {
+    _default: {
+      entityId: "cit:cake_0",
+      variantCount: 3,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Cake_0: {
+      entityId: "cit:cake_0",
+      variantCount: 3,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Cake_0a: {
+      entityId: "cit:cake_0",
+      spawnVariant: 1,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Cake_0b: {
+      entityId: "cit:cake_0",
+      spawnVariant: 2,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Cake_1: {
+      entityId: "cit:cake_1",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    Cake_2: {
+      entityId: "cit:cake_2",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
         ceiling: -0.01,
       },
     },

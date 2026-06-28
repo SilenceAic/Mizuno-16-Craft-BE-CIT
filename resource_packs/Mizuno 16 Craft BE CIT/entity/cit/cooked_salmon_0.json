@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:cooked_salmon_0",
+      "materials": {
+        "plate_white": "entity_alphatest",
+        "cooked_salmon_0": "entity_alphatest"
+      },
+      "textures": {
+        "plate_white": "textures/cit/entity/plate_white",
+        "cooked_salmon_0": "textures/cit/entity/cooked_salmon_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.cooked_salmon_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.cooked_salmon_0.plate_white",
+        "controller.render.cit.cooked_salmon_0.cooked_salmon_0"
+      ]
+    }
+  }
+}

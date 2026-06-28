@@ -16,7 +16,9 @@
         "pufferfish_1_top": "animation.cit.pufferfish_1_top"
       },
       "scripts": {
-        "animate": ["pufferfish_1_top"]
+        "animate": [
+          "pufferfish_1_top"
+        ]
       },
       "render_controllers": [
         "controller.render.cit.pufferfish_1"

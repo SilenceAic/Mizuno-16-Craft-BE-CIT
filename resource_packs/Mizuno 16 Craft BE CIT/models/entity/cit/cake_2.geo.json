@@ -1,0 +1,179 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.cake_2",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "plate_gold",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-5, 0, -5],
+							"size": [10, 1, 10],
+							"uv": {
+								"north": {"uv": [3, 2], "uv_size": [10, 1], "material_instance": "plate_gold"},
+								"east": {"uv": [13, 3], "uv_size": [1, 10], "uv_rotation": 90, "material_instance": "plate_gold"},
+								"south": {"uv": [3, 13], "uv_size": [10, 1], "material_instance": "plate_gold"},
+								"west": {"uv": [2, 3], "uv_size": [1, 10], "uv_rotation": 90, "material_instance": "plate_gold"},
+								"up": {"uv": [13, 13], "uv_size": [-10, -10], "material_instance": "plate_gold"},
+								"down": {"uv": [13, 13], "uv_size": [-10, -10], "material_instance": "plate_gold"}
+							}
+						},
+						{
+							"origin": [-5, 0.5, -7],
+							"size": [10, 1, 2],
+							"uv": {
+								"north": {"uv": [3, 0], "uv_size": [10, 1], "material_instance": "plate_gold"},
+								"south": {"uv": [3, 2], "uv_size": [10, 1], "material_instance": "plate_gold"},
+								"up": {"uv": [13, 3], "uv_size": [-10, -2], "material_instance": "plate_gold"},
+								"down": {"uv": [13, 15], "uv_size": [-10, -2], "material_instance": "plate_gold"}
+							}
+						},
+						{
+							"origin": [-5, 0.5, 5],
+							"size": [10, 1, 2],
+							"uv": {
+								"north": {"uv": [3, 13], "uv_size": [10, 1], "material_instance": "plate_gold"},
+								"south": {"uv": [3, 15], "uv_size": [10, 1], "material_instance": "plate_gold"},
+								"up": {"uv": [13, 15], "uv_size": [-10, -2], "material_instance": "plate_gold"},
+								"down": {"uv": [13, 3], "uv_size": [-10, -2], "material_instance": "plate_gold"}
+							}
+						},
+						{
+							"origin": [5, 0.5, -7],
+							"size": [2, 1, 14],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [2, 1], "material_instance": "plate_gold"},
+								"east": {"uv": [2, 1], "uv_size": [1, 14], "uv_rotation": 90, "material_instance": "plate_gold"},
+								"south": {"uv": [1, 15], "uv_size": [2, 1], "material_instance": "plate_gold"},
+								"west": {"uv": [0, 1], "uv_size": [1, 14], "uv_rotation": 90, "material_instance": "plate_gold"},
+								"up": {"uv": [3, 15], "uv_size": [-2, -14], "material_instance": "plate_gold"},
+								"down": {"uv": [3, 15], "uv_size": [-2, -14], "material_instance": "plate_gold"}
+							}
+						},
+						{
+							"origin": [-7, 0.5, -7],
+							"size": [2, 1, 14],
+							"uv": {
+								"north": {"uv": [13, 0], "uv_size": [2, 1], "material_instance": "plate_gold"},
+								"east": {"uv": [15, 1], "uv_size": [1, 14], "uv_rotation": 90, "material_instance": "plate_gold"},
+								"south": {"uv": [13, 15], "uv_size": [2, 1], "material_instance": "plate_gold"},
+								"west": {"uv": [13, 1], "uv_size": [1, 14], "uv_rotation": 90, "material_instance": "plate_gold"},
+								"up": {"uv": [15, 15], "uv_size": [-2, -14], "material_instance": "plate_gold"},
+								"down": {"uv": [15, 15], "uv_size": [-2, -14], "material_instance": "plate_gold"}
+							}
+						}
+					]
+				},
+				{
+					"name": "cake_1",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-4, 0, -4],
+							"size": [8, 6, 6],
+							"uv": {
+								"east": {"uv": [4, 9], "uv_size": [6, 6], "material_instance": "cake_1"},
+								"west": {"uv": [4, 9], "uv_size": [6, 6], "material_instance": "cake_1"},
+								"up": {"uv": [10, 8], "uv_size": [-6, -8], "uv_rotation": 90, "material_instance": "cake_1"}
+							}
+						}
+					]
+				},
+				{
+					"name": "cake_1_01",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [0, 6, -3],
+							"size": [2, 1, 2],
+							"uv": {
+								"north": {"uv": [1, 14], "uv_size": [2, 1], "material_instance": "cake_1_01"},
+								"east": {"uv": [1, 14], "uv_size": [2, 1], "material_instance": "cake_1_01"},
+								"south": {"uv": [1, 14], "uv_size": [2, 1], "material_instance": "cake_1_01"},
+								"west": {"uv": [1, 14], "uv_size": [2, 1], "material_instance": "cake_1_01"},
+								"up": {"uv": [3, 15], "uv_size": [-2, -2], "material_instance": "cake_1_01"}
+							}
+						},
+						{
+							"origin": [-3, 6.5, -3.5],
+							"size": [5, 0.01, 5],
+							"pivot": [1, 6.5, 0.5],
+							"rotation": [0, 0, 22.5],
+							"uv": {
+								"up": {"uv": [15, 15], "uv_size": [-5, -5], "material_instance": "cake_1_01"},
+								"down": {"uv": [15, 10], "uv_size": [-5, 5], "material_instance": "cake_1_01"}
+							}
+						},
+						{
+							"origin": [-3, 6.5, -3.5],
+							"size": [5, 0.01, 5],
+							"pivot": [1, 6.5, 0.5],
+							"rotation": [-22.5, 0, 0],
+							"uv": {
+								"up": {"uv": [15, 15], "uv_size": [-5, -5], "material_instance": "cake_1_01"},
+								"down": {"uv": [15, 10], "uv_size": [-5, 5], "material_instance": "cake_1_01"}
+							}
+						},
+						{
+							"origin": [-4, 0, 2],
+							"size": [8, 6, 0],
+							"uv": {
+								"south": {"uv": [0, 0], "uv_size": [8, 6], "material_instance": "cake_1_01"}
+							}
+						},
+						{
+							"origin": [-4, 0, -4],
+							"size": [8, 6, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [8, 6], "material_instance": "cake_1_01"}
+							}
+						}
+					]
+				},
+				{
+					"name": "cutlery_gold",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-1, 1.75, 2.5],
+							"size": [4, 0.5, 3],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [1, 4], "uv_rotation": 90, "material_instance": "cutlery_gold"},
+								"east": {"uv": [1, 3], "uv_size": [3, 1], "material_instance": "cutlery_gold"},
+								"south": {"uv": [0, 0], "uv_size": [1, 4], "uv_rotation": 270, "material_instance": "cutlery_gold"},
+								"west": {"uv": [1, 0], "uv_size": [3, 1], "material_instance": "cutlery_gold"},
+								"up": {"uv": [4, 4], "uv_size": [-3, -4], "uv_rotation": 270, "material_instance": "cutlery_gold"},
+								"down": {"uv": [4, 4], "uv_size": [-3, -4], "uv_rotation": 270, "material_instance": "cutlery_gold"}
+							}
+						},
+						{
+							"origin": [-8, 1.5, 3],
+							"size": [7, 1, 2],
+							"uv": {
+								"north": {"uv": [0, 4], "uv_size": [1, 7], "uv_rotation": 90, "material_instance": "cutlery_gold"},
+								"east": {"uv": [1, 11], "uv_size": [2, 1], "material_instance": "cutlery_gold"},
+								"south": {"uv": [0, 4], "uv_size": [1, 7], "uv_rotation": 270, "material_instance": "cutlery_gold"},
+								"west": {"uv": [1, 4], "uv_size": [2, 1], "material_instance": "cutlery_gold"},
+								"up": {"uv": [3, 11], "uv_size": [-2, -7], "uv_rotation": 270, "material_instance": "cutlery_gold"},
+								"down": {"uv": [3, 11], "uv_size": [-2, -7], "uv_rotation": 270, "material_instance": "cutlery_gold"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

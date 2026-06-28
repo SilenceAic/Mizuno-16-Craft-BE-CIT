@@ -8,7 +8,7 @@
         "pufferfish_0": "entity_alphatest"
       },
       "textures": {
-        "spruce_planks": "textures/cit/entity/spruce_planks",
+        "spruce_planks": "textures/blocks/cit/spruce_planks",
         "pufferfish_0": "textures/cit/entity/pufferfish_0"
       },
       "geometry": {
@@ -18,7 +18,9 @@
         "pufferfish_0_wall": "animation.cit.pufferfish_0_wall"
       },
       "scripts": {
-        "animate": ["pufferfish_0_wall"]
+        "animate": [
+          "pufferfish_0_wall"
+        ]
       },
       "render_controllers": [
         "controller.render.cit.pufferfish_0.spruce_planks",

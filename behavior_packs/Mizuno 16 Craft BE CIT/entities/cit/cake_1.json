@@ -2,14 +2,14 @@
   "format_version": "1.21.80",
   "minecraft:entity": {
     "description": {
-      "identifier": "cit:pufferfish_0",
+      "identifier": "cit:cake_1",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false,
       "properties": {
         "cit:is_wall": {
           "type": "bool",
-          "default": true,
+          "default": false,
           "client_sync": true
         },
         "cit:is_top": {
@@ -34,15 +34,6 @@
           ],
           "default": 0,
           "client_sync": true
-        },
-        "cit:bounce": {
-          "type": "float",
-          "range": [
-            0.0,
-            1.0
-          ],
-          "default": 0.0,
-          "client_sync": true
         }
       }
     },
@@ -66,26 +57,24 @@
     "components": {
       "minecraft:type_family": {
         "family": [
-          "pufferfish_0",
+          "cake_1",
           "cit",
-          "inanimate",
-          "is_wall",
-          "is_dynamic"
+          "inanimate"
         ]
       },
       "minecraft:is_collidable": {},
       "minecraft:collision_box": {
-        "width": 0.25,
-        "height": 0.1875
+        "width": 0.75,
+        "height": 0.5
       },
       "minecraft:custom_hit_test": {
         "hitboxes": [
           {
-            "width": 0.25,
-            "height": 0.1875,
+            "width": 0.5,
+            "height": 0.375,
             "pivot": [
               0,
-              0.1875,
+              0.25,
               0
             ]
           }
@@ -103,6 +92,7 @@
         "value": 1.0
       },
       "minecraft:persistent": {},
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": false,
         "is_pushable_by_piston": true

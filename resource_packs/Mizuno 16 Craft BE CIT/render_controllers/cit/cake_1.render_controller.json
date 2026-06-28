@@ -1,22 +1,25 @@
 {
     "format_version": "1.8.0",
     "render_controllers": {
-        "controller.render.cit.bread_3.bread_2": {
+        "controller.render.cit.cake_1.cake_1": {
             "geometry": "Geometry.default",
             "materials": [
                 {
-                    "*": "Material.bread_2"
+                    "*": "Material.cake_1"
                 }
             ],
             "textures": [
-                "Texture.bread_2"
+                "Texture.cake_1"
             ],
             "part_visibility": [
                 {
-                    "bread_2": true
+                    "*": true
                 },
                 {
-                    "bread_3": false
+                    "cake_1": true
+                },
+                {
+                    "cake_1_01": false
                 }
             ],
             "is_hurt_color": {
@@ -33,22 +36,25 @@
             },
             "ignore_lighting": false
         },
-        "controller.render.cit.bread_3.bread_3": {
+        "controller.render.cit.cake_1.cake_1_01": {
             "geometry": "Geometry.default",
             "materials": [
                 {
-                    "*": "Material.bread_3"
+                    "*": "Material.cake_1_01"
                 }
             ],
             "textures": [
-                "Texture.bread_3"
+                "Texture.cake_1_01"
             ],
             "part_visibility": [
                 {
-                    "bread_2": false
+                    "*": true
                 },
                 {
-                    "bread_3": true
+                    "cake_1": false
+                },
+                {
+                    "cake_1_01": true
                 }
             ],
             "is_hurt_color": {

@@ -688,6 +688,46 @@
           ]
         }
       }
+    },
+    "animation.cit.cake_0_floor": {
+      "loop": true,
+      "bones": {
+        "plate": {
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        },
+        "side": {
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        },
+        "cutlery": {
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        },
+        "inner": {
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        },
+        "top": {
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        }
+      }
     }
   }
 }

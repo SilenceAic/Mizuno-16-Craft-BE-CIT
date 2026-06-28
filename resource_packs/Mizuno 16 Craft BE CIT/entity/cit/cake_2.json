@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:cake_2",
+      "materials": {
+        "plate_gold": "entity_alphatest",
+        "cake_1": "entity_alphatest",
+        "cake_1_01": "entity_alphatest",
+        "cutlery_gold": "entity_alphatest"
+      },
+      "textures": {
+        "plate_gold": "textures/cit/entity/plate_gold",
+        "cake_1": "textures/cit/entity/cake_1",
+        "cake_1_01": "textures/cit/entity/cake_1_01",
+        "cutlery_gold": "textures/cit/entity/cutlery_gold"
+      },
+      "geometry": {
+        "default": "geometry.cit.cake_2"
+      },
+      "render_controllers": [
+        "controller.render.cit.cake_2.plate_gold",
+        "controller.render.cit.cake_2.cake_1",
+        "controller.render.cit.cake_2.cake_1_01",
+        "controller.render.cit.cake_2.cutlery_gold"
+      ]
+    }
+  }
+}

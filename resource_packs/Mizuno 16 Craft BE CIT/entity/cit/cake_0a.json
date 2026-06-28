@@ -1,0 +1,50 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:cake_0a",
+      "materials": {
+        "plate": "entity_alphatest",
+        "side": "entity_alphatest",
+        "cutlery": "entity_alphatest",
+        "inner": "entity_alphatest",
+        "top": "entity_alphatest"
+      },
+      "textures": {
+        "plate": "textures/cit/entity/plate_white",
+        "plate_a": "textures/cit/entity/plate_white",
+        "plate_b": "textures/cit/entity/plate_white",
+        "side": "textures/blocks/cit/cake_side",
+        "side_a": "textures/blocks/cit/cake_side_0",
+        "side_b": "textures/blocks/cit/cake_side_1",
+        "cutlery": "textures/cit/entity/cutlery",
+        "cutlery_a": "textures/cit/entity/cutlery",
+        "cutlery_b": "textures/cit/entity/cutlery",
+        "inner": "textures/blocks/cit/cake_inner",
+        "inner_a": "textures/blocks/cit/cake_inner_0",
+        "inner_b": "textures/blocks/cit/cake_inner_1",
+        "top": "textures/blocks/cit/cake_top",
+        "top_a": "textures/blocks/cit/cake_top_0",
+        "top_b": "textures/blocks/cit/cake_top_1"
+      },
+      "geometry": {
+        "default": "geometry.cit.template_cake_0"
+      },
+      "animations": {
+        "cake_0_floor": "animation.cit.cake_0_floor"
+      },
+      "scripts": {
+        "animate": [
+          "cake_0_floor"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cit.cake_0.plate",
+        "controller.render.cit.cake_0.side",
+        "controller.render.cit.cake_0.cutlery",
+        "controller.render.cit.cake_0.inner",
+        "controller.render.cit.cake_0.top"
+      ]
+    }
+  }
+}

@@ -56,7 +56,6 @@ const dynamicEntities = new Set([
   "cit:tropical_fish_0",
   "cit:tropical_fish_1",
   "cit:pufferfish_0",
-  "cit:pufferfish_1",
 ]);
 /** 动态实体的锚点位置（弹跳前的 Y），用于回落矫正 */
 const dynamicAnchorMap = new Map(); // entityId → anchorY

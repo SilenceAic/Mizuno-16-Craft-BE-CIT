@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:cake_1",
+      "materials": {
+        "cake_1": "entity_alphatest",
+        "cake_1_01": "entity_alphatest"
+      },
+      "textures": {
+        "cake_1": "textures/cit/entity/cake_1",
+        "cake_1_01": "textures/cit/entity/cake_1_01"
+      },
+      "geometry": {
+        "default": "geometry.cit.cake_1"
+      },
+      "render_controllers": [
+        "controller.render.cit.cake_1.cake_1",
+        "controller.render.cit.cake_1.cake_1_01"
+      ]
+    }
+  }
+}

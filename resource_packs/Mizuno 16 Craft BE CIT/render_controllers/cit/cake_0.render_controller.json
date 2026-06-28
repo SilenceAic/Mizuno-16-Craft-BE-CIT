@@ -1,0 +1,210 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.cake_0.plate": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.plate"
+                }
+            ],
+            "textures": [
+                "q.property('cit:variant') == 1 ? Texture.plate_a : (q.property('cit:variant') == 2 ? Texture.plate_b : Texture.plate)"
+            ],
+            "part_visibility": [
+                {
+                    "plate": true
+                },
+                {
+                    "side": false
+                },
+                {
+                    "cutlery": false
+                },
+                {
+                    "inner": false
+                },
+                {
+                    "top": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.cake_0.side": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.side"
+                }
+            ],
+            "textures": [
+                "q.property('cit:variant') == 1 ? Texture.side_a : (q.property('cit:variant') == 2 ? Texture.side_b : Texture.side)"
+            ],
+            "part_visibility": [
+                {
+                    "plate": false
+                },
+                {
+                    "side": true
+                },
+                {
+                    "cutlery": false
+                },
+                {
+                    "inner": false
+                },
+                {
+                    "top": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.cake_0.cutlery": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.cutlery"
+                }
+            ],
+            "textures": [
+                "q.property('cit:variant') == 1 ? Texture.cutlery_a : (q.property('cit:variant') == 2 ? Texture.cutlery_b : Texture.cutlery)"
+            ],
+            "part_visibility": [
+                {
+                    "plate": false
+                },
+                {
+                    "side": false
+                },
+                {
+                    "cutlery": true
+                },
+                {
+                    "inner": false
+                },
+                {
+                    "top": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.cake_0.inner": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.inner"
+                }
+            ],
+            "textures": [
+                "q.property('cit:variant') == 1 ? Texture.inner_a : (q.property('cit:variant') == 2 ? Texture.inner_b : Texture.inner)"
+            ],
+            "part_visibility": [
+                {
+                    "plate": false
+                },
+                {
+                    "side": false
+                },
+                {
+                    "cutlery": false
+                },
+                {
+                    "inner": true
+                },
+                {
+                    "top": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.cake_0.top": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.top"
+                }
+            ],
+            "textures": [
+                "q.property('cit:variant') == 1 ? Texture.top_a : (q.property('cit:variant') == 2 ? Texture.top_b : Texture.top)"
+            ],
+            "part_visibility": [
+                {
+                    "plate": false
+                },
+                {
+                    "side": false
+                },
+                {
+                    "cutlery": false
+                },
+                {
+                    "inner": false
+                },
+                {
+                    "top": true
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        }
+    }
+}

@@ -3,26 +3,66 @@
     "render_controllers": {
         "controller.render.cit.pufferfish_0.spruce_planks": {
             "geometry": "Geometry.default",
-            "materials": [{ "*": "Material.spruce_planks" }],
-            "textures": ["Texture.spruce_planks"],
-            "part_visibility": [
-                { "spruce_planks": true },
-                { "pufferfish_0": false }
+            "materials": [
+                {
+                    "*": "Material.spruce_planks"
+                }
             ],
-            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
-            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "textures": [
+                "Texture.spruce_planks"
+            ],
+            "part_visibility": [
+                {
+                    "spruce_planks": true
+                },
+                {
+                    "pufferfish_0": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
             "ignore_lighting": false
         },
         "controller.render.cit.pufferfish_0.pufferfish_0": {
             "geometry": "Geometry.default",
-            "materials": [{ "*": "Material.pufferfish_0" }],
-            "textures": ["Texture.pufferfish_0"],
-            "part_visibility": [
-                { "spruce_planks": false },
-                { "pufferfish_0": true }
+            "materials": [
+                {
+                    "*": "Material.pufferfish_0"
+                }
             ],
-            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
-            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "textures": [
+                "Texture.pufferfish_0"
+            ],
+            "part_visibility": [
+                {
+                    "spruce_planks": false
+                },
+                {
+                    "pufferfish_0": true
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
             "ignore_lighting": false
         }
     }

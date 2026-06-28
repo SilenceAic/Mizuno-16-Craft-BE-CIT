@@ -47,6 +47,9 @@ export const item3dList = new Set([
   "minecraft:salmon",
   "minecraft:tropical_fish",
   "minecraft:pufferfish",
+  "minecraft:cooked_cod",
+  "minecraft:cooked_salmon",
+  "minecraft:cake",
 ]);
 /**
  * 需要被拦截放置、转向 item3d 系统的方块类型物品及其名称要求

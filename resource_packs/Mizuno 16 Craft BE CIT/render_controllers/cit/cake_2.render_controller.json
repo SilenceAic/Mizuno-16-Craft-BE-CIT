@@ -1,0 +1,61 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.cake_2.plate_gold": {
+            "geometry": "Geometry.default",
+            "materials": [{ "*": "Material.plate_gold" }],
+            "textures": ["Texture.plate_gold"],
+            "part_visibility": [
+                { "plate_gold": true },
+                { "cake_1": false },
+                { "cake_1_01": false },
+                { "cutlery_gold": false }
+            ],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.cake_2.cake_1": {
+            "geometry": "Geometry.default",
+            "materials": [{ "*": "Material.cake_1" }],
+            "textures": ["Texture.cake_1"],
+            "part_visibility": [
+                { "plate_gold": false },
+                { "cake_1": true },
+                { "cake_1_01": false },
+                { "cutlery_gold": false }
+            ],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.cake_2.cake_1_01": {
+            "geometry": "Geometry.default",
+            "materials": [{ "*": "Material.cake_1_01" }],
+            "textures": ["Texture.cake_1_01"],
+            "part_visibility": [
+                { "plate_gold": false },
+                { "cake_1": false },
+                { "cake_1_01": true },
+                { "cutlery_gold": false }
+            ],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.cake_2.cutlery_gold": {
+            "geometry": "Geometry.default",
+            "materials": [{ "*": "Material.cutlery_gold" }],
+            "textures": ["Texture.cutlery_gold"],
+            "part_visibility": [
+                { "plate_gold": false },
+                { "cake_1": false },
+                { "cake_1_01": false },
+                { "cutlery_gold": true }
+            ],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "ignore_lighting": false
+        }
+    }
+}

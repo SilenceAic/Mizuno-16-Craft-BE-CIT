@@ -1,0 +1,29 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.cooked_salmon_0.plate_white": {
+            "geometry": "Geometry.default",
+            "materials": [{ "*": "Material.plate_white" }],
+            "textures": ["Texture.plate_white"],
+            "part_visibility": [
+                { "plate_white": true },
+                { "cooked_salmon_0": false }
+            ],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.cooked_salmon_0.cooked_salmon_0": {
+            "geometry": "Geometry.default",
+            "materials": [{ "*": "Material.cooked_salmon_0" }],
+            "textures": ["Texture.cooked_salmon_0"],
+            "part_visibility": [
+                { "plate_white": false },
+                { "cooked_salmon_0": true }
+            ],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "ignore_lighting": false
+        }
+    }
+}
