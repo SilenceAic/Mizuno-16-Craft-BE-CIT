@@ -15,7 +15,7 @@
  * ```json
  * {
  *   "module_name": "@minecraft/server",
- *   "version": "2.7.0"
+ *   "version": "2.8.0"
  * }
  * ```
  *
@@ -11534,7 +11534,7 @@ export class EntityProjectileComponent extends EntityComponent {
      * @remarks
      * The gravity applied to the projectile. When the entity is
      * not on the ground, subtracts this amount from the
-     * projectile’s change in vertical position every tick. The
+     * projectileโ��s change in vertical position every tick. The
      * higher the value, the faster the projectile falls. If
      * negative, the entity will rise instead of fall.
      *
@@ -14467,7 +14467,7 @@ export class ItemStack {
      *
      * function giveAwesomeSword(player: Player) {
      *   const diamondAwesomeSword = new ItemStack(MinecraftItemTypes.DiamondSword, 1);
-     *   diamondAwesomeSword.setLore(['§c§lDiamond Sword of Awesome§r', '+10 coolness', '§p+4 shiny§r']);
+     *   diamondAwesomeSword.setLore(['ยงcยงlDiamond Sword of Awesomeยงr', '+10 coolness', 'ยงp+4 shinyยงr']);
      *
      *   // hover over/select the item in your inventory to see the lore.
      *   const inventory = player.getComponent(EntityComponentTypes.Inventory);
@@ -18452,7 +18452,7 @@ export class ScoreboardScoreInfo {
  *   const players = world.getPlayers();
  *
  *   if (players.length > 0) {
- *     players[0].onScreenDisplay.setTitle('§o§6Fancy Title§r');
+ *     players[0].onScreenDisplay.setTitle('ยงoยง6Fancy Titleยงr');
  *   }
  * }
  * ```
@@ -18600,7 +18600,7 @@ export class ScreenDisplay {
      *   const players = world.getPlayers();
      *
      *   if (players.length > 0) {
-     *     players[0].onScreenDisplay.setTitle('§o§6Fancy Title§r');
+     *     players[0].onScreenDisplay.setTitle('ยงoยง6Fancy Titleยงr');
      *   }
      * }
      * ```

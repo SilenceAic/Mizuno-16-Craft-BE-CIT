@@ -1,0 +1,29 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.golden_apple_1.basket": {
+            "geometry": "Geometry.default",
+            "materials": [{ "*": "Material.basket" }],
+            "textures": ["Texture.basket"],
+            "part_visibility": [
+                { "basket": true },
+                { "golden_apple_0": false }
+            ],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.golden_apple_1.golden_apple_0": {
+            "geometry": "Geometry.default",
+            "materials": [{ "*": "Material.golden_apple_0" }],
+            "textures": ["Texture.golden_apple_0"],
+            "part_visibility": [
+                { "basket": false },
+                { "golden_apple_0": true }
+            ],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "ignore_lighting": false
+        }
+    }
+}

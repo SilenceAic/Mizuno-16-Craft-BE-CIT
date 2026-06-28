@@ -1,12 +1,68 @@
 {
     "format_version": "1.8.0",
     "render_controllers": {
-        "controller.render.cit.bread_0": {
+        "controller.render.cit.bread_0.bread_0": {
             "geometry": "Geometry.default",
-            "materials": [{ "*": "Material.default" }],
-            "textures": ["Texture.default"],
-            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
-            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "materials": [
+                {
+                    "*": "Material.bread_0"
+                }
+            ],
+            "textures": [
+                "Texture.bread_0"
+            ],
+            "part_visibility": [
+                {
+                    "bread_0": true
+                },
+                {
+                    "bread_1": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.bread_0.bread_1": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.bread_1"
+                }
+            ],
+            "textures": [
+                "Texture.bread_1"
+            ],
+            "part_visibility": [
+                {
+                    "bread_0": false
+                },
+                {
+                    "bread_1": true
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
             "ignore_lighting": false
         }
     }

@@ -1,0 +1,132 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cit:raw_salmon_2",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "properties": {
+        "cit:is_wall": {
+          "type": "bool",
+          "default": false,
+          "client_sync": true
+        },
+        "cit:is_top": {
+          "type": "bool",
+          "default": true,
+          "client_sync": true
+        },
+        "cit:wall_face": {
+          "type": "int",
+          "range": [
+            0,
+            270
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "cit:wall_rotation": {
+          "type": "int",
+          "range": [
+            0,
+            359
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "cit:bounce": {
+          "type": "float",
+          "range": [
+            0.0,
+            1.0
+          ],
+          "default": 0.0,
+          "client_sync": true
+        }
+      }
+    },
+    "component_groups": {
+      "cit:despawn": {
+        "minecraft:instant_despawn": {}
+      },
+      "cit:invisible": {
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "visible": false,
+              "effect": "invisibility",
+              "duration": "infinite"
+            }
+          ]
+        },
+        "minecraft:renders_when_invisible": {}
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "raw_salmon_2",
+          "cit",
+          "inanimate",
+          "is_top"
+        ]
+      },
+      "minecraft:is_collidable": {},
+      "minecraft:collision_box": {
+        "width": 0.625,
+        "height": 1.125
+      },
+      "minecraft:custom_hit_test": {
+        "hitboxes": [
+          {
+            "width": 0.625,
+            "height": 1.125,
+            "pivot": [
+              0,
+              0.5625,
+              0
+            ]
+          }
+        ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": "no"
+          }
+        ]
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:persistent": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:is_stackable": {},
+      "minecraft:push_through": {
+        "value": 1
+      }
+    },
+    "events": {
+      "cit:despawn": {
+        "add": {
+          "component_groups": [
+            "cit:despawn"
+          ]
+        }
+      },
+      "cit:on_spawn": {
+        "add": {
+          "component_groups": [
+            "cit:invisible"
+          ]
+        }
+      }
+    }
+  }
+}

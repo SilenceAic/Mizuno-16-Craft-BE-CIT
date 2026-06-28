@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:pufferfish_1",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/cit/entity/pufferfish_1"
+      },
+      "geometry": {
+        "default": "geometry.cit.pufferfish_1"
+      },
+      "animations": {
+        "pufferfish_1_top": "animation.cit.pufferfish_1_top"
+      },
+      "scripts": {
+        "animate": ["pufferfish_1_top"]
+      },
+      "render_controllers": [
+        "controller.render.cit.pufferfish_1"
+      ]
+    }
+  }
+}

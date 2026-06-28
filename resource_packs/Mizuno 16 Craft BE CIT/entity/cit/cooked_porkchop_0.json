@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:cooked_porkchop_0",
+      "materials": {
+        "plate_green": "entity_alphatest",
+        "cooked_porkchop_0": "entity_alphatest"
+      },
+      "textures": {
+        "plate_green": "textures/cit/entity/cooked_porkchop_0",
+        "cooked_porkchop_0": "textures/cit/entity/cooked_porkchop_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.cooked_porkchop_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.cooked_porkchop_0.plate_green",
+        "controller.render.cit.cooked_porkchop_0.cooked_porkchop_0"
+      ]
+    }
+  }
+}

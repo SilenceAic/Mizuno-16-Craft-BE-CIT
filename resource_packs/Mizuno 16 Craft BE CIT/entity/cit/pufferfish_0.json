@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:pufferfish_0",
+      "materials": {
+        "spruce_planks": "entity_alphatest",
+        "pufferfish_0": "entity_alphatest"
+      },
+      "textures": {
+        "spruce_planks": "textures/cit/entity/spruce_planks",
+        "pufferfish_0": "textures/cit/entity/pufferfish_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.pufferfish_0"
+      },
+      "animations": {
+        "pufferfish_0_wall": "animation.cit.pufferfish_0_wall"
+      },
+      "scripts": {
+        "animate": ["pufferfish_0_wall"]
+      },
+      "render_controllers": [
+        "controller.render.cit.pufferfish_0.spruce_planks",
+        "controller.render.cit.pufferfish_0.pufferfish_0"
+      ]
+    }
+  }
+}

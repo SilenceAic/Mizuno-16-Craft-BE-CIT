@@ -29,6 +29,42 @@ const transitionVariantEntities = new Set([
 // switch_out 动画时长 0.2s × 20 = 4 ticks
 const transitionSwitchOutTicks = 4;
 const transitionSpawnGuardTicks = 2;
+// 墙面吸附平滑过渡
+let wallTickCounter = 0;
+const wallTransitionEntities = new Map(); // entityId → { startTick, startRot, targetRot }
+const WALL_TRANSITION_TICKS = 6;
+
+function shortestAngleDelta(from, to) {
+  let delta = (((to - from) % 360) + 360) % 360;
+  if (delta > 180) delta -= 360;
+  return delta;
+}
+/** 类型 ID 不以 _wall 结尾但需要墙面行为的实体 */
+const wallCapableEntities = new Set([
+  "cit:raw_cod_0",
+  "cit:raw_salmon_0",
+  "cit:tropical_fish_0",
+  "cit:tropical_fish_1",
+  "cit:pufferfish_0",
+]);
+/** 类型 ID 不以 _top 结尾但需要天花板旋转行为的实体 */
+const topCapableEntities = new Set(["cit:raw_cod_1", "cit:raw_cod_1a", "cit:raw_salmon_2", "cit:pufferfish_1"]);
+/** 拥有 is_dynamic family 的实体，地板弹跳后需要自动回落 */
+const dynamicEntities = new Set([
+  "cit:raw_cod_0",
+  "cit:raw_salmon_0",
+  "cit:tropical_fish_0",
+  "cit:tropical_fish_1",
+  "cit:pufferfish_0",
+  "cit:pufferfish_1",
+]);
+/** 动态实体的锚点位置（弹跳前的 Y），用于回落矫正 */
+const dynamicAnchorMap = new Map(); // entityId → anchorY
+/** 判断实体是否具备墙面属性，避免在无该属性的 floor 实体上崩溃 */
+function hasWallCapability(entity) {
+  if (entity.typeId.endsWith("_wall")) return true;
+  return wallCapableEntities.has(entity.typeId);
+}
 /** 触发弹跳动画并开始衰减 */
 function startBounce(entity) {
   try {
@@ -152,25 +188,17 @@ function hopFloorStack(baseEntity, rotationYDelta = 0) {
   const stackEntities = [baseEntity, ...getStackedFloorEntities(baseEntity)];
   for (let index = 0; index < stackEntities.length; index++) {
     const entity = stackEntities[index];
-    if (!entity.isValid) {
-      continue;
-    }
+    if (!entity.isValid) continue;
     try {
       const location = entity.location;
+      // 记录动态实体的锚点位置，用于后续回落矫正
+      if (dynamicEntities.has(entity.typeId)) {
+        dynamicAnchorMap.set(entity.id, location.y);
+      }
       const rotation = entity.getRotation();
       entity.teleport(
-        {
-          x: location.x,
-          y: location.y + (index === 0 ? 0.1 : 0.08),
-          z: location.z,
-        },
-        {
-          dimension: entity.dimension,
-          rotation: {
-            x: rotation.x,
-            y: rotation.y + (index === 0 ? rotationYDelta : 0),
-          },
-        }
+        { x: location.x, y: location.y + (index === 0 ? 0.1 : 0.08), z: location.z },
+        { dimension: entity.dimension, rotation: { x: rotation.x, y: rotation.y + (index === 0 ? rotationYDelta : 0) } }
       );
     } catch (e) {}
   }
@@ -508,7 +536,7 @@ components.set("cit:core", {
         }
       } else {
         // 无变体：仅弹跳
-        const isTopType = hitEntity.typeId.endsWith("_top");
+        const isTopType = hitEntity.typeId.endsWith("_top") || topCapableEntities.has(hitEntity.typeId);
         if (isWallType || isTopType) {
           startBounce(hitEntity);
         } else {
@@ -534,11 +562,11 @@ components.set("cit:core", {
     if (!player.isSneaking) {
       const itemName = target.getDynamicProperty("cit:custom_name") || "";
       const normalizedName = itemName.toLowerCase();
-      // 用 typeId 判断是否为 wall 实体，避免在无该属性的 floor 实体上崩溃
-      const isWallEntity = target.typeId.endsWith("_wall");
-      const isTopEntity = target.typeId.endsWith("_top");
-      // _wall / _top 实体走纯动画旋转（cit:wall_rotation），floor 实体走 teleport 旋转+跳动
-      const rotationMode = (isWallEntity || isTopEntity) ? "wall_10" : "floor";
+      // 用 typeId 或属性判断是否为 wall 实体，并区分当前是否已在墙上
+      const isWallEntity = hasWallCapability(target);
+      const isTopEntity = target.typeId.endsWith("_top") || topCapableEntities.has(target.typeId);
+      const currentlyOnWall = isWallEntity && target.getProperty("cit:is_wall") === true;
+      const rotationMode = currentlyOnWall || isTopEntity ? "wall_10" : "floor";
       mc.system.run(() => {
         if (!target.isValid) return;
         if (rotationMode === "wall_10") {
@@ -564,6 +592,9 @@ components.set("cit:core", {
         }
         // Release ownership
         target.setDynamicProperty("cit:owner", undefined);
+        target.setDynamicProperty("cit:prev_is_wall", false);
+        wallTransitionEntities.delete(target.id);
+        dynamicAnchorMap.delete(target.id);
         player.removeTag("cit");
       });
       event.cancel = true;
@@ -586,6 +617,7 @@ components.set("cit:core", {
       }
       target.setDynamicProperty("cit:owner", player.name);
       player.addTag("cit");
+      dynamicAnchorMap.delete(target.id);
     });
     event.cancel = true;
   },
@@ -663,6 +695,7 @@ mc.system.runInterval(() => {
 }, 1);
 // Held item loop
 mc.system.runInterval(() => {
+  wallTickCounter++;
   const players = mc.world.getAllPlayers();
   for (const player of players) {
     // Skip players without the item3d tag (not holding any item)
@@ -689,6 +722,9 @@ mc.system.runInterval(() => {
         // Handle entity override: apple_wall -> apple, bowl_4_wall -> bowl
         itemTypeId = itemTypeId.replace("_wall", "").replace("_top", "");
         itemTypeId = itemTypeId.replace(/_\d+[a-zA-Z]*$/, "");
+        // Fix fish entity naming: raw_cod → cod, raw_salmon → salmon
+        itemTypeId = itemTypeId.replace("minecraft:raw_cod", "minecraft:cod");
+        itemTypeId = itemTypeId.replace("minecraft:raw_salmon", "minecraft:salmon");
         const itemName = entity.getDynamicProperty("cit:custom_name");
         const { targetLocation, properties } = calculateTargetLocation(
           player,
@@ -696,8 +732,8 @@ mc.system.runInterval(() => {
           itemTypeId,
           itemName !== null && itemName !== void 0 ? itemName : null
         );
-        // 仅 _wall 实体拥有 wall 属性，floor 实体不读写，避免崩溃
-        const isWallEntity = entity.typeId.endsWith("_wall");
+        // 通过属性检测判断是否为 wall 实体
+        const isWallEntity = hasWallCapability(entity);
         if (properties !== null) {
           if (isWallEntity) {
             for (const [key, value] of Object.entries(properties)) {
@@ -713,13 +749,47 @@ mc.system.runInterval(() => {
         if (isWallEntity) {
           const isWall = entity.getProperty("cit:is_wall");
           if (isWall) {
-            // Wall-mounted items use specific rotation
             const wallFace = entity.getProperty("cit:wall_face");
-            entity.teleport(targetLocation, {
-              dimension,
-              rotation: { x: 0, y: wallFace },
-            });
+            const transition = wallTransitionEntities.get(entity.id);
+            // 正在过渡中：插值旋转
+            if (transition) {
+              const elapsed = wallTickCounter - transition.startTick;
+              const t = Math.min(elapsed / WALL_TRANSITION_TICKS, 1.0);
+              const currentRot =
+                transition.startRot + shortestAngleDelta(transition.startRot, transition.targetRot) * t;
+              entity.teleport(targetLocation, {
+                dimension,
+                rotation: { x: 0, y: currentRot },
+              });
+              if (t >= 1.0) {
+                wallTransitionEntities.delete(entity.id);
+              }
+            } else {
+              // 检查是否从地面状态刚切换到墙面——启动过渡
+              const wasNotOnWall = entity.getDynamicProperty("cit:prev_is_wall") !== true;
+              if (wasNotOnWall) {
+                const currentRot = entity.getRotation();
+                wallTransitionEntities.set(entity.id, {
+                  startTick: wallTickCounter,
+                  startRot: ((currentRot.y % 360) + 360) % 360,
+                  targetRot: wallFace,
+                });
+                entity.setDynamicProperty("cit:prev_is_wall", true);
+              }
+              // 如果刚启动了过渡，第一帧不 snap 旋转，留给下帧插值
+              if (!wallTransitionEntities.has(entity.id)) {
+                entity.teleport(targetLocation, {
+                  dimension,
+                  rotation: { x: 0, y: wallFace },
+                });
+              } else {
+                entity.teleport(targetLocation, { dimension });
+              }
+            }
           } else {
+            // 离开墙面：记录状态，清除过渡
+            entity.setDynamicProperty("cit:prev_is_wall", false);
+            wallTransitionEntities.delete(entity.id);
             entity.teleport(targetLocation, { dimension });
           }
         } else {
@@ -729,6 +799,29 @@ mc.system.runInterval(() => {
       } catch (error) {
         // Silently handle errors
       }
+    }
+  }
+}, 1);
+// Dynamic entity correction loop: pull hopped entities back to anchor
+mc.system.runInterval(() => {
+  for (const [entityId, anchorY] of dynamicAnchorMap) {
+    try {
+      const entity = mc.world.getEntity(entityId);
+      if (!entity || !entity.isValid) {
+        dynamicAnchorMap.delete(entityId);
+        continue;
+      }
+      // 被拿起的实体不矫正
+      if (entity.getDynamicProperty("cit:owner")) continue;
+      const currentY = entity.location.y;
+      if (currentY > anchorY + 0.005) {
+        const fallback = Math.max(anchorY, currentY - 0.05);
+        entity.teleport({ x: entity.location.x, y: fallback, z: entity.location.z }, { dimension: entity.dimension });
+      } else if (currentY <= anchorY + 0.005) {
+        dynamicAnchorMap.delete(entityId);
+      }
+    } catch {
+      dynamicAnchorMap.delete(entityId);
     }
   }
 }, 1);

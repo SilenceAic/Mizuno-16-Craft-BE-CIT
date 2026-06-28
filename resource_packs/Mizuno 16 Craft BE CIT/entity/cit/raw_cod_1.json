@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:raw_cod_1",
+      "materials": {
+        "raw_meat_hook": "entity_alphatest",
+        "raw_cod_0": "entity_alphatest"
+      },
+      "textures": {
+        "raw_meat_hook": "textures/cit/entity/raw_meat_hook",
+        "raw_cod_0": "textures/cit/entity/raw_cod_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.raw_cod_1"
+      },
+      "animations": {
+        "raw_cod_1_top": "animation.cit.raw_cod_1_top"
+      },
+      "scripts": {
+        "animate": [
+          "raw_cod_1_top"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cit.raw_cod_1.raw_meat_hook",
+        "controller.render.cit.raw_cod_1.raw_cod_0"
+      ]
+    }
+  }
+}

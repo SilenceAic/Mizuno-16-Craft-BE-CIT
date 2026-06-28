@@ -1,0 +1,29 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.raw_salmon_1.raw_salmon_1_01": {
+            "geometry": "Geometry.default",
+            "materials": [{ "*": "Material.raw_salmon_1_01" }],
+            "textures": ["Texture.raw_salmon_1_01"],
+            "part_visibility": [
+                { "raw_salmon_1_01": true },
+                { "raw_salmon_1": false }
+            ],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.raw_salmon_1.raw_salmon_1": {
+            "geometry": "Geometry.default",
+            "materials": [{ "*": "Material.raw_salmon_1" }],
+            "textures": ["Texture.raw_salmon_1"],
+            "part_visibility": [
+                { "raw_salmon_1_01": false },
+                { "raw_salmon_1": true }
+            ],
+            "is_hurt_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "on_fire_color": { "r": 0, "g": 0, "b": 0, "a": 0 },
+            "ignore_lighting": false
+        }
+    }
+}

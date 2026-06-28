@@ -13,9 +13,17 @@
         "raw_porkchop_2": "textures/cit/entity/raw_porkchop_2",
         "raw_porkchop_2_01": "textures/cit/entity/raw_porkchop_2_01"
       },
-      "geometry": { "default": "geometry.cit.raw_porkchop_2_top" },
-      "animations": { "pork_top": "animation.cit.porkchop_2_top" },
-      "scripts": { "animate": ["pork_top"] },
+      "geometry": {
+        "default": "geometry.cit.raw_porkchop_2_top"
+      },
+      "animations": {
+        "pork_top": "animation.cit.porkchop_2_top"
+      },
+      "scripts": {
+        "animate": [
+          "pork_top"
+        ]
+      },
       "render_controllers": [
         "controller.render.cit.raw_porkchop_2_top.raw_meat_hook",
         "controller.render.cit.raw_porkchop_2_top.raw_porkchop_2",

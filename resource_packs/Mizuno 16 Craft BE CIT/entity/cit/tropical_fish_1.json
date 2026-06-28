@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:tropical_fish_1",
+      "materials": {
+        "spruce_planks": "entity_alphatest",
+        "tropical_fish_1": "entity_alphatest"
+      },
+      "textures": {
+        "spruce_planks": "textures/blocks/cit/spruce_planks",
+        "tropical_fish_1": "textures/cit/entity/tropical_fish_1"
+      },
+      "geometry": {
+        "default": "geometry.cit.tropical_fish_1"
+      },
+      "animations": {
+        "tropical_fish_1_wall": "animation.cit.tropical_fish_1_wall"
+      },
+      "scripts": {
+        "animate": [
+          "tropical_fish_1_wall"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cit.tropical_fish_1.spruce_planks",
+        "controller.render.cit.tropical_fish_1.tropical_fish_1"
+      ]
+    }
+  }
+}

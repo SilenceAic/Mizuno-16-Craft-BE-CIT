@@ -5,10 +5,12 @@
       "identifier": "cit:bread_2",
       "materials": {
         "bread_2": "entity_alphatest",
+        "bread_1": "entity_alphatest",
         "bread_0": "entity_alphatest"
       },
       "textures": {
         "bread_2": "textures/cit/entity/bread_2",
+        "bread_1": "textures/cit/entity/bread_1",
         "bread_0": "textures/cit/entity/bread_0"
       },
       "geometry": {
@@ -16,6 +18,7 @@
       },
       "render_controllers": [
         "controller.render.cit.bread_2.bread_2",
+        "controller.render.cit.bread_2.bread_1",
         "controller.render.cit.bread_2.bread_0"
       ]
     }

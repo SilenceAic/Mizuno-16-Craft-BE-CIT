@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:golden_apple_1",
+      "materials": {
+        "basket": "entity_alphatest",
+        "golden_apple_0": "entity_alphatest"
+      },
+      "textures": {
+        "basket": "textures/cit/entity/basket",
+        "golden_apple_0": "textures/cit/entity/golden_apple_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.golden_apple_1"
+      },
+      "render_controllers": [
+        "controller.render.cit.golden_apple_1.basket",
+        "controller.render.cit.golden_apple_1.golden_apple_0"
+      ]
+    }
+  }
+}

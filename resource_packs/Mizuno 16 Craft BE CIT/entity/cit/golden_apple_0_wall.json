@@ -1,0 +1,28 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:golden_apple_0_wall",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/cit/entity/golden_apple_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.golden_apple_0_wall"
+      },
+      "animations": {
+        "golden_apple_wall": "animation.cit.golden_apple_0_wall"
+      },
+      "scripts": {
+        "animate": [
+          "golden_apple_wall"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cit.golden_apple_0_wall"
+      ]
+    }
+  }
+}

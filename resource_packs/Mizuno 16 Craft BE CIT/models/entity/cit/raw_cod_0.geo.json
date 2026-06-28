@@ -1,0 +1,435 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.raw_cod_0",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [
+					0,
+					0.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "spruce_planks",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"rotation": [
+						0,
+						180,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								-6
+							],
+							"size": [
+								16,
+								1,
+								12
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										15
+									],
+									"uv_size": [
+										16,
+										1
+									],
+									"uv_rotation": 180,
+									"material_instance": "spruce_planks"
+								},
+								"east": {
+									"uv": [
+										15,
+										0
+									],
+									"uv_size": [
+										1,
+										12
+									],
+									"uv_rotation": 90,
+									"material_instance": "spruce_planks"
+								},
+								"south": {
+									"uv": [
+										0,
+										15
+									],
+									"uv_size": [
+										16,
+										1
+									],
+									"material_instance": "spruce_planks"
+								},
+								"west": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										1,
+										12
+									],
+									"uv_rotation": 270,
+									"material_instance": "spruce_planks"
+								},
+								"up": {
+									"uv": [
+										16,
+										12
+									],
+									"uv_size": [
+										-16,
+										-12
+									],
+									"material_instance": "spruce_planks"
+								},
+								"down": {
+									"uv": [
+										16,
+										0
+									],
+									"uv_size": [
+										-16,
+										12
+									],
+									"material_instance": "spruce_planks"
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "raw_cod_0",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"rotation": [
+						0,
+						180,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								6,
+								1,
+								-2
+							],
+							"size": [
+								1,
+								2,
+								3
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										1,
+										9
+									],
+									"uv_size": [
+										2,
+										1
+									],
+									"uv_rotation": 270,
+									"material_instance": "raw_cod_0"
+								},
+								"south": {
+									"uv": [
+										3,
+										9
+									],
+									"uv_size": [
+										2,
+										1
+									],
+									"uv_rotation": 90,
+									"material_instance": "raw_cod_0"
+								},
+								"west": {
+									"uv": [
+										1,
+										10
+									],
+									"uv_size": [
+										2,
+										3
+									],
+									"uv_rotation": 270,
+									"material_instance": "raw_cod_0"
+								},
+								"up": {
+									"uv": [
+										4,
+										13
+									],
+									"uv_size": [
+										-1,
+										-3
+									],
+									"material_instance": "raw_cod_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-4,
+								1,
+								-2
+							],
+							"size": [
+								10,
+								2,
+								4
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										2,
+										0
+									],
+									"uv_size": [
+										10,
+										2
+									],
+									"uv_rotation": 180,
+									"material_instance": "raw_cod_0"
+								},
+								"east": {
+									"uv": [
+										12,
+										2
+									],
+									"uv_size": [
+										2,
+										4
+									],
+									"uv_rotation": 90,
+									"material_instance": "raw_cod_0"
+								},
+								"south": {
+									"uv": [
+										2,
+										6
+									],
+									"uv_size": [
+										10,
+										2
+									],
+									"material_instance": "raw_cod_0"
+								},
+								"west": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										2,
+										4
+									],
+									"uv_rotation": 270,
+									"material_instance": "raw_cod_0"
+								},
+								"up": {
+									"uv": [
+										12,
+										6
+									],
+									"uv_size": [
+										-10,
+										-4
+									],
+									"material_instance": "raw_cod_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-2,
+								2,
+								-3
+							],
+							"size": [
+								3,
+								0.009999999999999787,
+								1
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										16,
+										8
+									],
+									"uv_size": [
+										-3,
+										-1
+									],
+									"material_instance": "raw_cod_0"
+								},
+								"down": {
+									"uv": [
+										16,
+										8
+									],
+									"uv_size": [
+										-3,
+										-1
+									],
+									"material_instance": "raw_cod_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								2,
+								3,
+								1
+							],
+							"size": [
+								2,
+								2,
+								0.009999999999999787
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										8,
+										9
+									],
+									"uv_size": [
+										2,
+										2
+									],
+									"uv_rotation": 270,
+									"material_instance": "raw_cod_0"
+								},
+								"south": {
+									"uv": [
+										8,
+										11
+									],
+									"uv_size": [
+										2,
+										-2
+									],
+									"uv_rotation": 270,
+									"material_instance": "raw_cod_0"
+								}
+							},
+							"pivot": [
+								4,
+								3,
+								1
+							],
+							"rotation": [
+								-45,
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-5,
+								2,
+								-2
+							],
+							"size": [
+								1,
+								0.009999999999999787,
+								4
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										13,
+										13
+									],
+									"uv_size": [
+										-1,
+										-4
+									],
+									"material_instance": "raw_cod_0"
+								},
+								"down": {
+									"uv": [
+										12,
+										13
+									],
+									"uv_size": [
+										1,
+										-4
+									],
+									"uv_rotation": 180,
+									"material_instance": "raw_cod_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-8,
+								2,
+								-2
+							],
+							"size": [
+								3,
+								0.009999999999999787,
+								4
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										16,
+										13
+									],
+									"uv_size": [
+										-3,
+										-4
+									],
+									"material_instance": "raw_cod_0"
+								},
+								"down": {
+									"uv": [
+										13,
+										13
+									],
+									"uv_size": [
+										3,
+										-4
+									],
+									"uv_rotation": 180,
+									"material_instance": "raw_cod_0"
+								}
+							},
+							"pivot": [
+								-5,
+								2,
+								0
+							],
+							"rotation": [
+								0,
+								0,
+								22.5
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

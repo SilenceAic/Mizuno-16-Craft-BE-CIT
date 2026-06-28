@@ -37,9 +37,16 @@ export const item3dList = new Set([
   "minecraft:rabbit_hide",
   "minecraft:beetroot_seeds",
   "minecraft:apple",
+  "minecraft:enchanted_golden_apple",
   "minecraft:mushroom_stew",
   "minecraft:bread",
   "minecraft:porkchop",
+  "minecraft:cooked_porkchop",
+  "minecraft:golden_apple",
+  "minecraft:cod",
+  "minecraft:salmon",
+  "minecraft:tropical_fish",
+  "minecraft:pufferfish",
 ]);
 /**
  * 需要被拦截放置、转向 item3d 系统的方块类型物品及其名称要求

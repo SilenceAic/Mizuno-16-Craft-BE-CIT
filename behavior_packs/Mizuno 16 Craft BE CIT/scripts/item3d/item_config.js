@@ -1360,6 +1360,284 @@ export const itemConfig = {
       },
     },
   },
+  // ==================== 熟猪排配置 ====================
+  "minecraft:cooked_porkchop": {
+    _default: {
+      wallEntityId: null,
+      ceilEntityId: null,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+    "Cooked Porkchop_0": {
+      entityId: "cit:cooked_porkchop_0",
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 金苹果配置 ====================
+  "minecraft:golden_apple": {
+    // 默认配置（所有未特殊配置的金苹果使用）
+    _default: {
+      wallEntityId: "cit:golden_apple_0_wall",
+      ceilEntityId: "cit:golden_apple_0_top",
+      noGravity: false, // 受重力影响
+      hitbox: null, // 默认点击区域 (0.06 × 0.06)
+      placement: {
+        wall: 0.21875, // 墙面距离
+        ground: 1.0, // 地面高度
+        ceiling: -0.4453125, // 天花板高度 7又1/8个方块
+      },
+    },
+    "Golden Apple_0": {
+      entityId: "cit:golden_apple_0",
+      wallEntityId: "cit:golden_apple_0_wall",
+      ceilEntityId: "cit:golden_apple_0_top",
+      noGravity: false,
+      hitbox: null,
+      placement: {
+        wall: 0.21875,
+        ground: 1.0,
+        ceiling: -0.4453125,
+      },
+    },
+    "Golden Apple_0_wall": {
+      wallEntityId: "cit:golden_apple_0_wall",
+      ceilEntityId: "cit:golden_apple_0_top",
+      noGravity: true,
+      hitbox: null, // 默认点击区域
+      placement: {
+        wall: 0.21875, // 墙面距离
+        ground: 1.0, // 地面高度
+        ceiling: -0.4453125, // 天花板高度 7又1/8个方块
+      },
+    },
+    "Golden Apple_0_top": {
+      wallEntityId: "cit:golden_apple_0_wall",
+      ceilEntityId: "cit:golden_apple_0_top",
+      noGravity: true,
+      hitbox: null, // 顶部点击区域 (1 × 1)
+      placement: {
+        wall: 0.21875, // 墙面距离
+        ground: 1.0, // 地面高度
+        ceiling: -0.4453125, // 天花板高度 (scale=2 时金苹果顶部贴天花)
+      },
+    },
+    "Golden Apple_1": {
+      entityId: "cit:golden_apple_1",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      hitbox: null,
+      placement: {
+        wall: 0.21875,
+        ground: 1.0,
+        ceiling: -0.4453125,
+      },
+    },
+    "Golden Apple_1_top": {
+      entityId: "cit:golden_apple_1_top",
+      wallEntityId: null,
+      ceilEntityId: "cit:golden_apple_1_top",
+      noGravity: true,
+      placement: {
+        wall: 0.21875,
+        ground: 1.0,
+        ceiling: -1.765625,
+      },
+    },
+  },
+  // ==================== 附魔金苹果配置 ====================
+  "minecraft:enchanted_golden_apple": {
+    // 默认配置（所有未特殊配置的附魔金苹果使用）
+    _default: {
+      wallEntityId: "cit:enchanted_golden_apple_0_wall",
+      ceilEntityId: "cit:enchanted_golden_apple_0_top",
+      noGravity: false, // 受重力影响
+      hitbox: null, // 默认点击区域 (0.06 × 0.06)
+      placement: {
+        wall: 0.21875, // 墙面距离
+        ground: 1.0, // 地面高度
+        ceiling: -0.4453125, // 天花板高度 7又1/8个方块
+      },
+    },
+    "Enchanted Golden Apple_0": {
+      entityId: "cit:enchanted_golden_apple_0",
+      wallEntityId: "cit:enchanted_golden_apple_0_wall",
+      ceilEntityId: "cit:enchanted_golden_apple_0_top",
+      noGravity: false,
+      hitbox: null,
+      placement: {
+        wall: 0.21875,
+        ground: 1.0,
+        ceiling: -0.4453125,
+      },
+    },
+  },
+  // ==================== 鳕鱼配置 ====================
+  "minecraft:cod": {
+    _default: {
+      entityId: "cit:raw_cod_0",
+      wallEntityId: "cit:raw_cod_0",
+      ceilEntityId: null,
+      noGravity: true,
+      placement: {
+        wall: 0,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    "Raw Cod_0": {
+      entityId: "cit:raw_cod_0",
+      wallEntityId: "cit:raw_cod_0",
+      ceilEntityId: null,
+      noGravity: true,
+      placement: {
+        wall: 0,
+        ground: 0.9921875, //1÷128*127=0.9921875
+        ceiling: -0.01,
+      },
+    },
+    "Raw Cod_1": {
+      entityId: "cit:raw_cod_1",
+      wallEntityId: null,
+      ceilEntityId: "cit:raw_cod_1",
+      noGravity: true,
+      variantCount: 2,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -1.5703125,
+      },
+    },
+    "Raw Cod_1a": {
+      entityId: "cit:raw_cod_1a",
+      wallEntityId: null,
+      ceilEntityId: "cit:raw_cod_1a",
+      noGravity: true,
+      spawnVariant: 1,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -1.5703125,
+      },
+    },
+  },
+  // ==================== 鲑鱼配置 ====================
+  "minecraft:salmon": {
+    _default: {
+      entityId: "cit:raw_salmon_0",
+      wallEntityId: "cit:raw_salmon_0",
+      noGravity: true,
+      placement: {
+        wall: 0,
+        ground: 0.9921875, //1÷128*127=0.9921875
+        ceiling: -0.01,
+      },
+    },
+    "Raw Salmon_0": {
+      entityId: "cit:raw_salmon_0",
+      wallEntityId: "cit:raw_salmon_0",
+      noGravity: true,
+      placement: {
+        wall: 0,
+        ground: 0.9921875, //1÷128*127=0.9921875
+        ceiling: -0.01,
+      },
+    },
+    "Raw Salmon_1": {
+      entityId: "cit:raw_salmon_1",
+      wallEntityId: null,
+      ceilEntityId: null,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -1.5703125,
+      },
+    },
+    "Raw Salmon_2": {
+      entityId: "cit:raw_salmon_2",
+      wallEntityId: null,
+      ceilEntityId: "cit:raw_salmon_2",
+      noGravity: true,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -1.5703125,
+      },
+    },
+  },
+  // ==================== 热带鱼配置 ====================
+  "minecraft:tropical_fish": {
+    _default: {
+      entityId: "cit:tropical_fish_0",
+      wallEntityId: "cit:tropical_fish_0",
+      noGravity: true,
+      placement: {
+        wall: 0,
+        ground: 0.9921875, //1÷128*127=0.9921875
+        ceiling: -0.01,
+      },
+    },
+    "Tropical Fish_0": {
+      entityId: "cit:tropical_fish_0",
+      wallEntityId: "cit:tropical_fish_0",
+      noGravity: true,
+      placement: {
+        wall: 0,
+        ground: 0.9921875, //1÷128*127=0.9921875
+        ceiling: -0.01,
+      },
+    },
+    "Tropical Fish_1": {
+      entityId: "cit:tropical_fish_1",
+      wallEntityId: "cit:tropical_fish_1",
+      noGravity: true,
+      placement: {
+        wall: 0,
+        ground: 0.9921875, //1÷128*127=0.9921875
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 河豚配置 ====================
+  "minecraft:pufferfish": {
+    _default: {
+      entityId: "cit:pufferfish_0",
+      wallEntityId: "cit:pufferfish_0",
+      noGravity: true,
+      placement: {
+        wall: 0.3,
+        ground: 1.01,
+        ceiling: -0.01,
+      },
+    },
+    Pufferfish_0: {
+      entityId: "cit:pufferfish_0",
+      wallEntityId: "cit:pufferfish_0",
+      noGravity: true,
+      placement: {
+        wall: 0.3,
+        ground: 1.01,
+        ceiling: -0.01,
+      },
+    },
+    Pufferfish_1: {
+      entityId: "cit:pufferfish_1",
+      ceilEntityId: "cit:pufferfish_1",
+      noGravity: true,
+      placement: {
+        wall: 0.3,
+        ground: 1.01,
+        ceiling: -0.01,
+      },
+    },
+  },
 };
 // ==================== 辅助函数 ====================
 /**

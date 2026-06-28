@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:raw_salmon_1",
+      "materials": {
+        "raw_salmon_1_01": "entity_alphatest",
+        "raw_salmon_1": "entity_alphatest"
+      },
+      "textures": {
+        "raw_salmon_1_01": "textures/cit/entity/raw_salmon_1_01",
+        "raw_salmon_1": "textures/cit/entity/raw_salmon_1"
+      },
+      "geometry": {
+        "default": "geometry.cit.raw_salmon_1"
+      },
+      "animations": {
+        "raw_salmon_1_wall": "animation.cit.raw_salmon_1_wall"
+      },
+      "scripts": {
+        "animate": [
+          "raw_salmon_1_wall"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cit.raw_salmon_1.raw_salmon_1_01",
+        "controller.render.cit.raw_salmon_1.raw_salmon_1"
+      ]
+    }
+  }
+}

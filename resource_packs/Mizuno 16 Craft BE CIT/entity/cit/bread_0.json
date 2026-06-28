@@ -4,16 +4,19 @@
     "description": {
       "identifier": "cit:bread_0",
       "materials": {
-        "default": "entity_alphatest"
+        "bread_0": "entity_alphatest",
+        "bread_1": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/cit/entity/bread_0"
+        "bread_0": "textures/cit/entity/bread_0",
+        "bread_1": "textures/cit/entity/bread_1"
       },
       "geometry": {
         "default": "geometry.cit.bread_0"
       },
       "render_controllers": [
-        "controller.render.cit.bread_0"
+        "controller.render.cit.bread_0.bread_0",
+        "controller.render.cit.bread_0.bread_1"
       ]
     }
   }

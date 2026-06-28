@@ -1,0 +1,65 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.cit.cooked_porkchop_0.plate_green": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.plate_green"
+        }
+      ],
+      "textures": [
+        "Texture.plate_green"
+      ],
+      "part_visibility": [
+        {
+          "plate_green": true,
+          "cooked_porkchop_0": false
+        }
+      ],
+      "is_hurt_color": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "on_fire_color": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "ignore_lighting": false
+    },
+    "controller.render.cit.cooked_porkchop_0.cooked_porkchop_0": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.cooked_porkchop_0"
+        }
+      ],
+      "textures": [
+        "Texture.cooked_porkchop_0"
+      ],
+      "part_visibility": [
+        {
+          "plate_green": false,
+          "cooked_porkchop_0": true
+        }
+      ],
+      "is_hurt_color": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "on_fire_color": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "ignore_lighting": false
+    }
+  }
+}

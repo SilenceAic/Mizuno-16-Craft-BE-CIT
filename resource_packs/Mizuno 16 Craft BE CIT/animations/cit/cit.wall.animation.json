@@ -237,15 +237,105 @@
       "loop": true,
       "bones": {
         "basket_0": {
-          "rotation": [0, "q.property('cit:wall_rotation')", 0]
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ]
         },
         "basket": {
-          "rotation": [0, "q.property('cit:wall_rotation')", 0],
-          "position": [0, "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5", 0]
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
         },
         "apple_0": {
-          "rotation": [0, "q.property('cit:wall_rotation')", 0],
-          "position": [0, "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5", 0]
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cit.golden_apple_0_wall": {
+      "loop": true,
+      "bones": {
+        "golden_apple_0": {
+          "rotation": [
+            0,
+            0,
+            "q.property('cit:wall_rotation')"
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cit.golden_apple_0_top": {
+      "loop": true,
+      "bones": {
+        "golden_apple_0": {
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cit.golden_apple_1_top": {
+      "loop": true,
+      "bones": {
+        "basket_0": {
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ]
+        },
+        "basket": {
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        },
+        "golden_apple_0": {
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
         }
       }
     },
@@ -253,11 +343,35 @@
       "loop": true,
       "bones": {
         "raw_meat_hook": {
-          "rotation": [0, "q.property('cit:wall_rotation')", 0]
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ]
         },
         "raw_porkchop_2": {
-          "rotation": [0, "q.property('cit:wall_rotation')", 0],
-          "position": [0, "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5", 0]
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        },
+        "raw_porkchop_2_01": {
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
         }
       }
     },
@@ -265,11 +379,313 @@
       "loop": true,
       "bones": {
         "raw_meat_hook": {
-          "rotation": [0, "q.property('cit:wall_rotation')", 0]
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ]
+        },
+        "raw_porkchop_2": {
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
         },
         "raw_porkchop_3": {
-          "rotation": [0, "q.property('cit:wall_rotation')", 0],
-          "position": [0, "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5", 0]
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cit.raw_cod_0_wall": {
+      "loop": true,
+      "bones": {
+        "spruce_planks": {
+          "rotation": [
+            "q.property('cit:is_wall') ? -90 : 0",
+            0,
+            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            "q.property('cit:is_wall') ? 0 : 0"
+          ]
+        },
+        "raw_cod_0": {
+          "rotation": [
+            "q.property('cit:is_wall') ? -90 : 0",
+            0,
+            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            "q.property('cit:is_wall') ? 0: 0"
+          ]
+        }
+      }
+    },
+    "animation.cit.raw_cod_1_top": {
+      "loop": true,
+      "bones": {
+        "raw_meat_hook": {
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "raw_cod_0": {
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cit.raw_cod_1a_top": {
+      "loop": true,
+      "bones": {
+        "raw_meat_hook": {
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "raw_cod_0a": {
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cit.raw_salmon_0_wall": {
+      "loop": true,
+      "bones": {
+        "spruce_planks": {
+          "rotation": [
+            "q.property('cit:is_wall') ? -90 : 0",
+            0,
+            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        },
+        "raw_salmon_0": {
+          "rotation": [
+            "q.property('cit:is_wall') ? -90 : 0",
+            0,
+            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cit.raw_salmon_1_wall": {
+      "loop": true,
+      "bones": {
+        "raw_salmon_1_01": {
+          "rotation": [
+            "q.property('cit:is_wall') ? -90 : 0",
+            0,
+            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        },
+        "raw_salmon_1": {
+          "rotation": [
+            "q.property('cit:is_wall') ? -90 : 0",
+            0,
+            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cit.raw_salmon_2_top": {
+      "loop": true,
+      "bones": {
+        "raw_meat_hook": {
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        },
+        "raw_salmon_0": {
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cit.tropical_fish_0_wall": {
+      "loop": true,
+      "bones": {
+        "spruce_planks": {
+          "rotation": [
+            "q.property('cit:is_wall') ? -90 : 0",
+            0,
+            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        },
+        "tropical_fish_0": {
+          "rotation": [
+            "q.property('cit:is_wall') ? -90 : 0",
+            0,
+            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cit.tropical_fish_1_wall": {
+      "loop": true,
+      "bones": {
+        "spruce_planks": {
+          "rotation": [
+            "q.property('cit:is_wall') ? -90 : 0",
+            0,
+            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        },
+        "tropical_fish_1": {
+          "rotation": [
+            "q.property('cit:is_wall') ? -90 : 0",
+            0,
+            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cit.pufferfish_0_wall": {
+      "loop": true,
+      "bones": {
+        "spruce_planks": {
+          "rotation": [
+            "q.property('cit:is_wall') ? -90 : 0",
+            0,
+            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        },
+        "pufferfish_0": {
+          "rotation": [
+            "q.property('cit:is_wall') ? -90 : 0",
+            0,
+            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cit.pufferfish_1_top": {
+      "loop": true,
+      "bones": {
+        "pufferfish_1": {
+          "rotation": [
+            0,
+            "q.property('cit:wall_rotation')",
+            0
+          ],
+          "position": [
+            0,
+            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+            0
+          ]
         }
       }
     }
