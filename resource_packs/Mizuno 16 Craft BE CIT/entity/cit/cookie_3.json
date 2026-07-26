@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:cookie_3",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/cit/entity/cookie_3"
+      },
+      "geometry": {
+        "default": "geometry.cit.cookie_3"
+      },
+      "render_controllers": [
+        "controller.render.cit.cookie_3"
+      ]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.honey_bottle_0.honey_bottle_0": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.honey_bottle_0"
+                }
+            ],
+            "textures": [
+                "Texture.honey_bottle_0"
+            ],
+            "part_visibility": [
+                {
+                    "honey_bottle_0": true
+                },
+                {
+                    "potion_0": false
+                },
+                {
+                    "opaque": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.honey_bottle_0.potion_0": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.potion_0"
+                },
+                {
+                    "opaque": "Material.opaque"
+                }
+            ],
+            "textures": [
+                "Texture.potion_0"
+            ],
+            "part_visibility": [
+                {
+                    "honey_bottle_0": false
+                },
+                {
+                    "potion_0": true
+                },
+                {
+                    "opauqe": true
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        }
+    }
+}

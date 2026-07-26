@@ -1,0 +1,28 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:stone_axe_0",
+      "materials": {
+        "stone_axe": "entity_alphatest"
+      },
+      "textures": {
+        "stone_axe": "textures/cit/entity/stone_axe"
+      },
+      "geometry": {
+        "default": "geometry.cit.template_axe_0"
+      },
+      "animations": {
+        "stone_axe_0_wall": "animation.cit.stone_axe_0_wall"
+      },
+      "scripts": {
+        "animate": [
+          "stone_axe_0_wall"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cit.stone_axe_0"
+      ]
+    }
+  }
+}

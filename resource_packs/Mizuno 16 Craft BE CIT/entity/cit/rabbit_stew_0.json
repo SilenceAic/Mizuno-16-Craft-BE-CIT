@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:rabbit_stew_0",
+      "materials": {
+        "bowl_0": "entity_alphatest",
+        "stew_0": "entity_alphatest"
+      },
+      "textures": {
+        "bowl_0": "textures/cit/entity/bowl_0",
+        "stew_0": "textures/cit/entity/stew_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.rabbit_stew_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.rabbit_stew_0.bowl_0",
+        "controller.render.cit.rabbit_stew_0.stew_0"
+      ]
+    }
+  }
+}

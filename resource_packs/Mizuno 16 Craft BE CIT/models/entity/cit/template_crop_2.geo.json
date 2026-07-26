@@ -1,0 +1,128 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.template_crop_2",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "farmland_moist",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-7, 1, -6],
+							"size": [14, 6, 12],
+							"uv": {
+								"up": {"uv": [15, 14], "uv_size": [-14, -12], "material_instance": "farmland_moist"}
+							}
+						}
+					]
+				},
+				{
+					"name": "planter",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, -7],
+							"size": [16, 8, 1],
+							"uv": {
+								"north": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "#planter"},
+								"east": {"uv": [14, 0], "uv_size": [1, 8], "material_instance": "#planter"},
+								"south": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "#planter"},
+								"west": {"uv": [0, 0], "uv_size": [1, 8], "material_instance": "#planter"},
+								"up": {"uv": [16, 2], "uv_size": [-16, -1], "material_instance": "#planter"},
+								"down": {"uv": [16, 15], "uv_size": [-16, -1], "material_instance": "#planter"}
+							}
+						},
+						{
+							"origin": [-8, 0, 6],
+							"size": [16, 8, 1],
+							"uv": {
+								"north": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "#planter"},
+								"east": {"uv": [1, 0], "uv_size": [1, 8], "material_instance": "#planter"},
+								"south": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "#planter"},
+								"west": {"uv": [14, 0], "uv_size": [1, 8], "material_instance": "#planter"},
+								"up": {"uv": [16, 15], "uv_size": [-16, -1], "material_instance": "#planter"},
+								"down": {"uv": [16, 3], "uv_size": [-16, -1], "material_instance": "#planter"}
+							}
+						},
+						{
+							"origin": [7, 0, -6],
+							"size": [1, 8, 12],
+							"uv": {
+								"east": {"uv": [2, 0], "uv_size": [12, 8], "material_instance": "#planter"},
+								"west": {"uv": [2, 0], "uv_size": [12, 8], "material_instance": "#planter"},
+								"up": {"uv": [1, 14], "uv_size": [-1, -12], "material_instance": "#planter"},
+								"down": {"uv": [1, 14], "uv_size": [-1, -12], "material_instance": "#planter"}
+							}
+						},
+						{
+							"origin": [-8, 0, -6],
+							"size": [1, 8, 12],
+							"uv": {
+								"east": {"uv": [2, 0], "uv_size": [12, 8], "material_instance": "#planter"},
+								"west": {"uv": [2, 0], "uv_size": [12, 8], "material_instance": "#planter"},
+								"up": {"uv": [16, 14], "uv_size": [-1, -12], "material_instance": "#planter"},
+								"down": {"uv": [16, 14], "uv_size": [-1, -12], "material_instance": "#planter"}
+							}
+						},
+						{
+							"origin": [-7, 1, -6],
+							"size": [14, 0, 12],
+							"uv": {
+								"down": {"uv": [15, 14], "uv_size": [-14, -12], "material_instance": "#planter"}
+							}
+						}
+					]
+				},
+				{
+					"name": "crop",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [3.99999, 7, -7.99998],
+							"size": [0, 15.99996, 15.99996],
+							"uv": {
+								"east": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "#crop"},
+								"west": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "#crop"}
+							}
+						},
+						{
+							"origin": [-3.99999, 7, -7.99998],
+							"size": [0, 15.99996, 15.99996],
+							"uv": {
+								"east": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "#crop"},
+								"west": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "#crop"}
+							}
+						},
+						{
+							"origin": [-7.99998, 7, -3.99999],
+							"size": [15.99996, 15.99996, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "#crop"},
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "#crop"}
+							}
+						},
+						{
+							"origin": [-7.99998, 7, 3.99999],
+							"size": [15.99996, 15.99996, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "#crop"},
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "#crop"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

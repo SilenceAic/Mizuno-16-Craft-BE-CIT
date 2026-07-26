@@ -1,0 +1,283 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cit.carrot_0",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [
+					0,
+					0.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "carrot_0",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"rotation": [
+						0,
+						180,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								5,
+								0.5,
+								-1
+							],
+							"size": [
+								3,
+								3.0,
+								3
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										3,
+										3
+									],
+									"uv_size": [
+										-3,
+										3
+									],
+									"material_instance": "carrot_0"
+								},
+								"south": {
+									"uv": [
+										0,
+										3
+									],
+									"uv_size": [
+										3,
+										3
+									],
+									"uv_rotation": 180,
+									"material_instance": "carrot_0"
+								},
+								"west": {
+									"uv": [
+										3,
+										0
+									],
+									"uv_size": [
+										3,
+										3
+									],
+									"uv_rotation": 180,
+									"material_instance": "carrot_0"
+								},
+								"up": {
+									"uv": [
+										3,
+										3
+									],
+									"uv_size": [
+										-3,
+										-3
+									],
+									"material_instance": "carrot_0"
+								},
+								"down": {
+									"uv": [
+										3,
+										6
+									],
+									"uv_size": [
+										-3,
+										-3
+									],
+									"material_instance": "carrot_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-1,
+								0,
+								-1.5
+							],
+							"size": [
+								6,
+								4,
+								4.0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										6,
+										12
+									],
+									"uv_size": [
+										-6,
+										4
+									],
+									"material_instance": "carrot_0"
+								},
+								"east": {
+									"uv": [
+										6,
+										12
+									],
+									"uv_size": [
+										4,
+										4
+									],
+									"material_instance": "carrot_0"
+								},
+								"south": {
+									"uv": [
+										0,
+										12
+									],
+									"uv_size": [
+										6,
+										4
+									],
+									"material_instance": "carrot_0"
+								},
+								"west": {
+									"uv": [
+										6,
+										12
+									],
+									"uv_size": [
+										4,
+										4
+									],
+									"material_instance": "carrot_0"
+								},
+								"up": {
+									"uv": [
+										6,
+										12
+									],
+									"uv_size": [
+										-6,
+										-4
+									],
+									"material_instance": "carrot_0"
+								},
+								"down": {
+									"uv": [
+										6,
+										16
+									],
+									"uv_size": [
+										-6,
+										-4
+									],
+									"material_instance": "carrot_0"
+								}
+							}
+						},
+						{
+							"origin": [
+								-10,
+								2,
+								-3
+							],
+							"size": [
+								9,
+								0.009999999999999787,
+								6
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										15,
+										10
+									],
+									"uv_size": [
+										-6,
+										-9
+									],
+									"uv_rotation": 90,
+									"material_instance": "carrot_0"
+								},
+								"down": {
+									"uv": [
+										9,
+										10
+									],
+									"uv_size": [
+										6,
+										-9
+									],
+									"uv_rotation": 90,
+									"material_instance": "carrot_0"
+								}
+							},
+							"pivot": [
+								-5.5,
+								2,
+								0
+							],
+							"rotation": [
+								-22.5,
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-10,
+								2,
+								-3
+							],
+							"size": [
+								9,
+								0.009999999999999787,
+								6
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										15,
+										10
+									],
+									"uv_size": [
+										-6,
+										-9
+									],
+									"uv_rotation": 90,
+									"material_instance": "carrot_0"
+								},
+								"down": {
+									"uv": [
+										9,
+										10
+									],
+									"uv_size": [
+										6,
+										-9
+									],
+									"uv_rotation": 90,
+									"material_instance": "carrot_0"
+								}
+							},
+							"pivot": [
+								-5.5,
+								2,
+								0
+							],
+							"rotation": [
+								22.5,
+								0,
+								0
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

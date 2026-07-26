@@ -46,6 +46,8 @@ const wallCapableEntities = new Set([
   "cit:tropical_fish_0",
   "cit:tropical_fish_1",
   "cit:pufferfish_0",
+  "cit:wooden_axe_0",
+  "cit:stone_axe_0",
 ]);
 /** 类型 ID 不以 _top 结尾但需要天花板旋转行为的实体 */
 const topCapableEntities = new Set(["cit:raw_cod_1", "cit:raw_cod_1a", "cit:raw_salmon_2", "cit:pufferfish_1"]);
@@ -56,6 +58,8 @@ const dynamicEntities = new Set([
   "cit:tropical_fish_0",
   "cit:tropical_fish_1",
   "cit:pufferfish_0",
+  "cit:wooden_axe_0",
+  "cit:stone_axe_0",
 ]);
 /** 动态实体的锚点位置（弹跳前的 Y），用于回落矫正 */
 const dynamicAnchorMap = new Map(); // entityId → anchorY
@@ -338,6 +342,14 @@ components.set("cit:core", {
                 // Entity might not support this event
               }
             }
+          }
+        }
+        // Set wall-appropriate hitbox when placed on a wall face
+        if (wallProperties.is_wall) {
+          try {
+            spawnedEntity.triggerEvent("cit:set_hitbox_wall");
+          } catch (e) {
+            // Entity might not support this event
           }
         }
         // Remove one item from player inventory

@@ -1,0 +1,29 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.stone_axe_0": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.stone_axe"
+                }
+            ],
+            "textures": [
+                "Texture.stone_axe"
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        }
+    }
+}

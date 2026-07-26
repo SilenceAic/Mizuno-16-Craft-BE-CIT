@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:cooked_rabbit_0",
+      "materials": {
+        "cooked_rabbit_0": "entity_alphatest",
+        "plate_black": "entity_alphatest"
+      },
+      "textures": {
+        "cooked_rabbit_0": "textures/cit/entity/cooked_rabbit_0",
+        "plate_black": "textures/cit/entity/plate_black"
+      },
+      "geometry": {
+        "default": "geometry.cit.cooked_rabbit_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.cooked_rabbit_0.cooked_rabbit_0",
+        "controller.render.cit.cooked_rabbit_0.plate_black"
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:honey_bottle_2",
+      "materials": {
+        "default": "entity_alphatest",
+        "transparent": "ppmshjz_ao"
+      },
+      "textures": {
+        "default": "textures/cit/entity/honey_bottle_1"
+      },
+      "geometry": {
+        "default": "geometry.cit.honey_bottle_2"
+      },
+      "render_controllers": [
+        "controller.render.cit.honey_bottle_2"
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:cookie_0",
+      "materials": {
+        "cookie_0": "ppmshjz_ao", // 同时渲染前后透明
+        "opaque": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/cit/entity/cookie_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.cookie_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.cookie_0"
+      ]
+    }
+  }
+}

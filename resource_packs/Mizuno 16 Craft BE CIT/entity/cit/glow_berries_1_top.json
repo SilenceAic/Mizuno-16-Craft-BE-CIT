@@ -1,0 +1,34 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:glow_berries_1_top",
+      "materials": {
+        "basket": "entity_alphatest",
+        "basket_0": "entity_alphatest",
+        "glow_brries_0": "entity_alphatest"
+      },
+      "textures": {
+        "basket": "textures/cit/entity/basket",
+        "basket_0": "textures/cit/entity/basket_0",
+        "glow_brries_0": "textures/cit/entity/glow_brries_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.glow_berries_1_top"
+      },
+      "render_controllers": [
+        "controller.render.cit.glow_berries_1_top.basket",
+        "controller.render.cit.glow_berries_1_top.basket_0",
+        "controller.render.cit.glow_berries_1_top.glow_brries_0"
+      ],
+      "animations": {
+        "glow_berries_1_top": "animation.cit.glow_berries_1_top"
+      },
+      "scripts": {
+        "animate": [
+          "glow_berries_1_top"
+        ]
+      }
+    }
+  }
+}

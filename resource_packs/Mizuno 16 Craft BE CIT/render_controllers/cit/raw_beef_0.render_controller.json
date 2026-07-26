@@ -1,0 +1,69 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.raw_beef_0.raw_beef_0": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.raw_beef_0"
+                }
+            ],
+            "textures": [
+                "Texture.raw_beef_0"
+            ],
+            "part_visibility": [
+                {
+                    "raw_beef_0": true
+                },
+                {
+                    "raw_beef_0_01": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.raw_beef_0.raw_beef_0_01": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.raw_beef_0_01"
+                }
+            ],
+            "textures": [
+                "Texture.raw_beef_0_01"
+            ],
+            "part_visibility": [
+                {
+                    "raw_beef_0": false
+                },
+                {
+                    "raw_beef_0_01": true
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        }
+    }
+}

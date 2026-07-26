@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:raw_mutton_0",
+      "materials": {
+        "raw_mutton_0": "entity_alphatest",
+        "cutting_board": "entity_alphatest"
+      },
+      "textures": {
+        "raw_mutton_0": "textures/cit/entity/raw_mutton_0",
+        "cutting_board": "textures/cit/entity/cutting_board"
+      },
+      "geometry": {
+        "default": "geometry.cit.raw_mutton_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.raw_mutton_0.raw_mutton_0",
+        "controller.render.cit.raw_mutton_0.cutting_board"
+      ]
+    }
+  }
+}

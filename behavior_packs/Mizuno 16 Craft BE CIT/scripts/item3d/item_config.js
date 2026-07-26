@@ -1740,6 +1740,680 @@ export const itemConfig = {
         ceiling: -0.01,
       },
     },
+  }, // ==================== 曲奇配置 ====================
+  "minecraft:cookie": {
+    _default: {
+      entityId: "cit:cookie_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    Cookie_0: {
+      entityId: "cit:cookie_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    Cookie_1: {
+      entityId: "cit:cookie_1",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    Cookie_2: {
+      entityId: "cit:cookie_2",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    Cookie_3: {
+      entityId: "cit:cookie_3",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 西瓜片配置 ====================
+  "minecraft:melon_slice": {
+    _default: {
+      entityId: "cit:melon_slice_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+    "Melon Slice_0": {
+      entityId: "cit:melon_slice_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 生牛肉配置 ====================
+  "minecraft:beef": {
+    _default: {
+      entityId: "cit:raw_beef_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+    "Raw Beef_0": {
+      entityId: "cit:raw_beef_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    "Raw Beef_1": {
+      entityId: "cit:raw_beef_1",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    // ==================== 牛排配置 ====================
+    "minecraft:cooked_beef": {
+      _default: {
+        entityId: "cit:cooked_beef_0",
+        wallEntityId: null,
+        ceilEntityId: null,
+        noGravity: false,
+        placement: {
+          wall: 0.3,
+          ground: 0.9921875,
+          ceiling: -0.01,
+        },
+      },
+    },
+    Steak_0: {
+      entityId: "cit:cooked_beef_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 生鸡肉配置 ====================
+  "minecraft:chicken": {
+    _default: {
+      entityId: "cit:raw_chicken_0",
+      wallEntityId: null,
+      ceilEntityId: "cit:raw_chicken_0_top",
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    "Raw Chicken_0": {
+      entityId: "cit:raw_chicken_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    "Raw Chicken_0_top": {
+      entityId: "cit:raw_chicken_0_top",
+      wallEntityId: null,
+      ceilEntityId: "cit:raw_chicken_0_top",
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -1.5703125,
+      },
+    },
+  },
+  // ==================== 熟鸡肉配置 ====================
+  "minecraft:cooked_chicken": {
+    _default: {
+      entityId: "cit:cooked_chicken_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+    "Cooked Chicken_0": {
+      entityId: "cit:cooked_chicken_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 胡萝卜配置 ====================
+  "minecraft:carrot": {
+    _default: {
+      entityId: "cit:carrot_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+    Carrot_0: {
+      entityId: "cit:carrot_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    Carrot_1: {
+      entityId: "cit:carrot_1",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -1.5703125,
+      },
+    },
+    Carrot_1_top: {
+      entityId: "cit:carrot_1_top",
+      wallEntityId: "cit:carrot_1_top",
+      ceilEntityId: null,
+      noGravity: true,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -1.7578125,
+      },
+    },
+    Carrot_2: {
+      entityId: "cit:carrot_2",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 马铃薯配置 ====================
+  "minecraft:potato": {
+    _default: {
+      entityId: "cit:potato_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+    Potato_0: {
+      entityId: "cit:potato_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    Potato_1: {
+      entityId: "cit:potato_1",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    Potato_1_top: {
+      entityId: "cit:potato_1_top",
+      wallEntityId: null,
+      ceilEntityId: "cit:potato_1_top",
+      noGravity: true,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -1.7578125,
+      },
+    },
+    Potato_2: {
+      entityId: "cit:potato_2",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 烤马铃薯配置 ====================
+  "minecraft:baked_potato": {
+    _default: {
+      entityId: "cit:baked_potato_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+  },
+  "Baked Potato_0": {
+    entityId: "cit:baked_potato_0",
+    wallEntityId: null,
+    ceilEntityId: null,
+    noGravity: false,
+    placement: {
+      wall: 0.3,
+      ground: 0.9921875,
+      ceiling: -0.01,
+    },
+  },
+  // ==================== 南瓜派配置 ====================
+  "minecraft:pumpkin_pie": {
+    _default: {
+      entityId: "cit:pumpkin_pie_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+  },
+  "Pumpkin Pie_0": {
+    entityId: "cit:pumpkin_pie_0",
+    wallEntityId: null,
+    ceilEntityId: null,
+    noGravity: false,
+    placement: {
+      wall: 0.3,
+      ground: 0.9921875,
+      ceiling: -0.01,
+    },
+  },
+  // ==================== 兔肉配置 ====================
+  "minecraft:rabbit": {
+    _default: {
+      entityId: "cit:raw_rabbit_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+  },
+  Rabbit_0: {
+    entityId: "cit:raw_rabbit_0",
+    wallEntityId: null,
+    ceilEntityId: null,
+    noGravity: false,
+    placement: {
+      wall: 0.3,
+      ground: 0.9921875,
+      ceiling: -0.01,
+    },
+  },
+  // ==================== 熟兔肉配置 ====================
+  "minecraft:cooked_rabbit": {
+    _default: {
+      entityId: "cit:cooked_rabbit_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+  },
+  "Cooked Rabbit_0": {
+    entityId: "cit:cooked_rabbit_0",
+    wallEntityId: null,
+    ceilEntityId: null,
+    noGravity: false,
+    placement: {
+      wall: 0.3,
+      ground: 0.9921875,
+      ceiling: -0.01,
+    },
+  },
+  // ==================== 兔肉煲配置 ====================
+  "minecraft:rabbit_stew": {
+    _default: {
+      entityId: "cit:rabbit_stew_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+  },
+  "Rabbit Stew_0": {
+    entityId: "cit:rabbit_stew_0",
+    wallEntityId: null,
+    ceilEntityId: null,
+    noGravity: false,
+    placement: {
+      wall: 0.3,
+      ground: 0.9921875,
+      ceiling: -0.01,
+    },
+  },
+  // ==================== 羊肉配置 ====================
+  "minecraft:mutton": {
+    _default: {
+      entityId: "cit:raw_mutton_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+  },
+  "Raw Mutton_0": {
+    entityId: "cit:raw_mutton_0",
+    wallEntityId: null,
+    ceilEntityId: null,
+    noGravity: false,
+    placement: {
+      wall: 0.3,
+      ground: 0.9921875,
+      ceiling: -0.01,
+    },
+  },
+  // ==================== 熟羊肉配置 ====================
+  "minecraft:cooked_mutton": {
+    _default: {
+      entityId: "cit:cooked_mutton_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+  },
+  "Cooked Mutton_0": {
+    entityId: "cit:cooked_mutton_0",
+    wallEntityId: null,
+    ceilEntityId: null,
+    noGravity: false,
+    placement: {
+      wall: 0.3,
+      ground: 0.9921875,
+      ceiling: -0.01,
+    },
+  },
+  // ==================== 甜菜根配置 ====================
+  "minecraft:beetroot": {
+    _default: {
+      entityId: "cit:beetroot_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+    Beetroot_0: {
+      entityId: "cit:beetroot_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    Beetroot_1: {
+      entityId: "cit:beetroot_1",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    Beetroot_1_top: {
+      entityId: "cit:beetroot_1_top",
+      wallEntityId: null,
+      ceilEntityId: "cit:beetroot_1_top",
+      noGravity: true,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -1.7578125,
+      },
+    },
+    Beetroot_2: {
+      entityId: "cit:beetroot_2",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 甜菜根汤配置 ====================
+  "minecraft:beetroot_soup": {
+    _default: {
+      entityId: "cit:beetroot_soup_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+    "Beetroot Soup_0": {
+      entityId: "cit:beetroot_soup_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 甜浆果配置 ====================
+  "minecraft:sweet_berries": {
+    _default: {
+      entityId: "cit:sweet_berries_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+    "Sweet Berries_0": {
+      entityId: "cit:sweet_berries_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    "Sweet Berries_1": {
+      entityId: "cit:sweet_berries_1",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    "Sweet Berries_1_top": {
+      entityId: "cit:sweet_berries_1_top",
+      wallEntityId: null,
+      ceilEntityId: "cit:sweet_berries_1_top",
+      noGravity: true,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -1.7578125,
+      },
+    },
+  },
+  // ==================== 发光浆果配置 ====================
+  "minecraft:glow_berries": {
+    _default: {
+      entityId: "cit:glow_berries_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+    "Glow Berries_0": {
+      entityId: "cit:glow_berries_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    "Glow Berries_1": {
+      entityId: "cit:glow_berries_1",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    "Glow Berries_1_top": {
+      entityId: "cit:glow_berries_1_top",
+      wallEntityId: null,
+      ceilEntityId: "cit:glow_berries_1_top",
+      noGravity: true,
+      placement: {
+        wall: 0.3,
+        ground: 1.0,
+        ceiling: -1.7578125,
+      },
+    },
+  },
+  // ==================== 蜂蜜瓶配置 ====================
+  "minecraft:honey_bottle": {
+    _default: {
+      entityId: "cit:honey_bottle_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+    "Honey Bottle_0": {
+      entityId: "cit:honey_bottle_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    "Honey Bottle_1": {
+      entityId: "cit:honey_bottle_1",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+    "Honey Bottle_2": {
+      entityId: "cit:honey_bottle_2",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 石斧配置 ====================
+  "minecraft:stone_axe": {
+    _default: {
+      entityId: "cit:stone_axe_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+    "Stone Axe_0": {
+      entityId: "cit:stone_axe_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+      placement: {
+        wall: 0.3,
+        ground: 0.9921875,
+        ceiling: -0.01,
+      },
+    },
+  },
+  // ==================== 木斧配置 ====================
+  "minecraft:wooden_axe": {
+    _default: {
+      entityId: "cit:wooden_axe_0",
+      wallEntityId: null,
+      ceilEntityId: null,
+      noGravity: false,
+    },
+  },
+  "Wooden Axe_0": {
+    entityId: "cit:wooden_axe_0",
+    wallEntityId: null,
+    ceilEntityId: null,
+    noGravity: false,
+    placement: {
+      wall: 0.3,
+      ground: 0.9921875,
+      ceiling: -0.01,
+    },
   },
 };
 // ==================== 辅助函数 ====================

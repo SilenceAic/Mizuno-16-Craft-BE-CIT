@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:pumpkin_pie_0",
+      "materials": {
+        "pumpkin_pie_0": "entity_alphatest",
+        "plate_white": "entity_alphatest"
+      },
+      "textures": {
+        "pumpkin_pie_0": "textures/cit/entity/pumpkin_pie_0",
+        "plate_white": "textures/cit/entity/plate_white"
+      },
+      "geometry": {
+        "default": "geometry.cit.pumpkin_pie_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.pumpkin_pie_0.pumpkin_pie_0",
+        "controller.render.cit.pumpkin_pie_0.plate_white"
+      ]
+    }
+  }
+}

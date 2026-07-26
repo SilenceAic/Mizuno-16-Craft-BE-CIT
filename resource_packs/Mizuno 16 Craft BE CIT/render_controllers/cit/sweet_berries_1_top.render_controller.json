@@ -1,0 +1,110 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.sweet_berries_1_top.basket": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.basket"
+                }
+            ],
+            "textures": [
+                "Texture.basket"
+            ],
+            "part_visibility": [
+                {
+                    "basket": true
+                },
+                {
+                    "basket_0": false
+                },
+                {
+                    "sweet_brrries_0": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.sweet_berries_1_top.basket_0": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.basket_0"
+                }
+            ],
+            "textures": [
+                "Texture.basket_0"
+            ],
+            "part_visibility": [
+                {
+                    "basket": false
+                },
+                {
+                    "basket_0": true
+                },
+                {
+                    "sweet_brrries_0": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.sweet_berries_1_top.sweet_brrries_0": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.sweet_brrries_0"
+                }
+            ],
+            "textures": [
+                "Texture.sweet_brrries_0"
+            ],
+            "part_visibility": [
+                {
+                    "basket": false
+                },
+                {
+                    "basket_0": false
+                },
+                {
+                    "sweet_brrries_0": true
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        }
+    }
+}

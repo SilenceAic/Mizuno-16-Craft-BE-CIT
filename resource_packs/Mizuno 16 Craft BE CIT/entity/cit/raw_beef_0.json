@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:raw_beef_0",
+      "materials": {
+        "raw_beef_0": "entity_alphatest",
+        "raw_beef_0_01": "entity_alphatest"
+      },
+      "textures": {
+        "raw_beef_0": "textures/cit/entity/raw_beef_0",
+        "raw_beef_0_01": "textures/cit/entity/raw_beef_0_01"
+      },
+      "geometry": {
+        "default": "geometry.cit.raw_beef_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.raw_beef_0.raw_beef_0",
+        "controller.render.cit.raw_beef_0.raw_beef_0_01"
+      ]
+    }
+  }
+}

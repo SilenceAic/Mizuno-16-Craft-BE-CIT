@@ -1,0 +1,98 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.carrot_2.farmland_moist": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.farmland_moist"
+                }
+            ],
+            "textures": [
+                "Texture.farmland_moist"
+            ],
+            "part_visibility": [
+                {
+                    "farmland_moist": true,
+                    "planter": false,
+                    "crop": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.carrot_2.planter": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.planter"
+                }
+            ],
+            "textures": [
+                "Texture.planter"
+            ],
+            "part_visibility": [
+                {
+                    "farmland_moist": false,
+                    "planter": true,
+                    "crop": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.carrot_2.crop": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.crop"
+                }
+            ],
+            "textures": [
+                "Texture.crop"
+            ],
+            "part_visibility": [
+                {
+                    "farmland_moist": false,
+                    "planter": false,
+                    "crop": true
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        }
+    }
+}

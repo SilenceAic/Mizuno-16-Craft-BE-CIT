@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:beetroot_1",
+      "materials": {
+        "basket": "entity_alphatest",
+        "beetroot_0": "entity_alphatest"
+      },
+      "textures": {
+        "basket": "textures/cit/entity/basket",
+        "beetroot_0": "textures/cit/entity/beetroot_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.beetroot_1"
+      },
+      "render_controllers": [
+        "controller.render.cit.beetroot_1.basket",
+        "controller.render.cit.beetroot_1.beetroot_0"
+      ]
+    }
+  }
+}

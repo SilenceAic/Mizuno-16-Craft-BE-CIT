@@ -1,0 +1,69 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.beetroot_1.basket": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.basket"
+                }
+            ],
+            "textures": [
+                "Texture.basket"
+            ],
+            "part_visibility": [
+                {
+                    "basket": true
+                },
+                {
+                    "beetroot_0": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.beetroot_1.beetroot_0": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.beetroot_0"
+                }
+            ],
+            "textures": [
+                "Texture.beetroot_0"
+            ],
+            "part_visibility": [
+                {
+                    "basket": false
+                },
+                {
+                    "beetroot_0": true
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        }
+    }
+}

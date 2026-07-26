@@ -1,0 +1,110 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.raw_beef_1.raw_beef_1": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.raw_beef_1"
+                }
+            ],
+            "textures": [
+                "Texture.raw_beef_1"
+            ],
+            "part_visibility": [
+                {
+                    "raw_beef_1": true
+                },
+                {
+                    "oak_log": false
+                },
+                {
+                    "stripped_oak_log_top": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.raw_beef_1.oak_log": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.oak_log"
+                }
+            ],
+            "textures": [
+                "Texture.oak_log"
+            ],
+            "part_visibility": [
+                {
+                    "raw_beef_1": false
+                },
+                {
+                    "oak_log": true
+                },
+                {
+                    "stripped_oak_log_top": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.raw_beef_1.stripped_oak_log_top": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.stripped_oak_log_top"
+                }
+            ],
+            "textures": [
+                "Texture.stripped_oak_log_top"
+            ],
+            "part_visibility": [
+                {
+                    "raw_beef_1": false
+                },
+                {
+                    "oak_log": false
+                },
+                {
+                    "stripped_oak_log_top": true
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:cooked_beef_0",
+      "materials": {
+        "steak_0": "entity_alphatest",
+        "plate_white": "entity_alphatest"
+      },
+      "textures": {
+        "steak_0": "textures/cit/entity/steak_0",
+        "plate_white": "textures/cit/entity/plate_white"
+      },
+      "geometry": {
+        "default": "geometry.cit.steak_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.steak_0.steak_0",
+        "controller.render.cit.steak_0.plate_white"
+      ]
+    }
+  }
+}

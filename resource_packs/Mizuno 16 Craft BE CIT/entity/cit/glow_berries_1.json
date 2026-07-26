@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:glow_berries_1",
+      "materials": {
+        "basket": "entity_alphatest",
+        "glow_brries_0": "entity_alphatest"
+      },
+      "textures": {
+        "basket": "textures/cit/entity/basket",
+        "glow_brries_0": "textures/cit/entity/glow_brries_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.glow_berries_1"
+      },
+      "render_controllers": [
+        "controller.render.cit.glow_berries_1.basket",
+        "controller.render.cit.glow_berries_1.glow_brries_0"
+      ]
+    }
+  }
+}

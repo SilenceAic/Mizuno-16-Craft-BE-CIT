@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:potato_1",
+      "materials": {
+        "basket": "entity_alphatest",
+        "potato_0": "entity_alphatest"
+      },
+      "textures": {
+        "basket": "textures/cit/entity/basket",
+        "potato_0": "textures/cit/entity/potato_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.potato_1"
+      },
+      "render_controllers": [
+        "controller.render.cit.potato_1.basket",
+        "controller.render.cit.potato_1.potato_0"
+      ]
+    }
+  }
+}

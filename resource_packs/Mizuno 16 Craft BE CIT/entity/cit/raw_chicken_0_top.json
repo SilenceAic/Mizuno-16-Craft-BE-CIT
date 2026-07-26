@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:raw_chicken_0_top",
+      "materials": {
+        "raw_chicken_0": "entity_alphatest",
+        "raw_meat_hook": "entity_alphatest"
+      },
+      "textures": {
+        "raw_chicken_0": "textures/cit/entity/raw_chicken_0",
+        "raw_meat_hook": "textures/cit/entity/raw_meat_hook"
+      },
+      "geometry": {
+        "default": "geometry.cit.raw_chicken_0_top"
+      },
+      "render_controllers": [
+        "controller.render.cit.raw_chicken_0_top.raw_chicken_0",
+        "controller.render.cit.raw_chicken_0_top.raw_meat_hook"
+      ],
+      "animations": {
+        "raw_chicken_0_top": "animation.cit.raw_chicken_0_top"
+      },
+      "scripts": {
+        "animate": [
+          "raw_chicken_0_top"
+        ]
+      }
+    }
+  }
+}

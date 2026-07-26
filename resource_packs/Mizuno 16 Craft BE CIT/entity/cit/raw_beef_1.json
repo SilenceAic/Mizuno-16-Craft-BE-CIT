@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:raw_beef_1",
+      "materials": {
+        "raw_beef_1": "entity_alphatest",
+        "oak_log": "entity_alphatest",
+        "stripped_oak_log_top": "entity_alphatest"
+      },
+      "textures": {
+        "raw_beef_1": "textures/cit/entity/raw_beef_1",
+        "oak_log": "textures/blocks/cit/oak_log",
+        "stripped_oak_log_top": "textures/blocks/cit/stripped_oak_log_top"
+      },
+      "geometry": {
+        "default": "geometry.cit.raw_beef_1"
+      },
+      "render_controllers": [
+        "controller.render.cit.raw_beef_1.raw_beef_1",
+        "controller.render.cit.raw_beef_1.oak_log",
+        "controller.render.cit.raw_beef_1.stripped_oak_log_top"
+      ]
+    }
+  }
+}

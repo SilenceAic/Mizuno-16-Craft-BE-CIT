@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:cooked_chicken_0",
+      "materials": {
+        "cooked_chicken_0": "entity_alphatest",
+        "cooked_chicken_0_01": "entity_alphatest",
+        "plate_white": "entity_alphatest"
+      },
+      "textures": {
+        "cooked_chicken_0": "textures/cit/entity/cooked_chicken_0",
+        "cooked_chicken_0_01": "textures/cit/entity/cooked_chicken_0_01",
+        "plate_white": "textures/cit/entity/plate_white"
+      },
+      "geometry": {
+        "default": "geometry.cit.cooked_chicken_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.cooked_chicken_0.cooked_chicken_0",
+        "controller.render.cit.cooked_chicken_0.cooked_chicken_0_01",
+        "controller.render.cit.cooked_chicken_0.plate_white"
+      ]
+    }
+  }
+}

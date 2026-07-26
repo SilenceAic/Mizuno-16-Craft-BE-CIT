@@ -1,0 +1,110 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cit.cooked_chicken_0.cooked_chicken_0": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.cooked_chicken_0"
+                }
+            ],
+            "textures": [
+                "Texture.cooked_chicken_0"
+            ],
+            "part_visibility": [
+                {
+                    "cooked_chicken_0": true
+                },
+                {
+                    "cooked_chicken_0_01": false
+                },
+                {
+                    "plate_white": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.cooked_chicken_0.cooked_chicken_0_01": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.cooked_chicken_0_01"
+                }
+            ],
+            "textures": [
+                "Texture.cooked_chicken_0_01"
+            ],
+            "part_visibility": [
+                {
+                    "cooked_chicken_0": false
+                },
+                {
+                    "cooked_chicken_0_01": true
+                },
+                {
+                    "plate_white": false
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        },
+        "controller.render.cit.cooked_chicken_0.plate_white": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.plate_white"
+                }
+            ],
+            "textures": [
+                "Texture.plate_white"
+            ],
+            "part_visibility": [
+                {
+                    "cooked_chicken_0": false
+                },
+                {
+                    "cooked_chicken_0_01": false
+                },
+                {
+                    "plate_white": true
+                }
+            ],
+            "is_hurt_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "on_fire_color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+            },
+            "ignore_lighting": false
+        }
+    }
+}

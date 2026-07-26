@@ -1,0 +1,25 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:honey_bottle_0",
+      "materials": {
+        "honey_bottle_0": "entity_alphablend",
+        "potion_0": "ppmshjz_ao",
+        "opaque": "entity_alphatest"
+      },
+      "textures": {
+        "honey_bottle_0": "textures/cit/entity/honey_bottle_0",
+        "potion_0": "textures/cit/entity/potion_0",
+        "opaque": "textures/cit/entity/potion_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.honey_bottle_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.honey_bottle_0.honey_bottle_0",
+        "controller.render.cit.honey_bottle_0.potion_0"
+      ]
+    }
+  }
+}

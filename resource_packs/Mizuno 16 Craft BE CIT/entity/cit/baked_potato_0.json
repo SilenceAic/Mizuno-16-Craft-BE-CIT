@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:baked_potato_0",
+      "materials": {
+        "baked_potato_0": "entity_alphatest",
+        "baked_potato_0_01": "entity_alphatest"
+      },
+      "textures": {
+        "baked_potato_0": "textures/cit/entity/baked_potato_0",
+        "baked_potato_0_01": "textures/cit/entity/baked_potato_0_01"
+      },
+      "geometry": {
+        "default": "geometry.cit.baked_potato_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.baked_potato_0.baked_potato_0",
+        "controller.render.cit.baked_potato_0.baked_potato_0_01"
+      ]
+    }
+  }
+}

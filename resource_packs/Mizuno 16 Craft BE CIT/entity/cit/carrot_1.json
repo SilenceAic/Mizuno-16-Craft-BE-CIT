@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:carrot_1",
+      "materials": {
+        "basket": "entity_alphatest",
+        "carrot_0": "entity_alphatest"
+      },
+      "textures": {
+        "basket": "textures/cit/entity/basket",
+        "carrot_0": "textures/cit/entity/carrot_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.carrot_1"
+      },
+      "render_controllers": [
+        "controller.render.cit.carrot_1.basket",
+        "controller.render.cit.carrot_1.carrot_0"
+      ]
+    }
+  }
+}

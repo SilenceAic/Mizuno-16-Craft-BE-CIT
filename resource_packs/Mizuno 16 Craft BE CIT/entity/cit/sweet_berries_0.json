@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:sweet_berries_0",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/cit/entity/sweet_brrries_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.sweet_berries_0"
+      },
+      "render_controllers": [
+        "controller.render.cit.sweet_berries_0"
+      ]
+    }
+  }
+}

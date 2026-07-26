@@ -1,733 +1,979 @@
 {
-  "format_version": "1.8.0",
-  "animations": {
-    "animation.cit.wall": {
-      "loop": true,
-      "bones": {
-        "root": {
-          "rotation": [
-            "q.property('cit:is_wall') ? (q.property('cit:wall_rotation') == 90 || q.property('cit:wall_rotation') == 180 || q.property('cit:wall_rotation') == 270 ? 25 : -25) : 90",
-            0,
-            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') + 25 : 0"
-          ],
-          "position": [
-            0,
-            "q.property('cit:is_wall') ? 0 : -7",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.bone_wall": {
-      "loop": true,
-      "bones": {
-        "bone": {
-          "rotation": [
-            0,
-            0,
-            "q.property('cit:wall_rotation')"
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.bowl_2_floor": {
-      "loop": true,
-      "bones": {
-        "cutlery": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.bowl_3_floor": {
-      "loop": true,
-      "bones": {
-        "bone2": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.bowl_3a_floor": {
-      "loop": true,
-      "bones": {
-        "plate2": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.cit.wall": {
+            "loop": true,
+            "bones": {
+                "root": {
+                    "rotation": [
+                        "q.property('cit:is_wall') ? (q.property('cit:wall_rotation') == 90 || q.property('cit:wall_rotation') == 180 || q.property('cit:wall_rotation') == 270 ? 25 : -25) : 90",
+                        0,
+                        "q.property('cit:is_wall') ? q.property('cit:wall_rotation') + 25 : 0"
+                    ],
+                    "position": [
+                        0,
+                        "q.property('cit:is_wall') ? 0 : -7",
+                        0
+                    ]
+                }
+            }
         },
-        "plate3": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
+        "animation.cit.bone_wall": {
+            "loop": true,
+            "bones": {
+                "bone": {
+                    "rotation": [
+                        0,
+                        0,
+                        "q.property('cit:wall_rotation')"
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
         },
-        "plate": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
+        "animation.cit.bowl_2_floor": {
+            "loop": true,
+            "bones": {
+                "cutlery": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
         },
-        "bowl": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
+        "animation.cit.bowl_3_floor": {
+            "loop": true,
+            "bones": {
+                "bone2": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
         },
-        "bone": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
+        "animation.cit.bowl_3a_floor": {
+            "loop": true,
+            "bones": {
+                "plate2": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "plate3": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "plate": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "bowl": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "bone": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.bowl_4_floor": {
+            "loop": true,
+            "bones": {
+                "group2": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "group": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.bowl_5_floor": {
+            "loop": true,
+            "bones": {
+                "dish": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "cutlery": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.leather_0_floor": {
+            "loop": true,
+            "bones": {
+                "bone": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.leather_1_floor": {
+            "loop": true,
+            "bones": {
+                "group": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "bone": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.milk_bucket_4_floor": {
+            "loop": true,
+            "bones": {
+                "bone": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.water_bucket_1_floor": {
+            "loop": true,
+            "bones": {
+                "bone": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "water": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.apple_0_wall": {
+            "loop": true,
+            "bones": {
+                "apple_0": {
+                    "rotation": [
+                        0,
+                        0,
+                        "q.property('cit:wall_rotation')"
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.apple_0_top": {
+            "loop": true,
+            "bones": {
+                "apple_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.apple_1_top": {
+            "loop": true,
+            "bones": {
+                "basket_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ]
+                },
+                "basket": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "apple_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.golden_apple_0_wall": {
+            "loop": true,
+            "bones": {
+                "golden_apple_0": {
+                    "rotation": [
+                        0,
+                        0,
+                        "q.property('cit:wall_rotation')"
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.golden_apple_0_top": {
+            "loop": true,
+            "bones": {
+                "golden_apple_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.golden_apple_1_top": {
+            "loop": true,
+            "bones": {
+                "basket_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ]
+                },
+                "basket": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "golden_apple_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.porkchop_2_top": {
+            "loop": true,
+            "bones": {
+                "raw_meat_hook": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ]
+                },
+                "raw_porkchop_2": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "raw_porkchop_2_01": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.porkchop_3_top": {
+            "loop": true,
+            "bones": {
+                "raw_meat_hook": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ]
+                },
+                "raw_porkchop_2": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "raw_porkchop_3": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.raw_cod_0_wall": {
+            "loop": true,
+            "bones": {
+                "spruce_planks": {
+                    "rotation": [
+                        "q.property('cit:is_wall') ? -90 : 0",
+                        0,
+                        "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        "q.property('cit:is_wall') ? 0 : 0"
+                    ]
+                },
+                "raw_cod_0": {
+                    "rotation": [
+                        "q.property('cit:is_wall') ? -90 : 0",
+                        0,
+                        "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        "q.property('cit:is_wall') ? 0: 0"
+                    ]
+                }
+            }
+        },
+        "animation.cit.raw_cod_1_top": {
+            "loop": true,
+            "bones": {
+                "raw_meat_hook": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "raw_cod_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.raw_cod_1a_top": {
+            "loop": true,
+            "bones": {
+                "raw_meat_hook": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "raw_cod_0a": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.raw_salmon_0_wall": {
+            "loop": true,
+            "bones": {
+                "spruce_planks": {
+                    "rotation": [
+                        "q.property('cit:is_wall') ? -90 : 0",
+                        0,
+                        "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "raw_salmon_0": {
+                    "rotation": [
+                        "q.property('cit:is_wall') ? -90 : 0",
+                        0,
+                        "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.raw_salmon_1_wall": {
+            "loop": true,
+            "bones": {
+                "raw_salmon_1_01": {
+                    "rotation": [
+                        "q.property('cit:is_wall') ? -90 : 0",
+                        0,
+                        "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "raw_salmon_1": {
+                    "rotation": [
+                        "q.property('cit:is_wall') ? -90 : 0",
+                        0,
+                        "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.raw_salmon_2_top": {
+            "loop": true,
+            "bones": {
+                "raw_meat_hook": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "raw_salmon_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.tropical_fish_0_wall": {
+            "loop": true,
+            "bones": {
+                "spruce_planks": {
+                    "rotation": [
+                        "q.property('cit:is_wall') ? -90 : 0",
+                        0,
+                        "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "tropical_fish_0": {
+                    "rotation": [
+                        "q.property('cit:is_wall') ? -90 : 0",
+                        0,
+                        "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.tropical_fish_1_wall": {
+            "loop": true,
+            "bones": {
+                "spruce_planks": {
+                    "rotation": [
+                        "q.property('cit:is_wall') ? -90 : 0",
+                        0,
+                        "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "tropical_fish_1": {
+                    "rotation": [
+                        "q.property('cit:is_wall') ? -90 : 0",
+                        0,
+                        "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.pufferfish_0_wall": {
+            "loop": true,
+            "bones": {
+                "spruce_planks": {
+                    "rotation": [
+                        "q.property('cit:is_wall') ? -90 : 0",
+                        0,
+                        "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "pufferfish_0": {
+                    "rotation": [
+                        "q.property('cit:is_wall') ? -90 : 0",
+                        0,
+                        "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.pufferfish_1_top": {
+            "loop": true,
+            "bones": {
+                "pufferfish_1": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.cake_0_floor": {
+            "loop": true,
+            "bones": {
+                "plate": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "side": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "cutlery": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "inner": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "top": {
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.raw_chicken_0_top": {
+            "loop": true,
+            "bones": {
+                "raw_chicken_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "raw_meat_hook": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.carrot_1_top": {
+            "loop": true,
+            "bones": {
+                "basket": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "basket_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "carrot_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.potato_1_top": {
+            "loop": true,
+            "bones": {
+                "basket": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "basket_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "potato_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.beetroot_1_top": {
+            "loop": true,
+            "bones": {
+                "basket": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "basket_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "beetroot_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.sweet_berries_1_top": {
+            "loop": true,
+            "bones": {
+                "basket": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "basket_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "sweet_brrries_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.glow_berries_1_top": {
+            "loop": true,
+            "bones": {
+                "basket": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "basket_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                },
+                "glow_brries_0": {
+                    "rotation": [
+                        0,
+                        "q.property('cit:wall_rotation')",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.cit.stone_axe_0_wall": {
+            "loop": true,
+            "bones": {
+                "axe_0": {
+                    "rotation": [
+                        "q.property('cit:is_wall') ? -90 : 0",
+                        0,
+                        "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
+                    ],
+                    "position": [
+                        0,
+                        "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
+                        "q.property('cit:is_wall') ? 0 : 0"
+                    ]
+                }
+            }
         }
-      }
-    },
-    "animation.cit.bowl_4_floor": {
-      "loop": true,
-      "bones": {
-        "group2": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        },
-        "group": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.bowl_5_floor": {
-      "loop": true,
-      "bones": {
-        "dish": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        },
-        "cutlery": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.leather_0_floor": {
-      "loop": true,
-      "bones": {
-        "bone": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.leather_1_floor": {
-      "loop": true,
-      "bones": {
-        "group": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        },
-        "bone": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.milk_bucket_4_floor": {
-      "loop": true,
-      "bones": {
-        "bone": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.water_bucket_1_floor": {
-      "loop": true,
-      "bones": {
-        "bone": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        },
-        "water": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.apple_0_wall": {
-      "loop": true,
-      "bones": {
-        "apple_0": {
-          "rotation": [
-            0,
-            0,
-            "q.property('cit:wall_rotation')"
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.apple_0_top": {
-      "loop": true,
-      "bones": {
-        "apple_0": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.apple_1_top": {
-      "loop": true,
-      "bones": {
-        "basket_0": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ]
-        },
-        "basket": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        },
-        "apple_0": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.golden_apple_0_wall": {
-      "loop": true,
-      "bones": {
-        "golden_apple_0": {
-          "rotation": [
-            0,
-            0,
-            "q.property('cit:wall_rotation')"
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.golden_apple_0_top": {
-      "loop": true,
-      "bones": {
-        "golden_apple_0": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.golden_apple_1_top": {
-      "loop": true,
-      "bones": {
-        "basket_0": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ]
-        },
-        "basket": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        },
-        "golden_apple_0": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.porkchop_2_top": {
-      "loop": true,
-      "bones": {
-        "raw_meat_hook": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ]
-        },
-        "raw_porkchop_2": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        },
-        "raw_porkchop_2_01": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.porkchop_3_top": {
-      "loop": true,
-      "bones": {
-        "raw_meat_hook": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ]
-        },
-        "raw_porkchop_2": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        },
-        "raw_porkchop_3": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.raw_cod_0_wall": {
-      "loop": true,
-      "bones": {
-        "spruce_planks": {
-          "rotation": [
-            "q.property('cit:is_wall') ? -90 : 0",
-            0,
-            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            "q.property('cit:is_wall') ? 0 : 0"
-          ]
-        },
-        "raw_cod_0": {
-          "rotation": [
-            "q.property('cit:is_wall') ? -90 : 0",
-            0,
-            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            "q.property('cit:is_wall') ? 0: 0"
-          ]
-        }
-      }
-    },
-    "animation.cit.raw_cod_1_top": {
-      "loop": true,
-      "bones": {
-        "raw_meat_hook": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ],
-          "position": [
-            0,
-            0,
-            0
-          ]
-        },
-        "raw_cod_0": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.raw_cod_1a_top": {
-      "loop": true,
-      "bones": {
-        "raw_meat_hook": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ],
-          "position": [
-            0,
-            0,
-            0
-          ]
-        },
-        "raw_cod_0a": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.raw_salmon_0_wall": {
-      "loop": true,
-      "bones": {
-        "spruce_planks": {
-          "rotation": [
-            "q.property('cit:is_wall') ? -90 : 0",
-            0,
-            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        },
-        "raw_salmon_0": {
-          "rotation": [
-            "q.property('cit:is_wall') ? -90 : 0",
-            0,
-            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.raw_salmon_1_wall": {
-      "loop": true,
-      "bones": {
-        "raw_salmon_1_01": {
-          "rotation": [
-            "q.property('cit:is_wall') ? -90 : 0",
-            0,
-            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        },
-        "raw_salmon_1": {
-          "rotation": [
-            "q.property('cit:is_wall') ? -90 : 0",
-            0,
-            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.raw_salmon_2_top": {
-      "loop": true,
-      "bones": {
-        "raw_meat_hook": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        },
-        "raw_salmon_0": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.tropical_fish_0_wall": {
-      "loop": true,
-      "bones": {
-        "spruce_planks": {
-          "rotation": [
-            "q.property('cit:is_wall') ? -90 : 0",
-            0,
-            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        },
-        "tropical_fish_0": {
-          "rotation": [
-            "q.property('cit:is_wall') ? -90 : 0",
-            0,
-            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.tropical_fish_1_wall": {
-      "loop": true,
-      "bones": {
-        "spruce_planks": {
-          "rotation": [
-            "q.property('cit:is_wall') ? -90 : 0",
-            0,
-            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        },
-        "tropical_fish_1": {
-          "rotation": [
-            "q.property('cit:is_wall') ? -90 : 0",
-            0,
-            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.pufferfish_0_wall": {
-      "loop": true,
-      "bones": {
-        "spruce_planks": {
-          "rotation": [
-            "q.property('cit:is_wall') ? -90 : 0",
-            0,
-            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        },
-        "pufferfish_0": {
-          "rotation": [
-            "q.property('cit:is_wall') ? -90 : 0",
-            0,
-            "q.property('cit:is_wall') ? q.property('cit:wall_rotation') : 0"
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.pufferfish_1_top": {
-      "loop": true,
-      "bones": {
-        "pufferfish_1": {
-          "rotation": [
-            0,
-            "q.property('cit:wall_rotation')",
-            0
-          ],
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
-    },
-    "animation.cit.cake_0_floor": {
-      "loop": true,
-      "bones": {
-        "plate": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        },
-        "side": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        },
-        "cutlery": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        },
-        "inner": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        },
-        "top": {
-          "position": [
-            0,
-            "math.sin(q.life_time * 1080) * q.property('cit:bounce') * 0.5",
-            0
-          ]
-        }
-      }
     }
-  }
 }

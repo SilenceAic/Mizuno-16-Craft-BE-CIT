@@ -1,0 +1,34 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:sweet_berries_1_top",
+      "materials": {
+        "basket": "entity_alphatest",
+        "basket_0": "entity_alphatest",
+        "sweet_brrries_0": "entity_alphatest"
+      },
+      "textures": {
+        "basket": "textures/cit/entity/basket",
+        "basket_0": "textures/cit/entity/basket_0",
+        "sweet_brrries_0": "textures/cit/entity/sweet_brrries_0"
+      },
+      "geometry": {
+        "default": "geometry.cit.sweet_berries_1_top"
+      },
+      "render_controllers": [
+        "controller.render.cit.sweet_berries_1_top.basket",
+        "controller.render.cit.sweet_berries_1_top.basket_0",
+        "controller.render.cit.sweet_berries_1_top.sweet_brrries_0"
+      ],
+      "animations": {
+        "sweet_berries_1_top": "animation.cit.sweet_berries_1_top"
+      },
+      "scripts": {
+        "animate": [
+          "sweet_berries_1_top"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cit:carrot_2",
+      "materials": {
+        "farmland_moist": "entity_alphatest",
+        "planter": "entity_alphatest",
+        "crop": "entity_alphatest_one_sided"
+      },
+      "textures": {
+        "farmland_moist": "textures/blocks/cit/farmland_moist",
+        "planter": "textures/blocks/cit/spruce_planks",
+        "crop": "textures/blocks/cit/carrots_stage3"
+      },
+      "geometry": {
+        "default": "geometry.cit.template_crop_2"
+      },
+      "render_controllers": [
+        "controller.render.cit.carrot_2.farmland_moist",
+        "controller.render.cit.carrot_2.planter",
+        "controller.render.cit.carrot_2.crop"
+      ]
+    }
+  }
+}
